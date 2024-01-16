@@ -3,7 +3,7 @@ pos_lst1 = []
 neg_lst1 = []
 
 for num in lst1 :
-    if num > 0 :
+    if num >= 0 :
         pos_lst1.append(num)
     else :
         neg_lst1.append(num)
