@@ -8,8 +8,9 @@ import subprocess
 import json
 import re
 import sys
+import os
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Set
 from html.parser import HTMLParser
 import urllib.parse
 import time
@@ -25,6 +26,33 @@ class HTMLTextExtractor(HTMLParser):
 
     def get_text(self):
         return ''.join(self.text)
+
+def load_exclusion_list() -> Set[str]:
+    """Load job IDs from the exclusion list file."""
+    exclusion_file = os.path.expanduser('~/bin/linkedin-jobs-exclusions.txt')
+    excluded_ids = set()
+
+    if not os.path.exists(exclusion_file):
+        return excluded_ids
+
+    try:
+        with open(exclusion_file, 'r') as f:
+            for line in f:
+                line = line.strip()
+                # Skip comments and empty lines
+                if not line or line.startswith('#'):
+                    continue
+                # Extract job ID (first part before |)
+                parts = line.split('|')
+                if parts:
+                    job_id = parts[0].strip()
+                    if job_id:
+                        excluded_ids.add(job_id)
+        print(f"Loaded {len(excluded_ids)} jobs from exclusion list.")
+    except Exception as e:
+        print(f"Warning: Could not load exclusion list: {e}", file=sys.stderr)
+
+    return excluded_ids
 
 def run_gog_command(args: List[str]) -> Dict[str, Any]:
     """Run a gog command and return JSON output."""
@@ -631,6 +659,9 @@ def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
 
 def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
     """Main processing function."""
+    # Load exclusion list
+    excluded_job_ids = load_exclusion_list()
+
     # First, get jobs from previous summary emails
     previous_jobs = parse_previous_summary_emails()
 
@@ -680,6 +711,14 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
                 print(f"    Skipping {company_name} - not a public company")
                 continue
 
+            # Check if job is in exclusion list
+            job_id_match = re.search(r'/jobs/view/(\d+)', job['link'])
+            if job_id_match:
+                job_id = job_id_match.group(1)
+                if job_id in excluded_job_ids:
+                    print(f"    Skipping {company_name} - {job['title']} - in exclusion list")
+                    continue
+
             # Try to get salary in this order:
             # 1. From job listing (if embedded in email)
             # 2. From email body
@@ -713,7 +752,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
     # Merge with previous jobs and deduplicate
     all_jobs = previous_jobs + filtered_jobs
 
-    # Deduplicate by job ID (extracted from link)
+    # Deduplicate by job ID (extracted from link) and filter out excluded jobs
     # LinkedIn URLs have format: /jobs/view/4365006239/ where 4365006239 is the job ID
     seen_job_ids = set()
     unique_jobs = []
@@ -722,6 +761,9 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
         job_id_match = re.search(r'/jobs/view/(\d+)', job['link'])
         if job_id_match:
             job_id = job_id_match.group(1)
+            # Skip if in exclusion list
+            if job_id in excluded_job_ids:
+                continue
             if job_id not in seen_job_ids:
                 seen_job_ids.add(job_id)
                 unique_jobs.append(job)
