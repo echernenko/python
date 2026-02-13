@@ -220,8 +220,8 @@ def delete_old_summary_emails():
     """Delete all previous summary emails except the most recent one."""
     print("Cleaning up old summary emails...")
 
-    # Search for unread summary emails
-    search_query = 'is:unread subject:"LinkedIn Job Opportunities"'
+    # Search for all summary emails (read or unread)
+    search_query = 'subject:"LinkedIn Job Opportunities"'
 
     result = run_gog_command([
         'gmail', 'search',
@@ -241,7 +241,7 @@ def delete_old_summary_emails():
             thread_id = thread.get('id')
             if thread_id:
                 # Move to trash by adding TRASH label
-                run_gog_command(['gmail', 'thread', 'modify', thread_id, '--add', 'TRASH'])
+                run_gog_command(['gmail', 'thread', 'modify', thread_id, '--add', 'TRASH', '--json'])
         print(f"Deleted {len(threads)} old summary email(s).")
 
 def parse_previous_summary_emails() -> List[Dict[str, Any]]:
@@ -341,7 +341,8 @@ def mark_email_as_read(message_id: str):
     run_gog_command([
         'gmail', 'thread', 'modify',
         message_id,
-        '--remove', 'UNREAD'
+        '--remove', 'UNREAD',
+        '--json'
     ])
 
 def get_company_tier(company_name: str) -> int:
@@ -647,7 +648,6 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
 
     filtered_jobs = []
     processed_message_ids = []
-
 
     for email in emails:
         message_id = email.get('id')
