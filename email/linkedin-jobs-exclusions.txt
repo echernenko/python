@@ -1,0 +1,25 @@
+# LinkedIn Jobs Exclusion List
+# Jobs listed here (by job ID) will not appear in future summaries
+# Format: job_id | company | position
+
+4365006239 | NVIDIA | Senior Manager, Software Engineering - Libraries Devops and Infrastructure
+4370127027 | NVIDIA | Director, Software Engineering - NIM Factory
+4361796992 | Netflix | Engineering Manager, Open Connect Control Plane Foundations
+4340877049 | Meta | Director, Mechanical Engineering
+4366036352 | Apple | Software Engineering Manager, HomeKit
+4361027031 | Netflix | Engineering Manager – OC Foundation Infrastructure Services
+4305859627 | Netflix | Director, Technical Program Management - Commerce Engineering
+4369074568 | Microsoft | Principal Group Engineering Manager
+4370142945 | Microsoft | Principal Software Engineering Manager
+4322290315 | Anthropic | Engineering Manager, Inference
+4340497820 | Netflix | Senior Engineering Manager, Model Inference & Serving, Machine Learning Platform
+4316728406 | Meta | Software Engineer (Technical Leadership)
+4330954802 | Anthropic | Engineering Manager, UI Platform
+4360035090 | Apple | Senior Software Engineering Manager, Enterprise Technology Services
+4359215380 | Apple | Software Engineering Manager, Enterprise Technology Services
+4360083657 | Apple | Media Services Quality Engineering Manager
+4370985645 | Microsoft | Principal Software Engineering Manager
+4361848732 | Netflix | Engineering Manager - Games Social Communicate
+4363096626 | Meta | Software Engineering Manager, Product
+4322585032 | Affirm | Director, Software Engineering
+4369317865 | Salesforce | Sr. Manager, Software Engineering
