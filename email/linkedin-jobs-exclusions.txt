@@ -24,3 +24,28 @@
 4322585032 | Affirm | Director, Software Engineering
 4369317865 | Salesforce | Sr. Manager, Software Engineering
 4371356118 | Anthropic | Engineering Manager, Access Management
+4365267928 | Microsoft | Principal Engineering Manager
+4356750183 | Netflix | Engineering Manager (Cloud Architecture Tooling & Security)
+4175510123 | Netflix | Director, Growth Data Engineering
+4372196006 | Microsoft | Principal Software Engineering Manager
+4361884757 | Blue Origin | Sr. Manager - Software Engineering
+4370848614 | Slack | Staff Frontend Product Engineer - Slack, Search Pillar
+4307095014 | Reddit, Inc. | Engineering Manager, Data Pipeline
+4369311207 | Figma | Manager, Software Engineering - Internal Tools
+4312230264 | CrowdStrike | Sr. Manager, Enterprise Data Science (Remote, USA)
+4273763849 | Figma | Director, Software Engineering - Product Platform
+4322575104 | Affirm | Director, Software Engineering
+4354477650 | Shopify | Data Engineering Managers (Americas)
+4363995481 | Oracle | Snr Manager, Software Engineering, Cloud Performance
+4319254645 | Reddit, Inc. | Senior Engineering Manager, Unified Embeddings Platform
+4369029689 | Cisco | Director, Engineering
+4309706024 | Affirm | Manager, Software Engineering (Continuous Integration)
+4288512842 | Oracle | Software Development Senior Manager
+4192327226 | Oracle | Software Development Senior Manager
+4309495914 | Affirm | Manager, Software Engineering (Continuous Integration)
+4363125621 | Oracle | Software Development Director
+4355262391 | Oracle | Software Development Director
+4273762865 | Figma | Director, Software Engineering - Product Platform
+4342934829 | Airbnb | Senior Engineering Manager - Marketplaces DNA (Data & AI)
+4359611187 | Airbnb | Engineering Manager, Client Products & Emerging Tech
+4366974065 | Airbnb | Engineering Manager, Ambassador Routing
