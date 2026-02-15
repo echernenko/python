@@ -23,3 +23,4 @@
 4363096626 | Meta | Software Engineering Manager, Product
 4322585032 | Affirm | Director, Software Engineering
 4369317865 | Salesforce | Sr. Manager, Software Engineering
+4371356118 | Anthropic | Engineering Manager, Access Management
