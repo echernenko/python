@@ -15,6 +15,9 @@ from html.parser import HTMLParser
 import urllib.parse
 import time
 
+# Global variable to store the Gmail account
+GOG_ACCOUNT = None
+
 class HTMLTextExtractor(HTMLParser):
     """Extract text content from HTML."""
     def __init__(self):
@@ -56,11 +59,21 @@ def load_exclusion_list() -> Set[str]:
 
     return excluded_ids
 
-def run_gog_command(args: List[str]) -> Dict[str, Any]:
+def run_gog_command(args: List[str], account: str = None) -> Dict[str, Any]:
     """Run a gog command and return JSON output."""
     try:
+        # Use global account if not provided
+        if account is None:
+            account = GOG_ACCOUNT
+
+        # Build command with account if provided
+        cmd = ['gog']
+        if account:
+            cmd.extend(['--account', account])
+        cmd.extend(args)
+
         result = subprocess.run(
-            ['gog'] + args,
+            cmd,
             capture_output=True,
             text=True,
             check=True
@@ -116,7 +129,10 @@ def is_public_company(company_name: str, job_description: str) -> bool:
         'pinterest', 'snap', 'twitter', 'reddit', 'roblox', 'unity',
         'servicenow', 'workday', 'splunk', 'crowdstrike', 'palo alto',
         'fortinet', 'cloudflare', 'datadog', 'gitlab', 'hashicorp',
-        'affirm', 'cvs', 'zillow', 'anthropic', 'ford', 'visa', 'walmart',
+        'affirm', 'akamai', 'amgen', 'backblaze', 'compass',
+        'cvs', 'zillow', 'anthropic', 'ford', 'hubspot', 'instacart',
+        'mastercard', 'nutanix', 'sony', 'upstart', 'vertex', 'visa',
+        'walmart', 'workiva',
         'target', 'home depot', 'lowes', 'best buy', 'dell', 'hp',
         'booking', 'expedia', 'wayfair', 'ebay', 'etsy', 'chewy',
         'draft kings', 'mgm', 'caesars', 'disney', 'comcast', 'verizon',
@@ -341,8 +357,7 @@ def get_unread_linkedin_emails() -> List[Dict[str, Any]]:
     print("Searching for LinkedIn emails...")
 
     # Search for unread emails from LinkedIn about jobs
-    # Search for emails from any LinkedIn job-related sender (last 24 hours, read or unread)
-    search_query = '(from:jobs-listings@linkedin.com OR from:jobs-noreply@linkedin.com OR from:jobalerts-noreply@linkedin.com OR from:messages-noreply@linkedin.com) newer_than:1d'
+    search_query = '(from:jobs-listings@linkedin.com OR from:jobs-noreply@linkedin.com OR from:jobalerts-noreply@linkedin.com OR from:messages-noreply@linkedin.com) newer_than:3d'
 
     result = run_gog_command([
         'gmail', 'search',
@@ -394,8 +409,10 @@ def get_company_tier(company_name: str) -> int:
         'dropbox', 'pinterest', 'snap', 'twitter', 'reddit', 'roblox', 'unity',
         'servicenow', 'workday', 'splunk', 'crowdstrike', 'palo alto',
         'fortinet', 'cloudflare', 'datadog', 'gitlab', 'hashicorp', 'figma',
-        'affirm', 'coinbase', 'square', 'block', 'spotify', 'roku', 'peloton',
-        'blue origin', 'mixpanel', 'sofi', 'visa'
+        'affirm', 'akamai', 'amgen', 'coinbase', 'hubspot', 'instacart',
+        'mastercard', 'nutanix', 'sony', 'square', 'block', 'spotify',
+        'roku', 'peloton', 'blue origin', 'mixpanel', 'sofi', 'visa',
+        'backblaze', 'compass', 'upstart', 'vertex', 'workiva'
     }
 
     # Check tier 1
@@ -801,12 +818,17 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
 
 def main():
     import argparse
+    global GOG_ACCOUNT
 
     parser = argparse.ArgumentParser(description='Filter LinkedIn job emails')
     parser.add_argument('--email', required=True, help='Your email address to send summary to')
     parser.add_argument('--dry-run', action='store_true', help='Don\'t mark emails as read')
+    parser.add_argument('--account', help='Gmail account to use with gog (defaults to --email value)')
 
     args = parser.parse_args()
+
+    # Set the global account (default to email if not specified)
+    GOG_ACCOUNT = args.account if args.account else args.email
 
     process_linkedin_emails(args.email, args.dry_run)
 
