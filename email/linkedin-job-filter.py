@@ -29,7 +29,9 @@ class HTMLTextExtractor(HTMLParser):
 
 def load_exclusion_list() -> Set[str]:
     """Load job IDs from the exclusion list file."""
-    exclusion_file = os.path.expanduser('~/bin/linkedin-jobs-exclusions.txt')
+    # Use the exclusion file in the same directory as the script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    exclusion_file = os.path.join(script_dir, 'linkedin-jobs-exclusions.txt')
     excluded_ids = set()
 
     if not os.path.exists(exclusion_file):
@@ -114,7 +116,7 @@ def is_public_company(company_name: str, job_description: str) -> bool:
         'pinterest', 'snap', 'twitter', 'reddit', 'roblox', 'unity',
         'servicenow', 'workday', 'splunk', 'crowdstrike', 'palo alto',
         'fortinet', 'cloudflare', 'datadog', 'gitlab', 'hashicorp',
-        'affirm', 'cvs', 'zillow', 'anthropic', 'ford', 'walmart',
+        'affirm', 'cvs', 'zillow', 'anthropic', 'ford', 'visa', 'walmart',
         'target', 'home depot', 'lowes', 'best buy', 'dell', 'hp',
         'booking', 'expedia', 'wayfair', 'ebay', 'etsy', 'chewy',
         'draft kings', 'mgm', 'caesars', 'disney', 'comcast', 'verizon',
@@ -127,7 +129,7 @@ def is_public_company(company_name: str, job_description: str) -> bool:
 
     # Check if any known public company name is in the company name
     for public_co in known_public:
-        if public_co in company_lower:
+        if re.search(r'\b' + re.escape(public_co) + r'\b', company_lower):
             return True
 
     # Check for indicators in job description
@@ -261,7 +263,7 @@ def delete_old_summary_emails():
     if not result or 'threads' not in result:
         return
 
-    threads = result.get('threads', [])
+    threads = result.get('threads', []) or []
 
     if threads and len(threads) > 0:
         print(f"Deleting {len(threads)} old summary email(s)...")
@@ -289,7 +291,7 @@ def parse_previous_summary_emails() -> List[Dict[str, Any]]:
     if not result or 'threads' not in result:
         return []
 
-    threads = result.get('threads', [])
+    threads = result.get('threads', []) or []
     print(f"Found {len(threads)} previous summary emails.")
 
     jobs = []
@@ -352,7 +354,7 @@ def get_unread_linkedin_emails() -> List[Dict[str, Any]]:
     if not result or 'threads' not in result:
         return []
 
-    return result.get('threads', [])
+    return result.get('threads', []) or []
 
 def get_email_details(message_id: str) -> Dict[str, Any]:
     """Get detailed information for a specific email."""
@@ -393,17 +395,17 @@ def get_company_tier(company_name: str) -> int:
         'servicenow', 'workday', 'splunk', 'crowdstrike', 'palo alto',
         'fortinet', 'cloudflare', 'datadog', 'gitlab', 'hashicorp', 'figma',
         'affirm', 'coinbase', 'square', 'block', 'spotify', 'roku', 'peloton',
-        'blue origin', 'mixpanel', 'sofi'
+        'blue origin', 'mixpanel', 'sofi', 'visa'
     }
 
     # Check tier 1
     for t1_company in tier1:
-        if t1_company in company_lower:
+        if re.search(r'\b' + re.escape(t1_company) + r'\b', company_lower):
             return 1
 
     # Check tier 2
     for t2_company in tier2:
-        if t2_company in company_lower:
+        if re.search(r'\b' + re.escape(t2_company) + r'\b', company_lower):
             return 2
 
     # Tier 3: Other public companies
