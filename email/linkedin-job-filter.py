@@ -33,7 +33,7 @@ class HTMLTextExtractor(HTMLParser):
 def load_exclusion_list() -> Set[str]:
     """Load job IDs from the exclusion list file."""
     # Use the exclusion file in the same directory as the script
-    script_dir = os.path.dirname(os.path.abspath(__file__))
+    script_dir = os.path.dirname(os.path.realpath(__file__))
     exclusion_file = os.path.join(script_dir, 'linkedin-jobs-exclusions.txt')
     excluded_ids = set()
 
@@ -156,7 +156,7 @@ def _get_company_cache() -> Dict[str, bool]:
     global _company_public_cache, _company_cache_file
     if _company_public_cache is not None:
         return _company_public_cache
-    script_dir = os.path.dirname(os.path.abspath(__file__))
+    script_dir = os.path.dirname(os.path.realpath(__file__))
     _company_cache_file = os.path.join(script_dir, 'linkedin-company-cache.json')
     try:
         if os.path.exists(_company_cache_file):
