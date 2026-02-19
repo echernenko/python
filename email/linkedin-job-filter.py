@@ -141,46 +141,109 @@ def extract_linkedin_job_links(email_body: str) -> List[str]:
 
     return list(links)
 
+# Cache for Yahoo Finance public/private lookups (persisted to disk)
+_company_public_cache: Dict[str, bool] = None
+_company_cache_file: str = None
+
+# Brand names that differ from their legal/trading name on Yahoo Finance
+_COMPANY_ALIASES = {
+    'instacart': 'Maplebear',
+    'google': 'Alphabet',
+    'facebook': 'Meta Platforms',
+}
+
+def _get_company_cache() -> Dict[str, bool]:
+    global _company_public_cache, _company_cache_file
+    if _company_public_cache is not None:
+        return _company_public_cache
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    _company_cache_file = os.path.join(script_dir, 'linkedin-company-cache.json')
+    try:
+        if os.path.exists(_company_cache_file):
+            with open(_company_cache_file) as f:
+                _company_public_cache = json.load(f)
+        else:
+            _company_public_cache = {}
+    except Exception:
+        _company_public_cache = {}
+    return _company_public_cache
+
+def _save_company_cache():
+    global _company_public_cache, _company_cache_file
+    if _company_public_cache is None or _company_cache_file is None:
+        return
+    try:
+        with open(_company_cache_file, 'w') as f:
+            json.dump(_company_public_cache, f, indent=2, sort_keys=True)
+    except Exception as e:
+        print(f"Warning: Could not save company cache: {e}", file=sys.stderr)
+
+def _normalize_company_name(name: str) -> str:
+    """Lowercase, strip legal suffixes and punctuation for fuzzy matching."""
+    name = name.lower()
+    name = re.sub(r'\b(inc\.?|llc\.?|corp\.?|ltd\.?|co\.?|group|holdings?|platforms?|technologies|technology|systems|solutions|international|services)\b\.?', ' ', name)
+    name = re.sub(r'[^a-z0-9\s]', ' ', name)
+    return ' '.join(name.split())
+
+def _yahoo_finance_is_public(company_name: str) -> bool:
+    """Query Yahoo Finance to check if the company is a publicly traded equity."""
+    try:
+        encoded = urllib.parse.quote(company_name)
+        url = f"https://query1.finance.yahoo.com/v1/finance/search?q={encoded}&quotesCount=5&newsCount=0"
+        result = subprocess.run(
+            ['curl', '-s', '--max-time', '5', '-H', 'User-Agent: Mozilla/5.0', url],
+            capture_output=True, text=True, timeout=10
+        )
+        if result.returncode != 0:
+            return True  # Fail open on network error
+
+        data = json.loads(result.stdout)
+        quotes = data.get('quotes', [])
+
+        norm_search = _normalize_company_name(company_name)
+        search_words = {w for w in norm_search.split() if len(w) > 2}
+
+        for quote in quotes:
+            if quote.get('quoteType') != 'EQUITY':
+                continue
+            long_name = quote.get('longname') or quote.get('shortname') or ''
+            norm_result = _normalize_company_name(long_name)
+            result_words = {w for w in norm_result.split() if len(w) > 2}
+            if not search_words or not result_words:
+                continue
+            overlap = search_words & result_words
+            # Match if at least 60% of search words appear in the result name
+            if len(overlap) >= max(1, len(search_words) * 0.6):
+                return True
+
+        return False
+    except Exception as e:
+        print(f"    Warning: Yahoo Finance check failed for {company_name}: {e}", file=sys.stderr)
+        return True  # Fail open on unexpected error
+    finally:
+        time.sleep(0.3)  # Avoid rate-limiting
+
 def is_public_company(company_name: str, job_description: str) -> bool:
-    """
-    Heuristic check if a company is public.
-    This is a simple implementation - could be enhanced with SEC API.
-    """
-    # List of known public tech companies (can be expanded)
-    known_public = {
-        'google', 'alphabet', 'meta', 'facebook', 'amazon', 'microsoft',
-        'apple', 'netflix', 'tesla', 'nvidia', 'intel', 'amd', 'qualcomm',
-        'salesforce', 'oracle', 'ibm', 'cisco', 'adobe', 'intuit', 'paypal',
-        'uber', 'lyft', 'airbnb', 'doordash', 'coinbase', 'snowflake',
-        'databricks', 'stripe', 'atlassian', 'shopify', 'square', 'block',
-        'mongodb', 'elastic', 'twilio', 'okta', 'zoom', 'slack', 'dropbox',
-        'pinterest', 'snap', 'twitter', 'reddit', 'roblox', 'unity',
-        'servicenow', 'workday', 'splunk', 'crowdstrike', 'palo alto',
-        'fortinet', 'cloudflare', 'datadog', 'gitlab', 'hashicorp',
-        'affirm', 'akamai', 'amgen', 'backblaze', 'compass',
-        'cvs', 'zillow', 'anthropic', 'ford', 'hubspot', 'instacart',
-        'mastercard', 'nutanix', 'sony', 'upstart', 'vertex', 'visa',
-        'walmart', 'workiva',
-        'target', 'home depot', 'lowes', 'best buy', 'dell', 'hp',
-        'booking', 'expedia', 'wayfair', 'ebay', 'etsy', 'chewy',
-        'draft kings', 'mgm', 'caesars', 'disney', 'comcast', 'verizon',
-        'att', 't-mobile', 'sprint', 'charter', 'dish', 'fox', 'viacom',
-        'paramount', 'warner', 'discovery', 'spotify', 'roku', 'peloton',
-        'figma', 'mixpanel', 'blue origin', 'sofi', 'databricks'
-    }
+    """Check if a company is publicly traded using Yahoo Finance API with local caching."""
+    cache = _get_company_cache()
 
-    company_lower = company_name.lower()
+    if company_name in cache:
+        return cache[company_name]
 
-    # Check if any known public company name is in the company name
-    for public_co in known_public:
-        if re.search(r'\b' + re.escape(public_co) + r'\b', company_lower):
-            return True
+    # Check for a brand-name alias before querying
+    alias = _COMPANY_ALIASES.get(company_name.lower())
+    search_name = alias if alias else company_name
+    result = _yahoo_finance_is_public(search_name)
 
-    # Check for indicators in job description
-    public_indicators = ['nasdaq', 'nyse', 'publicly traded', 'stock options', 'equity']
-    desc_lower = job_description.lower()
+    # Fall back to job description indicators if Yahoo Finance drew a blank
+    if not result:
+        public_indicators = ['nasdaq:', 'nyse:', 'publicly traded', 'publicly-traded']
+        if any(ind in job_description.lower() for ind in public_indicators):
+            result = True
 
-    return any(indicator in desc_lower for indicator in public_indicators)
+    cache[company_name] = result
+    _save_company_cache()
+    return result
 
 def fetch_salary_from_job_page(job_url: str) -> str:
     """Fetch salary information from LinkedIn job page."""
