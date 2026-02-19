@@ -72,15 +72,44 @@ def run_gog_command(args: List[str], account: str = None) -> Dict[str, Any]:
             cmd.extend(['--account', account])
         cmd.extend(args)
 
+        # gog checks for a TTY to prompt for the keyring password; it ignores
+        # GOG_KEYRING_PASSWORD when set to empty string. Use `expect` to provide
+        # a pseudo-TTY and automatically send an empty newline as the password.
+        import shlex
+        cmd_str = ' '.join(shlex.quote(c) for c in cmd)
+        expect_script = (
+            f'set timeout 30\n'
+            f'spawn {cmd_str}\n'
+            f'expect {{\n'
+            f'  "password" {{ send "\\r"; exp_continue }}\n'
+            f'  eof\n'
+            f'}}\n'
+            f'set code [wait]\n'
+            f'exit [lindex $code 3]\n'
+        )
+
         result = subprocess.run(
-            cmd,
+            ['expect', '-'],
+            input=expect_script,
             capture_output=True,
             text=True,
-            check=True
         )
-        # Only try to parse JSON if there's actual output
-        if result.stdout and result.stdout.strip():
-            return json.loads(result.stdout)
+
+        if result.returncode != 0:
+            raise subprocess.CalledProcessError(result.returncode, cmd, stderr=result.stderr)
+
+        # expect prepends "spawn ..." to stdout; find where JSON actually starts
+        # and take everything from that line onward.
+        stdout = result.stdout
+        lines = stdout.splitlines()
+        json_start = next(
+            (i for i, l in enumerate(lines) if l.strip().startswith('{') or l.strip().startswith('[')),
+            -1
+        )
+        json_text = '\n'.join(lines[json_start:]).strip() if json_start >= 0 else ''
+
+        if json_text:
+            return json.loads(json_text)
         return {}
     except subprocess.CalledProcessError as e:
         print(f"Error running gog command: {e}", file=sys.stderr)
@@ -88,7 +117,6 @@ def run_gog_command(args: List[str], account: str = None) -> Dict[str, Any]:
         return {}
     except json.JSONDecodeError as e:
         print(f"Error parsing JSON: {e}", file=sys.stderr)
-        print(f"stdout was: {result.stdout[:100]}", file=sys.stderr)
         return {}
 
 def extract_text_from_html(html: str) -> str:
@@ -821,7 +849,7 @@ def main():
     global GOG_ACCOUNT
 
     parser = argparse.ArgumentParser(description='Filter LinkedIn job emails')
-    parser.add_argument('--email', required=True, help='Your email address to send summary to')
+    parser.add_argument('--email', default='chernenko@gmail.com', help='Your email address to send summary to')
     parser.add_argument('--dry-run', action='store_true', help='Don\'t mark emails as read')
     parser.add_argument('--account', help='Gmail account to use with gog (defaults to --email value)')
 
