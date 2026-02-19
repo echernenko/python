@@ -4,6 +4,7 @@
 # LinkedIn Jobs Exclusion List
 4175510123 | Netflix | Director, Growth Data Engineering
 4192327226 | Oracle | Software Development Senior Manager
+4254318514 | Meta | Systems Software Engineering Manager
 4255818033 | Google | Software Engineering Manager II, Infrastructure, Google Cloud AI
 4273762865 | Figma | Director, Software Engineering - Product Platform
 4273763849 | Figma | Director, Software Engineering - Product Platform
