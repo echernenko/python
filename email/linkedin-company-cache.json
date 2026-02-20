@@ -1,4 +1,6 @@
 {
+  "Accenture": true,
+  "Affirm": true,
   "Airbnb": true,
   "Apple": true,
   "Blue Origin": false,
@@ -15,6 +17,7 @@
   "GitLab": true,
   "Google": true,
   "Instacart": true,
+  "IonQ": true,
   "Ladders": false,
   "Mastercard": true,
   "Merative": false,
@@ -28,6 +31,7 @@
   "Piedmont Global": false,
   "Samsara": true,
   "Snap Inc.": true,
+  "Snowflake": true,
   "This company is actively hiring": false,
   "Visa": true
 }

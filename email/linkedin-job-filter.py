@@ -460,7 +460,7 @@ def get_unread_linkedin_emails() -> List[Dict[str, Any]]:
     print("Searching for LinkedIn emails...")
 
     # Search for unread emails from LinkedIn about jobs
-    search_query = '(from:jobs-listings@linkedin.com OR from:jobs-noreply@linkedin.com OR from:jobalerts-noreply@linkedin.com OR from:messages-noreply@linkedin.com) newer_than:3d'
+    search_query = '(from:jobs-listings@linkedin.com OR from:jobs-noreply@linkedin.com OR from:jobalerts-noreply@linkedin.com OR from:messages-noreply@linkedin.com) newer_than:2d'
 
     result = run_gog_command([
         'gmail', 'search',
