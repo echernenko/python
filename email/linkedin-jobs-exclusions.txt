@@ -68,3 +68,17 @@
 4372848739 | Meta | Software Engineering Manager
 4372967835 | GitLab | VP of Engineering, Architecture and Transformation
 4373286093 | Databricks | Sr. Manager, Engineering Performance
+4372214902 | Chewy | Director, Software Engineering
+4372013190 | Expedia Group | Director, Software Development Engineering - Air Shopping Platform
+4373879849 | Chewy | Software Development Manager
+4374489315 | Docusign | Director, Software Engineering
+4351920987 | Samsara | Director, Software Engineering - Routing
+4268412434 | Figma | Director, Software Engineering - Growth
+4359621176 | Instacart | Software Engineering Manager, Enterprise Platform
+4372473579 | Oracle | Software Development Snr Manager
+4338853865 | Snap Inc. | Senior Manager, Software Engineering, Ads Format
+4338893759 | Snap Inc. | Senior Manager, Software Engineering, Ads Format
+4371994874 | Oracle | Software Development Snr Manager
+4356010437 | Oracle | Software Development Senior Manager
+4355799642 | Oracle | Software Development Director
+4268409460 | Figma | Director, Software Engineering - Growth
