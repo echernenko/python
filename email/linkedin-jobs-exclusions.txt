@@ -98,3 +98,13 @@
 4371093314 | Nutanix | Director, Systems Engineering
 4366244555 | Snap Inc. | Manager, Software Engineering
 4366244557 | Snap Inc. | Manager, Software Engineering
+4365662657 | Microsoft | Principal Software Engineering Manager
+4374737059 | Microsoft | Group Engineering Manager
+4374730679 | Microsoft | Principal Group Engineering Manager
+4373031607 | Apple | Engineering Manager, Shield
+4371354647 | Apple | Senior Software QE Manager
+4372031388 | Apple | Software Engineering Manager - CI/CD
+4254314769 | Meta | Systems Software Engineering Manager
+4372996914 | Microsoft | Software Engineering Manager
+4355965220 | Netflix | Engineering Manager, Trust & Safety Foundations
+4374001783 | Google | Senior Software Engineering Manager, AI/ML, Compute Infrastructure
