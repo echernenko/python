@@ -82,3 +82,19 @@
 4356010437 | Oracle | Software Development Senior Manager
 4355799642 | Oracle | Software Development Director
 4268409460 | Figma | Director, Software Engineering - Growth
+4373603694 | GitHub | Staff Software Engineering Manager, Dependency Graph
+4375487049 | IonQ | Senior Manager, Compute Infrastructure Engineering
+4373631896 | Accenture | AI Native Software Engineering Manager
+4364418708 | Mastercard | Vice President, Software Engineering
+4364495591 | Mastercard | Vice President, Software Engineering
+4371220751 | Instacart | Director of Software Engineering, Order Experience
+4343983211 | Snowflake | Engineering Manager, Service Identity and Secret Management, Product Security
+4366561033 | Affirm | Senior Manager, Technical Programs
+4349900720 | Oracle | Senior Manager, Cloud Operations
+4372591199 | Visa | Sr. Manager, Software Engineering
+4372170840 | Snap Inc. | Director, Software Engineering
+4373290801 | GitLab | VP of Engineering, Architecture and Transformation
+4351336764 | Compass | Senior Engineering Manager
+4371093314 | Nutanix | Director, Systems Engineering
+4366244555 | Snap Inc. | Manager, Software Engineering
+4366244557 | Snap Inc. | Manager, Software Engineering
