@@ -145,11 +145,17 @@ def extract_linkedin_job_links(email_body: str) -> List[str]:
 _company_public_cache: Dict[str, bool] = None
 _company_cache_file: str = None
 
+# Companies known to be private that Yahoo Finance may falsely match
+_KNOWN_PRIVATE_COMPANIES = {
+    'modular',
+}
+
 # Brand names that differ from their legal/trading name on Yahoo Finance
 _COMPANY_ALIASES = {
     'instacart': 'Maplebear',
     'google': 'Alphabet',
     'facebook': 'Meta Platforms',
+    'github': 'Microsoft',
 }
 
 def _get_company_cache() -> Dict[str, bool]:
@@ -229,6 +235,12 @@ def is_public_company(company_name: str, job_description: str) -> bool:
 
     if company_name in cache:
         return cache[company_name]
+
+    # Known private companies should never be treated as public
+    if company_name.lower() in _KNOWN_PRIVATE_COMPANIES:
+        cache[company_name] = False
+        _save_company_cache()
+        return False
 
     # Check for a brand-name alias before querying
     alias = _COMPANY_ALIASES.get(company_name.lower())
@@ -858,6 +870,9 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
             print(f"    ✓ Added {company_name} - {job['title']}")
 
         processed_message_ids.append(message_id)
+
+    # Filter previous jobs against current public company cache
+    previous_jobs = [j for j in previous_jobs if is_public_company(j['company'], '')]
 
     # Merge with previous jobs and deduplicate
     all_jobs = previous_jobs + filtered_jobs
