@@ -126,3 +126,7 @@
 4375496903 | Airbnb | Engineering Manager, Core Foundation
 4366985331 | Coinbase | Engineering Manager - Risk Platform
 4375886193 | SoFi | Engineering Manager, Member Growth
+4304603851 | eBay | Director of Engineering - eBay Live
+4324843741 | Hinge | Senior Engineering Manager, Platform
+4356523053 | Palo Alto Networks | Senior Director, Engineering (Unit 42)
+4366881182 | Starbucks | engineering manager, Next Generation Ordering & Coffeehouse Platform
