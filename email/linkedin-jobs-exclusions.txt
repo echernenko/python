@@ -113,3 +113,8 @@
 4373716847 | Meta | Systems Software Engineering Manager
 4367918605 | Microsoft | Principal Software Engineering Manager - Developer Platform
 4356475374 | Netflix | Manager, Engineering - Live Media Asset Management
+4255811878 | Meta | Software Engineering Manager, Infrastructure
+4302393949 | Netflix | Manager, Engineering - Page Systems
+4359481620 | NVIDIA | Engineering Manager, Observability Platform
+4365913955 | Apple | Senior Engineering Manager, Product Engineering Systems
+4375852038 | Microsoft | Software Engineer Manager
