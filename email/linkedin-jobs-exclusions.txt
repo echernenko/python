@@ -122,3 +122,7 @@
 4373715602 | Nautilus Biotechnology | Senior Manager, Software Engineering
 4373623587 | Affirm | Director, Software Engineering (Site Reliability Engineering)
 4374325324 | Figma | Manager, Software Engineering - Search & Recommendations
+4337425687 | Oracle | Software Development Director
+4375496903 | Airbnb | Engineering Manager, Core Foundation
+4366985331 | Coinbase | Engineering Manager - Risk Platform
+4375886193 | SoFi | Engineering Manager, Member Growth
