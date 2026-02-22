@@ -118,3 +118,7 @@
 4359481620 | NVIDIA | Engineering Manager, Observability Platform
 4365913955 | Apple | Senior Engineering Manager, Product Engineering Systems
 4375852038 | Microsoft | Software Engineer Manager
+4312227391 | Okta | Senior Manager, Site Reliability Engineering - Infrastructure Platform
+4373715602 | Nautilus Biotechnology | Senior Manager, Software Engineering
+4373623587 | Affirm | Director, Software Engineering (Site Reliability Engineering)
+4374325324 | Figma | Manager, Software Engineering - Search & Recommendations
