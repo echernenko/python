@@ -893,7 +893,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
             # Check job cache for previously stored compensation
             job_cache = _get_job_cache()
             cached_job = job_cache.get(job_id) if job_id_match else None
-            cached_comp = cached_job.get('compensation') if cached_job else None
+            cached_comp = cached_job.get('salary') if cached_job else None
 
             if cached_comp and cached_comp != "Not specified":
                 compensation = cached_comp
@@ -917,14 +917,16 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
 
             final_compensation = compensation if compensation else "Not specified"
 
-            # Cache the job info
+            # Cache the job info (only store salary when we actually have one)
             if job_id_match:
-                job_cache.setdefault(job_id, {}).update({
+                entry = {
                     'title': job['title'],
                     'company': company_name,
                     'location': job['location'],
-                    'compensation': final_compensation,
-                })
+                }
+                if final_compensation != "Not specified":
+                    entry['salary'] = final_compensation
+                job_cache.setdefault(job_id, {}).update(entry)
                 _save_job_cache()
 
             # Add this job to filtered list
