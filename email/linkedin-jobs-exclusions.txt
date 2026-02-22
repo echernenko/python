@@ -109,3 +109,4 @@
 4355965220 | Netflix | Engineering Manager, Trust & Safety Foundations
 4374001783 | Google | Senior Software Engineering Manager, AI/ML, Compute Infrastructure
 4374063592 | Google | Software Engineering Manager II, Site Reliability Engineering
+4375152893 | Microsoft | Senior Software Engineering Manager - CTJ - TS/SCI

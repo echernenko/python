@@ -257,6 +257,36 @@ def is_public_company(company_name: str, job_description: str) -> bool:
     _save_company_cache()
     return result
 
+# Cache for job data (persisted to disk)
+_job_cache: Dict[str, dict] = None
+_job_cache_file: str = None
+
+def _get_job_cache() -> Dict[str, dict]:
+    global _job_cache, _job_cache_file
+    if _job_cache is not None:
+        return _job_cache
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    _job_cache_file = os.path.join(script_dir, 'linkedin-job-cache.json')
+    try:
+        if os.path.exists(_job_cache_file):
+            with open(_job_cache_file) as f:
+                _job_cache = json.load(f)
+        else:
+            _job_cache = {}
+    except Exception:
+        _job_cache = {}
+    return _job_cache
+
+def _save_job_cache():
+    global _job_cache, _job_cache_file
+    if _job_cache is None or _job_cache_file is None:
+        return
+    try:
+        with open(_job_cache_file, 'w') as f:
+            json.dump(_job_cache, f, indent=2, sort_keys=True)
+    except Exception as e:
+        print(f"Warning: Could not save job cache: {e}", file=sys.stderr)
+
 def fetch_salary_from_job_page(job_url: str) -> str:
     """Fetch salary information from LinkedIn job page."""
     try:
@@ -267,6 +297,15 @@ def fetch_salary_from_job_page(job_url: str) -> str:
             return None
 
         job_id = job_id_match.group(1)
+
+        # Check job cache for previously fetched salary
+        cache = _get_job_cache()
+        if job_id in cache:
+            cached = cache[job_id]
+            salary = cached.get('salary')
+            if salary is not None or 'salary' in cached:
+                return salary
+
         # Construct clean URL
         clean_url = f"https://www.linkedin.com/jobs/view/{job_id}/"
 
@@ -298,6 +337,7 @@ def fetch_salary_from_job_page(job_url: str) -> str:
             r'\$([\d,]+) - \$([\d,]+)',
         ]
 
+        salary = None
         for pattern in salary_patterns:
             match = re.search(pattern, html_content, re.IGNORECASE)
             if match:
@@ -305,9 +345,13 @@ def fetch_salary_from_job_page(job_url: str) -> str:
                 low = match.group(1).replace(',', '')
                 high = match.group(2).replace(',', '')
                 # Convert to K format
-                return f"${int(low)//1000}K-${int(high)//1000}K"
+                salary = f"${int(low)//1000}K-${int(high)//1000}K"
+                break
 
-        return None
+        # Cache the result (including None to avoid re-fetching)
+        cache.setdefault(job_id, {})['salary'] = salary
+        _save_job_cache()
+        return salary
     except Exception as e:
         print(f"    Warning: Could not fetch salary from {job_url}: {e}", file=sys.stderr)
         return None
@@ -846,29 +890,49 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
                     print(f"    Skipping {company_name} - {job['title']} - in exclusion list")
                     continue
 
-            # Try to get salary in this order:
-            # 1. From job listing (if embedded in email)
-            # 2. From email body
-            # 3. From job page itself
-            compensation = None
-            if job.get('salary'):
-                compensation = job['salary']
-            else:
-                compensation = extract_compensation(body)
+            # Check job cache for previously stored compensation
+            job_cache = _get_job_cache()
+            cached_job = job_cache.get(job_id) if job_id_match else None
+            cached_comp = cached_job.get('compensation') if cached_job else None
 
-            # If still no salary, try fetching from job page
-            if compensation == "Not specified" or not compensation:
-                page_salary = fetch_salary_from_job_page(job['link'])
-                if page_salary:
-                    compensation = page_salary
-                time.sleep(0.5)  # Be nice to LinkedIn servers
+            if cached_comp and cached_comp != "Not specified":
+                compensation = cached_comp
+            else:
+                # Try to get salary in this order:
+                # 1. From job listing (if embedded in email)
+                # 2. From email body
+                # 3. From job page itself
+                compensation = None
+                if job.get('salary'):
+                    compensation = job['salary']
+                else:
+                    compensation = extract_compensation(body)
+
+                # If still no salary, try fetching from job page
+                if compensation == "Not specified" or not compensation:
+                    page_salary = fetch_salary_from_job_page(job['link'])
+                    if page_salary:
+                        compensation = page_salary
+                    time.sleep(0.5)  # Be nice to LinkedIn servers
+
+            final_compensation = compensation if compensation else "Not specified"
+
+            # Cache the job info
+            if job_id_match:
+                job_cache.setdefault(job_id, {}).update({
+                    'title': job['title'],
+                    'company': company_name,
+                    'location': job['location'],
+                    'compensation': final_compensation,
+                })
+                _save_job_cache()
 
             # Add this job to filtered list
             filtered_jobs.append({
                 'company': company_name,
                 'title': job['title'],
                 'link': job['link'],
-                'compensation': compensation if compensation else "Not specified",
+                'compensation': final_compensation,
                 'location': job['location']
             })
 

@@ -1,0 +1,148 @@
+{
+  "4255811878": {
+    "company": "Meta",
+    "compensation": "Not specified",
+    "location": "Bellevue",
+    "title": "Software Engineering Manager, Infrastructure"
+  },
+  "4302393949": {
+    "company": "Netflix",
+    "compensation": "$436K-$791K",
+    "location": "United States",
+    "salary": "$436K-$791K",
+    "title": "Manager, Engineering - Page Systems"
+  },
+  "4304603851": {
+    "company": "eBay",
+    "compensation": "$233K-$311K",
+    "location": "San Jose, CA",
+    "salary": "$233K-$311K",
+    "title": "Director of Engineering - eBay Live"
+  },
+  "4312227391": {
+    "company": "Okta",
+    "compensation": "Not specified",
+    "location": "Bellevue",
+    "salary": null,
+    "title": "Senior Manager, Site Reliability Engineering - Infrastructure Platform"
+  },
+  "4324843741": {
+    "company": "Hinge",
+    "compensation": "$219K-$263K",
+    "location": "New York",
+    "salary": "$219K-$263K",
+    "title": "Senior Engineering Manager, Platform"
+  },
+  "4337425687": {
+    "company": "Oracle",
+    "compensation": "$122K-$291K",
+    "location": "United States",
+    "salary": "$122K-$291K",
+    "title": "Software Development Director"
+  },
+  "4356475374": {
+    "company": "Netflix",
+    "compensation": "$436K-$710K",
+    "location": "United States",
+    "salary": "$436K-$710K",
+    "title": "Manager, Engineering - Live Media Asset Management"
+  },
+  "4356523053": {
+    "company": "Palo Alto Networks",
+    "compensation": "Not specified",
+    "location": "Santa Clara, CA",
+    "salary": null,
+    "title": "Senior Director, Engineering (Unit 42)"
+  },
+  "4359481620": {
+    "company": "NVIDIA",
+    "compensation": "$224K-$356K",
+    "location": "Santa Clara",
+    "salary": "$224K-$356K",
+    "title": "Engineering Manager, Observability Platform, Engineering Manager, Observability Platform"
+  },
+  "4365913955": {
+    "company": "Apple",
+    "compensation": "$262K-$393K",
+    "location": "Sunnyvale",
+    "salary": "$262K-$393K",
+    "title": "Senior Engineering Manager, Product Engineering Systems"
+  },
+  "4366881182": {
+    "company": "Starbucks",
+    "compensation": "$162K-$270K",
+    "location": "Seattle",
+    "salary": "$162K-$270K",
+    "title": "engineering manager, Next Generation Ordering & Coffeehouse Platform- Seattle, WA"
+  },
+  "4366985331": {
+    "company": "Coinbase",
+    "compensation": "$218K-$256K",
+    "location": "United States",
+    "salary": "$218K-$256K",
+    "title": "Engineering Manager - Risk Platform"
+  },
+  "4367918605": {
+    "company": "Microsoft",
+    "compensation": "$139K-$304K",
+    "location": "Redmond",
+    "salary": "$139K-$304K",
+    "title": "Principal Software Engineering Manager - Developer Platform"
+  },
+  "4373623587": {
+    "company": "Affirm",
+    "compensation": "$300K-$360K",
+    "location": "Seattle, WA",
+    "salary": "$300K-$360K",
+    "title": "Director, Software Engineering (Site Reliability Engineering)"
+  },
+  "4373715602": {
+    "company": "Nautilus Biotechnology",
+    "compensation": "$189K-$252K",
+    "location": "Seattle",
+    "salary": "$189K-$252K",
+    "title": "Senior Manager, Software Engineering"
+  },
+  "4373716847": {
+    "company": "Meta",
+    "compensation": "$219K-$301K",
+    "location": "Seattle",
+    "salary": "$219K-$301K",
+    "title": "Systems Software Engineering Manager"
+  },
+  "4374325324": {
+    "company": "Figma",
+    "compensation": "Not specified",
+    "location": "United States",
+    "salary": null,
+    "title": "Manager, Software Engineering - Search & Recommendations"
+  },
+  "4375152893": {
+    "company": "Microsoft",
+    "compensation": "$119K-$258K",
+    "location": "United States",
+    "salary": "$119K-$258K",
+    "title": "Senior Software Engineering Manager - CTJ - TS/SCI"
+  },
+  "4375496903": {
+    "company": "Airbnb",
+    "compensation": "$204K-$255K",
+    "location": "San Francisco",
+    "salary": "$204K-$255K",
+    "title": "Engineering Manager, Core Foundation"
+  },
+  "4375852038": {
+    "company": "Microsoft",
+    "compensation": "$139K-$304K",
+    "location": "United States",
+    "salary": "$139K-$304K",
+    "title": "Software Engineer Manager"
+  },
+  "4375886193": {
+    "company": "SoFi",
+    "compensation": "$153K-$264K",
+    "location": "Seattle",
+    "salary": "$153K-$264K",
+    "title": "Engineering Manager, Member Growth"
+  }
+}
