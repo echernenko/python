@@ -110,3 +110,6 @@
 4374001783 | Google | Senior Software Engineering Manager, AI/ML, Compute Infrastructure
 4374063592 | Google | Software Engineering Manager II, Site Reliability Engineering
 4375152893 | Microsoft | Senior Software Engineering Manager - CTJ - TS/SCI
+4373716847 | Meta | Systems Software Engineering Manager
+4367918605 | Microsoft | Principal Software Engineering Manager - Developer Platform
+4356475374 | Netflix | Manager, Engineering - Live Media Asset Management
