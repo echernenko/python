@@ -136,3 +136,5 @@
 4304810893 | Figma | Manager, Software Engineering - Collaboration Tools
 4377416785 | NVIDIA | Senior Manager, Software Security Architecture
 4306853537 | Amazon Web Services (AWS) | Software Development Manager, Aurora PostgreSQL
+4374284614 | Oracle | Senior Manager of Software Development
+4315744787 | Reddit, Inc. | Engineering Manager, Notifications Relevance
