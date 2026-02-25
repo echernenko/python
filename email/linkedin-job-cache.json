@@ -17,11 +17,23 @@
     "salary": "$233K-$311K",
     "title": "Director of Engineering - eBay Live"
   },
+  "4312219056": {
+    "company": "eBay",
+    "location": "San Jose, CA",
+    "salary": "$233K-$311K",
+    "title": "Director of Engineering"
+  },
   "4312227391": {
     "company": "Okta",
     "location": "Bellevue",
     "salary": null,
     "title": "Senior Manager, Site Reliability Engineering - Infrastructure Platform"
+  },
+  "4315744787": {
+    "company": "Reddit, Inc.",
+    "location": "United States",
+    "salary": "$230K-$322K",
+    "title": "Engineering Manager, Notifications Relevance"
   },
   "4324843741": {
     "company": "Hinge",
@@ -29,11 +41,29 @@
     "salary": "$219K-$263K",
     "title": "Senior Engineering Manager, Platform"
   },
+  "4325309022": {
+    "company": "Shopify",
+    "location": "NAMER",
+    "salary": null,
+    "title": "Engineering Manager (Americas)"
+  },
+  "4329920684": {
+    "company": "Vanta",
+    "location": "United States",
+    "salary": null,
+    "title": "Sr. Engineering Manager, Reporting & Enterprise Hub"
+  },
   "4337425687": {
     "company": "Oracle",
     "location": "United States",
     "salary": "$122K-$291K",
     "title": "Software Development Director"
+  },
+  "4345839527": {
+    "company": "Uber",
+    "location": "Seattle",
+    "salary": "$232K-$258K",
+    "title": "Engineering Manager II, Core Security Engineering"
   },
   "4356475374": {
     "company": "Netflix",
@@ -47,11 +77,29 @@
     "salary": null,
     "title": "Senior Director, Engineering (Unit 42)"
   },
+  "4357494191": {
+    "company": "DoorDash",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Engineering Manager - Merchant Acquisition, Onboarding & Early Success"
+  },
   "4359481620": {
     "company": "NVIDIA",
     "location": "Santa Clara",
     "salary": "$224K-$356K",
     "title": "Engineering Manager, Observability Platform, Engineering Manager, Observability Platform"
+  },
+  "4359607621": {
+    "company": "Airbnb",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Control Plane - Distributed Transactional Database"
+  },
+  "4361181454": {
+    "company": "GitLab",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Create:Source Code"
   },
   "4365913955": {
     "company": "Apple",
@@ -71,11 +119,23 @@
     "salary": "$218K-$256K",
     "title": "Engineering Manager - Risk Platform"
   },
+  "4367875586": {
+    "company": "Google",
+    "location": "Kirkland",
+    "salary": "$197K-$291K",
+    "title": "Technical Lead Manager, YouTube"
+  },
   "4367918605": {
     "company": "Microsoft",
     "location": "Redmond",
     "salary": "$139K-$304K",
     "title": "Principal Software Engineering Manager - Developer Platform"
+  },
+  "4369614759": {
+    "company": "Sony",
+    "location": "San Diego",
+    "salary": "$240K-$270K",
+    "title": "Director, Engineering"
   },
   "4373623587": {
     "company": "Affirm",
@@ -95,17 +155,47 @@
     "salary": "$219K-$301K",
     "title": "Systems Software Engineering Manager"
   },
+  "4373902224": {
+    "company": "T-Mobile",
+    "location": "Bellevue",
+    "salary": "$134K-$242K",
+    "title": "Sr Manager, EPO Applications Support"
+  },
+  "4374284614": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$118K-$251K",
+    "title": "Senior Manager of Software Development"
+  },
   "4374325324": {
     "company": "Figma",
     "location": "United States",
     "salary": null,
     "title": "Manager, Software Engineering - Search & Recommendations"
   },
+  "4374500932": {
+    "company": "Cloudflare",
+    "location": "Seattle",
+    "salary": "$190K-$261K",
+    "title": "Engineering Manager, Cloudflare Hyperdrive"
+  },
+  "4374620119": {
+    "company": "Visa",
+    "location": "Highlands Ranch",
+    "salary": "$176K-$282K",
+    "title": "Director, Software Engineering"
+  },
   "4375496903": {
     "company": "Airbnb",
     "location": "San Francisco",
     "salary": "$204K-$255K",
     "title": "Engineering Manager, Core Foundation"
+  },
+  "4375747325": {
+    "company": "Google",
+    "location": "New York",
+    "salary": "$248K-$349K",
+    "title": "Senior Software Engineering Manager, Horizontal Compliance Platform and Tooling"
   },
   "4375852038": {
     "company": "Microsoft",
@@ -118,5 +208,29 @@
     "location": "Seattle",
     "salary": "$153K-$264K",
     "title": "Engineering Manager, Member Growth"
+  },
+  "4376077016": {
+    "company": "Google",
+    "location": "Kirkland",
+    "salary": "$197K-$291K",
+    "title": "Software Engineering Manager II, Infrastructure, Google Cloud"
+  },
+  "4376827151": {
+    "company": "Spotify",
+    "location": "New York",
+    "salary": null,
+    "title": "Engineering Manager II, Personalization"
+  },
+  "4377038402": {
+    "company": "IonQ",
+    "location": "Bothell",
+    "salary": "$151K-$198K",
+    "title": "Senior Manager, System Integration & Commissioning"
+  },
+  "4377416785": {
+    "company": "NVIDIA",
+    "location": "Redmond",
+    "salary": "$272K-$431K",
+    "title": "Senior Manager, Software Security Architecture"
   }
 }

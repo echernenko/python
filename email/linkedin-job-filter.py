@@ -156,6 +156,10 @@ _COMPANY_ALIASES = {
     'google': 'Alphabet',
     'facebook': 'Meta Platforms',
     'github': 'Microsoft',
+    'amazon web services (aws)': 'Amazon',
+    'aws': 'Amazon',
+    'twitch': 'Amazon',
+    'linkedin': 'Microsoft',
 }
 
 def _get_company_cache() -> Dict[str, bool]:
