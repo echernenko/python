@@ -17,6 +17,12 @@
     "salary": "$233K-$311K",
     "title": "Director of Engineering - eBay Live"
   },
+  "4306853537": {
+    "company": "Amazon Web Services (AWS)",
+    "location": "Redmond",
+    "salary": null,
+    "title": "Software Development Manager, Aurora PostgreSQL"
+  },
   "4312219056": {
     "company": "eBay",
     "location": "San Jose, CA",
@@ -220,6 +226,12 @@
     "location": "New York",
     "salary": null,
     "title": "Engineering Manager II, Personalization"
+  },
+  "4376847148": {
+    "company": "LinkedIn",
+    "location": "Mountain View",
+    "salary": "$152K-$248K",
+    "title": "Manager, Software Engineering"
   },
   "4377038402": {
     "company": "IonQ",
