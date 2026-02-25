@@ -134,3 +134,4 @@
 4373757317 | Netflix | Engineering Manager, Core Applications - AI for Member Systems
 4376301040 | Microsoft | Software Engineering Manager
 4304810893 | Figma | Manager, Software Engineering - Collaboration Tools
+4377416785 | NVIDIA | Senior Manager, Software Security Architecture
