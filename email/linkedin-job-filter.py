@@ -361,6 +361,8 @@ def fetch_salary_from_job_page(job_url: str) -> str:
         return None
 
 def extract_compensation(text: str) -> str:
+
+
     """Extract pay range information from text."""
     # Patterns for compensation/pay ranges (prioritized order)
     comp_patterns = [
@@ -950,7 +952,10 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
     previous_jobs = [j for j in previous_jobs if is_public_company(j['company'], '')]
 
     # Merge with previous jobs and deduplicate
-    all_jobs = previous_jobs + filtered_jobs
+    # Put filtered_jobs first so freshly-parsed data (with correct compensation/
+    # location from cache or email) takes precedence over stale data parsed from
+    # previous summary emails (which may show "Not specified").
+    all_jobs = filtered_jobs + previous_jobs
 
     # Deduplicate by job ID (extracted from link) and filter out excluded jobs
     # LinkedIn URLs have format: /jobs/view/4365006239/ where 4365006239 is the job ID
