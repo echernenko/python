@@ -135,3 +135,4 @@
 4376301040 | Microsoft | Software Engineering Manager
 4304810893 | Figma | Manager, Software Engineering - Collaboration Tools
 4377416785 | NVIDIA | Senior Manager, Software Security Architecture
+4306853537 | Amazon Web Services (AWS) | Software Development Manager, Aurora PostgreSQL
