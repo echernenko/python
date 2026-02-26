@@ -129,6 +129,7 @@
 4355799642 | Oracle | Software Development Director
 4349900720 | Oracle | Senior Manager, Cloud Operations
 4337425687 | Oracle | Software Development Director
+4352697668 | Oracle | Software Development Director
 4374284614 | Oracle | Senior Manager of Software Development
 4374543806 | Oracle | Senior Manager, Software Development
 4374843961 | Oracle | Software Development Snr Manager
