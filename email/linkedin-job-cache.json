@@ -221,6 +221,12 @@
     "salary": "$190K-$261K",
     "title": "Engineering Manager, Cloudflare Hyperdrive"
   },
+  "4374524806": {
+    "company": "OpenAI",
+    "location": "San Francisco",
+    "salary": null,
+    "title": "Platform Engineering Manager, Forward Deployed Engineering (FDE)"
+  },
   "4374543806": {
     "company": "Oracle",
     "location": "United States",
@@ -280,6 +286,12 @@
     "location": "Austin",
     "salary": "$176K-$265K",
     "title": "Finance Digital Transformation - Engineering Manager"
+  },
+  "4376433218": {
+    "company": "Anthropic",
+    "location": "San Francisco",
+    "salary": null,
+    "title": "Engineering Manager, UI Platform"
   },
   "4376437592": {
     "company": "Apple",

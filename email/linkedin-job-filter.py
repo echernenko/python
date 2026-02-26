@@ -150,6 +150,12 @@ _KNOWN_PRIVATE_COMPANIES = {
     'modular',
 }
 
+# Private companies that should still be included in the summary
+_ALLOWED_PRIVATE_COMPANIES = {
+    'anthropic',
+    'openai',
+}
+
 # Brand names that differ from their legal/trading name on Yahoo Finance
 _COMPANY_ALIASES = {
     'instacart': 'Maplebear',
@@ -236,6 +242,12 @@ def _yahoo_finance_is_public(company_name: str) -> bool:
 def is_public_company(company_name: str, job_description: str) -> bool:
     """Check if a company is publicly traded using Yahoo Finance API with local caching."""
     cache = _get_company_cache()
+
+    # Allowed private companies should always be included
+    if company_name.lower() in _ALLOWED_PRIVATE_COMPANIES:
+        cache[company_name] = True
+        _save_company_cache()
+        return True
 
     if company_name in cache:
         return cache[company_name]

@@ -19,6 +19,7 @@
 4322290315 | Anthropic | Engineering Manager, Inference
 4330954802 | Anthropic | Engineering Manager, UI Platform
 4371356118 | Anthropic | Engineering Manager, Access Management
+4376433218 | Anthropic | Engineering Manager, UI Platform
 4359215380 | Apple | Software Engineering Manager, Enterprise Technology Services
 4360035090 | Apple | Senior Software Engineering Manager, Enterprise Technology Services
 4360083657 | Apple | Media Services Quality Engineering Manager
@@ -53,6 +54,7 @@
 4268409460 | Figma | Director, Software Engineering - Growth
 4374325324 | Figma | Manager, Software Engineering - Search & Recommendations
 4304810893 | Figma | Manager, Software Engineering - Collaboration Tools
+4368056061 | Figma | Manager, Software Engineering - Design Systems Management
 4368604485 | Ford Motor Company | Software Engineering Director
 4373603694 | GitHub | Staff Software Engineering Manager, Dependency Graph
 4372967835 | GitLab | VP of Engineering, Architecture and Transformation
@@ -114,6 +116,7 @@
 4377416785 | NVIDIA | Senior Manager, Software Security Architecture
 4377485663 | NVIDIA | Engineering Manager, Observability Platform
 4377492621 | NVIDIA | Senior Manager, Engineering -  Enterprise AI and Automation
+4374524806 | OpenAI | Platform Engineering Manager, Forward Deployed Engineering (FDE)
 4312227391 | Okta | Senior Manager, Site Reliability Engineering - Infrastructure Platform
 4192327226 | Oracle | Software Development Senior Manager
 4288512842 | Oracle | Software Development Senior Manager
@@ -127,8 +130,10 @@
 4349900720 | Oracle | Senior Manager, Cloud Operations
 4337425687 | Oracle | Software Development Director
 4374284614 | Oracle | Senior Manager of Software Development
+4374543806 | Oracle | Senior Manager, Software Development
 4374843961 | Oracle | Software Development Snr Manager
 4356523053 | Palo Alto Networks | Senior Director, Engineering (Unit 42)
+4377471789 | Pinterest | Sr. Director, Engineering - Delivery Infrastructure
 4307095014 | Reddit, Inc. | Engineering Manager, Data Pipeline
 4319254645 | Reddit, Inc. | Senior Engineering Manager, Unified Embeddings Platform
 4315744787 | Reddit, Inc. | Engineering Manager, Notifications Relevance
