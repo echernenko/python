@@ -71,6 +71,18 @@
     "salary": "$232K-$258K",
     "title": "Engineering Manager II, Core Security Engineering"
   },
+  "4346141502": {
+    "company": "The Trade Desk",
+    "location": "Bellevue",
+    "salary": null,
+    "title": "Senior Manager, Software Engineering - Custom Solutions"
+  },
+  "4352697668": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$122K-$291K",
+    "title": "Software Development Director"
+  },
   "4356475374": {
     "company": "Netflix",
     "location": "United States",
@@ -125,6 +137,12 @@
     "salary": "$218K-$256K",
     "title": "Engineering Manager - Risk Platform"
   },
+  "4367208554": {
+    "company": "Apple",
+    "location": "Cupertino",
+    "salary": "$188K-$332K",
+    "title": "Senior Manager, Quality Engineering Xcode"
+  },
   "4367875586": {
     "company": "Google",
     "location": "Kirkland",
@@ -136,6 +154,24 @@
     "location": "Redmond",
     "salary": "$139K-$304K",
     "title": "Principal Software Engineering Manager - Developer Platform"
+  },
+  "4368056061": {
+    "company": "Figma",
+    "location": "United States",
+    "salary": null,
+    "title": "Manager, Software Engineering - Design Systems Management"
+  },
+  "4368333496": {
+    "company": "Coinbase",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Engineering Manager - Data Platform"
+  },
+  "4368433237": {
+    "company": "Dropbox",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Engineering Manager, Core Mobile Experience"
   },
   "4369614759": {
     "company": "Sony",
@@ -185,11 +221,23 @@
     "salary": "$190K-$261K",
     "title": "Engineering Manager, Cloudflare Hyperdrive"
   },
+  "4374543806": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$118K-$251K",
+    "title": "Senior Manager, Software Development"
+  },
   "4374620119": {
     "company": "Visa",
     "location": "Highlands Ranch",
     "salary": "$176K-$282K",
     "title": "Director, Software Engineering"
+  },
+  "4374843961": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$118K-$251K",
+    "title": "Software Development Snr Manager"
   },
   "4375496903": {
     "company": "Airbnb",
@@ -221,6 +269,36 @@
     "salary": "$197K-$291K",
     "title": "Software Engineering Manager II, Infrastructure, Google Cloud"
   },
+  "4376411620": {
+    "company": "NerdWallet",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Manager, Software Engineering (Platform Systems)"
+  },
+  "4376432790": {
+    "company": "Apple",
+    "location": "Austin",
+    "salary": "$176K-$265K",
+    "title": "Finance Digital Transformation - Engineering Manager"
+  },
+  "4376437592": {
+    "company": "Apple",
+    "location": "Cupertino",
+    "salary": null,
+    "title": "Finance Digital Transformation - Engineering Manager"
+  },
+  "4376464142": {
+    "company": "Visa",
+    "location": "Bellevue",
+    "salary": "$206K-$360K",
+    "title": "Senior Director, Software Engineering"
+  },
+  "4376720980": {
+    "company": "Google",
+    "location": "Kirkland",
+    "salary": null,
+    "title": "Senior Software Engineering Manager, Emerging On-prem AI Infrastructure"
+  },
   "4376827151": {
     "company": "Spotify",
     "location": "New York",
@@ -239,10 +317,52 @@
     "salary": "$151K-$198K",
     "title": "Senior Manager, System Integration & Commissioning"
   },
+  "4377103650": {
+    "company": "Uber",
+    "location": "San Francisco",
+    "salary": "$267K-$297K",
+    "title": "Sr Engineering Manager, Maps Search"
+  },
   "4377416785": {
     "company": "NVIDIA",
     "location": "Redmond",
     "salary": "$272K-$431K",
     "title": "Senior Manager, Software Security Architecture"
+  },
+  "4377471789": {
+    "company": "Palo Alto",
+    "location": "This company is actively hiring",
+    "salary": null,
+    "title": "Pinterest"
+  },
+  "4377485663": {
+    "company": "NVIDIA",
+    "location": "Santa Clara",
+    "salary": null,
+    "title": "Engineering Manager, Observability Platform"
+  },
+  "4377491549": {
+    "company": "NVIDIA",
+    "location": "California",
+    "salary": "$272K-$431K",
+    "title": "Senior Manager, Abstraction Layer Engineering \u2013 Autonomous Platform"
+  },
+  "4377492621": {
+    "company": "NVIDIA",
+    "location": "Santa Clara",
+    "salary": "$272K-$431K",
+    "title": "Senior Manager, Engineering -  Enterprise AI and Automation"
+  },
+  "4377492623": {
+    "company": "NVIDIA",
+    "location": "Santa Clara",
+    "salary": "$224K-$431K",
+    "title": "Engineering Manager - OpenBMC Platform"
+  },
+  "4377891321": {
+    "company": "Microsoft",
+    "location": "Redmond",
+    "salary": "$163K-$296K",
+    "title": "Group Engineering Manager"
   }
 }

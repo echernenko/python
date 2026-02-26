@@ -138,3 +138,9 @@
 4306853537 | Amazon Web Services (AWS) | Software Development Manager, Aurora PostgreSQL
 4374284614 | Oracle | Senior Manager of Software Development
 4315744787 | Reddit, Inc. | Engineering Manager, Notifications Relevance
+4376432790 | Apple | Finance Digital Transformation - Engineering Manager
+4376437592 | Apple | Finance Digital Transformation - Engineering Manager
+4377891321 | Microsoft | Group Engineering Manager
+4377485663 | NVIDIA | Engineering Manager, Observability Platform
+4377492621 | NVIDIA | Senior Manager, Engineering -  Enterprise AI and Automation
+4367208554 | Apple | Senior Manager, Quality Engineering Xcode
