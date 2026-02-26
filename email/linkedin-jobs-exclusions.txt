@@ -150,5 +150,6 @@
 4343983211 | Snowflake | Engineering Manager, Service Identity and Secret Management, Product Security
 4375886193 | SoFi | Engineering Manager, Member Growth
 4366881182 | Starbucks | engineering manager, Next Generation Ordering & Coffeehouse Platform
+4345839527 | Uber | Engineering Manager II, Core Security Engineering
 4372591199 | Visa | Sr. Manager, Software Engineering
 4332821888 | Zillow | Senior Manager, Software Development Engineering
