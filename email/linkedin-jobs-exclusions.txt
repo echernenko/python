@@ -42,6 +42,7 @@
 4312230264 | CrowdStrike | Sr. Manager, Enterprise Data Science (Remote, USA)
 4365639524 | CVS Health | Director Web Engineering
 4371025252 | CVS Health | Senior Engineering Manager
+4353116020 | Databricks | Senior Engineering Manager - Trust and Safety
 4373286093 | Databricks | Sr. Manager, Engineering Performance
 4374489315 | Docusign | Director, Software Engineering
 4368433237 | Dropbox | Senior Engineering Manager, Core Mobile Experience
