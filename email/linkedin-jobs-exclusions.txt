@@ -92,6 +92,7 @@
 4367918605 | Microsoft | Principal Software Engineering Manager - Developer Platform
 4375852038 | Microsoft | Software Engineer Manager
 4376301040 | Microsoft | Software Engineering Manager
+4377830873 | Microsoft | Principal Software Engineer Manager - Azure Storage
 4377891321 | Microsoft | Group Engineering Manager
 4373715602 | Nautilus Biotechnology | Senior Manager, Software Engineering
 4175510123 | Netflix | Director, Growth Data Engineering
