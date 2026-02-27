@@ -118,6 +118,7 @@
 4377485663 | NVIDIA | Engineering Manager, Observability Platform
 4377491549 | NVIDIA | Senior Manager, Abstraction Layer Engineering – Autonomous Platform
 4377492621 | NVIDIA | Senior Manager, Engineering -  Enterprise AI and Automation
+4377492623 | NVIDIA | Engineering Manager - OpenBMC Platform
 4374524806 | OpenAI | Platform Engineering Manager, Forward Deployed Engineering (FDE)
 4312227391 | Okta | Senior Manager, Site Reliability Engineering - Infrastructure Platform
 4192327226 | Oracle | Software Development Senior Manager
