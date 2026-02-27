@@ -64,6 +64,7 @@
 4373603694 | GitHub | Staff Software Engineering Manager, Dependency Graph
 4372967835 | GitLab | VP of Engineering, Architecture and Transformation
 4373290801 | GitLab | VP of Engineering, Architecture and Transformation
+4361181454 | GitLab | Engineering Manager, Create:Source Code
 4255818033 | Google | Software Engineering Manager II, Infrastructure, Google Cloud AI
 4374001783 | Google | Senior Software Engineering Manager, AI/ML, Compute Infrastructure
 4374063592 | Google | Software Engineering Manager II, Site Reliability Engineering
