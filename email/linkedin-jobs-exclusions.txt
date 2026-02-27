@@ -159,4 +159,5 @@
 4366881182 | Starbucks | engineering manager, Next Generation Ordering & Coffeehouse Platform
 4345839527 | Uber | Engineering Manager II, Core Security Engineering
 4372591199 | Visa | Sr. Manager, Software Engineering
+4376464142 | Visa | Senior Director, Software Engineering
 4332821888 | Zillow | Senior Manager, Software Development Engineering
