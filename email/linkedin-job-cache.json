@@ -101,6 +101,12 @@
     "salary": null,
     "title": "Engineering Manager - Merchant Acquisition, Onboarding & Early Success"
   },
+  "4357891376": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$118K-$251K",
+    "title": "Senior Software Development Manager"
+  },
   "4359481620": {
     "company": "NVIDIA",
     "location": "Santa Clara",
@@ -118,6 +124,12 @@
     "location": "United States",
     "salary": null,
     "title": "Engineering Manager, Create:Source Code"
+  },
+  "4365577380": {
+    "company": "Google",
+    "location": "Kirkland",
+    "salary": null,
+    "title": "Software Engineering Manager, Workforce Identity"
   },
   "4365913955": {
     "company": "Apple",
@@ -172,6 +184,18 @@
     "location": "United States",
     "salary": null,
     "title": "Senior Engineering Manager, Core Mobile Experience"
+  },
+  "4368504842": {
+    "company": "GitHub",
+    "location": "United States",
+    "salary": null,
+    "title": "Principal Engineering Manager, Data Engineering"
+  },
+  "4368840670": {
+    "company": "Coinbase",
+    "location": "United States",
+    "salary": "$218K-$256K",
+    "title": "Software Engineering Manager - Cloud Provisioning"
   },
   "4369614759": {
     "company": "Sony",
@@ -244,6 +268,12 @@
     "location": "United States",
     "salary": "$118K-$251K",
     "title": "Software Development Snr Manager"
+  },
+  "4374867969": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$122K-$291K",
+    "title": "Software Development Director"
   },
   "4375496903": {
     "company": "Airbnb",
@@ -335,6 +365,12 @@
     "salary": "$267K-$297K",
     "title": "Sr Engineering Manager, Maps Search"
   },
+  "4377271698": {
+    "company": "Google",
+    "location": "Seattle",
+    "salary": "$197K-$291K",
+    "title": "Software Engineering Manager II, Site Reliability Engineering"
+  },
   "4377416785": {
     "company": "NVIDIA",
     "location": "Redmond",
@@ -371,10 +407,22 @@
     "salary": "$224K-$431K",
     "title": "Engineering Manager - OpenBMC Platform"
   },
+  "4377830873": {
+    "company": "Microsoft",
+    "location": "United States",
+    "salary": "$139K-$304K",
+    "title": "Principal Software Engineer Manager - Azure Storage"
+  },
   "4377891321": {
     "company": "Microsoft",
     "location": "Redmond",
     "salary": "$163K-$296K",
     "title": "Group Engineering Manager"
+  },
+  "4378662077": {
+    "company": "Salesforce",
+    "location": "Seattle",
+    "salary": "$197K-$401K",
+    "title": "Director/Sr. Director - Software Engineering"
   }
 }

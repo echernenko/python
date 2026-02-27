@@ -153,6 +153,7 @@ _KNOWN_PRIVATE_COMPANIES = {
 # Private companies that should still be included in the summary
 _ALLOWED_PRIVATE_COMPANIES = {
     'anthropic',
+    'databricks',
     'openai',
 }
 
