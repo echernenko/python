@@ -144,6 +144,7 @@
 4319254645 | Reddit, Inc. | Senior Engineering Manager, Unified Embeddings Platform
 4315744787 | Reddit, Inc. | Engineering Manager, Notifications Relevance
 4369317865 | Salesforce | Sr. Manager, Software Engineering
+4378662077 | Salesforce | Director/Sr. Director - Software Engineering
 4351920987 | Samsara | Director, Software Engineering - Routing
 4354477650 | Shopify | Data Engineering Managers (Americas)
 4370848614 | Slack | Staff Frontend Product Engineer - Slack, Search Pillar
