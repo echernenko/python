@@ -12,6 +12,7 @@
 4366561033 | Affirm | Senior Manager, Technical Programs
 4373623587 | Affirm | Director, Software Engineering (Site Reliability Engineering)
 4342934829 | Airbnb | Senior Engineering Manager - Marketplaces DNA (Data & AI)
+4359607621 | Airbnb | Engineering Manager, Control Plane - Distributed Transactional Database
 4359611187 | Airbnb | Engineering Manager, Client Products & Emerging Tech
 4366974065 | Airbnb | Engineering Manager, Ambassador Routing
 4375496903 | Airbnb | Engineering Manager, Core Foundation
