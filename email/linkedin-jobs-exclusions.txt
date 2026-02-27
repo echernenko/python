@@ -37,6 +37,7 @@
 4373879849 | Chewy | Software Development Manager
 4369029689 | Cisco | Director, Engineering
 4365077604 | Coinbase | Director of Engineering, Custody
+4368333496 | Coinbase | Senior Engineering Manager - Data Platform
 4368840670 | Coinbase | Software Engineering Manager - Cloud Provisioning
 4366985331 | Coinbase | Engineering Manager - Risk Platform
 4351336764 | Compass | Senior Engineering Manager
