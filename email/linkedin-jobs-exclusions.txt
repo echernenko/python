@@ -107,6 +107,7 @@
 4344737247 | Microsoft | Principal Software Engineering Manager
 4378605110 | Microsoft | Software Engineering Manager
 4373715602 | Nautilus Biotechnology | Senior Manager, Software Engineering
+4318320298 | NerdWallet | Senior Manager, Software Engineering (SMB)
 4175510123 | Netflix | Director, Growth Data Engineering
 4305859627 | Netflix | Director, Technical Program Management - Commerce Engineering
 4318496803 | Netflix | Senior Engineering Manager, CDN Edge
