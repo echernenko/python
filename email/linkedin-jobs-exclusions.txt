@@ -49,9 +49,11 @@
 4351336764 | Compass | Senior Engineering Manager
 4312230264 | CrowdStrike | Sr. Manager, Enterprise Data Science (Remote, USA)
 4353601593 | CrowdStrike | Director, Engineering, NG-SIEM Serverless Platform (Hybrid)
+4353563915 | CrowdStrike | Sr. Engineering Manager, Sensor - CTIO (Hybrid)
 4365639524 | CVS Health | Director Web Engineering
 4371025252 | CVS Health | Senior Engineering Manager
 4305817743 | Databricks | Engineering Manager - Money
+4378714077 | DigitalOcean | Sr. Director Engineering, Head of Internal Technology
 4353116020 | Databricks | Senior Engineering Manager - Trust and Safety
 4373286093 | Databricks | Sr. Manager, Engineering Performance
 4374489315 | Docusign | Director, Software Engineering
@@ -159,6 +161,7 @@
 4374543806 | Oracle | Senior Manager, Software Development
 4374843961 | Oracle | Software Development Snr Manager
 4348094322 | Oracle | Senior Manager, Cloud Engineering
+4360546379 | Oracle | Senior Director, Software Development
 4356523053 | Palo Alto Networks | Senior Director, Engineering (Unit 42)
 4377471789 | Pinterest | Sr. Director, Engineering - Delivery Infrastructure
 4307095014 | Reddit, Inc. | Engineering Manager, Data Pipeline
