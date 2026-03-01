@@ -21,6 +21,8 @@
 4322290315 | Anthropic | Engineering Manager, Inference
 4330954802 | Anthropic | Engineering Manager, UI Platform
 4371356118 | Anthropic | Engineering Manager, Access Management
+4378285320 | Anthropic | Engineering Manager, Cloud Security
+4369309314 | Anthropic | Engineering Manager, Inference Developer Productivity
 4376433218 | Anthropic | Engineering Manager, UI Platform
 4359215380 | Apple | Software Engineering Manager, Enterprise Technology Services
 4360035090 | Apple | Senior Software Engineering Manager, Enterprise Technology Services
@@ -46,6 +48,7 @@
 4366985331 | Coinbase | Engineering Manager - Risk Platform
 4351336764 | Compass | Senior Engineering Manager
 4312230264 | CrowdStrike | Sr. Manager, Enterprise Data Science (Remote, USA)
+4353601593 | CrowdStrike | Director, Engineering, NG-SIEM Serverless Platform (Hybrid)
 4365639524 | CVS Health | Director Web Engineering
 4371025252 | CVS Health | Senior Engineering Manager
 4305817743 | Databricks | Engineering Manager - Money
@@ -63,6 +66,8 @@
 4374325324 | Figma | Manager, Software Engineering - Search & Recommendations
 4304810893 | Figma | Manager, Software Engineering - Collaboration Tools
 4368056061 | Figma | Manager, Software Engineering - Design Systems Management
+4318101719 | Figma | Manager, Software Engineering - Expressive AI
+4318108590 | Figma | Manager, Software Engineering - Expressive AI
 4368604485 | Ford Motor Company | Software Engineering Director
 4373603694 | GitHub | Staff Software Engineering Manager, Dependency Graph
 4372967835 | GitLab | VP of Engineering, Architecture and Transformation
@@ -106,6 +111,7 @@
 4377891321 | Microsoft | Group Engineering Manager
 4344737247 | Microsoft | Principal Software Engineering Manager
 4378605110 | Microsoft | Software Engineering Manager
+4366842941 | Microsoft | Principal Software Engineering Manager
 4373715602 | Nautilus Biotechnology | Senior Manager, Software Engineering
 4318320298 | NerdWallet | Senior Manager, Software Engineering (SMB)
 4175510123 | Netflix | Director, Growth Data Engineering
@@ -133,6 +139,7 @@
 4377491549 | NVIDIA | Senior Manager, Abstraction Layer Engineering – Autonomous Platform
 4377492621 | NVIDIA | Senior Manager, Engineering -  Enterprise AI and Automation
 4377492623 | NVIDIA | Engineering Manager - OpenBMC Platform
+4377483686 | NVIDIA | Software Engineering Manager - Image and Data Compression Libraries
 4378078725 | NVIDIA | Manager, Software Verification
 4374524806 | OpenAI | Platform Engineering Manager, Forward Deployed Engineering (FDE)
 4312227391 | Okta | Senior Manager, Site Reliability Engineering - Infrastructure Platform
@@ -151,6 +158,7 @@
 4374284614 | Oracle | Senior Manager of Software Development
 4374543806 | Oracle | Senior Manager, Software Development
 4374843961 | Oracle | Software Development Snr Manager
+4348094322 | Oracle | Senior Manager, Cloud Engineering
 4356523053 | Palo Alto Networks | Senior Director, Engineering (Unit 42)
 4377471789 | Pinterest | Sr. Director, Engineering - Delivery Infrastructure
 4307095014 | Reddit, Inc. | Engineering Manager, Data Pipeline
@@ -158,6 +166,7 @@
 4315744787 | Reddit, Inc. | Engineering Manager, Notifications Relevance
 4369317865 | Salesforce | Sr. Manager, Software Engineering
 4378662077 | Salesforce | Director/Sr. Director - Software Engineering
+4378720638 | Salesforce | Director, Engineering - Agentic Search & AI Components
 4351920987 | Samsara | Director, Software Engineering - Routing
 4354477650 | Shopify | Data Engineering Managers (Americas)
 4370848614 | Slack | Staff Frontend Product Engineer - Slack, Search Pillar
@@ -167,6 +176,7 @@
 4366244555 | Snap Inc. | Manager, Software Engineering
 4366244557 | Snap Inc. | Manager, Software Engineering
 4343983211 | Snowflake | Engineering Manager, Service Identity and Secret Management, Product Security
+4379256305 | Snowflake | Engineering Manager - Feature Store
 4375886193 | SoFi | Engineering Manager, Member Growth
 4366881182 | Starbucks | engineering manager, Next Generation Ordering & Coffeehouse Platform
 4345839527 | Uber | Engineering Manager II, Core Security Engineering
