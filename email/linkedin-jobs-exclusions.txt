@@ -17,6 +17,7 @@
 4366974065 | Airbnb | Engineering Manager, Ambassador Routing
 4375496903 | Airbnb | Engineering Manager, Core Foundation
 4306853537 | Amazon Web Services (AWS) | Software Development Manager, Aurora PostgreSQL
+4378318227 | Amazon Web Services (AWS) | Software Development Manager, Builder Tools Language Experience
 4322290315 | Anthropic | Engineering Manager, Inference
 4330954802 | Anthropic | Engineering Manager, UI Platform
 4371356118 | Anthropic | Engineering Manager, Access Management
