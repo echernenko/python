@@ -118,6 +118,7 @@
 4373757317 | Netflix | Engineering Manager, Core Applications - AI for Member Systems
 4371093314 | Nutanix | Director, Systems Engineering
 4365006239 | NVIDIA | Senior Manager, Software Engineering - Libraries Devops and Infrastructure
+4377417812 | NVIDIA | Senior Manager, Software Engineering - Libraries Devops and Infrastructure
 4370127027 | NVIDIA | Director, Software Engineering - NIM Factory
 4359481620 | NVIDIA | Engineering Manager, Observability Platform
 4359795062 | NVIDIA | Senior Manager, Software Security Architecture
