@@ -119,11 +119,23 @@
     "salary": null,
     "title": "Engineering Manager, Control Plane - Distributed Transactional Database"
   },
+  "4360593747": {
+    "company": "Circle",
+    "location": "San Francisco Bay Area",
+    "salary": "$282K-$352K",
+    "title": "Senior Director, Engineering"
+  },
   "4361181454": {
     "company": "GitLab",
     "location": "United States",
     "salary": null,
     "title": "Engineering Manager, Create:Source Code"
+  },
+  "4361328138": {
+    "company": "Ford Motor Company",
+    "location": "United States",
+    "salary": null,
+    "title": "Software Engineering Manager, Mobile"
   },
   "4365577380": {
     "company": "Google",
@@ -424,5 +436,17 @@
     "location": "Seattle",
     "salary": "$197K-$401K",
     "title": "Director/Sr. Director - Software Engineering"
+  },
+  "4379027824": {
+    "company": "Capital One",
+    "location": "McLean, VA",
+    "salary": "$244K-$279K",
+    "title": "Director, Software Engineering - Shopping (Remote-Eligible)"
+  },
+  "4379292084": {
+    "company": "Microsoft",
+    "location": "United States",
+    "salary": "$139K-$304K",
+    "title": "Principal Supercomputing Operations Engineering Manager"
   }
 }
