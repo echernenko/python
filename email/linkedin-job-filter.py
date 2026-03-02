@@ -9,7 +9,7 @@ import json
 import re
 import sys
 import os
-from datetime import datetime
+from datetime import datetime, date
 from typing import List, Dict, Any, Set
 from html.parser import HTMLParser
 import urllib.parse
@@ -58,6 +58,40 @@ def load_exclusion_list() -> Set[str]:
         print(f"Warning: Could not load exclusion list: {e}", file=sys.stderr)
 
     return excluded_ids
+
+def load_embargo_dates() -> Dict[str, date]:
+    """Load company embargo dates from JSON config file.
+
+    Returns a dict mapping lowercase company name to the embargo date.
+    Jobs from a company are excluded on or before its embargo date.
+    """
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    embargo_file = os.path.join(script_dir, 'linkedin-jobs-embargo.json')
+
+    if not os.path.exists(embargo_file):
+        return {}
+
+    try:
+        with open(embargo_file, 'r') as f:
+            raw = json.load(f)
+        embargo_dates = {}
+        for company, date_str in raw.items():
+            embargo_dates[company.lower()] = date.fromisoformat(date_str)
+        if embargo_dates:
+            print(f"Loaded {len(embargo_dates)} company embargo date(s).")
+        return embargo_dates
+    except Exception as e:
+        print(f"Warning: Could not load embargo dates: {e}", file=sys.stderr)
+        return {}
+
+
+def is_company_embargoed(company_name: str, embargo_dates: Dict[str, date]) -> bool:
+    """Return True if today's date is on or before the embargo date for this company."""
+    embargo_date = embargo_dates.get(company_name.lower())
+    if embargo_date is None:
+        return False
+    return date.today() <= embargo_date
+
 
 def run_gog_command(args: List[str], account: str = None) -> Dict[str, Any]:
     """Run a gog command and return JSON output."""
@@ -852,6 +886,9 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
     # Load exclusion list
     excluded_job_ids = load_exclusion_list()
 
+    # Load embargo dates
+    embargo_dates = load_embargo_dates()
+
     # First, get jobs from previous summary emails
     previous_jobs = parse_previous_summary_emails()
 
@@ -899,6 +936,12 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
             # Check if public company
             if not is_public_company(company_name, body):
                 print(f"    Skipping {company_name} - not a public company")
+                continue
+
+            # Check if company is embargoed
+            if is_company_embargoed(company_name, embargo_dates):
+                embargo_date = embargo_dates[company_name.lower()]
+                print(f"    Skipping {company_name} - embargoed until {embargo_date}")
                 continue
 
             # Check if job is in exclusion list
@@ -961,8 +1004,10 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
 
         processed_message_ids.append(message_id)
 
-    # Filter previous jobs against current public company cache
-    previous_jobs = [j for j in previous_jobs if is_public_company(j['company'], '')]
+    # Filter previous jobs against current public company cache and embargo dates
+    previous_jobs = [j for j in previous_jobs
+                     if is_public_company(j['company'], '')
+                     and not is_company_embargoed(j['company'], embargo_dates)]
 
     # Merge with previous jobs and deduplicate
     # Put filtered_jobs first so freshly-parsed data (with correct compensation/
