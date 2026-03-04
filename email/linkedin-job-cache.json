@@ -5,6 +5,12 @@
     "salary": "$184K-$257K",
     "title": "Software Engineering Manager, Infrastructure"
   },
+  "4297737975": {
+    "company": "Databricks",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Engineering Manager - UI Platform"
+  },
   "4302393949": {
     "company": "Netflix",
     "location": "United States",
@@ -125,6 +131,12 @@
     "salary": "$282K-$352K",
     "title": "Senior Director, Engineering"
   },
+  "4361079477": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$109K-$223K",
+    "title": "Software Development Manager"
+  },
   "4361181454": {
     "company": "GitLab",
     "location": "United States",
@@ -215,6 +227,24 @@
     "salary": "$240K-$270K",
     "title": "Director, Engineering"
   },
+  "4371571533": {
+    "company": "Apple",
+    "location": "Cupertino",
+    "salary": "$198K-$342K",
+    "title": "Manager, Central Quality Accessibility Engineering - Apple Services Engineering"
+  },
+  "4372039259": {
+    "company": "Apple",
+    "location": "Cupertino",
+    "salary": "$262K-$393K",
+    "title": "Senior Engineering Manager \u2014 Product Marketing Finance"
+  },
+  "4372169597": {
+    "company": "Salesforce",
+    "location": "Seattle",
+    "salary": "$172K-$260K",
+    "title": "Senior Manager of Engineering, Search Data Infrastructure - Slack"
+  },
   "4373623587": {
     "company": "Affirm",
     "location": "Seattle, WA",
@@ -293,6 +323,12 @@
     "salary": "$204K-$255K",
     "title": "Engineering Manager, Core Foundation"
   },
+  "4375560969": {
+    "company": "Headway",
+    "location": "Seattle",
+    "salary": "$190K-$237K",
+    "title": "Engineering Manager - Provider Growth"
+  },
   "4375747325": {
     "company": "Google",
     "location": "New York",
@@ -310,6 +346,12 @@
     "location": "Seattle",
     "salary": "$153K-$264K",
     "title": "Engineering Manager, Member Growth"
+  },
+  "4376014615": {
+    "company": "Apple",
+    "location": "Cupertino",
+    "salary": null,
+    "title": "Hardware Technology Platform Integration Engineering Program Manager"
   },
   "4376077016": {
     "company": "Google",
@@ -431,11 +473,23 @@
     "salary": "$163K-$296K",
     "title": "Group Engineering Manager"
   },
+  "4378216240": {
+    "company": "Apple",
+    "location": "Cupertino",
+    "salary": null,
+    "title": "Software Engineering Manager, HomeKit"
+  },
   "4378662077": {
     "company": "Salesforce",
     "location": "Seattle",
     "salary": "$197K-$401K",
     "title": "Director/Sr. Director - Software Engineering"
+  },
+  "4378768987": {
+    "company": "Microsoft",
+    "location": "Redmond",
+    "salary": "$139K-$274K",
+    "title": "Principal Software Engineering Manager"
   },
   "4379027824": {
     "company": "Capital One",
@@ -448,5 +502,17 @@
     "location": "United States",
     "salary": "$139K-$304K",
     "title": "Principal Supercomputing Operations Engineering Manager"
+  },
+  "4379713146": {
+    "company": "GitLab",
+    "location": "United States",
+    "salary": "$131K-$282K",
+    "title": "Engineering Manager, Software Supply Chain Security: Pipeline Security"
+  },
+  "4379962446": {
+    "company": "Armada",
+    "location": "Seattle",
+    "salary": "$160K-$200K",
+    "title": "Head of Federal Engineering"
   }
 }
