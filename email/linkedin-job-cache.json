@@ -71,6 +71,12 @@
     "salary": "$122K-$291K",
     "title": "Software Development Director"
   },
+  "4341159842": {
+    "company": "Databricks",
+    "location": "Bellevue",
+    "salary": null,
+    "title": "Engineering Manager - Identity and Access Management (IAM)"
+  },
   "4345839527": {
     "company": "Uber",
     "location": "Seattle",
@@ -149,11 +155,23 @@
     "salary": null,
     "title": "Software Engineering Manager, Mobile"
   },
+  "4363239200": {
+    "company": "DoorDash",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Engineering Manager, Search Quality"
+  },
   "4365577380": {
     "company": "Google",
     "location": "Kirkland",
     "salary": null,
     "title": "Software Engineering Manager, Workforce Identity"
+  },
+  "4365641608": {
+    "company": "Snowflake",
+    "location": "Bellevue",
+    "salary": "$236K-$339K",
+    "title": "Software Engineering Manager, Identity Access Management"
   },
   "4365913955": {
     "company": "Apple",
@@ -514,5 +532,47 @@
     "location": "Seattle",
     "salary": "$160K-$200K",
     "title": "Head of Federal Engineering"
+  },
+  "4380201264": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$141K-$338K",
+    "title": "Senior Director, Software Development"
+  },
+  "4380601894": {
+    "company": "Apple",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Software Engineering Manager, Apple Services Engineering"
+  },
+  "4380623641": {
+    "company": "Coupang",
+    "location": "Seattle",
+    "salary": "$159K-$345K",
+    "title": "Director of Engineering - Security Infrastructure"
+  },
+  "4380819534": {
+    "company": "Netflix",
+    "location": "Los Gatos",
+    "salary": null,
+    "title": "Senior Engineering Manager - Domain Experience Systems"
+  },
+  "4380822429": {
+    "company": "Netflix",
+    "location": "United States",
+    "salary": "$510K-$752K",
+    "title": "Engineering Manager, Cloud Infrastructure Security"
+  },
+  "4381055617": {
+    "company": "Twitch",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Senior Software Development Manager, Engage"
+  },
+  "4381338011": {
+    "company": "Docusign",
+    "location": "98104",
+    "salary": null,
+    "title": "Director, Software Engineering"
   }
 }
