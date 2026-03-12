@@ -171,6 +171,7 @@ _ALLOWED_PRIVATE_COMPANIES = {
     'anthropic',
     'databricks',
     'openai',
+    'superhuman',
 }
 
 # Brand names that differ from their legal/trading name on Yahoo Finance
