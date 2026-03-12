@@ -29,6 +29,12 @@
     "salary": null,
     "title": "Software Development Manager, Aurora PostgreSQL"
   },
+  "4311813721": {
+    "company": "Affirm",
+    "location": "Portland, OR",
+    "salary": "$340K-$375K",
+    "title": "Senior Director, Software Engineering (Machine Learning)"
+  },
   "4312219056": {
     "company": "eBay",
     "location": "San Jose, CA",
@@ -47,6 +53,12 @@
     "salary": "$230K-$322K",
     "title": "Engineering Manager, Notifications Relevance"
   },
+  "4323615765": {
+    "company": "Dropbox",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Engineering Manager, Core Media & Intelligence"
+  },
   "4324843741": {
     "company": "Hinge",
     "location": "New York",
@@ -58,6 +70,12 @@
     "location": "NAMER",
     "salary": null,
     "title": "Engineering Manager (Americas)"
+  },
+  "4327088872": {
+    "company": "BeOne Medicines",
+    "location": "United States",
+    "salary": null,
+    "title": "Executive Director, Global Infrastructure and Cloud Computing"
   },
   "4329920684": {
     "company": "Vanta",
@@ -94,6 +112,12 @@
     "location": "United States",
     "salary": "$122K-$291K",
     "title": "Software Development Director"
+  },
+  "4355780308": {
+    "company": "Netflix",
+    "location": "United States",
+    "salary": "$436K-$710K",
+    "title": "Engineering Manager - Launch Readiness"
   },
   "4356475374": {
     "company": "Netflix",
@@ -178,6 +202,12 @@
     "location": "Sunnyvale",
     "salary": "$262K-$393K",
     "title": "Senior Engineering Manager, Product Engineering Systems"
+  },
+  "4366204324": {
+    "company": "LinkedIn",
+    "location": "Mountain View, CA",
+    "salary": "$226K-$369K",
+    "title": "Director, Software Engineering, Systems Infrastructure"
   },
   "4366881182": {
     "company": "Starbucks",
@@ -298,6 +328,12 @@
     "location": "United States",
     "salary": null,
     "title": "Manager, Software Engineering - Search & Recommendations"
+  },
+  "4374450586": {
+    "company": "SoFi",
+    "location": "Seattle",
+    "salary": "$172K-$297K",
+    "title": "Senior Engineering Manager, Builder Tools"
   },
   "4374500932": {
     "company": "Cloudflare",
@@ -503,6 +539,18 @@
     "salary": "$197K-$401K",
     "title": "Director/Sr. Director - Software Engineering"
   },
+  "4378703366": {
+    "company": "DigitalOcean",
+    "location": "Boston, MA",
+    "salary": "$221K-$277K",
+    "title": "Sr. Director Engineering, Head of Internal Technology"
+  },
+  "4378712103": {
+    "company": "DigitalOcean",
+    "location": "San Francisco, CA",
+    "salary": "$221K-$277K",
+    "title": "Sr. Director Engineering, Head of Internal Technology"
+  },
   "4378768987": {
     "company": "Microsoft",
     "location": "Redmond",
@@ -574,5 +622,47 @@
     "location": "98104",
     "salary": null,
     "title": "Director, Software Engineering"
+  },
+  "4382478678": {
+    "company": "Apple",
+    "location": "Seattle",
+    "salary": "$198K-$342K",
+    "title": "Software Engineering Manager"
+  },
+  "4382486391": {
+    "company": "Apple",
+    "location": "Cupertino",
+    "salary": "$198K-$342K",
+    "title": "Software Engineering Manager"
+  },
+  "4382641289": {
+    "company": "Utah",
+    "location": "This company is actively hiring",
+    "salary": "$168K-$322K",
+    "title": "NVIDIA"
+  },
+  "4383471231": {
+    "company": "Elastic",
+    "location": "United States",
+    "salary": "$212K-$403K",
+    "title": "Sr. Director, IT - AI Innovation and Services"
+  },
+  "4383720684": {
+    "company": "Microsoft",
+    "location": "Redmond",
+    "salary": "$139K-$274K",
+    "title": "Principal Software Engineering Manager"
+  },
+  "4383864116": {
+    "company": "Amazon Web Services (AWS)",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Director, Software Engineering, Managed Open-Source Streaming"
+  },
+  "4384166826": {
+    "company": "Microsoft",
+    "location": "Redmond",
+    "salary": "$163K-$296K",
+    "title": "Principal Engineering Manager"
   }
 }
