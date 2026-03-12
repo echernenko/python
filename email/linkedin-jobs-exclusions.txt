@@ -18,6 +18,7 @@
 4375496903 | Airbnb | Engineering Manager, Core Foundation
 4306853537 | Amazon Web Services (AWS) | Software Development Manager, Aurora PostgreSQL
 4378318227 | Amazon Web Services (AWS) | Software Development Manager, Builder Tools Language Experience
+4383864116 | Amazon Web Services (AWS) | Director, Software Engineering, Managed Open-Source Streaming
 4322290315 | Anthropic | Engineering Manager, Inference
 4330954802 | Anthropic | Engineering Manager, UI Platform
 4371356118 | Anthropic | Engineering Manager, Access Management
@@ -37,7 +38,10 @@
 4376437592 | Apple | Finance Digital Transformation - Engineering Manager
 4377555978 | Apple | Software Engineering Manager, Partner & Release Management
 4367208554 | Apple | Senior Manager, Quality Engineering Xcode
+4380601894 | Apple | Software Engineering Manager, Apple Services Engineering
+4382478678 | Apple | Software Engineering Manager
 4382486391 | Apple | Software Engineering Manager
+4384166826 | Microsoft | Principal Engineering Manager
 4376217173 | Boeing | Senior Manager of Software Development
 4361884757 | Blue Origin | Sr. Manager - Software Engineering
 4372214902 | Chewy | Director, Software Engineering
@@ -57,6 +61,8 @@
 4378714077 | DigitalOcean | Sr. Director Engineering, Head of Internal Technology
 4353116020 | Databricks | Senior Engineering Manager - Trust and Safety
 4373286093 | Databricks | Sr. Manager, Engineering Performance
+4341159842 | Databricks | Engineering Manager - Identity and Access Management (IAM)
+4380819534 | Databricks | Sr. Engineering Manager - Lakeflow Designer
 4374489315 | Docusign | Director, Software Engineering
 4368433237 | Dropbox | Senior Engineering Manager, Core Mobile Experience
 4304603851 | eBay | Director of Engineering - eBay Live
@@ -114,6 +120,8 @@
 4377891321 | Microsoft | Group Engineering Manager
 4344737247 | Microsoft | Principal Software Engineering Manager
 4378605110 | Microsoft | Software Engineering Manager
+4378768987 | Microsoft | Principal Software Engineering Manager
+4383720684 | Microsoft | Principal Software Engineering Manager
 4366842941 | Microsoft | Principal Software Engineering Manager
 4373715602 | Nautilus Biotechnology | Senior Manager, Software Engineering
 4318320298 | NerdWallet | Senior Manager, Software Engineering (SMB)
@@ -131,6 +139,9 @@
 4356475374 | Netflix | Manager, Engineering - Live Media Asset Management
 4302393949 | Netflix | Manager, Engineering - Page Systems
 4373757317 | Netflix | Engineering Manager, Core Applications - AI for Member Systems
+4380822429 | Netflix | Engineering Manager, Cloud Infrastructure Security
+4349795432 | Netflix | Senior Engineering Manager - Domain Experience Systems
+4355780308 | Netflix | Engineering Manager - Launch Readiness
 4371093314 | Nutanix | Director, Systems Engineering
 4365006239 | NVIDIA | Senior Manager, Software Engineering - Libraries Devops and Infrastructure
 4377417812 | NVIDIA | Senior Manager, Software Engineering - Libraries Devops and Infrastructure
