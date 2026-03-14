@@ -6,6 +6,7 @@
 4309495914 | Affirm | Manager, Software Engineering (Continuous Integration)
 4309706024 | Affirm | Manager, Software Engineering (Continuous Integration)
 4311820609 | Affirm | Senior Director, Software Engineering (Machine Learning)
+4311810830 | Affirm | Senior Director, Software Engineering (Machine Learning)
 4322575104 | Affirm | Director, Software Engineering
 4322585032 | Affirm | Director, Software Engineering
 4326921223 | Affirm | Senior Manager, Software Engineering (Data & Storage Services)
@@ -64,13 +65,16 @@
 4371025252 | CVS Health | Senior Engineering Manager
 4305817743 | Databricks | Engineering Manager - Money
 4378714077 | DigitalOcean | Sr. Director Engineering, Head of Internal Technology
+4378712103 | DigitalOcean | Sr. Director Engineering, Head of Internal Technology
 4353116020 | Databricks | Senior Engineering Manager - Trust and Safety
 4373286093 | Databricks | Sr. Manager, Engineering Performance
 4341159842 | Databricks | Engineering Manager - Identity and Access Management (IAM)
 4380819534 | Databricks | Sr. Engineering Manager - Lakeflow Designer
 4374489315 | Docusign | Director, Software Engineering
+4363239200 | DoorDash | Engineering Manager, Search Quality
 4323615765 | Dropbox | Senior Engineering Manager, Core Media & Intelligence
 4368433237 | Dropbox | Senior Engineering Manager, Core Mobile Experience
+4383471231 | Elastic | Sr. Director, IT - AI Innovation and Services
 4304603851 | eBay | Director of Engineering - eBay Live
 4372013190 | Expedia Group | Director, Software Development Engineering - Air Shopping Platform
 4273762865 | Figma | Director, Software Engineering - Product Platform
@@ -205,6 +209,8 @@
 4375886193 | SoFi | Engineering Manager, Member Growth
 4366881182 | Starbucks | engineering manager, Next Generation Ordering & Coffeehouse Platform
 4345839527 | Uber | Engineering Manager II, Core Security Engineering
+4383272053 | Vanta | Director of Engineering
+4383025988 | Walmart | Senior Manager, Software Engineering
 4372591199 | Visa | Sr. Manager, Software Engineering
 4376464142 | Visa | Senior Director, Software Engineering
 4332821888 | Zillow | Senior Manager, Software Development Engineering
