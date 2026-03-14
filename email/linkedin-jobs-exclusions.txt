@@ -187,6 +187,7 @@
 4374843961 | Oracle | Software Development Snr Manager
 4348094322 | Oracle | Senior Manager, Cloud Engineering
 4360546379 | Oracle | Senior Director, Software Development
+4380201264 | Oracle | Senior Director, Software Development
 4356523053 | Palo Alto Networks | Senior Director, Engineering (Unit 42)
 4377471789 | Pinterest | Sr. Director, Engineering - Delivery Infrastructure
 4307095014 | Reddit, Inc. | Engineering Manager, Data Pipeline
