@@ -623,6 +623,18 @@
     "salary": null,
     "title": "Director, Software Engineering"
   },
+  "4382206577": {
+    "company": "Superhuman",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Engineering Manager, Mobile"
+  },
+  "4382321774": {
+    "company": "Airbnb",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Trust Platform"
+  },
   "4382478678": {
     "company": "Apple",
     "location": "Seattle",
@@ -641,17 +653,41 @@
     "salary": "$168K-$322K",
     "title": "NVIDIA"
   },
+  "4383025988": {
+    "company": "Walmart",
+    "location": "Sunnyvale",
+    "salary": "$143K-$286K",
+    "title": "Senior Manager, Software Engineering"
+  },
+  "4383272053": {
+    "company": "Vanta",
+    "location": "United States",
+    "salary": null,
+    "title": "Director of Engineering"
+  },
   "4383471231": {
     "company": "Elastic",
     "location": "United States",
     "salary": "$212K-$403K",
     "title": "Sr. Director, IT - AI Innovation and Services"
   },
+  "4383508666": {
+    "company": "Roblox",
+    "location": "San Mateo",
+    "salary": "$399K-$457K",
+    "title": "Director of Engineering, Programmability"
+  },
   "4383720684": {
     "company": "Microsoft",
     "location": "Redmond",
     "salary": "$139K-$274K",
     "title": "Principal Software Engineering Manager"
+  },
+  "4383861311": {
+    "company": "Okta",
+    "location": "United States",
+    "salary": null,
+    "title": "Director, Engineering (Auth0)"
   },
   "4383864116": {
     "company": "Amazon Web Services (AWS)",
@@ -664,5 +700,35 @@
     "location": "Redmond",
     "salary": "$163K-$296K",
     "title": "Principal Engineering Manager"
+  },
+  "4384373491": {
+    "company": "Zillow",
+    "location": "United States",
+    "salary": "$196K-$330K",
+    "title": "Senior Engineering Manager"
+  },
+  "4384377594": {
+    "company": "DigitalOcean",
+    "location": "Austin, Texas Metropolitan Area",
+    "salary": "$221K-$277K",
+    "title": "Sr. Director Engineering, Head of Internal Technology"
+  },
+  "4384547155": {
+    "company": "GE HealthCare",
+    "location": "98004",
+    "salary": "$174K-$262K",
+    "title": "Sr Director Software Engineering"
+  },
+  "4384831016": {
+    "company": "Amazon Web Services (AWS)",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Software Dev Manager III, AWS Clean Rooms"
+  },
+  "4384834304": {
+    "company": "Microsoft",
+    "location": "Redmond",
+    "salary": "$163K-$331K",
+    "title": "Group Engineering Manager"
   }
 }

@@ -9,6 +9,8 @@
 4322575104 | Affirm | Director, Software Engineering
 4322585032 | Affirm | Director, Software Engineering
 4326921223 | Affirm | Senior Manager, Software Engineering (Data & Storage Services)
+4311813721 | Affirm | Senior Manager, Software Engineering (Data & Storage Services)
+4326709471 | Affirm | Senior Manager, Software Engineering (Data & Storage Services)
 4366561033 | Affirm | Senior Manager, Technical Programs
 4373623587 | Affirm | Director, Software Engineering (Site Reliability Engineering)
 4342934829 | Airbnb | Senior Engineering Manager - Marketplaces DNA (Data & AI)
@@ -16,9 +18,11 @@
 4359611187 | Airbnb | Engineering Manager, Client Products & Emerging Tech
 4366974065 | Airbnb | Engineering Manager, Ambassador Routing
 4375496903 | Airbnb | Engineering Manager, Core Foundation
+4382321774 | Airbnb | Engineering Manager, Trust Platform
 4306853537 | Amazon Web Services (AWS) | Software Development Manager, Aurora PostgreSQL
 4378318227 | Amazon Web Services (AWS) | Software Development Manager, Builder Tools Language Experience
 4383864116 | Amazon Web Services (AWS) | Director, Software Engineering, Managed Open-Source Streaming
+4384831016 | Amazon Web Services (AWS) | Software Dev Manager III, AWS Clean Rooms
 4322290315 | Anthropic | Engineering Manager, Inference
 4330954802 | Anthropic | Engineering Manager, UI Platform
 4371356118 | Anthropic | Engineering Manager, Access Management
@@ -42,6 +46,7 @@
 4382478678 | Apple | Software Engineering Manager
 4382486391 | Apple | Software Engineering Manager
 4384166826 | Microsoft | Principal Engineering Manager
+4384834304 | Microsoft | Group Engineering Manager
 4376217173 | Boeing | Senior Manager of Software Development
 4361884757 | Blue Origin | Sr. Manager - Software Engineering
 4372214902 | Chewy | Director, Software Engineering
@@ -64,6 +69,7 @@
 4341159842 | Databricks | Engineering Manager - Identity and Access Management (IAM)
 4380819534 | Databricks | Sr. Engineering Manager - Lakeflow Designer
 4374489315 | Docusign | Director, Software Engineering
+4323615765 | Dropbox | Senior Engineering Manager, Core Media & Intelligence
 4368433237 | Dropbox | Senior Engineering Manager, Core Mobile Experience
 4304603851 | eBay | Director of Engineering - eBay Live
 4372013190 | Expedia Group | Director, Software Development Engineering - Air Shopping Platform
@@ -192,6 +198,10 @@
 4366244557 | Snap Inc. | Manager, Software Engineering
 4343983211 | Snowflake | Engineering Manager, Service Identity and Secret Management, Product Security
 4379256305 | Snowflake | Engineering Manager - Feature Store
+4365641608 | Snowflake | Engineering Manager - Freepool
+4365598443 | Snowflake | Engineering Manager - Freepool
+4333041788 | Snowflake | Director of Engineering, Cortex LLM Platform
+4374450586 | SoFi | Senior Engineering Manager, Builder Tools
 4375886193 | SoFi | Engineering Manager, Member Growth
 4366881182 | Starbucks | engineering manager, Next Generation Ordering & Coffeehouse Platform
 4345839527 | Uber | Engineering Manager II, Core Security Engineering
