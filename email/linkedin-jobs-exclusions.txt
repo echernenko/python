@@ -66,6 +66,7 @@
 4305817743 | Databricks | Engineering Manager - Money
 4378714077 | DigitalOcean | Sr. Director Engineering, Head of Internal Technology
 4378712103 | DigitalOcean | Sr. Director Engineering, Head of Internal Technology
+4384377594 | DigitalOcean | Sr. Director Engineering, Head of Internal Technology
 4353116020 | Databricks | Senior Engineering Manager - Trust and Safety
 4373286093 | Databricks | Sr. Manager, Engineering Performance
 4341159842 | Databricks | Engineering Manager - Identity and Access Management (IAM)
