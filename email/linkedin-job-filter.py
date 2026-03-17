@@ -781,11 +781,12 @@ def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
         lines = [line.strip() for line in listing.split('\n') if line.strip() and line.strip() != '-' * 50]
         lines = [l for l in lines if len(l) > 1 and not l.startswith('http')]  # Remove single char lines and URLs
         # Remove connection count lines like "3 connections", "Be first of 13 to apply"
-        lines = [l for l in lines if not re.match(r'^\d+\s+connections?$', l) and not re.match(r'^Be first of \d+ to apply$', l)]
+        lines = [l for l in lines if not re.match(r'^\d+\s+(?:connections?|company alumni)$', l) and not re.match(r'^Be first of \d+ to apply$', l)]
         # Remove LinkedIn UI action lines
         lines = [l for l in lines if l.lower() not in (
             'apply with resume & profile', 'apply', 'easy apply',
             'promoted', 'actively recruiting',
+            'this company is actively hiring',
         )]
 
         if not lines:
