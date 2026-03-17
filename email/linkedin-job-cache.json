@@ -17,6 +17,12 @@
     "salary": "$436K-$791K",
     "title": "Manager, Engineering - Page Systems"
   },
+  "4304288269": {
+    "company": "DoorDash",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Engineering Manager \u2013 Drive (Fleets and Delivery Experience)"
+  },
   "4304603851": {
     "company": "eBay",
     "location": "San Jose, CA",
@@ -95,6 +101,24 @@
     "salary": null,
     "title": "Engineering Manager - Identity and Access Management (IAM)"
   },
+  "4344882792": {
+    "company": "Twitch",
+    "location": "Seattle",
+    "salary": "$166K-$287K",
+    "title": "Sr. Software Development Manager, Community Discovery"
+  },
+  "4345164724": {
+    "company": "Snap Inc.",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Manager, Machine Learning Engineering, User & Friends"
+  },
+  "4345532025": {
+    "company": "Snap Inc.",
+    "location": "Bellevue",
+    "salary": "$195K-$343K",
+    "title": "Manager, Machine Learning Engineering, User & Friends"
+  },
   "4345839527": {
     "company": "Uber",
     "location": "Seattle",
@@ -131,6 +155,12 @@
     "salary": null,
     "title": "Senior Director, Engineering (Unit 42)"
   },
+  "4356711778": {
+    "company": "Upstart",
+    "location": "United States",
+    "salary": "$195K-$270K",
+    "title": "Senior Manager, Software Engineering - Core Pricing"
+  },
   "4357494191": {
     "company": "DoorDash",
     "location": "Seattle",
@@ -160,6 +190,12 @@
     "location": "San Francisco Bay Area",
     "salary": "$282K-$352K",
     "title": "Senior Director, Engineering"
+  },
+  "4360621793": {
+    "company": "Amazon",
+    "location": "Redmond",
+    "salary": "$184K-$250K",
+    "title": "Software Development Manager, Integrated Vehicle Testing"
   },
   "4361079477": {
     "company": "Oracle",
@@ -221,11 +257,23 @@
     "salary": "$218K-$256K",
     "title": "Engineering Manager - Risk Platform"
   },
+  "4367005063": {
+    "company": "Affirm",
+    "location": "Boston, MA",
+    "salary": "$260K-$310K",
+    "title": "Senior Manager, Software Engineering (Lake Analytics Platform)"
+  },
   "4367208554": {
     "company": "Apple",
     "location": "Cupertino",
     "salary": "$188K-$332K",
     "title": "Senior Manager, Quality Engineering Xcode"
+  },
+  "4367606078": {
+    "company": "GitHub",
+    "location": "United States",
+    "salary": "$160K-$425K",
+    "title": "Principal Engineering Manager, Git Systems"
   },
   "4367875586": {
     "company": "Google",
@@ -310,6 +358,12 @@
     "location": "Seattle",
     "salary": "$219K-$301K",
     "title": "Systems Software Engineering Manager"
+  },
+  "4373760299": {
+    "company": "Netflix",
+    "location": "United States",
+    "salary": null,
+    "title": "Tech Lead Manager, GenAI Sandbox & Tooling (AI Foundations)"
   },
   "4373902224": {
     "company": "T-Mobile",
@@ -400,6 +454,12 @@
     "location": "Seattle",
     "salary": "$153K-$264K",
     "title": "Engineering Manager, Member Growth"
+  },
+  "4375894804": {
+    "company": "Lantern",
+    "location": "United States",
+    "salary": null,
+    "title": "Director, AI Engineering"
   },
   "4376014615": {
     "company": "Apple",
@@ -496,6 +556,12 @@
     "location": "Santa Clara",
     "salary": null,
     "title": "Engineering Manager, Observability Platform"
+  },
+  "4377489611": {
+    "company": "NVIDIA",
+    "location": "Santa Clara",
+    "salary": "$184K-$299K",
+    "title": "Senior Manager, Software Monetization"
   },
   "4377491549": {
     "company": "NVIDIA",
@@ -695,11 +761,23 @@
     "salary": null,
     "title": "Director, Software Engineering, Managed Open-Source Streaming"
   },
+  "4384111032": {
+    "company": "NVIDIA",
+    "location": "Santa Clara",
+    "salary": "$272K-$431K",
+    "title": "Senior Manager, Systems Software Engineering - GeForce NOW Cloud"
+  },
   "4384166826": {
     "company": "Microsoft",
     "location": "Redmond",
     "salary": "$163K-$296K",
     "title": "Principal Engineering Manager"
+  },
+  "4384256294": {
+    "company": "Google",
+    "location": "Kirkland",
+    "salary": null,
+    "title": "Senior Software Engineering Manager, SenseAI Natural Language"
   },
   "4384373491": {
     "company": "Zillow",
@@ -719,6 +797,12 @@
     "salary": "$174K-$262K",
     "title": "Sr Director Software Engineering"
   },
+  "4384641534": {
+    "company": "GitHub",
+    "location": "United States",
+    "salary": "$140K-$372K",
+    "title": "Staff Engineering Manager, Notifications Platform"
+  },
   "4384831016": {
     "company": "Amazon Web Services (AWS)",
     "location": "Seattle",
@@ -730,5 +814,35 @@
     "location": "Redmond",
     "salary": "$163K-$331K",
     "title": "Group Engineering Manager"
+  },
+  "4384922395": {
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "salary": null,
+    "title": "Senior Engineering Manager, Core Services - Apple Services Engineering"
+  },
+  "4385177910": {
+    "company": "Snowflake",
+    "location": "California, United States",
+    "salary": "$207K-$362K",
+    "title": "Senior Manager, Solution Engineering"
+  },
+  "4385295166": {
+    "company": "Aritzia",
+    "location": "Seattle",
+    "salary": "$120K-$170K",
+    "title": "Technology - Senior Engineering Manager/Engineering Manager"
+  },
+  "4385613176": {
+    "company": "Apple",
+    "location": "Seattle",
+    "salary": "$188K-$325K",
+    "title": "Software Manager, Siri Communications Experiences"
+  },
+  "4385615140": {
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "salary": null,
+    "title": "Senior Engineering Manager - Data Lakehouse"
   }
 }
