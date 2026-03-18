@@ -551,6 +551,12 @@
     "salary": "$272K-$431K",
     "title": "Senior Manager, Software Security Architecture"
   },
+  "4377431218": {
+    "company": "NVIDIA",
+    "location": "California, United States",
+    "salary": "$224K-$356K",
+    "title": "Manager, Next-Generation AI Cluster Architecture"
+  },
   "4377471789": {
     "company": "Palo Alto",
     "location": "This company is actively hiring",
@@ -809,6 +815,12 @@
     "salary": "$221K-$277K",
     "title": "Sr. Director Engineering, Head of Internal Technology"
   },
+  "4384490468": {
+    "company": "Nielsen",
+    "location": "United States",
+    "salary": null,
+    "title": "Director, IT Infrastructure Engineering"
+  },
   "4384547155": {
     "company": "GE HealthCare",
     "location": "98004",
@@ -881,6 +893,12 @@
     "salary": "$240K-$379K",
     "title": "Senior Manager, Technical Product and Program Management, Planning and Controls - Autonomous Vehicles"
   },
+  "4385960051": {
+    "company": "Starbucks",
+    "location": "Seattle",
+    "salary": "$162K-$270K",
+    "title": "engineering manager, iOt- Seattle, WA"
+  },
   "4386365703": {
     "company": "WEX",
     "location": "Maine",
@@ -899,10 +917,40 @@
     "salary": null,
     "title": "Software Engineering Manager, Single Retailer Experience"
   },
+  "4386508711": {
+    "company": "Instacart",
+    "location": "United States",
+    "salary": null,
+    "title": "Software Engineering Manager, Ads Manager"
+  },
+  "4386525989": {
+    "company": "ServiceTitan",
+    "location": "United States",
+    "salary": "$271K-$363K",
+    "title": "Director, AI Engineering"
+  },
   "4386527028": {
     "company": "Instacart",
     "location": "United States",
     "salary": null,
     "title": "Senior Software Engineering Manager, Ads Solutions"
+  },
+  "4386779777": {
+    "company": "Amazon Web Services (AWS)",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Senior Manager, Software Dev, Amazon Software Builder Experience / Software Foundations & Management"
+  },
+  "4386794338": {
+    "company": "Marriott International",
+    "location": "Bethesda, MD",
+    "salary": null,
+    "title": "Director, Engineering"
+  },
+  "4386911022": {
+    "company": "Microsoft",
+    "location": "Redmond",
+    "salary": "$139K-$304K",
+    "title": "Principal Software Engineering Manager"
   }
 }
