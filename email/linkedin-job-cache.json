@@ -53,6 +53,12 @@
     "salary": null,
     "title": "Senior Manager, Site Reliability Engineering - Infrastructure Platform"
   },
+  "4313000205": {
+    "company": "Databricks",
+    "location": "New York, United States",
+    "salary": null,
+    "title": "Director, Engineering - Databricks Mosaic AI"
+  },
   "4315744787": {
     "company": "Reddit, Inc.",
     "location": "United States",
@@ -647,6 +653,12 @@
     "salary": "$160K-$200K",
     "title": "Head of Federal Engineering"
   },
+  "4379982059": {
+    "company": "Pinterest",
+    "location": "United States",
+    "salary": null,
+    "title": "Manager II, Production Engineering"
+  },
   "4380201264": {
     "company": "Oracle",
     "location": "United States",
@@ -731,6 +743,12 @@
     "salary": null,
     "title": "Director of Engineering"
   },
+  "4383359492": {
+    "company": "Zillow",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Technical Program Manager, FUB Engineering"
+  },
   "4383471231": {
     "company": "Elastic",
     "location": "United States",
@@ -797,6 +815,12 @@
     "salary": "$174K-$262K",
     "title": "Sr Director Software Engineering"
   },
+  "4384565878": {
+    "company": "Ford Motor Company",
+    "location": "Dearborn",
+    "salary": null,
+    "title": "Sr Director, Developer Experience and Platform Engineering"
+  },
   "4384641534": {
     "company": "GitHub",
     "location": "United States",
@@ -833,6 +857,12 @@
     "salary": "$120K-$170K",
     "title": "Technology - Senior Engineering Manager/Engineering Manager"
   },
+  "4385589341": {
+    "company": "Ford Motor Company",
+    "location": "United States",
+    "salary": null,
+    "title": "Director, Software Architecture"
+  },
   "4385613176": {
     "company": "Apple",
     "location": "Seattle",
@@ -844,5 +874,35 @@
     "location": "Cupertino, CA",
     "salary": null,
     "title": "Senior Engineering Manager - Data Lakehouse"
+  },
+  "4385813671": {
+    "company": "NVIDIA",
+    "location": "Washington",
+    "salary": "$240K-$379K",
+    "title": "Senior Manager, Technical Product and Program Management, Planning and Controls - Autonomous Vehicles"
+  },
+  "4386365703": {
+    "company": "WEX",
+    "location": "Maine",
+    "salary": "$230K-$283K",
+    "title": "Sr Director of Engineering, Mobilitiy"
+  },
+  "4386377696": {
+    "company": "NEO Energy",
+    "location": "United States",
+    "salary": null,
+    "title": "Vice President of Engineering"
+  },
+  "4386502880": {
+    "company": "Instacart",
+    "location": "United States",
+    "salary": null,
+    "title": "Software Engineering Manager, Single Retailer Experience"
+  },
+  "4386527028": {
+    "company": "Instacart",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Software Engineering Manager, Ads Solutions"
   }
 }

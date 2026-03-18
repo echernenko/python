@@ -234,3 +234,4 @@
 4384373491 | Zillow | Senior Engineering Manager
 4385613176 | Apple | Software Manager, Siri Communications Experiences
 4384922395 | Apple | Senior Engineering Manager, Core Services - Apple Services Engineering
+4385615140 | Apple | Senior Engineering Manager - Data Lakehouse
