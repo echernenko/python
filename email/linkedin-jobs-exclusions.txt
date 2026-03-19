@@ -239,3 +239,9 @@
 4385813671 | NVIDIA | Senior Manager, Technical Product and Program Management, Planning and Controls - Autonomous Vehicles
 4384111032 | NVIDIA | Senior Manager, Systems Software Engineering - GeForce NOW Cloud
 4377489611 | NVIDIA | Senior Manager, Software Monetization
+4386779777 | Amazon Web Services (AWS) | Senior Manager, Software Dev, Amazon Software Builder Experience / Software Foundations & Management
+4384730382 | Netflix | Data Science & Engineering Manager - Title & Launch Management
+4386911022 | Microsoft | Principal Software Engineering Manager
+4373760299 | Netflix | Tech Lead Manager, GenAI Sandbox & Tooling (AI Foundations)
+4360621793 | Amazon | Software Development Manager, Integrated Vehicle Testing
+4313000205 | Databricks | Director, Engineering - Databricks Mosaic AI
