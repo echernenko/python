@@ -250,3 +250,5 @@
 4384641534 | GitHub | Staff Engineering Manager, Notifications Platform
 4376411620 | NerdWallet | Senior Manager, Software Engineering (Platform Systems)
 4346141502 | The Trade Desk | Senior Manager, Software Engineering - Custom Solutions
+4383359492 | Zillow | Senior Technical Program Manager, FUB Engineering
+4386525989 | ServiceTitan | Director, AI Engineering
