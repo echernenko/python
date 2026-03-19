@@ -245,3 +245,8 @@
 4373760299 | Netflix | Tech Lead Manager, GenAI Sandbox & Tooling (AI Foundations)
 4360621793 | Amazon | Software Development Manager, Integrated Vehicle Testing
 4313000205 | Databricks | Director, Engineering - Databricks Mosaic AI
+4367606078 | GitHub | Principal Engineering Manager, Git Systems
+4386469659 | GitHub | Principal Engineering Manager
+4384641534 | GitHub | Staff Engineering Manager, Notifications Platform
+4376411620 | NerdWallet | Senior Manager, Software Engineering (Platform Systems)
+4346141502 | The Trade Desk | Senior Manager, Software Engineering - Custom Solutions
