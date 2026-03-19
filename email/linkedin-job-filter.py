@@ -170,6 +170,7 @@ _KNOWN_PRIVATE_COMPANIES = {
 _ALLOWED_PRIVATE_COMPANIES = {
     'anthropic',
     'databricks',
+    'docker',
     'openai',
     'superhuman',
 }
