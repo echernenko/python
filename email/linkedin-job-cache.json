@@ -101,11 +101,23 @@
     "salary": "$122K-$291K",
     "title": "Software Development Director"
   },
+  "4340347913": {
+    "company": "1Password",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, API Platform"
+  },
   "4341159842": {
     "company": "Databricks",
     "location": "Bellevue",
     "salary": null,
     "title": "Engineering Manager - Identity and Access Management (IAM)"
+  },
+  "4344160294": {
+    "company": "Fanatics",
+    "location": "United States",
+    "salary": null,
+    "title": "Director Software Engineering"
   },
   "4344882792": {
     "company": "Twitch",
@@ -190,6 +202,12 @@
     "location": "United States",
     "salary": null,
     "title": "Engineering Manager, Control Plane - Distributed Transactional Database"
+  },
+  "4359712570": {
+    "company": "Deloitte",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Engineering Manager - PxE Platforms"
   },
   "4360593747": {
     "company": "Circle",
@@ -304,6 +322,12 @@
     "location": "United States",
     "salary": null,
     "title": "Senior Engineering Manager - Data Platform"
+  },
+  "4368350629": {
+    "company": "Red Ventures",
+    "location": "United States",
+    "salary": null,
+    "title": "Director of Engineering, AI Engineering"
   },
   "4368433237": {
     "company": "Dropbox",
@@ -425,6 +449,12 @@
     "salary": "$118K-$251K",
     "title": "Software Development Snr Manager"
   },
+  "4374846378": {
+    "company": "Blue Origin",
+    "location": "Greater Seattle Area",
+    "salary": null,
+    "title": "Sr. Manager - Software Engineering"
+  },
   "4374867969": {
     "company": "Oracle",
     "location": "United States",
@@ -533,6 +563,12 @@
     "salary": "$151K-$198K",
     "title": "Senior Manager, System Integration & Commissioning"
   },
+  "4377077522": {
+    "company": "Stripe",
+    "location": "Seattle",
+    "salary": "$236K-$354K",
+    "title": "Engineering Manager, User Billing"
+  },
   "4377103650": {
     "company": "Uber",
     "location": "San Francisco",
@@ -557,11 +593,35 @@
     "salary": "$224K-$356K",
     "title": "Manager, Next-Generation AI Cluster Architecture"
   },
+  "4377432174": {
+    "company": "NVIDIA",
+    "location": "California",
+    "salary": "$272K-$431K",
+    "title": "Senior Manager, GPU and AI Architecture"
+  },
+  "4377434226": {
+    "company": "NVIDIA",
+    "location": "California, United States",
+    "salary": "$272K-$431K",
+    "title": "Senior Manager, Omniverse DevInfra CI/CD"
+  },
+  "4377457870": {
+    "company": "Airbnb",
+    "location": "United States",
+    "salary": "$204K-$255K",
+    "title": "Engineering Manager, Network Infrastructure (Cloud)"
+  },
   "4377471789": {
     "company": "Palo Alto",
     "location": "This company is actively hiring",
     "salary": null,
     "title": "Pinterest"
+  },
+  "4377474545": {
+    "company": "Talkiatry",
+    "location": "United States",
+    "salary": "$230K-$270K",
+    "title": "Director of AI Engineering."
   },
   "4377485663": {
     "company": "NVIDIA",
@@ -592,6 +652,12 @@
     "location": "Santa Clara",
     "salary": "$224K-$431K",
     "title": "Engineering Manager - OpenBMC Platform"
+  },
+  "4377572973": {
+    "company": "Ford Motor Company",
+    "location": "United States",
+    "salary": null,
+    "title": "Director, Private Cloud Platform Engineering"
   },
   "4377830873": {
     "company": "Microsoft",
@@ -785,6 +851,12 @@
     "salary": null,
     "title": "Director, Software Engineering, Managed Open-Source Streaming"
   },
+  "4384098700": {
+    "company": "Fanatics",
+    "location": "United States",
+    "salary": null,
+    "title": "Sr Engineering Manager - Fanatics Markets"
+  },
   "4384111032": {
     "company": "NVIDIA",
     "location": "Santa Clara",
@@ -845,11 +917,23 @@
     "salary": null,
     "title": "Manager, Software Engineering"
   },
+  "4384727792": {
+    "company": "Weave",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Director of Engineering"
+  },
   "4384730382": {
     "company": "Netflix",
     "location": "Los Gatos",
     "salary": "$523K-$920K",
     "title": "Data Science & Engineering Manager - Title & Launch Management"
+  },
+  "4384753491": {
+    "company": "Airbnb",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Workflow Orchestration - Data Infrastructure"
   },
   "4384831016": {
     "company": "Amazon Web Services (AWS)",
@@ -868,6 +952,18 @@
     "location": "Cupertino, CA",
     "salary": null,
     "title": "Senior Engineering Manager, Core Services - Apple Services Engineering"
+  },
+  "4385029531": {
+    "company": "Ladders",
+    "location": "United States",
+    "salary": "$143K-$238K",
+    "title": "Senior Manager, Software Engineering (USA Remote)"
+  },
+  "4385038176": {
+    "company": "Ladders",
+    "location": "United States",
+    "salary": "$200K-$260K",
+    "title": "Director, Global Software"
   },
   "4385065036": {
     "company": "Workday",
@@ -959,6 +1055,12 @@
     "salary": null,
     "title": "Senior Software Engineering Manager, Ads Solutions"
   },
+  "4386542845": {
+    "company": "CPG",
+    "location": "United States",
+    "salary": null,
+    "title": "Director of Engineering"
+  },
   "4386779777": {
     "company": "Amazon Web Services (AWS)",
     "location": "Seattle",
@@ -982,5 +1084,35 @@
     "location": "United States",
     "salary": "$168K-$269K",
     "title": "Manager II, Software Engineering"
+  },
+  "4387176661": {
+    "company": "The Home Depot",
+    "location": "Atlanta",
+    "salary": "$140K-$240K",
+    "title": "Manager, AI Platform Engineering (Remote)"
+  },
+  "4387448843": {
+    "company": "LinkedIn",
+    "location": "Mountain View, CA",
+    "salary": null,
+    "title": "Director, Software Engineering, Systems Infrastructure"
+  },
+  "4387455931": {
+    "company": "Confluent",
+    "location": "Texas",
+    "salary": null,
+    "title": "Director II, Engineering"
+  },
+  "4387606267": {
+    "company": "LinkedIn",
+    "location": "Mountain View",
+    "salary": "$200K-$268K",
+    "title": "Software Engineering Manager, Systems and Infrastructure"
+  },
+  "4387618181": {
+    "company": "LinkedIn",
+    "location": "Sunnyvale",
+    "salary": "$147K-$240K",
+    "title": "Manager, Software Engineering - Personalization Platform"
   }
 }

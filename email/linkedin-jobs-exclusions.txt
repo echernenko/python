@@ -193,6 +193,9 @@
 4377416785 | NVIDIA | Senior Manager, Software Security Architecture
 4377417812 | NVIDIA | Senior Manager, Software Engineering - Libraries Devops and Infrastructure
 4377431218 | NVIDIA | Manager, Next-Generation AI Cluster Architecture
+4377432174 | NVIDIA | Senior Manager, GPU and AI Architecture
+4377434226 | NVIDIA | Senior Manager, Omniverse DevInfra CI/CD
+4377457870 | Airbnb | Engineering Manager, Network Infrastructure (Cloud)
 4377471789 | Pinterest | Sr. Director, Engineering - Delivery Infrastructure
 4377483686 | NVIDIA | Software Engineering Manager - Image and Data Compression Libraries
 4377485663 | NVIDIA | Engineering Manager, Observability Platform
@@ -242,6 +245,7 @@
 4384641534 | GitHub | Staff Engineering Manager, Notifications Platform
 4384730382 | Netflix | Data Science & Engineering Manager - Title & Launch Management
 4384831016 | Amazon Web Services (AWS) | Software Dev Manager III, AWS Clean Rooms
+4384753491 | Airbnb | Engineering Manager, Workflow Orchestration - Data Infrastructure
 4384834304 | Microsoft | Group Engineering Manager
 4384922395 | Apple | Senior Engineering Manager, Core Services - Apple Services Engineering
 4385065036 | Workday | Senior Manager, Machine Learning Engineering
@@ -253,4 +257,5 @@
 4386525989 | ServiceTitan | Director, AI Engineering
 4386779777 | Amazon Web Services (AWS) | Senior Manager, Software Dev, Amazon Software Builder Experience / Software Foundations & Management
 4386911022 | Microsoft | Principal Software Engineering Manager
+4387448843 | LinkedIn | Director, Software Engineering, Systems Infrastructure
 

@@ -166,15 +166,6 @@ _KNOWN_PRIVATE_COMPANIES = {
     'modular',
 }
 
-# Private companies that should still be included in the summary
-_ALLOWED_PRIVATE_COMPANIES = {
-    'anthropic',
-    'databricks',
-    'docker',
-    'openai',
-    'superhuman',
-}
-
 # Brand names that differ from their legal/trading name on Yahoo Finance
 _COMPANY_ALIASES = {
     'instacart': 'Maplebear',
@@ -261,12 +252,6 @@ def _yahoo_finance_is_public(company_name: str) -> bool:
 def is_public_company(company_name: str, job_description: str) -> bool:
     """Check if a company is publicly traded using Yahoo Finance API with local caching."""
     cache = _get_company_cache()
-
-    # Allowed private companies should always be included
-    if company_name.lower() in _ALLOWED_PRIVATE_COMPANIES:
-        cache[company_name] = True
-        _save_company_cache()
-        return True
 
     if company_name in cache:
         return cache[company_name]
@@ -446,6 +431,223 @@ def extract_location(text: str) -> str:
 
     return "Not specified"
 
+def get_manual_job_emails() -> List[Dict[str, Any]]:
+    """Fetch emails with subject 'linkedin-jobs' containing manually shared job links.
+
+    Returns a list of dicts with 'thread_id' and 'message_ids' keys,
+    since gog search returns thread IDs which may differ from message IDs.
+    """
+    print("Searching for manually shared job emails...")
+
+    search_query = 'subject:linkedin-jobs'
+
+    result = run_gog_command([
+        'gmail', 'search',
+        search_query,
+        '--max', '10',
+        '--json'
+    ])
+
+    if not result or 'threads' not in result:
+        return []
+
+    threads = result.get('threads', []) or []
+    entries = []
+
+    for thread in threads:
+        thread_id = thread.get('id')
+        if not thread_id:
+            continue
+
+        # Resolve actual message IDs via thread get
+        thread_data = run_gog_command([
+            'gmail', 'thread', 'get', thread_id, '--json'
+        ])
+
+        message_ids = []
+        thread_info = thread_data.get('thread', {})
+        for msg in thread_info.get('messages', []):
+            msg_id = msg.get('id')
+            if msg_id:
+                message_ids.append(msg_id)
+
+        entries.append({
+            'thread_id': thread_id,
+            'message_ids': message_ids or [thread_id],
+        })
+
+    return entries
+
+
+def delete_manual_job_emails(message_ids: List[str]):
+    """Delete processed manual job emails."""
+    if not message_ids:
+        return
+    print(f"Deleting {len(message_ids)} manual job email(s)...")
+    for msg_id in message_ids:
+        run_gog_command(['gmail', 'thread', 'modify', msg_id, '--add', 'TRASH', '--json'])
+    print(f"Deleted {len(message_ids)} manual job email(s).")
+
+
+def extract_urls_from_text(text: str) -> List[str]:
+    """Extract URLs from plain text."""
+    url_pattern = r'https?://[^\s<>"\']+'
+    urls = re.findall(url_pattern, text)
+    return [url.rstrip('.,;)') for url in urls]
+
+
+def _extract_company_from_url(url: str) -> str:
+    """Extract company name from a career page URL."""
+    parsed = urllib.parse.urlparse(url)
+    hostname = parsed.hostname or ''
+    path = parsed.path or ''
+
+    # Job board platforms where company is in the path
+    job_board_patterns = [
+        (r'greenhouse\.io', r'/([^/]+)'),
+        (r'ashbyhq\.com', r'/([^/]+)'),
+        (r'lever\.co', r'/([^/]+)'),
+        (r'workable\.com', r'/([^/]+)'),
+    ]
+
+    for domain_pattern, path_pattern in job_board_patterns:
+        if re.search(domain_pattern, hostname):
+            match = re.match(path_pattern, path)
+            if match:
+                company = match.group(1)
+                # Try to split concatenated names (e.g., "andurilindustries" → "anduril industries")
+                # Insert space before common suffixes
+                company = re.sub(r'(industries|technologies|labs|systems|sciences|robotics|security|analytics)$',
+                                 r' \1', company, flags=re.IGNORECASE)
+                return company.replace('-', ' ').replace('_', ' ').title().strip()
+
+    # Extract from domain name
+    parts = hostname.split('.')
+    subdomains_to_remove = {'www', 'careers', 'jobs', 'job', 'boards', 'job-boards', 'apply'}
+    domain_parts = [p for p in parts if p not in subdomains_to_remove and len(p) > 2]
+
+    if domain_parts:
+        company = domain_parts[0]
+        return company.replace('-', ' ').replace('_', ' ').title()
+
+    return "Unknown"
+
+
+def _title_from_url_path(url: str) -> str:
+    """Extract a readable job title from a URL path as a fallback."""
+    parsed = urllib.parse.urlparse(url)
+    path = parsed.path.rstrip('/')
+    # Get last meaningful path segment
+    segments = [s for s in path.split('/') if s and not re.match(r'^[\da-f-]{8,}$', s)]
+    if segments:
+        slug = segments[-1]
+        # Convert slug to readable title
+        title = slug.replace('-', ' ').replace('_', ' ')
+        # Title case, but preserve known acronyms
+        title = ' '.join(w.upper() if len(w) <= 3 and w.isalpha() else w.capitalize()
+                         for w in title.split())
+        return title
+    return ''
+
+
+def _is_garbage_title(title: str) -> bool:
+    """Check if a title is garbage (Cloudflare challenge, HTML content, etc.)."""
+    if not title:
+        return True
+    garbage_markers = ['just a moment', 'checking your browser', 'please wait',
+                       'access denied', 'data-next-head', '<meta', '<link',
+                       'viewport', 'initial-scale']
+    title_lower = title.lower()
+    return any(marker in title_lower for marker in garbage_markers) or len(title) > 200
+
+
+def fetch_job_from_career_page(url: str) -> Dict[str, str]:
+    """Fetch job details from a career/jobs page URL."""
+    try:
+        result = subprocess.run([
+            'curl', '-s', '-L',
+            '-H', 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+            '-H', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            '-H', 'Accept-Language: en-US,en;q=0.9',
+            url
+        ],
+            capture_output=True,
+            text=True,
+            timeout=15
+        )
+
+        if result.returncode != 0:
+            return None
+
+        html = result.stdout
+
+        # Extract title tag
+        title_match = re.search(r'<title[^>]*>(.*?)</title>', html, re.IGNORECASE | re.DOTALL)
+        page_title = title_match.group(1).strip() if title_match else ''
+
+        # Extract og:title (property before content)
+        og_title = ''
+        og_match = re.search(r'<meta\s+property=["\']og:title["\']\s+content=["\'](.*?)["\']', html, re.IGNORECASE)
+        if og_match:
+            og_title = og_match.group(1).strip()
+
+        # Extract og:site_name (property before content)
+        site_name = ''
+        site_match = re.search(r'<meta\s+property=["\']og:site_name["\']\s+content=["\'](.*?)["\']', html, re.IGNORECASE)
+        if site_match:
+            site_name = site_match.group(1).strip()
+
+        # Determine job title - og:title is usually cleaner
+        job_title = og_title or page_title
+
+        # Clean up title - remove company name suffixes/prefixes
+        # Only use ' | ' and ' at ' for company extraction (reliable separators)
+        # ' - ' is ambiguous (could be location, team, level)
+        for sep in [' | ', ' at ']:
+            if sep in job_title:
+                parts = job_title.split(sep)
+                job_title = parts[0].strip()
+                if not site_name and len(parts) > 1:
+                    site_name = parts[-1].strip()
+                break
+        else:
+            # For ' - ' separators, only extract the title (first part), not company
+            for sep in [' - ', ' — ', ' – ']:
+                if sep in job_title:
+                    parts = job_title.split(sep)
+                    job_title = parts[0].strip()
+                    break
+
+        # Detect garbage titles and fall back to URL-based extraction
+        if _is_garbage_title(job_title):
+            job_title = _title_from_url_path(url)
+
+        # Determine company name
+        company = site_name or _extract_company_from_url(url)
+
+        # Clean up company name
+        company = re.sub(r'\s*(Careers?|Jobs?|Hiring)\s*$', '', company, flags=re.IGNORECASE).strip()
+
+        # Decode HTML entities
+        company = company.replace('&amp;', '&').replace('&#39;', "'").replace('&quot;', '"')
+        job_title = job_title.replace('&amp;', '&').replace('&#39;', "'").replace('&quot;', '"')
+
+        # Extract salary and location from the page
+        salary = extract_compensation(html)
+        location = extract_location(html)
+
+        return {
+            'title': job_title or 'Unknown Position',
+            'company': company,
+            'location': location,
+            'salary': salary,
+            'link': url,
+        }
+    except Exception as e:
+        print(f"    Warning: Could not fetch {url}: {e}", file=sys.stderr)
+        return None
+
+
 def delete_old_summary_emails():
     """Delete all previous summary emails except the most recent one."""
     print("Cleaning up old summary emails...")
@@ -574,8 +776,8 @@ def mark_email_as_read(message_id: str):
         '--json'
     ])
 
-def get_company_tier(company_name: str) -> int:
-    """Classify company into tiers (1 = best, 3 = good)."""
+def get_company_tier(company_name: str, is_public: bool = True) -> int:
+    """Classify company into tiers (1 = best, 4 = private companies)."""
     company_lower = company_name.lower()
 
     # Tier 1: FAANG + top tier tech companies
@@ -599,15 +801,19 @@ def get_company_tier(company_name: str) -> int:
         'backblaze', 'compass', 'upstart', 'vertex', 'workiva'
     }
 
-    # Check tier 1
+    # Check tier 1 (regardless of public/private status)
     for t1_company in tier1:
         if re.search(r'\b' + re.escape(t1_company) + r'\b', company_lower):
             return 1
 
-    # Check tier 2
+    # Check tier 2 (regardless of public/private status)
     for t2_company in tier2:
         if re.search(r'\b' + re.escape(t2_company) + r'\b', company_lower):
             return 2
+
+    # Tier 4: Private companies not in tier 1/2
+    if not is_public:
+        return 4
 
     # Tier 3: Other public companies
     return 3
@@ -622,15 +828,18 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
     tier1_jobs = []
     tier2_jobs = []
     tier3_jobs = []
+    tier4_jobs = []
 
     for job in jobs:
-        tier = get_company_tier(job['company'])
+        tier = get_company_tier(job['company'], job.get('is_public', True))
         if tier == 1:
             tier1_jobs.append(job)
         elif tier == 2:
             tier2_jobs.append(job)
-        else:
+        elif tier == 3:
             tier3_jobs.append(job)
+        else:
+            tier4_jobs.append(job)
 
     # Build email body
     email_body = f"""
@@ -643,6 +852,7 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
         .tier1 {{ color: #d4af37; }} /* Gold */
         .tier2 {{ color: #0066cc; }} /* Blue */
         .tier3 {{ color: #666; }} /* Gray */
+        .tier4 {{ color: #996633; }} /* Brown */
         .job {{ margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; background: #f9f9f9; }}
         .company {{ font-weight: bold; font-size: 18px; color: #0066cc; }}
         .title {{ font-size: 16px; margin: 5px 0; }}
@@ -653,7 +863,7 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
 </head>
 <body>
     <h1>🎯 LinkedIn Job Opportunities</h1>
-    <p><strong>{len(jobs)} jobs</strong> from public companies | Generated on {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
+    <p><strong>{len(jobs)} jobs</strong> | Generated on {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
 """
 
     # Tier 1: Top Companies
@@ -716,6 +926,26 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
 """
         email_body += "    </div>\n"
 
+    # Tier 4: Private Companies
+    if tier4_jobs:
+        email_body += f"""
+    <div class="tier">
+        <div class="tier-header tier4">🏢 Tier 4: Private Companies ({len(tier4_jobs)} jobs)</div>
+"""
+        for i, job in enumerate(tier4_jobs, 1):
+            email_body += f"""
+        <div class="job">
+            <div class="company">{i}. {job['company']}</div>
+            <div class="title">{job.get('title', 'Job Opportunity')}</div>
+            <div class="info">💰 Pay Range: {job['compensation']}</div>
+            <div class="info">📍 Location: {job['location']}</div>
+            <div class="link">
+                <a href="{job['link']}">View Job Posting →</a>
+            </div>
+        </div>
+"""
+        email_body += "    </div>\n"
+
     email_body += """
 </body>
 </html>
@@ -732,7 +962,7 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
         subprocess.run([
             'gog', 'gmail', 'send',
             '--to', recipient,
-            '--subject', f'LinkedIn Job Opportunities - {len(jobs)} Public Companies',
+            '--subject', f'LinkedIn Job Opportunities - {len(jobs)} Jobs',
             '--body-html', email_body
         ], check=True, env=env)
 
@@ -885,15 +1115,21 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
 
     emails = get_unread_linkedin_emails()
 
-    if not emails:
+    # Also fetch manually shared job emails
+    manual_emails = get_manual_job_emails()
+    manual_message_ids = []
+
+    if not emails and not manual_emails:
         if previous_jobs:
-            print("No new LinkedIn emails found, but found jobs from previous summaries.")
+            print("No new emails found, but found jobs from previous summaries.")
         else:
-            print("No LinkedIn emails found.")
+            print("No new emails found.")
             return
 
     if emails:
         print(f"Found {len(emails)} LinkedIn emails.")
+    if manual_emails:
+        print(f"Found {len(manual_emails)} manually shared job emails.")
 
     filtered_jobs = []
     processed_message_ids = []
@@ -924,10 +1160,8 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
         for job in job_listings:
             company_name = job['company']
 
-            # Check if public company
-            if not is_public_company(company_name, body):
-                print(f"    Skipping {company_name} - not a public company")
-                continue
+            # Check if public company (used for tier assignment)
+            company_is_public = is_public_company(company_name, body)
 
             # Check if company is embargoed
             if is_company_embargoed(company_name, embargo_dates):
@@ -988,17 +1222,79 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
                 'title': job['title'],
                 'link': job['link'],
                 'compensation': final_compensation,
-                'location': job['location']
+                'location': job['location'],
+                'is_public': company_is_public
             })
 
             print(f"    ✓ Added {company_name} - {job['title']}")
 
         processed_message_ids.append(message_id)
 
-    # Filter previous jobs against current public company cache and embargo dates
+    # Process manually shared job emails (subject: "linkedin-jobs")
+    for entry in manual_emails:
+        thread_id = entry['thread_id']
+        message_ids = entry['message_ids']
+
+        print(f"Processing manual job email {thread_id}...")
+
+        # Collect URLs from all messages in the thread
+        all_urls = []
+        for msg_id in message_ids:
+            details = get_email_details(msg_id)
+            body = details.get('body', '')
+            all_urls.extend(extract_urls_from_text(body))
+
+        if not all_urls:
+            print(f"  No URLs found in email")
+            continue
+
+        # Deduplicate URLs preserving order
+        seen_urls = set()
+        urls = []
+        for url in all_urls:
+            if url not in seen_urls:
+                seen_urls.add(url)
+                urls.append(url)
+
+        print(f"  Found {len(urls)} URLs")
+
+        for url in urls:
+            print(f"    Fetching {url}...")
+            job = fetch_job_from_career_page(url)
+            if not job:
+                print(f"    ✗ Could not fetch job details")
+                continue
+
+            company_name = job['company']
+
+            # Check if company is embargoed
+            if is_company_embargoed(company_name, embargo_dates):
+                embargo_date = embargo_dates[company_name.lower()]
+                print(f"    Skipping {company_name} - embargoed until {embargo_date}")
+                continue
+
+            company_is_public = is_public_company(company_name, '')
+
+            filtered_jobs.append({
+                'company': company_name,
+                'title': job['title'],
+                'link': job['link'],
+                'compensation': job['salary'],
+                'location': job['location'],
+                'is_public': company_is_public
+            })
+
+            print(f"    ✓ Added {company_name} - {job['title']}")
+            time.sleep(0.5)  # Be nice to servers
+
+        manual_message_ids.append(thread_id)
+
+    # Filter previous jobs against embargo dates and add is_public field
     previous_jobs = [j for j in previous_jobs
-                     if is_public_company(j['company'], '')
-                     and not is_company_embargoed(j['company'], embargo_dates)]
+                     if not is_company_embargoed(j['company'], embargo_dates)]
+    for j in previous_jobs:
+        if 'is_public' not in j:
+            j['is_public'] = is_public_company(j['company'], '')
 
     # Merge with previous jobs and deduplicate
     # Put filtered_jobs first so freshly-parsed data (with correct compensation/
@@ -1042,14 +1338,18 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
 
         send_summary_email(unique_jobs, recipient_email)
 
-    # Mark emails as read
+    # Mark LinkedIn emails as read
     if not dry_run and processed_message_ids:
         print(f"\nMarking {len(processed_message_ids)} LinkedIn emails as read...")
         for msg_id in processed_message_ids:
             mark_email_as_read(msg_id)
         print("Done!")
+
+    # Delete processed manual job emails
+    if not dry_run:
+        delete_manual_job_emails(manual_message_ids)
     elif dry_run:
-        print("\nDry run - emails NOT marked as read.")
+        print("\nDry run - emails NOT marked as read, manual emails NOT deleted.")
 
 def main():
     import argparse
