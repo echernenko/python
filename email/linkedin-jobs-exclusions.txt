@@ -83,6 +83,7 @@
 4356475374 | Netflix | Manager, Engineering - Live Media Asset Management
 4356523053 | Palo Alto Networks | Senior Director, Engineering (Unit 42)
 4356750183 | Netflix | Engineering Manager (Cloud Architecture Tooling & Security)
+4357494191 | DoorDash | Engineering Manager - Merchant Acquisition, Onboarding & Early Success
 4359215380 | Apple | Software Engineering Manager, Enterprise Technology Services
 4359481620 | NVIDIA | Engineering Manager, Observability Platform
 4359607621 | Airbnb | Engineering Manager, Control Plane - Distributed Transactional Database
@@ -178,6 +179,7 @@
 4374730679 | Microsoft | Principal Group Engineering Manager
 4374737059 | Microsoft | Group Engineering Manager
 4374843961 | Oracle | Software Development Snr Manager
+4374846378 | Blue Origin | Sr. Manager - Software Engineering
 4375152893 | Microsoft | Senior Software Engineering Manager - CTJ - TS/SCI
 4375487049 | IonQ | Senior Manager, Compute Infrastructure Engineering
 4375496903 | Airbnb | Engineering Manager, Core Foundation
@@ -190,6 +192,7 @@
 4376433218 | Anthropic | Engineering Manager, UI Platform
 4376437592 | Apple | Finance Digital Transformation - Engineering Manager
 4376464142 | Visa | Senior Director, Software Engineering
+4377077522 | Stripe | Engineering Manager, User Billing
 4377416785 | NVIDIA | Senior Manager, Software Security Architecture
 4377417812 | NVIDIA | Senior Manager, Software Engineering - Libraries Devops and Infrastructure
 4377431218 | NVIDIA | Manager, Next-Generation AI Cluster Architecture
