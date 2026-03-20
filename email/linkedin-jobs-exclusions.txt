@@ -271,4 +271,6 @@
 4356711778 | Upstart | Senior Manager, Software Engineering - Core Pricing
 4367005063 | Affirm | Senior Manager, Software Engineering (Lake Analytics Platform)
 7673572 | Roblox | Senior Engineering Manager, AI Platform
+4387778885 | Apple | Senior Security Engineering Manager
+4386822053 | Apple | Engineering Manager, User & Content Intelligence
 
