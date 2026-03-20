@@ -95,6 +95,12 @@
     "salary": null,
     "title": "Sr. Engineering Manager, Reporting & Enterprise Hub"
   },
+  "4335116861": {
+    "company": "Snowflake",
+    "location": "Menlo Park, California, United States",
+    "salary": "$264K-$379K",
+    "title": "Senior Engineering Manager - Observability"
+  },
   "4337425687": {
     "company": "Oracle",
     "location": "United States",
@@ -112,6 +118,12 @@
     "location": "Bellevue",
     "salary": null,
     "title": "Engineering Manager - Identity and Access Management (IAM)"
+  },
+  "4343659841": {
+    "company": "ClickUp",
+    "location": "United States",
+    "salary": "$325K-$375K",
+    "title": "Senior Director of Engineering"
   },
   "4344160294": {
     "company": "Fanatics",
@@ -310,6 +322,12 @@
     "location": "Redmond",
     "salary": "$139K-$304K",
     "title": "Principal Software Engineering Manager - Developer Platform"
+  },
+  "4367933006": {
+    "company": "JPMorganChase",
+    "location": "Palo Alto, California, United States",
+    "salary": "$232K-$325K",
+    "title": "Senior Director of Software Engineering - Head of Cloud/Lake Platforms Engineering"
   },
   "4368056061": {
     "company": "Figma",
@@ -556,6 +574,12 @@
     "location": "Mountain View",
     "salary": "$152K-$248K",
     "title": "Manager, Software Engineering"
+  },
+  "4376958727": {
+    "company": "Nava",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Platform/Infrastructure Engineering Manager"
   },
   "4377038402": {
     "company": "IonQ",
@@ -887,6 +911,12 @@
     "salary": "$221K-$277K",
     "title": "Sr. Director Engineering, Head of Internal Technology"
   },
+  "4384458688": {
+    "company": "Walmart",
+    "location": "Bentonville, Arkansas, United States",
+    "salary": "$160K-$320K",
+    "title": "Senior Director, Software Engineering"
+  },
   "4384490468": {
     "company": "Nielsen",
     "location": "United States",
@@ -971,11 +1001,23 @@
     "salary": "$202K-$303K",
     "title": "Senior Manager, Machine Learning Engineering"
   },
+  "4385067220": {
+    "company": "Asana",
+    "location": "San Francisco, California, United States",
+    "salary": "$264K-$300K",
+    "title": "Senior Engineering Manager, Security"
+  },
   "4385177910": {
     "company": "Snowflake",
     "location": "California, United States",
     "salary": "$207K-$362K",
     "title": "Senior Manager, Solution Engineering"
+  },
+  "4385283041": {
+    "company": "Mattson Technology",
+    "location": "Fremont, California, United States",
+    "salary": null,
+    "title": "Senior Director of Software Engineering"
   },
   "4385295166": {
     "company": "Aritzia",
@@ -1006,6 +1048,12 @@
     "location": "Washington",
     "salary": "$240K-$379K",
     "title": "Senior Manager, Technical Product and Program Management, Planning and Controls - Autonomous Vehicles"
+  },
+  "4385832765": {
+    "company": "JPMorganChase",
+    "location": "Jersey City, New Jersey, United States",
+    "salary": "$232K-$325K",
+    "title": "Senior Director of Software Engineering - Head of Operations - Surveillance Technology"
   },
   "4385960051": {
     "company": "Starbucks",
@@ -1073,6 +1121,12 @@
     "salary": null,
     "title": "Director, Engineering"
   },
+  "4386822053": {
+    "company": "Apple",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Engineering Manager, User & Content Intelligence"
+  },
   "4386911022": {
     "company": "Microsoft",
     "location": "Redmond",
@@ -1103,6 +1157,12 @@
     "salary": null,
     "title": "Director II, Engineering"
   },
+  "4387482469": {
+    "company": "GE Appliances, a Haier company",
+    "location": "Louisville, Kentucky, United States",
+    "salary": null,
+    "title": "Senior Director, Cloud Software Engineering"
+  },
   "4387606267": {
     "company": "LinkedIn",
     "location": "Mountain View",
@@ -1114,5 +1174,35 @@
     "location": "Sunnyvale",
     "salary": "$147K-$240K",
     "title": "Manager, Software Engineering - Personalization Platform"
+  },
+  "4387693065": {
+    "company": "Microsoft AI",
+    "location": "Redmond",
+    "salary": "$163K-$296K",
+    "title": "MTS - Platform Engineering Manager"
+  },
+  "4387775004": {
+    "company": "Savvly",
+    "location": "San Francisco Bay Area",
+    "salary": null,
+    "title": "Senior Director of Software Engineering"
+  },
+  "4387778885": {
+    "company": "Apple",
+    "location": "Seattle, Washington, United States",
+    "salary": null,
+    "title": "Senior Security Engineering Manager"
+  },
+  "4387871310": {
+    "company": "Airbnb",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Guest Displays and Platforms"
+  },
+  "4387934728": {
+    "company": "Rippling",
+    "location": "San Francisco, California, United States",
+    "salary": null,
+    "title": "Senior Engineering Manager - Payroll Platform"
   }
 }
