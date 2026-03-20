@@ -626,6 +626,7 @@ def fetch_job_from_career_page(url: str) -> Dict[str, str]:
         company = site_name or _extract_company_from_url(url)
 
         # Clean up company name
+        company = re.sub(r'^(Careers?|Jobs?|Hiring)\s+(at|@)\s+', '', company, flags=re.IGNORECASE)
         company = re.sub(r'\s*(Careers?|Jobs?|Hiring)\s*$', '', company, flags=re.IGNORECASE).strip()
 
         # Decode HTML entities
@@ -727,8 +728,12 @@ def parse_previous_summary_emails() -> List[Dict[str, Any]]:
             link_match = re.search(r'<a href="([^"]+)">', block)
 
             if company_match and link_match:
+                company = company_match.group(1).strip()
+                # Clean up company name - strip "Careers at" / "Jobs at" prefixes
+                company = re.sub(r'^(Careers?|Jobs?|Hiring)\s+(at|@)\s+', '', company, flags=re.IGNORECASE)
+                company = re.sub(r'\s*(Careers?|Jobs?|Hiring)\s*$', '', company, flags=re.IGNORECASE).strip()
                 jobs.append({
-                    'company': company_match.group(1).strip(),
+                    'company': company,
                     'title': title_match.group(1).strip() if title_match else 'Unknown Title',
                     'link': link_match.group(1).strip(),
                     'compensation': pay_match.group(1).strip() if pay_match else 'Not specified',
@@ -1060,6 +1065,10 @@ def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
                 company = first_part
                 location = second_part
 
+            # Clean up company name - strip "Careers at" / "Jobs at" prefixes
+            company = re.sub(r'^(Careers?|Jobs?|Hiring)\s+(at|@)\s+', '', company, flags=re.IGNORECASE)
+            company = re.sub(r'\s*(Careers?|Jobs?|Hiring)\s*$', '', company, flags=re.IGNORECASE).strip()
+
             # Title is the line before company_location
             title_idx = lines.index(company_location_match) - 1
             title = lines[title_idx] if title_idx >= 0 else "Unknown Title"
@@ -1086,6 +1095,8 @@ def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
 
             # Clean up company name
             company = re.sub(r'\s*-\s*\d+\s+connections?', '', company)
+            company = re.sub(r'^(Careers?|Jobs?|Hiring)\s+(at|@)\s+', '', company, flags=re.IGNORECASE)
+            company = re.sub(r'\s*(Careers?|Jobs?|Hiring)\s*$', '', company, flags=re.IGNORECASE).strip()
 
             # Filter out if company looks like a location
             is_location = any(re.match(pattern, company) for pattern in location_patterns)

@@ -220,6 +220,7 @@
 4378720638 | Salesforce | Director, Engineering - Agentic Search & AI Components
 4378768987 | Microsoft | Principal Software Engineering Manager
 4379256305 | Snowflake | Engineering Manager - Feature Store
+4379982059 | Pinterest | Manager II, Production Engineering
 4380201264 | Oracle | Senior Director, Software Development
 4380601894 | Apple | Software Engineering Manager, Apple Services Engineering
 4380623641 | Coupang | Director of Engineering - Security Infrastructure
@@ -246,6 +247,7 @@
 4384377594 | DigitalOcean | Sr. Director Engineering, Head of Internal Technology
 4384547155 | GE HealthCare | Sr Director Software Engineering
 4384641534 | GitHub | Staff Engineering Manager, Notifications Platform
+4384716437 | Palo Alto Networks | Manager, Software Engineering
 4384730382 | Netflix | Data Science & Engineering Manager - Title & Launch Management
 4384831016 | Amazon Web Services (AWS) | Software Dev Manager III, AWS Clean Rooms
 4384753491 | Airbnb | Engineering Manager, Workflow Orchestration - Data Infrastructure
@@ -257,7 +259,10 @@
 4385615140 | Apple | Senior Engineering Manager - Data Lakehouse
 4385813671 | NVIDIA | Senior Manager, Technical Product and Program Management, Planning and Controls - Autonomous Vehicles
 4386469659 | GitHub | Principal Engineering Manager
+4386502880 | Instacart | Software Engineering Manager, Single Retailer Experience
+4386508711 | Instacart | Software Engineering Manager, Ads Manager
 4386525989 | ServiceTitan | Director, AI Engineering
+4386527028 | Instacart | Senior Software Engineering Manager, Ads Solutions
 4386779777 | Amazon Web Services (AWS) | Senior Manager, Software Dev, Amazon Software Builder Experience / Software Foundations & Management
 4386911022 | Microsoft | Principal Software Engineering Manager
 4387448843 | LinkedIn | Director, Software Engineering, Systems Infrastructure
