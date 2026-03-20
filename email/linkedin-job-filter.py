@@ -85,8 +85,8 @@ def load_embargo_dates() -> Dict[str, date]:
         return {}
 
 
-def is_company_embargoed(company_name: str, embargo_dates: Dict[str, date]) -> bool:
-    """Return True if today's date is on or before the embargo date for this company.
+def get_embargo_date(company_name: str, embargo_dates: Dict[str, date]):
+    """Return the embargo date for this company, or None if not embargoed.
 
     Matches both exact names and names that start with an embargoed company
     (e.g. "Microsoft AI" matches the "microsoft" embargo).
@@ -100,6 +100,12 @@ def is_company_embargoed(company_name: str, embargo_dates: Dict[str, date]) -> b
             if name_lower.startswith(embargoed_name):
                 embargo_date = edate
                 break
+    return embargo_date
+
+
+def is_company_embargoed(company_name: str, embargo_dates: Dict[str, date]) -> bool:
+    """Return True if today's date is on or before the embargo date for this company."""
+    embargo_date = get_embargo_date(company_name, embargo_dates)
     if embargo_date is None:
         return False
     return date.today() <= embargo_date
@@ -1187,8 +1193,8 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
             company_is_public = is_public_company(company_name, body)
 
             # Check if company is embargoed
-            if is_company_embargoed(company_name, embargo_dates):
-                embargo_date = embargo_dates[company_name.lower()]
+            embargo_date = get_embargo_date(company_name, embargo_dates)
+            if embargo_date and date.today() <= embargo_date:
                 print(f"    Skipping {company_name} - embargoed until {embargo_date}")
                 continue
 
@@ -1291,8 +1297,8 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
             company_name = job['company']
 
             # Check if company is embargoed
-            if is_company_embargoed(company_name, embargo_dates):
-                embargo_date = embargo_dates[company_name.lower()]
+            embargo_date = get_embargo_date(company_name, embargo_dates)
+            if embargo_date and date.today() <= embargo_date:
                 print(f"    Skipping {company_name} - embargoed until {embargo_date}")
                 continue
 
