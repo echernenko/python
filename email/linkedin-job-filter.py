@@ -1181,7 +1181,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
                 continue
 
             # Check if job is in exclusion list
-            job_id_match = re.search(r'/jobs/view/(\d+)', job['link'])
+            job_id_match = re.search(r'/jobs/(?:view/)?(\d+)', job['link'])
             if job_id_match:
                 job_id = job_id_match.group(1)
                 if job_id in excluded_job_ids:
@@ -1319,7 +1319,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
     unique_jobs = []
     for job in all_jobs:
         # Extract job ID from URL
-        job_id_match = re.search(r'/jobs/view/(\d+)', job['link'])
+        job_id_match = re.search(r'/jobs/(?:view/)?(\d+)', job['link'])
         if job_id_match:
             job_id = job_id_match.group(1)
             # Skip if in exclusion list

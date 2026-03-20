@@ -266,4 +266,9 @@
 4386779777 | Amazon Web Services (AWS) | Senior Manager, Software Dev, Amazon Software Builder Experience / Software Foundations & Management
 4386911022 | Microsoft | Principal Software Engineering Manager
 4387448843 | LinkedIn | Director, Software Engineering, Systems Infrastructure
+4345164724 | Snap | Manager, Machine Learning Engineering, User & Friends
+4345532025 | Snap | Manager, Machine Learning Engineering, User & Friends
+4356711778 | Upstart | Senior Manager, Software Engineering - Core Pricing
+4367005063 | Affirm | Senior Manager, Software Engineering (Lake Analytics Platform)
+7673572 | Roblox | Senior Engineering Manager, AI Platform
 
