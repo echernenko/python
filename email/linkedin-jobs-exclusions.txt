@@ -273,4 +273,5 @@
 7673572 | Roblox | Senior Engineering Manager, AI Platform
 4387778885 | Apple | Senior Security Engineering Manager
 4386822053 | Apple | Engineering Manager, User & Content Intelligence
+790312856978 | Netflix | Senior Engineering Manager, Model Inference Serving - AI Platform
 

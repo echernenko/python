@@ -86,8 +86,20 @@ def load_embargo_dates() -> Dict[str, date]:
 
 
 def is_company_embargoed(company_name: str, embargo_dates: Dict[str, date]) -> bool:
-    """Return True if today's date is on or before the embargo date for this company."""
-    embargo_date = embargo_dates.get(company_name.lower())
+    """Return True if today's date is on or before the embargo date for this company.
+
+    Matches both exact names and names that start with an embargoed company
+    (e.g. "Microsoft AI" matches the "microsoft" embargo).
+    """
+    name_lower = company_name.lower()
+    # Try exact match first
+    embargo_date = embargo_dates.get(name_lower)
+    # Fall back to prefix match (e.g. "microsoft ai" starts with "microsoft")
+    if embargo_date is None:
+        for embargoed_name, edate in embargo_dates.items():
+            if name_lower.startswith(embargoed_name):
+                embargo_date = edate
+                break
     if embargo_date is None:
         return False
     return date.today() <= embargo_date
@@ -1181,7 +1193,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
                 continue
 
             # Check if job is in exclusion list
-            job_id_match = re.search(r'/jobs/(?:view/)?(\d+)', job['link'])
+            job_id_match = re.search(r'/jobs?/(?:view/)?(\d+)', job['link'])
             if job_id_match:
                 job_id = job_id_match.group(1)
                 if job_id in excluded_job_ids:
