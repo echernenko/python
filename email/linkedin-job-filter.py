@@ -1067,6 +1067,7 @@ def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
             'apply with resume & profile', 'apply', 'easy apply',
             'promoted', 'actively recruiting',
             'this company is actively hiring',
+            'top applicant', 'fast growing',
         )]
 
         if not lines:
@@ -1390,18 +1391,19 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
 
         send_summary_email(unique_jobs, recipient_email)
 
-    # Mark LinkedIn emails as read
+    # Mark LinkedIn emails as read and trash them
     if not dry_run and processed_message_ids:
-        print(f"\nMarking {len(processed_message_ids)} LinkedIn emails as read...")
+        print(f"\nDeleting {len(processed_message_ids)} processed LinkedIn emails...")
         for msg_id in processed_message_ids:
             mark_email_as_read(msg_id)
+            run_gog_command(['gmail', 'thread', 'modify', msg_id, '--add', 'TRASH', '--json'])
         print("Done!")
 
     # Delete processed manual job emails
     if not dry_run:
         delete_manual_job_emails(manual_message_ids)
     elif dry_run:
-        print("\nDry run - emails NOT marked as read, manual emails NOT deleted.")
+        print("\nDry run - LinkedIn emails NOT deleted, manual emails NOT deleted.")
 
 def main():
     import argparse
