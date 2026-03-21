@@ -159,6 +159,32 @@ def extract_text_from_html(html: str) -> str:
     parser.feed(html)
     return parser.get_text()
 
+def extract_job_id_from_url(url: str) -> str:
+    """Extract a job ID from any job URL (LinkedIn or direct company career pages).
+
+    Tries LinkedIn patterns first, then falls back to extracting a trailing
+    numeric ID from the URL path (e.g. Netflix, Databricks career pages).
+    """
+    # LinkedIn: /jobs/view/4365006239 or /job/4365006239
+    m = re.search(r'/jobs?/(?:view/)?(\d+)', url)
+    if m:
+        return m.group(1)
+    # Non-LinkedIn career pages often have a numeric ID at the end of the path
+    # e.g. .../sr-staff-software-engineer---data-platform-7823561002
+    # or  .../790312856978-senior-engineering-manager-...
+    path = urllib.parse.urlparse(url).path.rstrip('/')
+    last_segment = path.rsplit('/', 1)[-1] if '/' in path else path
+    # ID at the end after a hyphen: ...-7823561002
+    m = re.search(r'-(\d{5,})$', last_segment)
+    if m:
+        return m.group(1)
+    # ID at the start before a hyphen: 790312856978-...
+    m = re.match(r'(\d{5,})-', last_segment)
+    if m:
+        return m.group(1)
+    return None
+
+
 def extract_linkedin_job_links(email_body: str) -> List[str]:
     """Extract LinkedIn job posting URLs from email body."""
     # Pattern for LinkedIn job links
@@ -1199,16 +1225,14 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
                 continue
 
             # Check if job is in exclusion list
-            job_id_match = re.search(r'/jobs?/(?:view/)?(\d+)', job['link'])
-            if job_id_match:
-                job_id = job_id_match.group(1)
-                if job_id in excluded_job_ids:
-                    print(f"    Skipping {company_name} - {job['title']} - in exclusion list")
-                    continue
+            job_id = extract_job_id_from_url(job['link'])
+            if job_id and job_id in excluded_job_ids:
+                print(f"    Skipping {company_name} - {job['title']} - in exclusion list")
+                continue
 
             # Check job cache for previously stored compensation
             job_cache = _get_job_cache()
-            cached_job = job_cache.get(job_id) if job_id_match else None
+            cached_job = job_cache.get(job_id) if job_id else None
             cached_comp = cached_job.get('salary') if cached_job else None
 
             if cached_comp and cached_comp != "Not specified":
@@ -1234,7 +1258,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
             final_compensation = compensation if compensation else "Not specified"
 
             # Cache the job info (only store salary when we actually have one)
-            if job_id_match:
+            if job_id:
                 entry = {
                     'title': job['title'],
                     'company': company_name,
@@ -1337,9 +1361,8 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
     unique_jobs = []
     for job in all_jobs:
         # Extract job ID from URL
-        job_id_match = re.search(r'/jobs/(?:view/)?(\d+)', job['link'])
-        if job_id_match:
-            job_id = job_id_match.group(1)
+        job_id = extract_job_id_from_url(job['link'])
+        if job_id:
             # Skip if in exclusion list
             if job_id in excluded_job_ids:
                 continue
