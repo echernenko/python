@@ -275,4 +275,18 @@
 4386822053 | Apple | Engineering Manager, User & Content Intelligence
 790312856978 | Netflix | Senior Engineering Manager, Model Inference Serving - AI Platform
 7823561002 | Databricks | Sr. Staff Software Engineer - Data Platform
+4387906901 | NVIDIA | Senior Director, EDA Engineering
+4271754758 | Sony Interactive Entertainment | Sr. Director, Data Platform Engineering & Operations
+4377474545 | Talkiatry | Director of AI Engineering
+4385283041 | Mattson Technology | Senior Director of Software Engineering
+4387820815 | Shutterfly | Senior Director, Engineering - AI, Photos and Personalization
+4385746513 | Ladders | Director, Engineering
+4387606267 | LinkedIn | Software Engineering Manager, Systems and Infrastructure
+4387999529 | Plaid | Engineering Manager - Machine Learning Infrastructure
+Senior-Software-Engineer-AI-Infrastructure | NVIDIA | Senior Software Engineer, AI Infrastructure
+4377426395 | NVIDIA | Manager, Next-Gen AI Cluster Validation
+4385470796 | Netflix | Engineering Manager, Compute Runtime
+4357509254 | Netflix | Manager, Data Engineering – Commerce
+engineering-manager-ai-platform | Snowflake | Engineering Manager, AI Platform
+engineering-manager-machine-learning-platform | Airbnb | Engineering Manager, Machine Learning Platform
 
