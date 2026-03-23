@@ -282,11 +282,29 @@
 4387820815 | Shutterfly | Senior Director, Engineering - AI, Photos and Personalization
 4385746513 | Ladders | Director, Engineering
 4387606267 | LinkedIn | Software Engineering Manager, Systems and Infrastructure
+4387998550 | Plaid | Engineering Manager - Machine Learning Infrastructure
 4387999529 | Plaid | Engineering Manager - Machine Learning Infrastructure
+4378060703 | LinkedIn | Director, Software Engineering - Ads AI
 Senior-Software-Engineer-AI-Infrastructure | NVIDIA | Senior Software Engineer, AI Infrastructure
 4377426395 | NVIDIA | Manager, Next-Gen AI Cluster Validation
 4385470796 | Netflix | Engineering Manager, Compute Runtime
 4357509254 | Netflix | Manager, Data Engineering – Commerce
 engineering-manager-ai-platform | Snowflake | Engineering Manager, AI Platform
 engineering-manager-machine-learning-platform | Airbnb | Engineering Manager, Machine Learning Platform
-
+https://jobs.elastic.co/?size=n_5_n | Elastic | (careers page)
+4388538879 | Instacart | Director of Software Engineering, Order Experience
+4387871310 | Airbnb | Engineering Manager, Guest Displays and Platforms
+4335116861 | Snowflake | Senior Engineering Manager - Observability
+7342078 | Reddit | Staff Software Engineer - Continuous Integration, Developer Experience
+7359367 | Reddit | Senior Engineering Manager, Unified Embeddings Platform
+staff-engineer-search-ai-platform | Elastic | Staff Engineer, Search AI Platform
+engineering-manager-platform-inference | Mistral AI | Engineering Manager, Platform Inference
+staff-software-engineer-platform | Replicate | Staff Software Engineer, Platform
+4385762689 | Oracle | Snr Manager, Software Engineering, Cloud Performance
+4388526718 | Visa | Director, Software Engineering
+4388518253 | HubSpot | Senior Engineering Manager
+senior-software-engineer-autonomy-platform | Skydio | Senior Software Engineer, Autonomy Platform
+engineering-manager-core-platform | Tailscale | Engineering Manager, Core Platform
+engineering-manager-cloud-platform | Modal | Engineering Manager, Cloud Platform
+engineering-manager-edge-platform | Fly.io | Engineering Manager, Edge Platform
+engineering-manager-platform-infrastructure | Samsara | Engineering Manager, Platform Infrastructure
