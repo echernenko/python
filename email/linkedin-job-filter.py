@@ -1368,8 +1368,8 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
         # Extract job ID from URL
         job_id = extract_job_id_from_url(job['link'])
         if job_id:
-            # Skip if in exclusion list
-            if job_id in excluded_job_ids:
+            # Skip if in exclusion list (by extracted ID or full URL)
+            if job_id in excluded_job_ids or job['link'] in excluded_job_ids:
                 continue
             if job_id not in seen_job_ids:
                 seen_job_ids.add(job_id)
