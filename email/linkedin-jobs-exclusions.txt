@@ -308,3 +308,6 @@ engineering-manager-core-platform | Tailscale | Engineering Manager, Core Platfo
 engineering-manager-cloud-platform | Modal | Engineering Manager, Cloud Platform
 engineering-manager-edge-platform | Fly.io | Engineering Manager, Edge Platform
 engineering-manager-platform-infrastructure | Samsara | Engineering Manager, Platform Infrastructure
+https://sourcegraph.com/careers/staff-software-engineer-ai-platform | Sourcegraph | Staff Software Engineer, AI Platform
+https://jobs.lever.co/anduril/senior-software-engineer-robotics-platform | Anduril | Senior Software Engineer, Robotics Platform
+4388125022 | Revenium | Head of Engineering

@@ -227,6 +227,18 @@
     "salary": "$118K-$251K",
     "title": "Senior Software Development Manager"
   },
+  "4359031709": {
+    "company": "Whatnot",
+    "location": "San Francisco, CA",
+    "salary": "$280K-$330K",
+    "title": "Engineering Manager, Mobile"
+  },
+  "4359041119": {
+    "company": "Whatnot",
+    "location": "Seattle, WA",
+    "salary": "$280K-$330K",
+    "title": "Engineering Manager, Mobile"
+  },
   "4359481620": {
     "company": "NVIDIA",
     "location": "Santa Clara",
@@ -256,6 +268,12 @@
     "location": "Redmond",
     "salary": "$184K-$250K",
     "title": "Software Development Manager, Integrated Vehicle Testing"
+  },
+  "4361052144": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$122K-$291K",
+    "title": "Director, Software Engineering"
   },
   "4361079477": {
     "company": "Oracle",
@@ -401,6 +419,12 @@
     "salary": "$218K-$256K",
     "title": "Software Engineering Manager - Cloud Provisioning"
   },
+  "4369237481": {
+    "company": "Tubi",
+    "location": "United States",
+    "salary": null,
+    "title": "Director, ML Engineering & Infrastructure"
+  },
   "4369283371": {
     "company": "LangChain",
     "location": "Chicago, IL",
@@ -508,6 +532,12 @@
     "location": "Highlands Ranch",
     "salary": "$176K-$282K",
     "title": "Director, Software Engineering"
+  },
+  "4374842742": {
+    "company": "CoinTracker",
+    "location": "United States",
+    "salary": "$264K-$297K",
+    "title": "Engineering Manager, Infrastructure & Platform"
   },
   "4374843961": {
     "company": "Oracle",
@@ -659,6 +689,12 @@
     "salary": "$272K-$431K",
     "title": "Senior Manager, Software Security Architecture"
   },
+  "4377426395": {
+    "company": "NVIDIA",
+    "location": "California",
+    "salary": "$224K-$356K",
+    "title": "Manager, Next-Gen AI Cluster Validation"
+  },
   "4377431218": {
     "company": "NVIDIA",
     "location": "California, United States",
@@ -772,6 +808,12 @@
     "location": "Seattle",
     "salary": "$197K-$401K",
     "title": "Director/Sr. Director - Software Engineering"
+  },
+  "4378677821": {
+    "company": "Nike",
+    "location": "Beaverton, OR",
+    "salary": "$178K-$376K",
+    "title": "Director, Software Engineering (Remote Work Option)"
   },
   "4378703366": {
     "company": "DigitalOcean",
@@ -910,6 +952,12 @@
     "location": "United States",
     "salary": null,
     "title": "Senior Technical Program Manager, FUB Engineering"
+  },
+  "4383372819": {
+    "company": "Super.com",
+    "location": "United States",
+    "salary": "$215K-$316K",
+    "title": "Director of Engineering, Core Experience"
   },
   "4383471231": {
     "company": "Elastic",
@@ -1115,6 +1163,18 @@
     "salary": null,
     "title": "Senior Engineering Manager - Data Lakehouse"
   },
+  "4385738798": {
+    "company": "Ladders",
+    "location": "United States",
+    "salary": "$150K-$236K",
+    "title": "Senior Principal/Senior Director - Software Delivery/Software Program Management"
+  },
+  "4385746513": {
+    "company": "Ladders",
+    "location": "United States",
+    "salary": "$150K-$200K",
+    "title": "Director, Engineering"
+  },
   "4385747540": {
     "company": "Ladders",
     "location": "United States",
@@ -1127,11 +1187,35 @@
     "salary": "$254K-$481K",
     "title": "Group Director, Software Engineering"
   },
+  "4385756227": {
+    "company": "Ladders",
+    "location": "United States",
+    "salary": "$165K-$185K",
+    "title": "Director, Software Engineering (Life Product)"
+  },
+  "4385758701": {
+    "company": "LogicGate",
+    "location": "United States",
+    "salary": "$165K-$200K",
+    "title": "Manager, Software Engineering"
+  },
+  "4385762689": {
+    "company": "Oracle",
+    "location": "United States",
+    "salary": "$118K-$251K",
+    "title": "Snr Manager, Software Engineering, Cloud Performance"
+  },
   "4385773001": {
     "company": "Talkiatry",
     "location": "United States",
     "salary": null,
     "title": "Senior Manager of AI Engineering"
+  },
+  "4385782865": {
+    "company": "ClickUp",
+    "location": "United States",
+    "salary": "$160K-$210K",
+    "title": "Engineering Manager"
   },
   "4385813671": {
     "company": "NVIDIA",
@@ -1321,7 +1405,7 @@
   },
   "4387906901": {
     "company": "NVIDIA",
-    "location": "California, United States",
+    "location": "California",
     "salary": "$384K-$575K",
     "title": "Senior Director, EDA Engineering"
   },
@@ -1330,6 +1414,12 @@
     "location": "San Francisco, California, United States",
     "salary": null,
     "title": "Senior Engineering Manager - Payroll Platform"
+  },
+  "4387991256": {
+    "company": "Switchfly",
+    "location": "United States",
+    "salary": "$165K-$185K",
+    "title": "Director of Engineering"
   },
   "4387996488": {
     "company": "GoGuardian",
@@ -1355,6 +1445,12 @@
     "salary": null,
     "title": "Head of Engineering"
   },
+  "4388246218": {
+    "company": "Airbnb",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Data Movement & Transformation"
+  },
   "4388518253": {
     "company": "HubSpot",
     "location": "United States",
@@ -1378,5 +1474,11 @@
     "location": "United States",
     "salary": null,
     "title": "Director of Software Engineering, Order Experience"
+  },
+  "4388593100": {
+    "company": "Nutanix",
+    "location": "Seattle, WA",
+    "salary": null,
+    "title": "Senior Director, Worldwide Systems Engineering - Global Accounts"
   }
 }

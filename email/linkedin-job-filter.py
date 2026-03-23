@@ -182,6 +182,10 @@ def extract_job_id_from_url(url: str) -> str:
     m = re.match(r'(\d{5,})-', last_segment)
     if m:
         return m.group(1)
+    # Fallback: use the last path segment as identifier (e.g. Workday URLs
+    # like .../job/Senior-Software-Engineer-AI-Infrastructure)
+    if last_segment:
+        return last_segment
     return None
 
 
@@ -1227,7 +1231,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
 
             # Check if job is in exclusion list
             job_id = extract_job_id_from_url(job['link'])
-            if job_id and job_id in excluded_job_ids:
+            if (job_id and job_id in excluded_job_ids) or job['link'] in excluded_job_ids:
                 print(f"    Skipping {company_name} - {job['title']} - in exclusion list")
                 continue
 
@@ -1372,6 +1376,8 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
                 unique_jobs.append(job)
         else:
             # Fallback to full link if we can't extract ID
+            if job['link'] in excluded_job_ids:
+                continue
             if job['link'] not in seen_job_ids:
                 seen_job_ids.add(job['link'])
                 unique_jobs.append(job)
