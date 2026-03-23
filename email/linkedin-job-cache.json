@@ -11,6 +11,12 @@
     "salary": null,
     "title": "Sr. Director, Data Platform Engineering & Operations"
   },
+  "4281959101": {
+    "company": "Fleetio",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Platform"
+  },
   "4297737975": {
     "company": "Databricks",
     "location": "Seattle",
@@ -281,6 +287,12 @@
     "salary": "$109K-$223K",
     "title": "Software Development Manager"
   },
+  "4361085152": {
+    "company": "PitchBook",
+    "location": "Seattle, WA",
+    "salary": null,
+    "title": "Engineering Manager, AI Enablement"
+  },
   "4361181454": {
     "company": "GitLab",
     "location": "United States",
@@ -292,6 +304,12 @@
     "location": "United States",
     "salary": null,
     "title": "Software Engineering Manager, Mobile"
+  },
+  "4362571056": {
+    "company": "ClickUp",
+    "location": "United States",
+    "salary": "$280K-$320K",
+    "title": "Manager, Software Engineering"
   },
   "4363239200": {
     "company": "DoorDash",
@@ -442,6 +460,18 @@
     "location": "San Diego",
     "salary": "$240K-$270K",
     "title": "Director, Engineering"
+  },
+  "4369877586": {
+    "company": "Roblox",
+    "location": "San Mateo, CA",
+    "salary": null,
+    "title": "Director of Engineering - AI for Roblox Studio"
+  },
+  "4369946368": {
+    "company": "Elastic",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Engineering Manager - Search Scaling - Elasticsearch"
   },
   "4371571533": {
     "company": "Apple",
@@ -983,6 +1013,12 @@
     "salary": "$139K-$274K",
     "title": "Principal Software Engineering Manager"
   },
+  "4383802314": {
+    "company": "kadence",
+    "location": "United States",
+    "salary": "$180K-$240K",
+    "title": "Founding Head of Engineering"
+  },
   "4383861311": {
     "company": "Okta",
     "location": "United States",
@@ -1510,5 +1546,11 @@
     "location": "Greater Seattle Area",
     "salary": "$184K-$250K",
     "title": "Software Development Manager"
+  },
+  "4388664221": {
+    "company": "Valor Front",
+    "location": "United States",
+    "salary": null,
+    "title": "Director of Engineering"
   }
 }
