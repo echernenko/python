@@ -815,6 +815,12 @@
     "salary": "$178K-$376K",
     "title": "Director, Software Engineering (Remote Work Option)"
   },
+  "4378698410": {
+    "company": "Amazon",
+    "location": "Bellevue",
+    "salary": null,
+    "title": "SDM GenAI Products, Amazon Manager eXperience Central Science & Engineering"
+  },
   "4378703366": {
     "company": "DigitalOcean",
     "location": "Boston, MA",
@@ -1120,6 +1126,12 @@
     "location": "San Francisco, California, United States",
     "salary": "$264K-$300K",
     "title": "Senior Engineering Manager, Security"
+  },
+  "4385086875": {
+    "company": "EY",
+    "location": "98104",
+    "salary": null,
+    "title": "AI & Machine Learning Engineering Consultant - Manager - Consulting - Location OPEN"
   },
   "4385177910": {
     "company": "Snowflake",
@@ -1445,6 +1457,18 @@
     "salary": null,
     "title": "Head of Engineering"
   },
+  "4388151921": {
+    "company": "Amazon Web Services (AWS)",
+    "location": "Bellevue",
+    "salary": null,
+    "title": "Software Development Manager , AWS SageMaker Unified Studio"
+  },
+  "4388200739": {
+    "company": "Deloitte",
+    "location": "Seattle",
+    "salary": null,
+    "title": "AI Data Engineer - Manager"
+  },
   "4388246218": {
     "company": "Airbnb",
     "location": "United States",
@@ -1480,5 +1504,11 @@
     "location": "Seattle, WA",
     "salary": null,
     "title": "Senior Director, Worldwide Systems Engineering - Global Accounts"
+  },
+  "4388654195": {
+    "company": "Haystack",
+    "location": "Greater Seattle Area",
+    "salary": "$184K-$250K",
+    "title": "Software Development Manager"
   }
 }

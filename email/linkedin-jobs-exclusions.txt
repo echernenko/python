@@ -311,3 +311,4 @@ engineering-manager-platform-infrastructure | Samsara | Engineering Manager, Pla
 https://sourcegraph.com/careers/staff-software-engineer-ai-platform | Sourcegraph | Staff Software Engineer, AI Platform
 https://jobs.lever.co/anduril/senior-software-engineer-robotics-platform | Anduril | Senior Software Engineer, Robotics Platform
 4388125022 | Revenium | Head of Engineering
+4388151921 | Amazon Web Services (AWS) | Software Development Manager, AWS SageMaker Unified Studio
