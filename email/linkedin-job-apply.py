@@ -12,6 +12,7 @@ import json
 import re
 import sys
 import os
+import shutil
 import webbrowser
 from datetime import datetime
 from typing import List, Dict, Any
@@ -107,6 +108,17 @@ def fetch_summary_jobs() -> List[Dict[str, Any]]:
                 break
 
     return jobs
+
+
+def open_url(url: str):
+    """Open a URL in the browser, falling back to xdg-open or printing it."""
+    for cmd in ('xdg-open', 'sensible-browser', 'x-www-browser'):
+        if shutil.which(cmd):
+            subprocess.Popen([cmd, url], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            return
+    if webbrowser.open(url):
+        return
+    print(f"  Could not open browser. URL: {url}")
 
 
 def extract_job_id(url: str) -> str:
@@ -214,12 +226,12 @@ def main():
                 print(f"  Warning: could not extract job ID, not excluded.")
         elif action == 'o':
             # Open only, don't exclude
-            webbrowser.open(job['link'])
+            open_url(job['link'])
             opened_count += 1
             print(f"  Opened in browser.")
         else:
             # Default (Enter): open in browser and exclude
-            webbrowser.open(job['link'])
+            open_url(job['link'])
             opened_count += 1
             if job_id:
                 exclude_job(job_id, job['company'], job['title'])
