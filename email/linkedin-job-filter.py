@@ -14,6 +14,7 @@ from typing import List, Dict, Any, Set
 from html.parser import HTMLParser
 import urllib.parse
 import time
+import base64
 
 # Global variable to store the Gmail account
 GOG_ACCOUNT = None
@@ -1162,6 +1163,79 @@ def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
 
     return jobs
 
+
+def extract_html_body(details: Dict[str, Any]) -> str:
+    """Extract HTML body from email message MIME parts."""
+    message = details.get('message', {})
+    payload = message.get('payload', {})
+    parts = payload.get('parts', [])
+    for part in parts:
+        if part.get('mimeType') == 'text/html':
+            data = part.get('body', {}).get('data', '')
+            if data:
+                return base64.urlsafe_b64decode(data + '==').decode('utf-8')
+    return ''
+
+
+def parse_job_listings_from_html(html: str) -> List[Dict[str, str]]:
+    """Parse job listings from HTML email body (for saved-jobs format)."""
+    jobs = []
+    # Find job cards by data-test-id="job-card"
+    for card_match in re.finditer(r'data-test-id="job-card"', html):
+        card_start = card_match.start()
+        # Get a chunk of HTML after the card marker
+        card_html = html[card_start:card_start + 8000]
+
+        # Find the LinkedIn job URL in this card
+        url_match = re.search(
+            r'href="(https://www\.linkedin\.com/comm/jobs/view/\d+[^"]*)"',
+            card_html
+        )
+        if not url_match:
+            continue
+        raw_url = url_match.group(1).replace('&amp;', '&')
+
+        # Extract text nodes from the card
+        text = re.sub(r'<style[^>]*>.*?</style>', '', card_html, flags=re.DOTALL)
+        text = re.sub(r'<[^>]+>', '|', text)
+        text_parts = [p.strip() for p in text.split('|') if p.strip() and len(p.strip()) > 1]
+
+        # Look for title and company·location pattern
+        title = None
+        company = None
+        location = None
+        for i, part in enumerate(text_parts):
+            # Skip the data-test-id attribute text
+            if 'data-test-id' in part:
+                continue
+            # First meaningful text is the title
+            if title is None:
+                title = part
+                continue
+            # Next text with middle dot is company · location
+            if ' \u00b7 ' in part or ' &middot; ' in part:
+                sep = ' \u00b7 ' if ' \u00b7 ' in part else ' &middot; '
+                parts_split = part.split(sep, 1)
+                company = parts_split[0].strip()
+                location = parts_split[1].strip() if len(parts_split) > 1 else 'Not specified'
+                break
+
+        if title and company:
+            # Clean up company name
+            company = re.sub(r'^(Careers?|Jobs?|Hiring)\s+(at|@)\s+', '', company, flags=re.IGNORECASE)
+            company = re.sub(r'\s*(Careers?|Jobs?|Hiring)\s*$', '', company, flags=re.IGNORECASE).strip()
+
+            jobs.append({
+                'title': title,
+                'company': company,
+                'location': location or 'Not specified',
+                'link': raw_url.split()[0],
+                'salary': None
+            })
+
+    return jobs
+
+
 def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
     """Main processing function."""
     # Load exclusion list
@@ -1210,8 +1284,15 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
         # Parse individual job listings from the email
         job_listings = parse_job_listings_from_body(body)
 
+        # Fall back to HTML parsing if text body yielded no results
+        if not job_listings:
+            html_body = extract_html_body(details)
+            if html_body:
+                job_listings = parse_job_listings_from_html(html_body)
+
         if not job_listings:
             print(f"  No job listings found in email")
+            processed_message_ids.append(message_id)
             continue
 
         print(f"  Found {len(job_listings)} job listings")
