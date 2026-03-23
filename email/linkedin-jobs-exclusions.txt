@@ -320,3 +320,4 @@ https://jobs.lever.co/anduril/senior-software-engineer-robotics-platform | Andur
 4353490588 | Snyk | Senior Director, Engineering
 https://jobs.ashbyhq.com/1password/eef5c8da-33b5-4120-943e-cbdf7f08fa42 | 1Password | Engineering Manager, API Platform
 4387630784 | Deloitte | Engineering Manager - PxE Platforms
+4369877586 | Roblox | Director of Engineering - AI for Roblox Studio

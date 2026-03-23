@@ -12,8 +12,6 @@ import json
 import re
 import sys
 import os
-import shutil
-import webbrowser
 from datetime import datetime
 from typing import List, Dict, Any
 
@@ -111,14 +109,8 @@ def fetch_summary_jobs() -> List[Dict[str, Any]]:
 
 
 def open_url(url: str):
-    """Open a URL in the browser, falling back to xdg-open or printing it."""
-    for cmd in ('xdg-open', 'sensible-browser', 'x-www-browser'):
-        if shutil.which(cmd):
-            subprocess.Popen([cmd, url], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            return
-    if webbrowser.open(url):
-        return
-    print(f"  Could not open browser. URL: {url}")
+    """Print a URL for the user to Cmd+click."""
+    print(f"  {url}")
 
 
 def extract_job_id(url: str) -> str:
@@ -189,8 +181,6 @@ def main():
         return
 
     print(f"\n{len(jobs)} positions to review.\n")
-    print("Commands: Enter=open & exclude, s=skip (exclude without opening), o=open only, q=quit\n")
-
     current_tier = ''
     excluded_count = 0
     opened_count = 0
@@ -206,39 +196,19 @@ def main():
         job_id = extract_job_id(job['link'])
         print(f"\n[{i + 1}/{len(jobs)}] {job['company']} - {job['title']}")
         print(f"  Pay: {job['compensation']}  |  Location: {job['location']}")
+        open_url(job['link'])
+        opened_count += 1
 
         try:
-            action = input("  > ").strip().lower()
+            applied = input("  Did you apply? (y/n) ").strip().lower()
         except (EOFError, KeyboardInterrupt):
             print("\nQuitting.")
             break
 
-        if action == 'q':
-            print("Quitting.")
-            break
-        elif action == 's':
-            # Skip - exclude without opening
-            if job_id:
+        if applied == 'y' and job_id:
                 exclude_job(job_id, job['company'], job['title'])
                 excluded_count += 1
                 print(f"  Excluded.")
-            else:
-                print(f"  Warning: could not extract job ID, not excluded.")
-        elif action == 'o':
-            # Open only, don't exclude
-            open_url(job['link'])
-            opened_count += 1
-            print(f"  Opened in browser.")
-        else:
-            # Default (Enter): open in browser and exclude
-            open_url(job['link'])
-            opened_count += 1
-            if job_id:
-                exclude_job(job_id, job['company'], job['title'])
-                excluded_count += 1
-                print(f"  Opened & excluded.")
-            else:
-                print(f"  Opened. Warning: could not extract job ID, not excluded.")
 
     print(f"\nDone. Opened: {opened_count}, Excluded: {excluded_count}")
 
