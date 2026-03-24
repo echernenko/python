@@ -47,6 +47,12 @@
     "salary": null,
     "title": "Software Development Manager, Aurora PostgreSQL"
   },
+  "4310153867": {
+    "company": "Rippling",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "title": "Director of Engineering - Platform"
+  },
   "4311813721": {
     "company": "Affirm",
     "location": "Portland, OR",
@@ -131,6 +137,12 @@
     "salary": null,
     "title": "Engineering Manager, API Platform"
   },
+  "4340500929": {
+    "company": "Woven by Toyota",
+    "location": "Palo Alto",
+    "salary": "$140K-$230K",
+    "title": "Software Engineering Manager, Infrastructure Engineering"
+  },
   "4341159842": {
     "company": "Databricks",
     "location": "Bellevue",
@@ -185,6 +197,12 @@
     "salary": "$122K-$291K",
     "title": "Software Development Director"
   },
+  "4353450753": {
+    "company": "Databricks",
+    "location": "Mountain View",
+    "salary": null,
+    "title": "Sr. Manager, Observability Platform Engineering"
+  },
   "4353490588": {
     "company": "Snyk",
     "location": "Boston, MA",
@@ -196,6 +214,12 @@
     "location": "United States",
     "salary": "$436K-$710K",
     "title": "Engineering Manager - Launch Readiness"
+  },
+  "4355900830": {
+    "company": "TENEX.AI",
+    "location": "San Jose, CA",
+    "salary": null,
+    "title": "Head of Platform Engineering"
   },
   "4356475374": {
     "company": "Netflix",
@@ -304,6 +328,12 @@
     "location": "United States",
     "salary": null,
     "title": "Software Engineering Manager, Mobile"
+  },
+  "4361492777": {
+    "company": "Headspace",
+    "location": "United States",
+    "salary": null,
+    "title": "VP of Engineering, B2B Platforms"
   },
   "4362571056": {
     "company": "ClickUp",
@@ -634,6 +664,12 @@
     "location": "Kirkland",
     "salary": "$197K-$291K",
     "title": "Software Engineering Manager II, Infrastructure, Google Cloud"
+  },
+  "4376227213": {
+    "company": "AMD",
+    "location": "78735",
+    "salary": "$183K-$275K",
+    "title": "Sr. Manager Software Development"
   },
   "4376411620": {
     "company": "NerdWallet",
@@ -1121,6 +1157,12 @@
     "salary": null,
     "title": "Engineering Manager, Workflow Orchestration - Data Infrastructure"
   },
+  "4384792294": {
+    "company": "Upstart",
+    "location": "United States",
+    "salary": "$195K-$270K",
+    "title": "Senior Engineering Manager, Offer Delivery"
+  },
   "4384831016": {
     "company": "Amazon Web Services (AWS)",
     "location": "Seattle",
@@ -1361,6 +1403,12 @@
     "salary": "$168K-$269K",
     "title": "Manager II, Software Engineering"
   },
+  "4387101317": {
+    "company": "ByteDance",
+    "location": "Seattle",
+    "salary": "$198K-$416K",
+    "title": "Tech Lead Manager, Global Traffic Infrastructure"
+  },
   "4387176661": {
     "company": "The Home Depot",
     "location": "Atlanta",
@@ -1552,5 +1600,17 @@
     "location": "United States",
     "salary": null,
     "title": "Director of Engineering"
+  },
+  "4389027748": {
+    "company": "NVIDIA",
+    "location": "California",
+    "salary": "$224K-$356K",
+    "title": "Manager, Compiler Engineering"
+  },
+  "4389031548": {
+    "company": "NVIDIA",
+    "location": "Santa Clara, CA",
+    "salary": "$320K-$488K",
+    "title": "Director of Software Engineering, Networking"
   }
 }

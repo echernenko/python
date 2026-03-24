@@ -321,3 +321,6 @@ https://jobs.lever.co/anduril/senior-software-engineer-robotics-platform | Andur
 https://jobs.ashbyhq.com/1password/eef5c8da-33b5-4120-943e-cbdf7f08fa42 | 1Password | Engineering Manager, API Platform
 4387630784 | Deloitte | Engineering Manager - PxE Platforms
 4369877586 | Roblox | Director of Engineering - AI for Roblox Studio
+4353450753 | Databricks | Sr. Manager, Observability Platform Engineering
+4389031548 | NVIDIA | Director of Software Engineering, Networking
+4376227213 | AMD | Sr. Manager Software Development
