@@ -781,12 +781,22 @@ def parse_previous_summary_emails() -> List[Dict[str, Any]]:
                 # Clean up company name - strip "Careers at" / "Jobs at" prefixes
                 company = re.sub(r'^(Careers?|Jobs?|Hiring)\s+(at|@)\s+', '', company, flags=re.IGNORECASE)
                 company = re.sub(r'\s*(Careers?|Jobs?|Hiring)\s*$', '', company, flags=re.IGNORECASE).strip()
+                title = title_match.group(1).strip() if title_match else 'Unknown Title'
+                # Skip entries where LinkedIn navigation text leaked into parsed title
+                bad_titles = {'linkedin login, sign in', 'sign in', 'login', 'view on linkedin'}
+                if title.lower() in bad_titles or 'linkedin login' in title.lower():
+                    continue
+                location = location_match.group(1).strip() if location_match else 'Not specified'
+                # Skip entries where CSS leaked into location
+                garbled_keywords = ['width', 'margin', 'padding', 'font-', 'color:']
+                if any(kw in location.lower() for kw in garbled_keywords):
+                    continue
                 jobs.append({
                     'company': company,
-                    'title': title_match.group(1).strip() if title_match else 'Unknown Title',
+                    'title': title,
                     'link': link_match.group(1).strip(),
                     'compensation': pay_match.group(1).strip() if pay_match else 'Not specified',
-                    'location': location_match.group(1).strip() if location_match else 'Not specified'
+                    'location': location
                 })
 
     print(f"Extracted {len(jobs)} jobs from previous summary emails.")
@@ -1197,8 +1207,17 @@ def parse_job_listings_from_html(html: str) -> List[Dict[str, str]]:
 
         # Extract text nodes from the card
         text = re.sub(r'<style[^>]*>.*?</style>', '', card_html, flags=re.DOTALL)
+        # Also strip inline style attributes to prevent CSS leaking into text
+        text = re.sub(r'\s+style="[^"]*"', '', text)
         text = re.sub(r'<[^>]+>', '|', text)
         text_parts = [p.strip() for p in text.split('|') if p.strip() and len(p.strip()) > 1]
+
+        # Known LinkedIn UI/navigation text to skip
+        linkedin_ui_skip = {
+            'linkedin', 'linkedin login, sign in', 'sign in', 'login',
+            'view on linkedin', 'unsubscribe', 'manage preferences',
+            'view in browser', 'skip to main content', 'accessibility',
+        }
 
         # Look for title and company·location pattern
         title = None
@@ -1207,6 +1226,9 @@ def parse_job_listings_from_html(html: str) -> List[Dict[str, str]]:
         for i, part in enumerate(text_parts):
             # Skip the data-test-id attribute text
             if 'data-test-id' in part:
+                continue
+            # Skip known LinkedIn UI/navigation text
+            if part.lower() in linkedin_ui_skip:
                 continue
             # First meaningful text is the title
             if title is None:
@@ -1218,9 +1240,17 @@ def parse_job_listings_from_html(html: str) -> List[Dict[str, str]]:
                 parts_split = part.split(sep, 1)
                 company = parts_split[0].strip()
                 location = parts_split[1].strip() if len(parts_split) > 1 else 'Not specified'
+                # Validate location doesn't contain garbled HTML/CSS content
+                garbled_keywords = ['width', 'margin', 'padding', 'font-', 'color:', 'regenerate', 'email']
+                if any(kw in location.lower() for kw in garbled_keywords):
+                    location = 'Not specified'
                 break
 
         if title and company:
+            # Skip if title looks like LinkedIn UI text (not a real job title)
+            if title.lower() in linkedin_ui_skip or 'login' in title.lower() or 'sign in' in title.lower():
+                continue
+
             # Clean up company name
             company = re.sub(r'^(Careers?|Jobs?|Hiring)\s+(at|@)\s+', '', company, flags=re.IGNORECASE)
             company = re.sub(r'\s*(Careers?|Jobs?|Hiring)\s*$', '', company, flags=re.IGNORECASE).strip()

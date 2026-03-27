@@ -334,3 +334,11 @@ https://jobs.ashbyhq.com/1password/eef5c8da-33b5-4120-943e-cbdf7f08fa42 | 1Passw
 4377768260 | Visa | Director Software Engineering
 4388888226 | Netflix | Engineering Manager, Cloud Network Engineering
 4389984917 | NVIDIA | Senior Software Manager, AI Networking
+4389285960 | Amazon Web Services (AWS) | Software Engineering Manager, AWS CloudFormation
+4389027748 | NVIDIA | Manager, Compiler Engineering
+4389921483 | Airbnb | Engineering Manager, Investigations and Incident Response
+4387534642 | Airbnb | Engineering Manager, User Foundation (Users, Identity & Community)
+4389407140 | Salesforce | Senior Manager of Engineering - GovCloud
+4387512638 | Blue Origin | Sr. Manager - Software Engineering
+4390618635 | GitLab | Senior Engineering Manager, Design
+4389271513 | Roku | Director, Productivity Engineering
