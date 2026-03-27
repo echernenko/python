@@ -365,6 +365,12 @@
     "salary": null,
     "title": "Engineering Manager, Search Quality"
   },
+  "4365218846": {
+    "company": "Alma",
+    "location": "United States",
+    "salary": "$260K-$290K",
+    "title": "Senior Director, Engineering Operations & Platform"
+  },
   "4365577380": {
     "company": "Google",
     "location": "Kirkland",
@@ -1937,6 +1943,18 @@
     "salary": "$272K-$431K",
     "title": "Senior Software Manager, AI Networking"
   },
+  "4390035775": {
+    "company": "Ladders",
+    "location": "United States",
+    "salary": "$150K-$200K",
+    "title": "Sr Director, Developer Experience and Platform Engineering"
+  },
+  "4390038657": {
+    "company": "Ladders",
+    "location": "United States",
+    "salary": "$150K-$200K",
+    "title": "Senior Director of Engineering"
+  },
   "4390153302": {
     "company": "Space Executive",
     "location": "United States",
@@ -1949,16 +1967,58 @@
     "salary": null,
     "title": "Principal Engineering Manager, Data Architecture"
   },
+  "4390492646": {
+    "company": "Cognizant",
+    "location": "Seattle",
+    "salary": "$139K-$254K",
+    "title": "AI Customer Engineering Lead"
+  },
   "4390618635": {
     "company": "GitLab",
     "location": "United States",
     "salary": null,
     "title": "Senior Engineering Manager, Design"
   },
+  "4390636577": {
+    "company": "Ziff Davis Shopping",
+    "location": "United States",
+    "salary": null,
+    "title": "Director of Engineering"
+  },
+  "4390684451": {
+    "company": "CoderPad",
+    "location": "United States",
+    "salary": "$250K-$275K",
+    "title": "Director of Engineering"
+  },
+  "4390852349": {
+    "company": "Dynatrace",
+    "location": "Boston, MA",
+    "salary": null,
+    "title": "Sr Director, Software Engineering"
+  },
+  "4390886075": {
+    "company": "Bain & Company",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Expert Senior Manager, AI-ML Engineering"
+  },
   "4391145490": {
     "company": "Petco",
     "location": "San Diego, CA",
     "salary": null,
     "title": "Sr. Manager, Frontend Engineering"
+  },
+  "4391190684": {
+    "company": "1Password",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Authentication Experience"
+  },
+  "4391936261": {
+    "company": "Airbnb",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Identity & Privacy Experience (Users, Identity & Community)"
   }
 }
