@@ -327,3 +327,6 @@ https://jobs.ashbyhq.com/1password/eef5c8da-33b5-4120-943e-cbdf7f08fa42 | 1Passw
 4387101317 | ByteDance | Tech Lead Manager, Global Traffic Infrastructure
 4340500929 | Woven by Toyota | Software Engineering Manager, Infrastructure Engineering
 4384458688 | Walmart | Senior Director, Software Engineering
+4389944134 | Snowflake | Senior Director of Engineering, Traffic and Networking
+4389939275 | Snowflake | Senior Director of Engineering, Traffic and Networking
+4377768260 | Visa | Director Software Engineering

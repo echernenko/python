@@ -221,6 +221,12 @@
     "salary": null,
     "title": "Engineering Manager, Track Anything"
   },
+  "4354058211": {
+    "company": "Databricks",
+    "location": "Bellevue",
+    "salary": null,
+    "title": "Senior Engineering Manager - Trust and Safety"
+  },
   "4355780308": {
     "company": "Netflix",
     "location": "United States",
@@ -538,6 +544,12 @@
     "location": "Cupertino",
     "salary": "$198K-$342K",
     "title": "Manager, Central Quality Accessibility Engineering - Apple Services Engineering"
+  },
+  "4371650923": {
+    "company": "Nordstrom",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Senior Engineering Manager, Cloud Engineering - Hybrid - Seattle"
   },
   "4372039259": {
     "company": "Apple",
