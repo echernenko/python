@@ -324,3 +324,6 @@ https://jobs.ashbyhq.com/1password/eef5c8da-33b5-4120-943e-cbdf7f08fa42 | 1Passw
 4353450753 | Databricks | Sr. Manager, Observability Platform Engineering
 4389031548 | NVIDIA | Director of Software Engineering, Networking
 4376227213 | AMD | Sr. Manager Software Development
+4387101317 | ByteDance | Tech Lead Manager, Global Traffic Infrastructure
+4340500929 | Woven by Toyota | Software Engineering Manager, Infrastructure Engineering
+4384458688 | Walmart | Senior Director, Software Engineering

@@ -149,6 +149,12 @@
     "salary": null,
     "title": "Engineering Manager - Identity and Access Management (IAM)"
   },
+  "4343559650": {
+    "company": "Adobe",
+    "location": "95110",
+    "salary": "$242K-$351K",
+    "title": "Sr Engineering Manager, AI Platform"
+  },
   "4343659841": {
     "company": "ClickUp",
     "location": "United States",
@@ -208,6 +214,12 @@
     "location": "Boston, MA",
     "salary": null,
     "title": "Senior Director, Engineering"
+  },
+  "4353950003": {
+    "company": "Asana",
+    "location": "New York, NY",
+    "salary": null,
+    "title": "Engineering Manager, Track Anything"
   },
   "4355780308": {
     "company": "Netflix",
@@ -353,6 +365,12 @@
     "salary": null,
     "title": "Software Engineering Manager, Workforce Identity"
   },
+  "4365577444": {
+    "company": "Google",
+    "location": "Sunnyvale",
+    "salary": null,
+    "title": "Senior Software Engineering Manager, Infrastructure, Google Cloud Security and Privacy"
+  },
   "4365641608": {
     "company": "Snowflake",
     "location": "Bellevue",
@@ -370,6 +388,12 @@
     "location": "Mountain View, CA",
     "salary": "$226K-$369K",
     "title": "Director, Software Engineering, Systems Infrastructure"
+  },
+  "4366337900": {
+    "company": "Modular",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Director, GenAI Enterprise"
   },
   "4366881182": {
     "company": "Starbucks",
@@ -503,6 +527,12 @@
     "salary": null,
     "title": "Senior Engineering Manager - Search Scaling - Elasticsearch"
   },
+  "4369952153": {
+    "company": "Pinterest",
+    "location": "United States",
+    "salary": null,
+    "title": "Sr. Engineering Manager, AI/ML Serving Platform"
+  },
   "4371571533": {
     "company": "Apple",
     "location": "Cupertino",
@@ -586,6 +616,12 @@
     "location": "United States",
     "salary": "$118K-$251K",
     "title": "Senior Manager, Software Development"
+  },
+  "4374553717": {
+    "company": "eBay",
+    "location": "San Jose, CA",
+    "salary": "$274K-$366K",
+    "title": "Senior Director Eng, Seller Exp Platform"
   },
   "4374620119": {
     "company": "Visa",
@@ -706,6 +742,12 @@
     "location": "Kirkland",
     "salary": null,
     "title": "Senior Software Engineering Manager, Emerging On-prem AI Infrastructure"
+  },
+  "4376781638": {
+    "company": "Galvanick",
+    "location": "Greater Seattle Area",
+    "salary": null,
+    "title": "Head of Engineering"
   },
   "4376827151": {
     "company": "Spotify",
@@ -833,6 +875,12 @@
     "salary": null,
     "title": "Director, Private Cloud Platform Engineering"
   },
+  "4377768260": {
+    "company": "Visa",
+    "location": "Austin, TX",
+    "salary": null,
+    "title": "Director Software Engineering"
+  },
   "4377830873": {
     "company": "Microsoft",
     "location": "United States",
@@ -868,6 +916,12 @@
     "location": "Cupertino",
     "salary": "$198K-$342K",
     "title": "Software Engineering Manager, HomeKit"
+  },
+  "4378325779": {
+    "company": "Deloitte",
+    "location": "Bellevue",
+    "salary": null,
+    "title": "Engineering Manager - Product Engineering A&A"
   },
   "4378662077": {
     "company": "Salesforce",
@@ -905,11 +959,29 @@
     "salary": "$139K-$274K",
     "title": "Principal Software Engineering Manager"
   },
+  "4378883338": {
+    "company": "Horizon3.ai",
+    "location": "United States",
+    "salary": "$210K-$260K",
+    "title": "Senior Engineering Manager, RVBM"
+  },
   "4379027824": {
     "company": "Capital One",
     "location": "McLean, VA",
     "salary": "$244K-$279K",
     "title": "Director, Software Engineering - Shopping (Remote-Eligible)"
+  },
+  "4379149165": {
+    "company": "Yahoo",
+    "location": "United States",
+    "salary": null,
+    "title": "Sr. Engineering Manager"
+  },
+  "4379183556": {
+    "company": "Kaseya",
+    "location": "United States",
+    "salary": null,
+    "title": "Director, Engineering"
   },
   "4379292084": {
     "company": "Microsoft",
@@ -940,6 +1012,12 @@
     "location": "United States",
     "salary": "$141K-$338K",
     "title": "Senior Director, Software Development"
+  },
+  "4380527735": {
+    "company": "Atlassian",
+    "location": "Salt Lake City, UT",
+    "salary": "$239K-$312K",
+    "title": "Head of Engineering, DX"
   },
   "4380601894": {
     "company": "Apple",
@@ -1415,6 +1493,12 @@
     "salary": "$140K-$240K",
     "title": "Manager, AI Platform Engineering (Remote)"
   },
+  "4387179354": {
+    "company": "The Walt Disney Company",
+    "location": "Orlando",
+    "salary": null,
+    "title": "Senior Manager, Software Engineering"
+  },
   "4387448843": {
     "company": "LinkedIn",
     "location": "Mountain View, CA",
@@ -1432,6 +1516,48 @@
     "location": "Louisville, Kentucky, United States",
     "salary": null,
     "title": "Senior Director, Cloud Software Engineering"
+  },
+  "4387500946": {
+    "company": "Ladders",
+    "location": "United States",
+    "salary": "$282K-$352K",
+    "title": "Senior Director, Engineering"
+  },
+  "4387507349": {
+    "company": "Ladders",
+    "location": "United States",
+    "salary": "$196K-$240K",
+    "title": "Engineering Manager, Trusted Products"
+  },
+  "4387511575": {
+    "company": "Splitero",
+    "location": "United States",
+    "salary": "$200K-$250K",
+    "title": "Director of Engineering"
+  },
+  "4387512638": {
+    "company": "Blue Origin",
+    "location": "Greater Seattle Area",
+    "salary": null,
+    "title": "Senior Manager, Software Engineering"
+  },
+  "4387530888": {
+    "company": "Mechanical Orchard",
+    "location": "United States",
+    "salary": null,
+    "title": "Director of Engineering, Product Infrastructure and Release Engineering"
+  },
+  "4387534642": {
+    "company": "Airbnb",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, User Foundation (Users, Identity & Community)"
+  },
+  "4387542542": {
+    "company": "Upstart",
+    "location": "United States",
+    "salary": "$195K-$270K",
+    "title": "Senior Engineering Manager, Distribution Platform"
   },
   "4387604821": {
     "company": "Sully.ai",
@@ -1559,6 +1685,12 @@
     "salary": null,
     "title": "Engineering Manager, Data Movement & Transformation"
   },
+  "4388461587": {
+    "company": "Talkiatry",
+    "location": "United States",
+    "salary": "$190K-$240K",
+    "title": "Senior Manager of AI Engineering"
+  },
   "4388518253": {
     "company": "HubSpot",
     "location": "United States",
@@ -1601,6 +1733,12 @@
     "salary": null,
     "title": "Director of Engineering"
   },
+  "4388888226": {
+    "company": "Netflix",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Cloud Network Engineering"
+  },
   "4389027748": {
     "company": "NVIDIA",
     "location": "California",
@@ -1612,5 +1750,197 @@
     "location": "Santa Clara, CA",
     "salary": "$320K-$488K",
     "title": "Director of Software Engineering, Networking"
+  },
+  "4389171402": {
+    "company": "EY",
+    "location": "98104",
+    "salary": null,
+    "title": "AI and Distributed Systems Backend Engineer - Manager - Consulting - Location OPEN"
+  },
+  "4389215368": {
+    "company": "dynamism",
+    "location": "United States",
+    "salary": null,
+    "title": "Head of Engineering"
+  },
+  "4389264162": {
+    "company": "LinkedIn",
+    "location": "Mountain View, CA",
+    "salary": null,
+    "title": "Director, Software Engineering- Ads AI"
+  },
+  "4389267627": {
+    "company": "Curinos",
+    "location": "United States",
+    "salary": "$160K-$220K",
+    "title": "Head, AI Platform Engineering"
+  },
+  "4389271513": {
+    "company": "Roku",
+    "location": "San Jose",
+    "salary": "$350K-$474K",
+    "title": "Director, Productivity Engineering"
+  },
+  "4389285960": {
+    "company": "Amazon Web Services (AWS)",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Software Engineering Manager, AWS CloudFormation"
+  },
+  "4389292616": {
+    "company": "Amazon Web Services (AWS)",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Software Development Manager, Amazon Connect"
+  },
+  "4389318851": {
+    "company": "Blue River Technology",
+    "location": "United States",
+    "salary": "$200K-$352K",
+    "title": "Director, Software Engineering"
+  },
+  "4389407140": {
+    "company": "Salesforce",
+    "location": "Bellevue",
+    "salary": "$172K-$313K",
+    "title": "Senior Manager of Engineering - GovCloud"
+  },
+  "4389443040": {
+    "company": "Nordstrom",
+    "location": "Seattle, WA",
+    "salary": null,
+    "title": "Director of Engineering AI/ML"
+  },
+  "4389443569": {
+    "company": "LinkedIn",
+    "location": "Mountain View",
+    "salary": "$200K-$268K",
+    "title": "Software Engineering Manager, Systems and Infrastructure - Data Catalog"
+  },
+  "4389520974": {
+    "company": "Expedia Group",
+    "location": "Seattle",
+    "salary": "$296K-$414K",
+    "title": "Senior Director, Software Development Engineering"
+  },
+  "4389776811": {
+    "company": "LinkedIn",
+    "location": "Mountain View",
+    "salary": "$152K-$248K",
+    "title": "Manager, Software Engineering - Premium"
+  },
+  "4389781410": {
+    "company": "Rippling",
+    "location": "94104",
+    "salary": null,
+    "title": "Senior Engineering Manager, Infrastructure"
+  },
+  "4389782347": {
+    "company": "LinkedIn",
+    "location": "Mountain View, CA",
+    "salary": null,
+    "title": "Director, Software Engineering, Systems Infrastructure"
+  },
+  "4389790116": {
+    "company": "Rippling",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "title": "Senior Engineering Manager, AI Developer Experience"
+  },
+  "4389822304": {
+    "company": "Accenture",
+    "location": "Redmond",
+    "salary": null,
+    "title": "AI Native Software Engineering Senior Manager - Assoc Director"
+  },
+  "4389843043": {
+    "company": "Affirm",
+    "location": "Seattle",
+    "salary": "$225K-$275K",
+    "title": "Manager, Software Engineering (Card Experiences)"
+  },
+  "4389884800": {
+    "company": "Jobgether",
+    "location": "United States",
+    "salary": null,
+    "title": "Director of Software Engineering, Order Experience"
+  },
+  "4389893875": {
+    "company": "RemoteHunter",
+    "location": "United States",
+    "salary": null,
+    "title": "Sr. Director Engineering, Head of Internal Technology"
+  },
+  "4389917018": {
+    "company": "Maximus",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Director \u2013 Software Engineering"
+  },
+  "4389921483": {
+    "company": "Airbnb",
+    "location": "United States",
+    "salary": null,
+    "title": "Engineering Manager, Investigations and Incident Response"
+  },
+  "4389936630": {
+    "company": "Marqeta",
+    "location": "United States",
+    "salary": "$174K-$218K",
+    "title": "Manager, Software Engineering - Data Infrastructure"
+  },
+  "4389939275": {
+    "company": "Snowflake",
+    "location": "Menlo Park, CA",
+    "salary": "$340K-$488K",
+    "title": "Senior Director of Engineering, Traffic and Networking"
+  },
+  "4389944134": {
+    "company": "Snowflake",
+    "location": "Bellevue, WA",
+    "salary": "$340K-$488K",
+    "title": "Senior Director of Engineering, Traffic and Networking"
+  },
+  "4389950971": {
+    "company": "Marriott International",
+    "location": "Bethesda, MD",
+    "salary": null,
+    "title": "Director, AI Engineering (Tip.AI)"
+  },
+  "4389968893": {
+    "company": "Uber",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Engineering Manager II, Eater Messaging, Core Consumer"
+  },
+  "4389983662": {
+    "company": "Zillow",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Manager, Site Reliability Engineering, Follow Up Boss"
+  },
+  "4389984917": {
+    "company": "NVIDIA",
+    "location": "California, United States",
+    "salary": "$272K-$431K",
+    "title": "Senior Software Manager, AI Networking"
+  },
+  "4390153302": {
+    "company": "Space Executive",
+    "location": "United States",
+    "salary": "$180K-$250K",
+    "title": "Engineering Manager \u2013 AI Platform - Observability - Remote (US) | Up to $250k base + equity"
+  },
+  "4390274824": {
+    "company": "GitHub",
+    "location": "United States",
+    "salary": null,
+    "title": "Principal Engineering Manager, Data Architecture"
+  },
+  "4390618635": {
+    "company": "GitLab",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Engineering Manager, Design"
   }
 }
