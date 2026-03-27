@@ -221,6 +221,12 @@
     "salary": null,
     "title": "Engineering Manager, Track Anything"
   },
+  "4353990000": {
+    "company": "Asana",
+    "location": "New York, NY",
+    "salary": "$264K-$336K",
+    "title": "Engineering Manager, Reference Anything"
+  },
   "4354058211": {
     "company": "Databricks",
     "location": "Bellevue",
@@ -1889,6 +1895,12 @@
     "salary": null,
     "title": "Sr. Director Engineering, Head of Internal Technology"
   },
+  "4389900571": {
+    "company": "ServiceNow",
+    "location": "Mountain View, CA",
+    "salary": null,
+    "title": "Engineering Manager, Agentic Systems"
+  },
   "4389917018": {
     "company": "Maximus",
     "location": "United States",
@@ -1991,6 +2003,12 @@
     "salary": "$250K-$275K",
     "title": "Director of Engineering"
   },
+  "4390812294": {
+    "company": "LinkedIn",
+    "location": "Mountain View, CA",
+    "salary": null,
+    "title": "Senior Software Engineering Manager - Systems and Infrastructure"
+  },
   "4390852349": {
     "company": "Dynatrace",
     "location": "Boston, MA",
@@ -2002,6 +2020,12 @@
     "location": "Seattle",
     "salary": null,
     "title": "Expert Senior Manager, AI-ML Engineering"
+  },
+  "4390898311": {
+    "company": "Microsoft",
+    "location": "Redmond, WA",
+    "salary": "$139K-$274K",
+    "title": "Principal Engineering Manager"
   },
   "4391145490": {
     "company": "Petco",

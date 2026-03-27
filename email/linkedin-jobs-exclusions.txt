@@ -8,6 +8,9 @@
 4175510123 | Netflix | Director, Growth Data Engineering
 4192327226 | Oracle | Software Development Senior Manager
 4254314769 | Meta | Systems Software Engineering Manager
+4390898311 | Microsoft | Principal Engineering Manager
+4391936261 | Airbnb | Engineering Manager, Identity & Privacy Experience
+4389900571 | ServiceNow | Engineering Manager, Agentic Systems
 4254318514 | Meta | Systems Software Engineering Manager
 4255811878 | Meta | Software Engineering Manager, Infrastructure
 4255818033 | Google | Software Engineering Manager II, Infrastructure, Google Cloud AI
@@ -313,6 +316,7 @@ engineering-manager-edge-platform | Fly.io | Engineering Manager, Edge Platform
 engineering-manager-platform-infrastructure | Samsara | Engineering Manager, Platform Infrastructure
 https://sourcegraph.com/careers/staff-software-engineer-ai-platform | Sourcegraph | Staff Software Engineer, AI Platform
 https://jobs.lever.co/anduril/senior-software-engineer-robotics-platform | Anduril | Senior Software Engineer, Robotics Platform
+https://jobs.ashbyhq.com/brinc/5f561411-9ee8-446f-8e1e-770cdd13db13 | BRINC | Director of Software Engineering, Web Platform
 4388125022 | Revenium | Head of Engineering
 4388151921 | Amazon Web Services (AWS) | Software Development Manager, AWS SageMaker Unified Studio
 4378698410 | Amazon | SDM GenAI Products, Amazon Manager eXperience Central Science & Engineering
