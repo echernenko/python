@@ -2,6 +2,7 @@
 # Format: job_id | company | position
 # Jobs listed here (by job ID) will not appear in future summaries
 # LinkedIn Jobs Exclusion List
+4389843043 | Affirm | Manager, Software Engineering (Card Experiences)
 4389292616 | Amazon Web Services (AWS) | Software Development Manager, Amazon Connect
 4380527735 | Atlassian | Head of Engineering, DX
 4175510123 | Netflix | Director, Growth Data Engineering
@@ -342,3 +343,4 @@ https://jobs.ashbyhq.com/1password/eef5c8da-33b5-4120-943e-cbdf7f08fa42 | 1Passw
 4387512638 | Blue Origin | Sr. Manager - Software Engineering
 4390618635 | GitLab | Senior Engineering Manager, Design
 4389271513 | Roku | Director, Productivity Engineering
+4389968893 | Uber | Engineering Manager II, Eater Messaging, Core Consumer
