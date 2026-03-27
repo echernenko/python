@@ -2,6 +2,8 @@
 # Format: job_id | company | position
 # Jobs listed here (by job ID) will not appear in future summaries
 # LinkedIn Jobs Exclusion List
+4389292616 | Amazon Web Services (AWS) | Software Development Manager, Amazon Connect
+4380527735 | Atlassian | Head of Engineering, DX
 4175510123 | Netflix | Director, Growth Data Engineering
 4192327226 | Oracle | Software Development Senior Manager
 4254314769 | Meta | Systems Software Engineering Manager
@@ -330,3 +332,5 @@ https://jobs.ashbyhq.com/1password/eef5c8da-33b5-4120-943e-cbdf7f08fa42 | 1Passw
 4389944134 | Snowflake | Senior Director of Engineering, Traffic and Networking
 4389939275 | Snowflake | Senior Director of Engineering, Traffic and Networking
 4377768260 | Visa | Director Software Engineering
+4388888226 | Netflix | Engineering Manager, Cloud Network Engineering
+4389984917 | NVIDIA | Senior Software Manager, AI Networking
