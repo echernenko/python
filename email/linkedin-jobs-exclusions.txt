@@ -349,3 +349,7 @@ https://jobs.ashbyhq.com/1password/eef5c8da-33b5-4120-943e-cbdf7f08fa42 | 1Passw
 4389271513 | Roku | Director, Productivity Engineering
 4389968893 | Uber | Engineering Manager II, Eater Messaging, Core Consumer
 4343559650 | Adobe | Sr Engineering Manager, AI Platform
+7736943 | Stripe | Engineering Manager, Developer Productivity AI
+7286376 | Stripe | AI/ML Engineering Manager, Payment Intelligence
+Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Store
+4369952153 | Pinterest | Sr. Engineering Manager, AI/ML Serving Platform
