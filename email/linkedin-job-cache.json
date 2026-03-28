@@ -365,6 +365,18 @@
     "salary": "$280K-$320K",
     "title": "Manager, Software Engineering"
   },
+  "4363118731": {
+    "company": "Blue Origin",
+    "location": "Greater Seattle Area",
+    "salary": null,
+    "title": "Senior Manager - Software Engineering - TeraWave"
+  },
+  "4363150925": {
+    "company": "Robinhood",
+    "location": "Bellevue",
+    "salary": null,
+    "title": "Engineering Manager, Capacity and Efficiency"
+  },
   "4363239200": {
     "company": "DoorDash",
     "location": "Seattle",
@@ -550,6 +562,12 @@
     "location": "United States",
     "salary": null,
     "title": "Sr. Engineering Manager, AI/ML Serving Platform"
+  },
+  "4371308885": {
+    "company": "Docusign",
+    "location": "94105",
+    "salary": null,
+    "title": "Sr. Director, SRE Platform Engineering"
   },
   "4371571533": {
     "company": "Apple",
@@ -821,6 +839,12 @@
     "salary": "$272K-$431K",
     "title": "Senior Manager, Software Security Architecture"
   },
+  "4377423475": {
+    "company": "NVIDIA",
+    "location": "Santa Clara",
+    "salary": "$272K-$431K",
+    "title": "Senior Manager, Software Security Architecture"
+  },
   "4377426395": {
     "company": "NVIDIA",
     "location": "California",
@@ -989,6 +1013,12 @@
     "salary": "$210K-$260K",
     "title": "Senior Engineering Manager, RVBM"
   },
+  "4378991010": {
+    "company": "PayPal",
+    "location": "New York",
+    "salary": null,
+    "title": "Sr. Director, Developer Platforms"
+  },
   "4379027824": {
     "company": "Capital One",
     "location": "McLean, VA",
@@ -1012,6 +1042,12 @@
     "location": "United States",
     "salary": "$139K-$304K",
     "title": "Principal Supercomputing Operations Engineering Manager"
+  },
+  "4379609522": {
+    "company": "Roblox",
+    "location": "San Mateo",
+    "salary": null,
+    "title": "Senior Engineering Manager, AI Platform"
   },
   "4379713146": {
     "company": "GitLab",
@@ -1072,6 +1108,30 @@
     "location": "Seattle",
     "salary": null,
     "title": "Senior Software Development Manager, Engage"
+  },
+  "4381114694": {
+    "company": "F5",
+    "location": "Greater Seattle Area",
+    "salary": null,
+    "title": "Sr DevOps Manager"
+  },
+  "4381123213": {
+    "company": "Mastercard",
+    "location": "10016",
+    "salary": "$182K-$310K",
+    "title": "Director, Platform Engineering"
+  },
+  "4381171189": {
+    "company": "Aledade, Inc.",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Engineering Manager- AI Data Platform"
+  },
+  "4381184162": {
+    "company": "ServiceTitan",
+    "location": "United States",
+    "salary": null,
+    "title": "Senior Manager, Software Engineering"
   },
   "4381338011": {
     "company": "Docusign",
@@ -1979,6 +2039,12 @@
     "salary": null,
     "title": "Principal Engineering Manager, Data Architecture"
   },
+  "4390470750": {
+    "company": "The Walt Disney Company",
+    "location": "Emeryville",
+    "salary": null,
+    "title": "Director, Core Engineering"
+  },
   "4390492646": {
     "company": "Cognizant",
     "location": "Seattle",
@@ -2002,6 +2068,12 @@
     "location": "United States",
     "salary": "$250K-$275K",
     "title": "Director of Engineering"
+  },
+  "4390743386": {
+    "company": "Red Oak Technologies",
+    "location": "United States",
+    "salary": "$0K-$0K",
+    "title": "Sr. Manager, Applied AI Engineering"
   },
   "4390812294": {
     "company": "LinkedIn",
@@ -2038,6 +2110,18 @@
     "location": "United States",
     "salary": null,
     "title": "Engineering Manager, Authentication Experience"
+  },
+  "4391918307": {
+    "company": "Abridge",
+    "location": "New York, NY",
+    "salary": "$250K-$280K",
+    "title": "Sr. Engineering Manager, SRE"
+  },
+  "4391920835": {
+    "company": "Horizon3.ai",
+    "location": "United States",
+    "salary": "$210K-$260K",
+    "title": "Senior Engineering Manager, User Platform & Enterprise"
   },
   "4391936261": {
     "company": "Airbnb",
