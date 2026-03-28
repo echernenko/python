@@ -1015,7 +1015,8 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
 </html>
 """
 
-    # Send email using gog with HTML body
+    # Send email using gog with HTML body (write to temp file to avoid ARG_MAX limits)
+    import tempfile
     try:
         passphrase_file = os.path.expanduser('~/.config/gogcli/keyring_passphrase')
         env = os.environ.copy()
@@ -1023,12 +1024,19 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
             with open(passphrase_file) as f:
                 env['GOG_KEYRING_PASSWORD'] = f.read().strip()
 
-        subprocess.run([
-            'gog', 'gmail', 'send',
-            '--to', recipient,
-            '--subject', f'LinkedIn Job Opportunities - {len(jobs)} Jobs',
-            '--body-html', email_body
-        ], check=True, env=env)
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False) as tmp:
+            tmp.write(email_body)
+            tmp_path = tmp.name
+
+        try:
+            subprocess.run([
+                'gog', 'gmail', 'send',
+                '--to', recipient,
+                '--subject', f'LinkedIn Job Opportunities - {len(jobs)} Jobs',
+                '--body-file', tmp_path
+            ], check=True, env=env)
+        finally:
+            os.unlink(tmp_path)
 
         print(f"Summary email sent to {recipient}")
     except subprocess.CalledProcessError as e:
