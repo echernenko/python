@@ -357,4 +357,5 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4369946368 | Elastic | Senior Engineering Manager - Search Scaling - Elasticsearch
 4391797913 | Stripe | Engineering Manager, Connect
 4387566011 | CrowdStrike | Manager, Engineering – macOS Sensor
+4389991558 | NVIDIA | Developer Relations Manager, Cloud Service Provider
 4369952153 | Pinterest | Sr. Engineering Manager, AI/ML Serving Platform
