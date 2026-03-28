@@ -1015,31 +1015,70 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
 </html>
 """
 
-    # Send email using gog with HTML body (write to temp file to avoid ARG_MAX limits)
+    # Send email via Gmail API directly (gog --body-html hits kernel's 128KB per-arg limit)
+    import json as _json
+    import urllib.request
+    import urllib.parse
     import tempfile
     try:
+        creds_file = os.path.expanduser('~/.config/gogcli/credentials.json')
         passphrase_file = os.path.expanduser('~/.config/gogcli/keyring_passphrase')
+        with open(creds_file) as f:
+            creds = _json.load(f)
+
+        # Export refresh token via gog
         env = os.environ.copy()
         if os.path.exists(passphrase_file):
             with open(passphrase_file) as f:
                 env['GOG_KEYRING_PASSWORD'] = f.read().strip()
 
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False) as tmp:
-            tmp.write(email_body)
-            tmp_path = tmp.name
-
+        with tempfile.NamedTemporaryFile(suffix='.json', delete=False) as tmp:
+            token_path = tmp.name
         try:
             subprocess.run([
-                'gog', 'gmail', 'send',
-                '--to', recipient,
-                '--subject', f'LinkedIn Job Opportunities - {len(jobs)} Jobs',
-                '--body-file', tmp_path
-            ], check=True, env=env)
+                'gog', 'auth', 'tokens', 'export', GOG_ACCOUNT,
+                '--out', token_path, '--overwrite'
+            ], check=True, env=env, capture_output=True)
+            with open(token_path) as f:
+                token_data = _json.load(f)
         finally:
-            os.unlink(tmp_path)
+            os.unlink(token_path)
 
+        # Exchange refresh token for access token
+        token_resp = urllib.request.urlopen(urllib.request.Request(
+            'https://oauth2.googleapis.com/token',
+            data=urllib.parse.urlencode({
+                'client_id': creds['client_id'],
+                'client_secret': creds['client_secret'],
+                'refresh_token': token_data['refresh_token'],
+                'grant_type': 'refresh_token',
+            }).encode(),
+            headers={'Content-Type': 'application/x-www-form-urlencoded'},
+        ))
+        access_token = _json.loads(token_resp.read())['access_token']
+
+        # Build RFC 2822 message with HTML body
+        import email.mime.text
+        import email.mime.multipart
+        msg = email.mime.multipart.MIMEMultipart('alternative')
+        msg['From'] = recipient
+        msg['To'] = recipient
+        msg['Subject'] = f'LinkedIn Job Opportunities - {len(jobs)} Jobs'
+        msg.attach(email.mime.text.MIMEText(email_body, 'html', 'utf-8'))
+        raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
+
+        # Send via Gmail API
+        send_resp = urllib.request.urlopen(urllib.request.Request(
+            'https://gmail.googleapis.com/gmail/v1/users/me/messages/send',
+            data=_json.dumps({'raw': raw}).encode(),
+            headers={
+                'Authorization': f'Bearer {access_token}',
+                'Content-Type': 'application/json',
+            },
+        ))
+        send_resp.read()
         print(f"Summary email sent to {recipient}")
-    except subprocess.CalledProcessError as e:
+    except Exception as e:
         print(f"Error sending email: {e}", file=sys.stderr)
 
 def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
