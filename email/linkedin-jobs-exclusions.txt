@@ -4,6 +4,7 @@
 # LinkedIn Jobs Exclusion List
 4389843043 | Affirm | Manager, Software Engineering (Card Experiences)
 4390470750 | The Walt Disney Company | Director, Core Engineering
+4381123213 | Mastercard | Director, Platform Engineering
 4389292616 | Amazon Web Services (AWS) | Software Development Manager, Amazon Connect
 4380527735 | Atlassian | Head of Engineering, DX
 4175510123 | Netflix | Director, Growth Data Engineering
