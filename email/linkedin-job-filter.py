@@ -612,6 +612,23 @@ def _is_garbage_title(title: str) -> bool:
 
 def fetch_job_from_career_page(url: str) -> Dict[str, str]:
     """Fetch job details from a career/jobs page URL."""
+    # For LinkedIn URLs, check job cache first (has correct company/title from email parsing)
+    if 'linkedin.com' in url:
+        job_id_match = re.search(r'/jobs?/(?:view/)?(\d+)', url)
+        if job_id_match:
+            job_id = job_id_match.group(1)
+            cache = _get_job_cache()
+            if job_id in cache:
+                cached = cache[job_id]
+                if cached.get('company') and cached.get('title'):
+                    return {
+                        'title': cached['title'],
+                        'company': cached['company'],
+                        'location': cached.get('location') or 'Not specified',
+                        'salary': cached.get('salary'),
+                        'link': url,
+                    }
+
     try:
         result = subprocess.run([
             'curl', '-s', '-L',
@@ -670,6 +687,17 @@ def fetch_job_from_career_page(url: str) -> Dict[str, str]:
         # Detect garbage titles and fall back to URL-based extraction
         if _is_garbage_title(job_title):
             job_title = _title_from_url_path(url)
+
+        # For LinkedIn URLs, og:site_name is "LinkedIn" but og:title has format
+        # "Company hiring Title in Location | LinkedIn" — extract the real company.
+        if 'linkedin.com' in url and site_name.lower() == 'linkedin' and ' hiring ' in job_title:
+            hiring_parts = job_title.split(' hiring ', 1)
+            site_name = hiring_parts[0].strip()
+            job_title = hiring_parts[1].strip()
+            # Strip trailing " in Location" from the title
+            in_loc = re.search(r' in [A-Z][a-zA-Z ,]+$', job_title)
+            if in_loc:
+                job_title = job_title[:in_loc.start()].strip()
 
         # Determine company name
         company = site_name or _extract_company_from_url(url)
@@ -782,6 +810,24 @@ def parse_previous_summary_emails() -> List[Dict[str, Any]]:
                 company = re.sub(r'^(Careers?|Jobs?|Hiring)\s+(at|@)\s+', '', company, flags=re.IGNORECASE)
                 company = re.sub(r'\s*(Careers?|Jobs?|Hiring)\s*$', '', company, flags=re.IGNORECASE).strip()
                 title = title_match.group(1).strip() if title_match else 'Unknown Title'
+                # If company is "LinkedIn", recover real company from the title
+                # (title was stored as "Company hiring Job Title in Location")
+                if company.lower() == 'linkedin' and ' hiring ' in title:
+                    hiring_parts = title.split(' hiring ', 1)
+                    company = hiring_parts[0].strip()
+                    title = hiring_parts[1].strip()
+                    in_loc = re.search(r' in [A-Z][a-zA-Z ,]+$', title)
+                    if in_loc:
+                        title = title[:in_loc.start()].strip()
+                # Also check job cache for correct company/title (LinkedIn URLs)
+                link = link_match.group(1).strip()
+                job_id_match = re.search(r'/jobs?/(?:view/)?(\d+)', link)
+                if job_id_match:
+                    cached = _get_job_cache().get(job_id_match.group(1), {})
+                    if cached.get('company'):
+                        company = cached['company']
+                    if cached.get('title'):
+                        title = cached['title']
                 # Skip entries where LinkedIn navigation text leaked into parsed title
                 bad_titles = {'linkedin login, sign in', 'sign in', 'login', 'view on linkedin'}
                 if title.lower() in bad_titles or 'linkedin login' in title.lower():
