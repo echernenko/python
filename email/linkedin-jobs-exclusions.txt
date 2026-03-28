@@ -361,4 +361,5 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4377429168 | NVIDIA | Manager, Compiler Engineering – Backend GPU
 4297737975 | Databricks | Engineering Manager - UI Platform
 4388593100 | Nutanix | Senior Director, Worldwide Systems Engineering - Global Accounts
+4387176661 | The Home Depot | Manager, AI Platform Engineering (Remote)
 4369952153 | Pinterest | Sr. Engineering Manager, AI/ML Serving Platform
