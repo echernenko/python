@@ -433,6 +433,16 @@
     "salary": null,
     "title": "VP of Engineering, B2B Platforms"
   },
+  "4362171369": {
+    "company": "Expedia Group",
+    "job_status": "open",
+    "location": "Seattle, WA",
+    "posted_hours": 22,
+    "posted_text": "22 hours ago",
+    "salary": "$296K-$414K",
+    "status_checked_at": "2026-03-29T07:34:31",
+    "title": "Distinguished Software Development Engineer"
+  },
   "4362571056": {
     "company": "ClickUp",
     "job_status": "open",
@@ -2760,5 +2770,15 @@
     "salary": null,
     "status_checked_at": "2026-03-29T05:36:43",
     "title": "Engineering Manager, Launch & Sandboxes- Weights & Biases"
+  },
+  "4392086418": {
+    "company": "Disney Experiences",
+    "job_status": "open",
+    "location": "Orlando, FL",
+    "posted_hours": 20,
+    "posted_text": "20 hours ago",
+    "salary": null,
+    "status_checked_at": "2026-03-29T07:34:29",
+    "title": "Manager - Software Engineering"
   }
 }
