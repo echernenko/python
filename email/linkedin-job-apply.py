@@ -73,7 +73,7 @@ def fetch_summary_jobs() -> List[Dict[str, Any]]:
     job_blocks = re.findall(r'<div class="job">(.*?)</div>\s*</div>', body_html, re.DOTALL)
 
     for block in job_blocks:
-        company_match = re.search(r'<div class="company">(?:\d+\.\s+)?([^<]+)</div>', block)
+        company_match = re.search(r'<div class="company">(?:\d+\.\s+)?([^<]+)', block)
         title_match = re.search(r'<div class="title">([^<]+)</div>', block)
         pay_match = re.search(r'💰 Pay Range:\s*([^<]+)</div>', block)
         location_match = re.search(r'📍 Location:\s*([^<]+)</div>', block)

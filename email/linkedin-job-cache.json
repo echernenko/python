@@ -1151,8 +1151,12 @@
   },
   "4379962446": {
     "company": "Armada",
+    "job_status": "open",
     "location": "Seattle",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$160K-$200K",
+    "status_checked_at": "2026-03-29T05:44:36",
     "title": "Head of Federal Engineering"
   },
   "4379982059": {
@@ -1897,8 +1901,12 @@
   },
   "4388461587": {
     "company": "Talkiatry",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$190K-$240K",
+    "status_checked_at": "2026-03-29T05:44:37",
     "title": "Senior Manager of AI Engineering"
   },
   "4388518253": {
@@ -2033,38 +2041,62 @@
   },
   "4389520974": {
     "company": "Expedia Group",
+    "job_status": "open",
     "location": "Seattle",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$296K-$414K",
+    "status_checked_at": "2026-03-29T05:44:39",
     "title": "Senior Director, Software Development Engineering"
   },
   "4389776811": {
     "company": "LinkedIn",
+    "job_status": "open",
     "location": "Mountain View",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$152K-$248K",
+    "status_checked_at": "2026-03-29T05:44:41",
     "title": "Manager, Software Engineering - Premium"
   },
   "4389781410": {
     "company": "Rippling",
+    "job_status": "open",
     "location": "94104",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:44:42",
     "title": "Senior Engineering Manager, Infrastructure"
   },
   "4389782347": {
     "company": "LinkedIn",
+    "job_status": "open",
     "location": "Mountain View, CA",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:44:44",
     "title": "Director, Software Engineering, Systems Infrastructure"
   },
   "4389790116": {
     "company": "Rippling",
+    "job_status": "open",
     "location": "San Francisco, CA",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:44:46",
     "title": "Senior Engineering Manager, AI Developer Experience"
   },
   "4389822304": {
     "company": "Accenture",
+    "job_status": "open",
     "location": "Redmond",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:44:48",
     "title": "AI Native Software Engineering Senior Manager - Assoc Director"
   },
   "4389843043": {
@@ -2113,8 +2145,12 @@
   },
   "4389936630": {
     "company": "Marqeta",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$174K-$218K",
+    "status_checked_at": "2026-03-29T05:44:49",
     "title": "Manager, Software Engineering - Data Infrastructure"
   },
   "4389939275": {
@@ -2131,8 +2167,12 @@
   },
   "4389950971": {
     "company": "Marriott International",
+    "job_status": "open",
     "location": "Bethesda, MD",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:44:51",
     "title": "Director, AI Engineering (Tip.AI)"
   },
   "4389968893": {
