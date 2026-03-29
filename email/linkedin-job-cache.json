@@ -149,6 +149,12 @@
     "salary": null,
     "title": "Engineering Manager - Identity and Access Management (IAM)"
   },
+  "4341185629": {
+    "company": "Adobe",
+    "location": "San Francisco, CA",
+    "salary": "$276K-$429K",
+    "title": "Sr. Director of Engineering - Mixed Media Authoring"
+  },
   "4343559650": {
     "company": "Adobe",
     "location": "95110",
@@ -337,7 +343,7 @@
   },
   "4361085152": {
     "company": "PitchBook",
-    "location": "Seattle, WA",
+    "location": "Seattle",
     "salary": null,
     "title": "Engineering Manager, AI Enablement"
   },
@@ -563,11 +569,23 @@
     "salary": null,
     "title": "Sr. Engineering Manager, AI/ML Serving Platform"
   },
+  "4370847469": {
+    "company": "You.com",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "title": "Director of Engineering, Platform and DX"
+  },
   "4371308885": {
     "company": "Docusign",
     "location": "94105",
     "salary": null,
     "title": "Sr. Director, SRE Platform Engineering"
+  },
+  "4371423521": {
+    "company": "JPMorganChase",
+    "location": "Plano, TX",
+    "salary": null,
+    "title": "Sr Director of Software Engineering- Capital Technology"
   },
   "4371571533": {
     "company": "Apple",
@@ -1103,6 +1121,12 @@
     "salary": "$510K-$752K",
     "title": "Engineering Manager, Cloud Infrastructure Security"
   },
+  "4381054512": {
+    "company": "Andiamo",
+    "location": "Seattle",
+    "salary": null,
+    "title": "Senior Engineering Manager, Machine Learning - Tech Leader, Simplifying Access To Care"
+  },
   "4381055617": {
     "company": "Twitch",
     "location": "Seattle",
@@ -1126,6 +1150,12 @@
     "location": "United States",
     "salary": null,
     "title": "Senior Engineering Manager- AI Data Platform"
+  },
+  "4381179401": {
+    "company": "Fivetran",
+    "location": "Oakland, CA",
+    "salary": null,
+    "title": "Senior Director, Lead Software Engineering"
   },
   "4381184162": {
     "company": "ServiceTitan",
@@ -2075,11 +2105,29 @@
     "salary": "$0K-$0K",
     "title": "Sr. Manager, Applied AI Engineering"
   },
+  "4390764326": {
+    "company": "Blink",
+    "location": "United States",
+    "salary": null,
+    "title": "Director of Engineering"
+  },
   "4390812294": {
     "company": "LinkedIn",
     "location": "Mountain View, CA",
     "salary": null,
     "title": "Senior Software Engineering Manager - Systems and Infrastructure"
+  },
+  "4390837113": {
+    "company": "The Coca-Cola Company",
+    "location": "Atlanta, GA",
+    "salary": "$202K-$229K",
+    "title": "Senior Director, Engineering"
+  },
+  "4390837262": {
+    "company": "Pixar Animation Studios",
+    "location": "Emeryville, CA",
+    "salary": null,
+    "title": "Director, Core Engineering"
   },
   "4390852349": {
     "company": "Dynatrace",
@@ -2099,6 +2147,12 @@
     "salary": "$139K-$274K",
     "title": "Principal Engineering Manager"
   },
+  "4390926551": {
+    "company": "Google",
+    "location": "Kirkland",
+    "salary": null,
+    "title": "Software Engineering Manager II, Infrastructure, Google Cloud"
+  },
   "4391145490": {
     "company": "Petco",
     "location": "San Diego, CA",
@@ -2110,6 +2164,30 @@
     "location": "United States",
     "salary": null,
     "title": "Engineering Manager, Authentication Experience"
+  },
+  "4391211424": {
+    "company": "AAA Washington",
+    "location": "Bellevue",
+    "salary": "$137K-$165K",
+    "title": "Senior Manager, Product Engineering"
+  },
+  "4391564666": {
+    "company": "Microsoft",
+    "location": "Redmond",
+    "salary": "$139K-$274K",
+    "title": "Principal Software Engineer Manager"
+  },
+  "4391571555": {
+    "company": "Microsoft",
+    "location": "Redmond",
+    "salary": "$163K-$296K",
+    "title": "Senior Principal Engineering Manager"
+  },
+  "4391588073": {
+    "company": "Collins Aerospace",
+    "location": "Olympia",
+    "salary": null,
+    "title": "Senior Engineering Manager - FlightAware (Remote)"
   },
   "4391918307": {
     "company": "Abridge",
@@ -2128,5 +2206,11 @@
     "location": "United States",
     "salary": null,
     "title": "Engineering Manager, Identity & Privacy Experience (Users, Identity & Community)"
+  },
+  "4391939667": {
+    "company": "Weights & Biases",
+    "location": "Bellevue",
+    "salary": null,
+    "title": "Engineering Manager, Launch & Sandboxes- Weights & Biases"
   }
 }

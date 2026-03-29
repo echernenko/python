@@ -383,3 +383,18 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4385756227 | Ladders | Director, Software Engineering (Life Product)
 4389770730 | Plaid | Experienced Engineering Manager, Network Enablement and Access (NEA)
 4649097006 | Chainguard | Manager, Software Engineering (Libraries)
+4357891376 | Oracle | Senior Software Development Manager
+4361079477 | Oracle | Software Development Manager
+4369614759 | Sony | Director, Engineering
+4371571533 | Apple | Manager, Central Quality Accessibility Engineering - Apple Services Engineering
+4372039259 | Apple | Senior Engineering Manager — Product Marketing Finance
+4374500932 | Cloudflare | Engineering Manager, Cloudflare Hyperdrive
+4374620119 | Visa | Director, Software Engineering
+4374867969 | Oracle | Software Development Director
+4375894804 | Lantern | Director, AI Engineering
+4376014615 | Apple | Hardware Technology Platform Integration Engineering Program Manager
+4376077016 | Google | Software Engineering Manager II, Infrastructure, Google Cloud
+4376720980 | Google | Senior Software Engineering Manager, Emerging On-prem AI Infrastructure
+4376847148 | LinkedIn | Manager, Software Engineering
+4378216240 | Apple | Software Engineering Manager, HomeKit
+4385295166 | Aritzia | Technology - Senior Engineering Manager/Engineering Manager
