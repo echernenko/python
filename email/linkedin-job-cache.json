@@ -395,8 +395,12 @@
   },
   "4363150925": {
     "company": "Robinhood",
+    "job_status": "open",
     "location": "Bellevue",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:36:45",
     "title": "Engineering Manager, Capacity and Efficiency"
   },
   "4363239200": {
@@ -447,8 +451,12 @@
   },
   "4366337900": {
     "company": "Modular",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:36:47",
     "title": "Engineering Director, GenAI Enterprise"
   },
   "4366881182": {
@@ -591,8 +599,12 @@
   },
   "4370847469": {
     "company": "You.com",
+    "job_status": "open",
     "location": "San Francisco, CA",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:36:48",
     "title": "Director of Engineering, Platform and DX"
   },
   "4371308885": {
@@ -1103,8 +1115,12 @@
   },
   "4379609522": {
     "company": "Roblox",
+    "job_status": "open",
     "location": "San Mateo",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:36:50",
     "title": "Senior Engineering Manager, AI Platform"
   },
   "4379713146": {
@@ -1927,8 +1943,12 @@
   },
   "4389171402": {
     "company": "EY",
+    "job_status": "open",
     "location": "98104",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:36:52",
     "title": "AI and Distributed Systems Backend Engineer - Manager - Consulting - Location OPEN"
   },
   "4389215368": {
@@ -2035,8 +2055,12 @@
   },
   "4389884800": {
     "company": "Jobgether",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:36:54",
     "title": "Director of Software Engineering, Order Experience"
   },
   "4389893875": {
@@ -2053,8 +2077,12 @@
   },
   "4389917018": {
     "company": "Maximus",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:36:55",
     "title": "Senior Director \u2013 Software Engineering"
   },
   "4389921483": {
@@ -2095,8 +2123,12 @@
   },
   "4389983662": {
     "company": "Zillow",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:36:57",
     "title": "Senior Manager, Site Reliability Engineering, Follow Up Boss"
   },
   "4389984917": {
@@ -2137,8 +2169,12 @@
   },
   "4390492646": {
     "company": "Cognizant",
+    "job_status": "open",
     "location": "Seattle",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$139K-$254K",
+    "status_checked_at": "2026-03-29T05:33:42",
     "title": "AI Customer Engineering Lead"
   },
   "4390618635": {
@@ -2161,14 +2197,22 @@
   },
   "4390743386": {
     "company": "Red Oak Technologies",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$0K-$0K",
+    "status_checked_at": "2026-03-29T05:33:44",
     "title": "Sr. Manager, Applied AI Engineering"
   },
   "4390764326": {
     "company": "Blink",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:33:46",
     "title": "Director of Engineering"
   },
   "4390812294": {
@@ -2179,26 +2223,42 @@
   },
   "4390837113": {
     "company": "The Coca-Cola Company",
+    "job_status": "open",
     "location": "Atlanta, GA",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$202K-$229K",
+    "status_checked_at": "2026-03-29T05:33:48",
     "title": "Senior Director, Engineering"
   },
   "4390837262": {
     "company": "Pixar Animation Studios",
+    "job_status": "open",
     "location": "Emeryville, CA",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:33:49",
     "title": "Director, Core Engineering"
   },
   "4390852349": {
     "company": "Dynatrace",
+    "job_status": "open",
     "location": "Boston, MA",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:33:51",
     "title": "Sr Director, Software Engineering"
   },
   "4390886075": {
     "company": "Bain & Company",
+    "job_status": "open",
     "location": "Seattle",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:33:53",
     "title": "Expert Senior Manager, AI-ML Engineering"
   },
   "4390898311": {
@@ -2219,14 +2279,22 @@
   },
   "4391145490": {
     "company": "Petco",
+    "job_status": "open",
     "location": "San Diego, CA",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:33:54",
     "title": "Sr. Manager, Frontend Engineering"
   },
   "4391190684": {
     "company": "1Password",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:33:56",
     "title": "Engineering Manager, Authentication Experience"
   },
   "4391211424": {
@@ -2271,14 +2339,22 @@
   },
   "4391918307": {
     "company": "Abridge",
+    "job_status": "open",
     "location": "New York, NY",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$250K-$280K",
+    "status_checked_at": "2026-03-29T05:33:58",
     "title": "Sr. Engineering Manager, SRE"
   },
   "4391920835": {
     "company": "Horizon3.ai",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$210K-$260K",
+    "status_checked_at": "2026-03-29T05:36:42",
     "title": "Senior Engineering Manager, User Platform & Enterprise"
   },
   "4391936261": {
@@ -2289,8 +2365,12 @@
   },
   "4391939667": {
     "company": "Weights & Biases",
+    "job_status": "open",
     "location": "Bellevue",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:36:43",
     "title": "Engineering Manager, Launch & Sandboxes- Weights & Biases"
   }
 }

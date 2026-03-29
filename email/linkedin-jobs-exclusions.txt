@@ -403,3 +403,8 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4385295166 | Aritzia | Technology - Senior Engineering Manager/Engineering Manager
 4391564666 | Microsoft | Principal Software Engineer Manager
 4391571555 | Microsoft | Senior Principal Engineering Manager
+4325309022 | Shopify | Engineering Manager (Americas)
+4379027824 | Capital One | Director, Software Engineering - Shopping
+4365577380 | Google | Software Engineering Manager, Workforce Identity
+4384256294 | Google | Senior Software Engineering Manager, Natural Language for Databases
+4386542845 | CPG | Director of Engineering
