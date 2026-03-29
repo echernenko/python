@@ -132,7 +132,7 @@
   "Merative": false,
   "Meta": true,
   "Microsoft": true,
-  "Microsoft AI": false,
+  "Microsoft AI": true,
   "Mistralai": false,
   "Mobius Talent Global": false,
   "Modal": false,
