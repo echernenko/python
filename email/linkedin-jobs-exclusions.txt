@@ -368,3 +368,17 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4353990000 | Asana | Engineering Manager, Reference Anything
 4385782865 | ClickUp | Engineering Manager
 4369952153 | Pinterest | Sr. Engineering Manager, AI/ML Serving Platform
+4389893875 | RemoteHunter | Sr. Director Engineering, Head of Internal Technology
+4387530888 | Mechanical Orchard | Director of Engineering, Product Infrastructure and Release Engineering
+4361492777 | Headspace | VP of Engineering, B2B Platforms
+4388654195 | Haystack | Software Development Manager
+4388524647 | PwC | AI-Native Senior Engineering Manager, Full Stack
+4387869066 | People In AI | Director of AI
+4387775004 | Savvly | Senior Director of Software Engineering
+4390038657 | Ladders | Senior Director of Engineering
+4390035775 | Ladders | Sr Director, Developer Experience and Platform Engineering
+4387507349 | Ladders | Engineering Manager, Trusted Products
+4385747540 | Ladders | Senior Manager, Software Engineering
+4385738798 | Ladders | Senior Principal/Senior Director - Software Delivery/Software Program Management
+4385756227 | Ladders | Director, Software Engineering (Life Product)
+4389770730 | Plaid | Experienced Engineering Manager, Network Enablement and Access (NEA)
