@@ -759,7 +759,7 @@ def parse_previous_summary_emails() -> List[Dict[str, Any]]:
     print("Searching for previous summary emails...")
 
     # Search for our own summary emails from the last 24 hours
-    search_query = 'subject:"LinkedIn Job Opportunities" newer_than:1d'
+    search_query = 'subject:"LinkedIn Job Opportunities" newer_than:7d'
 
     result = run_gog_command([
         'gmail', 'search',
@@ -793,12 +793,12 @@ def parse_previous_summary_emails() -> List[Dict[str, Any]]:
         #         <div class="info">📍 Location: ...</div>
         #         <a href="job_url">View Job Posting →</a>
 
-        # Extract job blocks
+        # Extract job blocks (works for both old tier-wrapped and new flat format)
         job_blocks = re.findall(r'<div class="job">(.*?)</div>\s*</div>', body_html, re.DOTALL)
 
         for block in job_blocks:
-            # Extract company (format: "1. Company Name")
-            company_match = re.search(r'<div class="company">(?:\d+\.\s+)?([^<]+)</div>', block)
+            # Extract company — allow inline tags like <span> inside the div
+            company_match = re.search(r'<div class="company">(?:\d+\.\s+)?([^<]+)', block)
             title_match = re.search(r'<div class="title">([^<]+)</div>', block)
             pay_match = re.search(r'💰 Pay Range:\s*([^<]+)</div>', block)
             location_match = re.search(r'📍 Location:\s*([^<]+)</div>', block)
@@ -928,11 +928,32 @@ def get_company_tier(company_name: str, is_public: bool = True) -> int:
     # Tier 3: Other public companies
     return 3
 
-def _fetch_applicant_status(job_url: str):
-    """Fetch applicant count and status from LinkedIn guest API.
+def _parse_posted_hours(text: str) -> int:
+    """Convert LinkedIn posting age text to hours for sorting (lower = newer).
 
-    Returns (status, applicant_count) where status is 'open', 'closed', or 'gone'
-    and applicant_count is an int or None.
+    Handles: "2 hours ago", "1 day ago", "3 days ago", "1 week ago",
+             "2 weeks ago", "1 month ago", "Reposted 1 week ago", etc.
+    Returns hours as int, or 999999 if unparseable.
+    """
+    text = text.strip().lower()
+    # Strip "reposted" prefix — treat repost age same as original post age
+    text = re.sub(r'^reposted\s+', '', text)
+    m = re.search(r'(\d+)\s+(hour|day|week|month|year)', text)
+    if not m:
+        if 'just now' in text or 'moments ago' in text:
+            return 0
+        return 999999
+    n = int(m.group(1))
+    unit = m.group(2)
+    multipliers = {'hour': 1, 'day': 24, 'week': 168, 'month': 720, 'year': 8760}
+    return n * multipliers.get(unit, 24)
+
+
+def _fetch_job_status(job_url: str):
+    """Fetch posting time and status from LinkedIn guest API.
+
+    Returns (status, posted_text, hours) where status is 'open', 'closed', or 'gone',
+    posted_text is the raw string ("2 days ago"), and hours is an int for sorting.
     """
     import random as _random
     _browsers = [
@@ -966,7 +987,7 @@ def _fetch_applicant_status(job_url: str):
     ]
     job_id_match = re.search(r'/jobs?/(?:view/)?(\d+)', job_url)
     if not job_id_match:
-        return 'open', None
+        return 'open', None, 999999
     job_id = job_id_match.group(1)
     url = f'https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{job_id}'
     b = _random.choice(_browsers)
@@ -993,34 +1014,26 @@ def _fetch_applicant_status(job_url: str):
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=25)
         html = result.stdout if result.returncode == 0 else ''
     except Exception:
-        return 'open', None
+        return 'open', None, 999999
 
     if not html or len(html) < 300:
-        return 'gone', None
+        return 'gone', None, 999999
     if 'No longer accepting applications' in html or 'no longer accepting applications' in html:
-        return 'closed', None
+        return 'closed', None, 999999
 
-    # Extract applicant count from num-applicants__caption
-    count = None
-    cap_match = re.search(r'num-applicants__caption[^>]*>\s*([^<]+)', html)
-    if cap_match:
-        cap_text = cap_match.group(1).strip()
-        # "Over 200 applicants", "47 applicants", "Be among the first 25 applicants",
-        # "47 people clicked apply", "Over 200 people clicked apply"
-        num_match = re.search(r'(?:Over\s+)?(\d+)\s+(?:applicants?|people clicked apply)', cap_text, re.IGNORECASE)
-        if num_match:
-            count = int(num_match.group(1))
-            if 'over' in cap_text.lower():
-                count = count + 1  # "Over 200" sorts after "200"
-        first_match = re.search(r'first\s+(\d+)\s+applicants?', cap_text, re.IGNORECASE)
-        if first_match:
-            count = int(first_match.group(1))
+    # Extract posting time from posted-time-ago__text
+    posted_text = None
+    hours = 999999
+    time_match = re.search(r'posted-time-ago__text[^>]*>\s*([^<]+)', html)
+    if time_match:
+        posted_text = time_match.group(1).strip()
+        hours = _parse_posted_hours(posted_text)
 
-    return 'open', count
+    return 'open', posted_text, hours
 
 
 def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
-    """Send a summary email sorted by applicant count (fewest first)."""
+    """Send a summary email sorted by posting recency (newest first)."""
     if not jobs:
         print("No jobs to send - all filtered out or none found.")
         return
@@ -1028,8 +1041,8 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
     script_dir = os.path.dirname(os.path.realpath(__file__))
     exclusion_file = os.path.join(script_dir, 'linkedin-jobs-exclusions.txt')
 
-    # Fetch applicant counts, auto-exclude closed/gone jobs
-    print(f"Checking applicant counts for {len(jobs)} jobs...")
+    # Fetch posting times, auto-exclude closed/gone jobs
+    print(f"Checking posting times for {len(jobs)} jobs...")
     active_jobs = []
     newly_excluded = []
 
@@ -1038,7 +1051,7 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
         job_id = job_id.group(1) if job_id else None
         print(f"  [{i+1}/{len(jobs)}] {job['company']} - {job.get('title', '')[:40]}", end='', flush=True)
 
-        status, count = _fetch_applicant_status(job.get('link', ''))
+        status, posted_text, hours = _fetch_job_status(job.get('link', ''))
 
         if status in ('closed', 'gone'):
             label = 'CLOSED' if status == 'closed' else 'GONE'
@@ -1046,9 +1059,9 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
             if job_id:
                 newly_excluded.append((job_id, job['company'], job.get('title', '')))
         else:
-            count_str = f" → {count} applicants" if count is not None else " → ? applicants"
-            print(count_str)
-            job['applicant_count'] = count
+            print(f" → {posted_text or 'unknown'}")
+            job['posted_text'] = posted_text
+            job['posted_hours'] = hours
             active_jobs.append(job)
 
         if i < len(jobs) - 1:
@@ -1066,10 +1079,10 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
         print("No active jobs remaining after filtering closed/gone.")
         return
 
-    # Sort by applicant count ascending (None/unknown goes to end)
-    active_jobs.sort(key=lambda j: (j['applicant_count'] is None, j['applicant_count'] or 0))
+    # Sort by posting time ascending (fewest hours = newest = appears first; unknown at end)
+    active_jobs.sort(key=lambda j: j['posted_hours'])
 
-    # Build flat email body sorted by applicant count
+    # Build flat email body sorted by recency
     email_body = f"""
 <html>
 <head>
@@ -1080,26 +1093,25 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
         .company-type {{ font-size: 13px; color: #888; font-weight: normal; margin-left: 6px; }}
         .title {{ font-size: 16px; margin: 5px 0; }}
         .info {{ color: #666; margin: 3px 0; }}
-        .applicants {{ color: #2a7a2a; font-weight: bold; margin: 3px 0; }}
+        .posted {{ color: #2a7a2a; font-weight: bold; margin: 3px 0; }}
         .link {{ margin-top: 10px; }}
         a {{ color: #0066cc; text-decoration: none; }}
     </style>
 </head>
 <body>
     <h1>🎯 LinkedIn Job Opportunities</h1>
-    <p><strong>{len(active_jobs)} jobs</strong> | Generated on {datetime.now().strftime('%Y-%m-%d %H:%M')} | Sorted by fewest applicants</p>
+    <p><strong>{len(active_jobs)} jobs</strong> | Generated on {datetime.now().strftime('%Y-%m-%d %H:%M')} | Sorted by newest first</p>
 """
 
     for i, job in enumerate(active_jobs, 1):
         is_public = job.get('is_public', True)
         company_type = 'public' if is_public else 'private'
-        count = job.get('applicant_count')
-        applicant_str = f"{count} people clicked apply" if count is not None else "applicant count unknown"
+        posted = job.get('posted_text') or 'unknown'
         email_body += f"""
     <div class="job">
         <div class="company">{i}. {job['company']} <span class="company-type">({company_type})</span></div>
         <div class="title">{job.get('title', 'Job Opportunity')}</div>
-        <div class="applicants">👥 {applicant_str}</div>
+        <div class="posted">🕐 {posted}</div>
         <div class="info">💰 Pay Range: {job['compensation']}</div>
         <div class="info">📍 Location: {job['location']}</div>
         <div class="link">
@@ -1667,6 +1679,43 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
     elif dry_run:
         print("\nDry run - LinkedIn emails NOT deleted, manual emails NOT deleted.")
 
+def rebuild_from_cache(recipient_email: str):
+    """Regenerate summary email from job cache, skipping excluded/embargoed jobs."""
+    excluded_job_ids = load_exclusion_list()
+    embargo_dates = load_embargo_dates()
+    job_cache = _get_job_cache()
+
+    jobs = []
+    for job_id, entry in job_cache.items():
+        if job_id in excluded_job_ids:
+            continue
+        company = entry.get('company', '')
+        if not company:
+            continue
+        if is_company_embargoed(company, embargo_dates):
+            continue
+        title = entry.get('title', 'Unknown')
+        location = entry.get('location', 'Not specified')
+        compensation = entry.get('salary', 'Not specified') or 'Not specified'
+        link = f'https://www.linkedin.com/jobs/view/{job_id}/'
+        is_public = is_public_company(company, '')
+        jobs.append({
+            'company': company,
+            'title': title,
+            'link': link,
+            'compensation': compensation,
+            'location': location,
+            'is_public': is_public,
+        })
+
+    print(f"Rebuilt {len(jobs)} jobs from cache.")
+    if jobs:
+        delete_old_summary_emails()
+        import time
+        time.sleep(1)
+        send_summary_email(jobs, recipient_email)
+
+
 def main():
     import argparse
     global GOG_ACCOUNT
@@ -1675,13 +1724,17 @@ def main():
     parser.add_argument('--email', default='chernenko@gmail.com', help='Your email address to send summary to')
     parser.add_argument('--dry-run', action='store_true', help='Don\'t mark emails as read')
     parser.add_argument('--account', help='Gmail account to use with gog (defaults to --email value)')
+    parser.add_argument('--rebuild-from-cache', action='store_true', help='Regenerate email from job cache (use when no source emails exist)')
 
     args = parser.parse_args()
 
     # Set the global account (default to email if not specified)
     GOG_ACCOUNT = args.account if args.account else args.email
 
-    process_linkedin_emails(args.email, args.dry_run)
+    if args.rebuild_from_cache:
+        rebuild_from_cache(args.email)
+    else:
+        process_linkedin_emails(args.email, args.dry_run)
 
 if __name__ == '__main__':
     main()
