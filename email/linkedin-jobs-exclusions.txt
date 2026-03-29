@@ -2,6 +2,8 @@
 # Format: job_id | company | position
 # Jobs listed here (by job ID) will not appear in future summaries
 # LinkedIn Jobs Exclusion List
+4340347913 | 1Password | Engineering Manager, API Platform
+4376827151 | Spotify | Engineering Manager II, Personalization
 4354058211 | Databricks | Senior Engineering Manager - Trust and Safety
 4362571056 | ClickUp | Manager, Software Engineering
 4389843043 | Affirm | Manager, Software Engineering (Card Experiences)
@@ -422,3 +424,4 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4378991010 | PayPal | Sr. Director, Developer Platforms
 4381114694 | F5 | Sr DevOps Manager
 4391190684 | 1Password | Engineering Manager, Authentication Experience
+4389520974 | Expedia Group | Senior Director, Software Development Engineering
