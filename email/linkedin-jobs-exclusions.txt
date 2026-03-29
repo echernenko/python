@@ -3,6 +3,7 @@
 # Jobs listed here (by job ID) will not appear in future summaries
 # LinkedIn Jobs Exclusion List
 4389843043 | Affirm | Manager, Software Engineering (Card Experiences)
+4390926551 | Google | Software Engineering Manager II, Infrastructure, Google Cloud
 4390470750 | The Walt Disney Company | Director, Core Engineering
 4381123213 | Mastercard | Director, Platform Engineering
 4389292616 | Amazon Web Services (AWS) | Software Development Manager, Amazon Connect
@@ -398,3 +399,5 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4376847148 | LinkedIn | Manager, Software Engineering
 4378216240 | Apple | Software Engineering Manager, HomeKit
 4385295166 | Aritzia | Technology - Senior Engineering Manager/Engineering Manager
+4391564666 | Microsoft | Principal Software Engineer Manager
+4391571555 | Microsoft | Senior Principal Engineering Manager

@@ -151,8 +151,12 @@
   },
   "4341185629": {
     "company": "Adobe",
+    "job_status": "open",
     "location": "San Francisco, CA",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$276K-$429K",
+    "status_checked_at": "2026-03-29T05:25:58",
     "title": "Sr. Director of Engineering - Mixed Media Authoring"
   },
   "4343559650": {
@@ -235,8 +239,12 @@
   },
   "4354058211": {
     "company": "Databricks",
+    "job_status": "open",
     "location": "Bellevue",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:26:00",
     "title": "Senior Engineering Manager - Trust and Safety"
   },
   "4355780308": {
@@ -367,14 +375,22 @@
   },
   "4362571056": {
     "company": "ClickUp",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$280K-$320K",
+    "status_checked_at": "2026-03-29T05:28:27",
     "title": "Manager, Software Engineering"
   },
   "4363118731": {
     "company": "Blue Origin",
+    "job_status": "open",
     "location": "Greater Seattle Area",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:25:46",
     "title": "Senior Manager - Software Engineering - TeraWave"
   },
   "4363150925": {
@@ -391,8 +407,12 @@
   },
   "4365218846": {
     "company": "Alma",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$260K-$290K",
+    "status_checked_at": "2026-03-29T05:28:29",
     "title": "Senior Director, Engineering Operations & Platform"
   },
   "4365577380": {
@@ -577,14 +597,22 @@
   },
   "4371308885": {
     "company": "Docusign",
+    "job_status": "open",
     "location": "94105",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:28:31",
     "title": "Sr. Director, SRE Platform Engineering"
   },
   "4371423521": {
     "company": "JPMorganChase",
+    "job_status": "open",
     "location": "Plano, TX",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:28:32",
     "title": "Sr Director of Software Engineering- Capital Technology"
   },
   "4371571533": {
@@ -595,8 +623,12 @@
   },
   "4371650923": {
     "company": "Nordstrom",
+    "job_status": "open",
     "location": "Seattle",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:28:34",
     "title": "Senior Engineering Manager, Cloud Engineering - Hybrid - Seattle"
   },
   "4372039259": {
@@ -721,8 +753,12 @@
   },
   "4375560969": {
     "company": "Headway",
+    "job_status": "open",
     "location": "Seattle",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": "$190K-$237K",
+    "status_checked_at": "2026-03-29T05:25:48",
     "title": "Engineering Manager - Provider Growth"
   },
   "4375747325": {
@@ -1033,8 +1069,12 @@
   },
   "4378991010": {
     "company": "PayPal",
+    "job_status": "open",
     "location": "New York",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:28:36",
     "title": "Sr. Director, Developer Platforms"
   },
   "4379027824": {
@@ -1123,8 +1163,12 @@
   },
   "4381054512": {
     "company": "Andiamo",
+    "job_status": "open",
     "location": "Seattle",
+    "posted_hours": 14,
+    "posted_text": "14 hours ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:25:44",
     "title": "Senior Engineering Manager, Machine Learning - Tech Leader, Simplifying Access To Care"
   },
   "4381055617": {
@@ -1135,8 +1179,12 @@
   },
   "4381114694": {
     "company": "F5",
+    "job_status": "open",
     "location": "Greater Seattle Area",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:28:38",
     "title": "Sr DevOps Manager"
   },
   "4381123213": {
@@ -1147,20 +1195,32 @@
   },
   "4381171189": {
     "company": "Aledade, Inc.",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:28:39",
     "title": "Senior Engineering Manager- AI Data Platform"
   },
   "4381179401": {
     "company": "Fivetran",
+    "job_status": "open",
     "location": "Oakland, CA",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:28:41",
     "title": "Senior Director, Lead Software Engineering"
   },
   "4381184162": {
     "company": "ServiceTitan",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:28:43",
     "title": "Senior Manager, Software Engineering"
   },
   "4381338011": {
@@ -2149,8 +2209,12 @@
   },
   "4390926551": {
     "company": "Google",
+    "job_status": "open",
     "location": "Kirkland",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:25:50",
     "title": "Software Engineering Manager II, Infrastructure, Google Cloud"
   },
   "4391145490": {
@@ -2167,26 +2231,42 @@
   },
   "4391211424": {
     "company": "AAA Washington",
+    "job_status": "open",
     "location": "Bellevue",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": "$137K-$165K",
+    "status_checked_at": "2026-03-29T05:25:51",
     "title": "Senior Manager, Product Engineering"
   },
   "4391564666": {
     "company": "Microsoft",
+    "job_status": "open",
     "location": "Redmond",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": "$139K-$274K",
+    "status_checked_at": "2026-03-29T05:25:53",
     "title": "Principal Software Engineer Manager"
   },
   "4391571555": {
     "company": "Microsoft",
+    "job_status": "open",
     "location": "Redmond",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": "$163K-$296K",
+    "status_checked_at": "2026-03-29T05:25:55",
     "title": "Senior Principal Engineering Manager"
   },
   "4391588073": {
     "company": "Collins Aerospace",
+    "job_status": "open",
     "location": "Olympia",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:25:56",
     "title": "Senior Engineering Manager - FlightAware (Remote)"
   },
   "4391918307": {

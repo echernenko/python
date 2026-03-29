@@ -1059,7 +1059,20 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
         ts = j['_status_checked_at']
         return ts if ts else ''  # empty string sorts before any ISO date
 
-    needs_fetch = sorted(jobs, key=_sort_key)
+    CACHE_TTL_HOURS = 24
+    now = datetime.now()
+
+    def _is_stale(j):
+        ts = j['_status_checked_at']
+        if not ts:
+            return True
+        try:
+            checked = datetime.fromisoformat(ts)
+            return (now - checked).total_seconds() > CACHE_TTL_HOURS * 3600
+        except ValueError:
+            return True
+
+    needs_fetch = sorted([j for j in jobs if refresh_all or _is_stale(j)], key=_sort_key)
     if REFRESH_LIMIT is not None:
         needs_fetch = needs_fetch[:REFRESH_LIMIT]
     needs_fetch_ids = {id(j) for j in needs_fetch}
