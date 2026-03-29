@@ -928,133 +928,185 @@ def get_company_tier(company_name: str, is_public: bool = True) -> int:
     # Tier 3: Other public companies
     return 3
 
+def _fetch_applicant_status(job_url: str):
+    """Fetch applicant count and status from LinkedIn guest API.
+
+    Returns (status, applicant_count) where status is 'open', 'closed', or 'gone'
+    and applicant_count is an int or None.
+    """
+    import random as _random
+    _browsers = [
+        {
+            'ua': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+            'sec_ch': '"Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+            'platform': '"Windows"',
+        },
+        {
+            'ua': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+            'sec_ch': '"Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+            'platform': '"macOS"',
+        },
+        {
+            'ua': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0',
+            'sec_ch': None, 'platform': None,
+        },
+        {
+            'ua': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14.4; rv:124.0) Gecko/20100101 Firefox/124.0',
+            'sec_ch': None, 'platform': None,
+        },
+        {
+            'ua': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15',
+            'sec_ch': None, 'platform': None,
+        },
+        {
+            'ua': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0',
+            'sec_ch': '"Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+            'platform': '"Windows"',
+        },
+    ]
+    job_id_match = re.search(r'/jobs?/(?:view/)?(\d+)', job_url)
+    if not job_id_match:
+        return 'open', None
+    job_id = job_id_match.group(1)
+    url = f'https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{job_id}'
+    b = _random.choice(_browsers)
+    cmd = [
+        'curl', '-s', '-L', '--max-time', '20',
+        '-H', f'User-Agent: {b["ua"]}',
+        '-H', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        '-H', 'Accept-Language: en-US,en;q=0.9',
+        '-H', 'Accept-Encoding: gzip, deflate, br',
+        '-H', 'Connection: keep-alive',
+        '--compressed',
+    ]
+    if b['sec_ch']:
+        cmd += [
+            '-H', f'Sec-CH-UA: {b["sec_ch"]}',
+            '-H', 'Sec-CH-UA-Mobile: ?0',
+            '-H', f'Sec-CH-UA-Platform: {b["platform"]}',
+            '-H', 'Sec-Fetch-Dest: document',
+            '-H', 'Sec-Fetch-Mode: navigate',
+            '-H', 'Sec-Fetch-Site: none',
+        ]
+    cmd.append(url)
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=25)
+        html = result.stdout if result.returncode == 0 else ''
+    except Exception:
+        return 'open', None
+
+    if not html or len(html) < 300:
+        return 'gone', None
+    if 'No longer accepting applications' in html or 'no longer accepting applications' in html:
+        return 'closed', None
+
+    # Extract applicant count from num-applicants__caption
+    count = None
+    cap_match = re.search(r'num-applicants__caption[^>]*>\s*([^<]+)', html)
+    if cap_match:
+        cap_text = cap_match.group(1).strip()
+        # "Over 200 applicants", "47 applicants", "Be among the first 25 applicants",
+        # "47 people clicked apply", "Over 200 people clicked apply"
+        num_match = re.search(r'(?:Over\s+)?(\d+)\s+(?:applicants?|people clicked apply)', cap_text, re.IGNORECASE)
+        if num_match:
+            count = int(num_match.group(1))
+            if 'over' in cap_text.lower():
+                count = count + 1  # "Over 200" sorts after "200"
+        first_match = re.search(r'first\s+(\d+)\s+applicants?', cap_text, re.IGNORECASE)
+        if first_match:
+            count = int(first_match.group(1))
+
+    return 'open', count
+
+
 def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
-    """Send a summary email with filtered job listings grouped by tier."""
+    """Send a summary email sorted by applicant count (fewest first)."""
     if not jobs:
         print("No jobs to send - all filtered out or none found.")
         return
 
-    # Group jobs by tier
-    tier1_jobs = []
-    tier2_jobs = []
-    tier3_jobs = []
-    tier4_jobs = []
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    exclusion_file = os.path.join(script_dir, 'linkedin-jobs-exclusions.txt')
 
-    for job in jobs:
-        tier = get_company_tier(job['company'], job.get('is_public', True))
-        if tier == 1:
-            tier1_jobs.append(job)
-        elif tier == 2:
-            tier2_jobs.append(job)
-        elif tier == 3:
-            tier3_jobs.append(job)
+    # Fetch applicant counts, auto-exclude closed/gone jobs
+    print(f"Checking applicant counts for {len(jobs)} jobs...")
+    active_jobs = []
+    newly_excluded = []
+
+    for i, job in enumerate(jobs):
+        job_id = re.search(r'/jobs?/(?:view/)?(\d+)', job.get('link', ''))
+        job_id = job_id.group(1) if job_id else None
+        print(f"  [{i+1}/{len(jobs)}] {job['company']} - {job.get('title', '')[:40]}", end='', flush=True)
+
+        status, count = _fetch_applicant_status(job.get('link', ''))
+
+        if status in ('closed', 'gone'):
+            label = 'CLOSED' if status == 'closed' else 'GONE'
+            print(f" → {label}, excluding")
+            if job_id:
+                newly_excluded.append((job_id, job['company'], job.get('title', '')))
         else:
-            tier4_jobs.append(job)
+            count_str = f" → {count} applicants" if count is not None else " → ? applicants"
+            print(count_str)
+            job['applicant_count'] = count
+            active_jobs.append(job)
 
-    # Build email body
+        if i < len(jobs) - 1:
+            time.sleep(1.5)
+
+    # Write newly excluded jobs to exclusions file
+    if newly_excluded:
+        print(f"\nAuto-excluding {len(newly_excluded)} closed/gone jobs:")
+        with open(exclusion_file, 'a') as f:
+            for job_id, company, title in newly_excluded:
+                print(f"  {job_id} | {company} | {title}")
+                f.write(f"{job_id} | {company} | {title}\n")
+
+    if not active_jobs:
+        print("No active jobs remaining after filtering closed/gone.")
+        return
+
+    # Sort by applicant count ascending (None/unknown goes to end)
+    active_jobs.sort(key=lambda j: (j['applicant_count'] is None, j['applicant_count'] or 0))
+
+    # Build flat email body sorted by applicant count
     email_body = f"""
 <html>
 <head>
     <style>
         body {{ font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }}
-        .tier {{ margin: 30px 0; }}
-        .tier-header {{ font-size: 24px; font-weight: bold; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #ddd; }}
-        .tier1 {{ color: #d4af37; }} /* Gold */
-        .tier2 {{ color: #0066cc; }} /* Blue */
-        .tier3 {{ color: #666; }} /* Gray */
-        .tier4 {{ color: #996633; }} /* Brown */
         .job {{ margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; background: #f9f9f9; }}
         .company {{ font-weight: bold; font-size: 18px; color: #0066cc; }}
+        .company-type {{ font-size: 13px; color: #888; font-weight: normal; margin-left: 6px; }}
         .title {{ font-size: 16px; margin: 5px 0; }}
         .info {{ color: #666; margin: 3px 0; }}
+        .applicants {{ color: #2a7a2a; font-weight: bold; margin: 3px 0; }}
         .link {{ margin-top: 10px; }}
         a {{ color: #0066cc; text-decoration: none; }}
     </style>
 </head>
 <body>
     <h1>🎯 LinkedIn Job Opportunities</h1>
-    <p><strong>{len(jobs)} jobs</strong> | Generated on {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
+    <p><strong>{len(active_jobs)} jobs</strong> | Generated on {datetime.now().strftime('%Y-%m-%d %H:%M')} | Sorted by fewest applicants</p>
 """
 
-    # Tier 1: Top Companies
-    if tier1_jobs:
+    for i, job in enumerate(active_jobs, 1):
+        is_public = job.get('is_public', True)
+        company_type = 'public' if is_public else 'private'
+        count = job.get('applicant_count')
+        applicant_str = f"{count} people clicked apply" if count is not None else "applicant count unknown"
         email_body += f"""
-    <div class="tier">
-        <div class="tier-header tier1">⭐ Tier 1: Top Companies ({len(tier1_jobs)} jobs)</div>
-"""
-        for i, job in enumerate(tier1_jobs, 1):
-            email_body += f"""
-        <div class="job">
-            <div class="company">{i}. {job['company']}</div>
-            <div class="title">{job.get('title', 'Job Opportunity')}</div>
-            <div class="info">💰 Pay Range: {job['compensation']}</div>
-            <div class="info">📍 Location: {job['location']}</div>
-            <div class="link">
-                <a href="{job['link']}">View Job Posting →</a>
-            </div>
+    <div class="job">
+        <div class="company">{i}. {job['company']} <span class="company-type">({company_type})</span></div>
+        <div class="title">{job.get('title', 'Job Opportunity')}</div>
+        <div class="applicants">👥 {applicant_str}</div>
+        <div class="info">💰 Pay Range: {job['compensation']}</div>
+        <div class="info">📍 Location: {job['location']}</div>
+        <div class="link">
+            <a href="{job['link']}">View Job Posting →</a>
         </div>
+    </div>
 """
-        email_body += "    </div>\n"
-
-    # Tier 2: Great Companies
-    if tier2_jobs:
-        email_body += f"""
-    <div class="tier">
-        <div class="tier-header tier2">🌟 Tier 2: Great Companies ({len(tier2_jobs)} jobs)</div>
-"""
-        for i, job in enumerate(tier2_jobs, 1):
-            email_body += f"""
-        <div class="job">
-            <div class="company">{i}. {job['company']}</div>
-            <div class="title">{job.get('title', 'Job Opportunity')}</div>
-            <div class="info">💰 Pay Range: {job['compensation']}</div>
-            <div class="info">📍 Location: {job['location']}</div>
-            <div class="link">
-                <a href="{job['link']}">View Job Posting →</a>
-            </div>
-        </div>
-"""
-        email_body += "    </div>\n"
-
-    # Tier 3: Good Companies
-    if tier3_jobs:
-        email_body += f"""
-    <div class="tier">
-        <div class="tier-header tier3">✨ Tier 3: Good Companies ({len(tier3_jobs)} jobs)</div>
-"""
-        for i, job in enumerate(tier3_jobs, 1):
-            email_body += f"""
-        <div class="job">
-            <div class="company">{i}. {job['company']}</div>
-            <div class="title">{job.get('title', 'Job Opportunity')}</div>
-            <div class="info">💰 Pay Range: {job['compensation']}</div>
-            <div class="info">📍 Location: {job['location']}</div>
-            <div class="link">
-                <a href="{job['link']}">View Job Posting →</a>
-            </div>
-        </div>
-"""
-        email_body += "    </div>\n"
-
-    # Tier 4: Private Companies
-    if tier4_jobs:
-        email_body += f"""
-    <div class="tier">
-        <div class="tier-header tier4">🏢 Tier 4: Private Companies ({len(tier4_jobs)} jobs)</div>
-"""
-        for i, job in enumerate(tier4_jobs, 1):
-            email_body += f"""
-        <div class="job">
-            <div class="company">{i}. {job['company']}</div>
-            <div class="title">{job.get('title', 'Job Opportunity')}</div>
-            <div class="info">💰 Pay Range: {job['compensation']}</div>
-            <div class="info">📍 Location: {job['location']}</div>
-            <div class="link">
-                <a href="{job['link']}">View Job Posting →</a>
-            </div>
-        </div>
-"""
-        email_body += "    </div>\n"
 
     email_body += """
 </body>
