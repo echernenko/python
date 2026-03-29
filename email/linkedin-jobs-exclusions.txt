@@ -3,6 +3,7 @@
 # Jobs listed here (by job ID) will not appear in future summaries
 # LinkedIn Jobs Exclusion List
 4354058211 | Databricks | Senior Engineering Manager - Trust and Safety
+4362571056 | ClickUp | Manager, Software Engineering
 4389843043 | Affirm | Manager, Software Engineering (Card Experiences)
 4390926551 | Google | Software Engineering Manager II, Infrastructure, Google Cloud
 4390470750 | The Walt Disney Company | Director, Core Engineering
