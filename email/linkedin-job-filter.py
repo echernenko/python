@@ -1032,7 +1032,7 @@ def _fetch_job_status(job_url: str):
     return 'open', posted_text, hours
 
 
-def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
+def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: bool = False):
     """Send a summary email sorted by posting recency (newest first)."""
     if not jobs:
         print("No jobs to send - all filtered out or none found.")
@@ -1040,31 +1040,75 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
 
     script_dir = os.path.dirname(os.path.realpath(__file__))
     exclusion_file = os.path.join(script_dir, 'linkedin-jobs-exclusions.txt')
+    job_cache = _get_job_cache()
 
-    # Fetch posting times, auto-exclude closed/gone jobs
-    print(f"Checking posting times for {len(jobs)} jobs...")
+    REFRESH_LIMIT = None if refresh_all else 10
+
+    # Attach cached status to each job, determine which need a fresh fetch
+    for job in jobs:
+        m = re.search(r'/jobs?/(?:view/)?(\d+)', job.get('link', ''))
+        job['_jid'] = m.group(1) if m else None
+        cached = job_cache.get(job['_jid'], {}) if job['_jid'] else {}
+        job['_cached_status'] = cached.get('job_status')
+        job['_cached_posted_text'] = cached.get('posted_text')
+        job['_cached_posted_hours'] = cached.get('posted_hours')
+        job['_status_checked_at'] = cached.get('status_checked_at')  # ISO str or None
+
+    # Jobs to fetch: never checked first, then oldest checked; cap at REFRESH_LIMIT
+    def _sort_key(j):
+        ts = j['_status_checked_at']
+        return ts if ts else ''  # empty string sorts before any ISO date
+
+    needs_fetch = sorted(jobs, key=_sort_key)
+    if REFRESH_LIMIT is not None:
+        needs_fetch = needs_fetch[:REFRESH_LIMIT]
+    needs_fetch_ids = {id(j) for j in needs_fetch}
+
+    total_fetched = len(needs_fetch)
+    total_cached = len(jobs) - total_fetched
+    print(f"Checking posting times: fetching {total_fetched} jobs, {total_cached} from cache...")
+
     active_jobs = []
     newly_excluded = []
 
     for i, job in enumerate(jobs):
-        job_id = re.search(r'/jobs?/(?:view/)?(\d+)', job.get('link', ''))
-        job_id = job_id.group(1) if job_id else None
-        print(f"  [{i+1}/{len(jobs)}] {job['company']} - {job.get('title', '')[:40]}", end='', flush=True)
+        job_id = job['_jid']
+        label_prefix = f"  [{i+1}/{len(jobs)}] {job['company']} - {job.get('title', '')[:40]}"
 
-        status, posted_text, hours = _fetch_job_status(job.get('link', ''))
+        if id(job) in needs_fetch_ids:
+            print(label_prefix, end='', flush=True)
+            status, posted_text, hours = _fetch_job_status(job.get('link', ''))
+
+            # Save result to cache
+            if job_id:
+                job_cache.setdefault(job_id, {}).update({
+                    'job_status': status,
+                    'posted_text': posted_text,
+                    'posted_hours': hours,
+                    'status_checked_at': datetime.now().isoformat(timespec='seconds'),
+                })
+                _save_job_cache()
+        else:
+            status = job['_cached_status'] or 'open'
+            posted_text = job['_cached_posted_text']
+            hours = job['_cached_posted_hours'] if job['_cached_posted_hours'] is not None else 999999
+            checked_at = (job['_status_checked_at'] or '')[:10]
+            print(f"{label_prefix} → {posted_text or 'unknown'} (cached {checked_at})")
 
         if status in ('closed', 'gone'):
             label = 'CLOSED' if status == 'closed' else 'GONE'
-            print(f" → {label}, excluding")
+            if id(job) in needs_fetch_ids:
+                print(f" → {label}, excluding")
             if job_id:
                 newly_excluded.append((job_id, job['company'], job.get('title', '')))
         else:
-            print(f" → {posted_text or 'unknown'}")
+            if id(job) in needs_fetch_ids:
+                print(f" → {posted_text or 'unknown'}")
             job['posted_text'] = posted_text
             job['posted_hours'] = hours
             active_jobs.append(job)
 
-        if i < len(jobs) - 1:
+        if id(job) in needs_fetch_ids and i < len(jobs) - 1:
             time.sleep(1.5)
 
     # Write newly excluded jobs to exclusions file
@@ -1188,6 +1232,10 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str):
         ))
         send_resp.read()
         print(f"Summary email sent to {recipient}")
+        cached_count = sum(1 for j in active_jobs if id(j) not in needs_fetch_ids)
+        if cached_count > 0:
+            print(f"\n  {cached_count} jobs used cached status (fetched {total_fetched} fresh this run).")
+            print(f"  To re-fetch ALL job statuses: python3 linkedin-job-filter.py --rebuild-from-cache --refresh-all-statuses")
     except Exception as e:
         print(f"Error sending email: {e}", file=sys.stderr)
 
@@ -1423,7 +1471,7 @@ def parse_job_listings_from_html(html: str) -> List[Dict[str, str]]:
     return jobs
 
 
-def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
+def process_linkedin_emails(recipient_email: str, dry_run: bool = False, refresh_all: bool = False):
     """Main processing function."""
     # Load exclusion list
     excluded_job_ids = load_exclusion_list()
@@ -1663,7 +1711,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
             delete_old_summary_emails()
             time.sleep(1)  # Brief pause
 
-        send_summary_email(unique_jobs, recipient_email)
+        send_summary_email(unique_jobs, recipient_email, refresh_all=refresh_all)
 
     # Mark LinkedIn emails as read and trash them
     if not dry_run and processed_message_ids:
@@ -1679,7 +1727,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False):
     elif dry_run:
         print("\nDry run - LinkedIn emails NOT deleted, manual emails NOT deleted.")
 
-def rebuild_from_cache(recipient_email: str):
+def rebuild_from_cache(recipient_email: str, refresh_all: bool = False):
     """Regenerate summary email from job cache, skipping excluded/embargoed jobs."""
     excluded_job_ids = load_exclusion_list()
     embargo_dates = load_embargo_dates()
@@ -1713,7 +1761,7 @@ def rebuild_from_cache(recipient_email: str):
         delete_old_summary_emails()
         import time
         time.sleep(1)
-        send_summary_email(jobs, recipient_email)
+        send_summary_email(jobs, recipient_email, refresh_all=refresh_all)
 
 
 def main():
@@ -1725,6 +1773,7 @@ def main():
     parser.add_argument('--dry-run', action='store_true', help='Don\'t mark emails as read')
     parser.add_argument('--account', help='Gmail account to use with gog (defaults to --email value)')
     parser.add_argument('--rebuild-from-cache', action='store_true', help='Regenerate email from job cache (use when no source emails exist)')
+    parser.add_argument('--refresh-all-statuses', action='store_true', help='Re-fetch status for every job, not just the 10 oldest')
 
     args = parser.parse_args()
 
@@ -1732,9 +1781,9 @@ def main():
     GOG_ACCOUNT = args.account if args.account else args.email
 
     if args.rebuild_from_cache:
-        rebuild_from_cache(args.email)
+        rebuild_from_cache(args.email, refresh_all=args.refresh_all_statuses)
     else:
-        process_linkedin_emails(args.email, args.dry_run)
+        process_linkedin_emails(args.email, args.dry_run, refresh_all=args.refresh_all_statuses)
 
 if __name__ == '__main__':
     main()
