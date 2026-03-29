@@ -427,8 +427,12 @@
   },
   "4365577444": {
     "company": "Google",
+    "job_status": "open",
     "location": "Sunnyvale",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:40:50",
     "title": "Senior Software Engineering Manager, Infrastructure, Google Cloud Security and Privacy"
   },
   "4365641608": {
@@ -723,8 +727,12 @@
   },
   "4374553717": {
     "company": "eBay",
+    "job_status": "open",
     "location": "San Jose, CA",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$274K-$366K",
+    "status_checked_at": "2026-03-29T05:40:52",
     "title": "Senior Director Eng, Seller Exp Platform"
   },
   "4374620119": {
@@ -1075,8 +1083,12 @@
   },
   "4378883338": {
     "company": "Horizon3.ai",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$210K-$260K",
+    "status_checked_at": "2026-03-29T05:40:54",
     "title": "Senior Engineering Manager, RVBM"
   },
   "4378991010": {
@@ -1097,14 +1109,22 @@
   },
   "4379149165": {
     "company": "Yahoo",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:40:56",
     "title": "Sr. Engineering Manager"
   },
   "4379183556": {
     "company": "Kaseya",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:40:57",
     "title": "Director, Engineering"
   },
   "4379292084": {
@@ -2151,14 +2171,22 @@
   },
   "4390153302": {
     "company": "Space Executive",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$180K-$250K",
+    "status_checked_at": "2026-03-29T05:40:42",
     "title": "Engineering Manager \u2013 AI Platform - Observability - Remote (US) | Up to $250k base + equity"
   },
   "4390274824": {
     "company": "GitHub",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:40:44",
     "title": "Principal Engineering Manager, Data Architecture"
   },
   "4390470750": {
@@ -2185,14 +2213,22 @@
   },
   "4390636577": {
     "company": "Ziff Davis Shopping",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:40:45",
     "title": "Director of Engineering"
   },
   "4390684451": {
     "company": "CoderPad",
+    "job_status": "open",
     "location": "United States",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$250K-$275K",
+    "status_checked_at": "2026-03-29T05:40:47",
     "title": "Director of Engineering"
   },
   "4390743386": {
@@ -2217,8 +2253,12 @@
   },
   "4390812294": {
     "company": "LinkedIn",
+    "job_status": "open",
     "location": "Mountain View, CA",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
+    "status_checked_at": "2026-03-29T05:40:49",
     "title": "Senior Software Engineering Manager - Systems and Infrastructure"
   },
   "4390837113": {
