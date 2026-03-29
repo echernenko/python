@@ -8,6 +8,9 @@
 4390926551 | Google | Software Engineering Manager II, Infrastructure, Google Cloud
 4390470750 | The Walt Disney Company | Director, Core Engineering
 4381123213 | Mastercard | Director, Platform Engineering
+4390812294 | LinkedIn | Senior Software Engineering Manager - Systems and Infrastructure
+4359712570 | Deloitte | Engineering Manager - PxE Platforms
+4361052144 | Oracle | Director, Software Engineering
 4389292616 | Amazon Web Services (AWS) | Software Development Manager, Amazon Connect
 4380527735 | Atlassian | Head of Engineering, DX
 4175510123 | Netflix | Director, Growth Data Engineering
@@ -408,3 +411,13 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4365577380 | Google | Software Engineering Manager, Workforce Identity
 4384256294 | Google | Senior Software Engineering Manager, Natural Language for Databases
 4386542845 | CPG | Director of Engineering
+4363118731 | Blue Origin | Senior Manager - Software Engineering - TeraWave
+4375560969 | Headway | Engineering Manager - Provider Growth
+4391211424 | AAA Washington | Senior Manager, Product Engineering
+4391588073 | Collins Aerospace | Senior Engineering Manager - FlightAware (Remote)
+4341185629 | Adobe | Sr. Director of Engineering - Mixed Media Authoring
+4365218846 | Alma | Senior Director, Engineering Operations & Platform
+4371308885 | Docusign | Sr. Director, SRE Platform Engineering
+4381184162 | ServiceTitan | Senior Manager, Software Engineering
+4378991010 | PayPal | Sr. Director, Developer Platforms
+4381114694 | F5 | Sr DevOps Manager
