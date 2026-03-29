@@ -1136,8 +1136,11 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
         print("No active jobs remaining after filtering closed/gone.")
         return
 
-    # Sort by posting time ascending (fewest hours = newest = appears first; unknown at end)
-    active_jobs.sort(key=lambda j: j['posted_hours'])
+    # Sort: non-LinkedIn URLs first (manually sent jobs), then by posting time ascending
+    def _job_sort_key(j):
+        is_linkedin = 'linkedin.com' in j.get('link', '')
+        return (1 if is_linkedin else 0, j['posted_hours'])
+    active_jobs.sort(key=_job_sort_key)
 
     # Build flat email body sorted by recency
     email_body = f"""
