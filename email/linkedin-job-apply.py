@@ -162,6 +162,7 @@ def main():
 
     parser = argparse.ArgumentParser(description='LinkedIn job application assistant')
     parser.add_argument('--account', default='chernenko@gmail.com', help='Gmail account')
+    parser.add_argument('filter', nargs='?', default=None, help='Optional filter string')
     args = parser.parse_args()
     GOG_ACCOUNT = args.account
 
@@ -180,7 +181,18 @@ def main():
         print("All jobs in the summary are already excluded.")
         return
 
-    print(f"\n{len(jobs)} positions to review.\n")
+    if args.filter:
+        q = args.filter.lower()
+        jobs = [
+            j for j in jobs
+            if q in f"{j['company']} {j['title']} {j['compensation']} {j['location']} {j['link']}".lower()
+        ]
+        if not jobs:
+            print(f"No jobs matched '{args.filter}'.")
+            return
+
+    filter_note = f" (filtered: '{args.filter}')" if args.filter else ""
+    print(f"\n{len(jobs)} positions to review{filter_note}.\n")
     current_tier = ''
     excluded_count = 0
     opened_count = 0
