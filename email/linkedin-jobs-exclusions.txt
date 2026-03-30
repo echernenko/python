@@ -384,3 +384,13 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4381179401 | Fivetran | Senior Director, Lead Software Engineering
 4390492646 | Cognizant | AI Customer Engineering Lead
 4392769826 | WD | Engineering Director, Agentic AI Delivery
+4381095588 | Lenovo | Senior Manager AI Reliability Engineering
+4392763671 | Netflix | Engineering Manager - Member Experience Client Foundations
+4379898411 | Oracle | Senior Director, Software Development
+4337325201 | PayPal | Senior Director Engineering, Growth – PayPal Consumer App
+4363150925 | Robinhood | Engineering Manager, Capacity and Efficiency
+4379609522 | Roblox | Senior Engineering Manager, AI Platform
+4390274824 | GitHub | Principal Engineering Manager, Data Architecture
+4390684451 | CoderPad | Director of Engineering
+4389983662 | Zillow | Senior Manager, Site Reliability Engineering, Follow Up Boss
+4379149165 | Yahoo | Sr. Engineering Manager
