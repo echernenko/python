@@ -383,3 +383,4 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4381171189 | Aledade, Inc. | Senior Engineering Manager- AI Data Platform
 4381179401 | Fivetran | Senior Director, Lead Software Engineering
 4390492646 | Cognizant | AI Customer Engineering Lead
+4392769826 | WD | Engineering Director, Agentic AI Delivery
