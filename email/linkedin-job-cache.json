@@ -119,6 +119,16 @@
     "salary": null,
     "title": "Executive Director, Global Infrastructure and Cloud Computing"
   },
+  "4329860908": {
+    "company": "Vanta",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-03-30T02:00:19",
+    "title": "Engineering Manager"
+  },
   "4329920684": {
     "company": "Vanta",
     "location": "United States",
@@ -140,6 +150,16 @@
     "location": "Menlo Park, California, United States",
     "salary": "$264K-$379K",
     "title": "Senior Engineering Manager - Observability"
+  },
+  "4337325201": {
+    "company": "PayPal",
+    "job_status": "open",
+    "location": "San Jose, CA",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-03-30T00:00:18",
+    "title": "Senior Director Engineering, Growth \u2013 PayPal Consumer App"
   },
   "4337425687": {
     "company": "Oracle",
@@ -234,6 +254,16 @@
     "location": "Bellevue",
     "salary": null,
     "title": "Senior Manager, Software Engineering - Custom Solutions"
+  },
+  "4350907288": {
+    "company": "CoreWeave",
+    "job_status": "open",
+    "location": "Bellevue",
+    "posted_hours": 11,
+    "posted_text": "11 hours ago",
+    "salary": null,
+    "status_checked_at": "2026-03-30T03:00:12",
+    "title": "Senior Engineering Manager, Data Engineering"
   },
   "4352697668": {
     "company": "Oracle",
@@ -489,6 +519,16 @@
     "status_checked_at": "2026-03-29T05:28:29",
     "title": "Senior Director, Engineering Operations & Platform"
   },
+  "4365323885": {
+    "company": "Synack",
+    "job_status": "open",
+    "location": "San Mateo, CA",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": "$240K-$280K",
+    "status_checked_at": "2026-03-30T00:00:20",
+    "title": "Director, Software Engineering, AI"
+  },
   "4365577380": {
     "company": "Google",
     "location": "Kirkland",
@@ -538,6 +578,16 @@
     "location": "Seattle",
     "salary": "$162K-$270K",
     "title": "engineering manager, Next Generation Ordering & Coffeehouse Platform- Seattle, WA"
+  },
+  "4366965937": {
+    "company": "Ontra",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 336,
+    "posted_text": "2 weeks ago",
+    "salary": null,
+    "status_checked_at": "2026-03-30T02:00:13",
+    "title": "Senior Manager, Platform Engineering"
   },
   "4366985331": {
     "company": "Coinbase",
@@ -1168,7 +1218,7 @@
   "4378018021": {
     "company": "Vercel",
     "job_status": "open",
-    "location": "San Francisco, CA",
+    "location": "San Francisco",
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": null,
@@ -1319,6 +1369,16 @@
     "status_checked_at": "2026-03-29T05:49:46",
     "title": "Engineering Manager, Software Supply Chain Security: Pipeline Security"
   },
+  "4379898411": {
+    "company": "Oracle",
+    "job_status": "open",
+    "location": "Seattle, WA",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": "$141K-$338K",
+    "status_checked_at": "2026-03-30T00:00:17",
+    "title": "Senior Director, Software Development"
+  },
   "4379962446": {
     "company": "Armada",
     "job_status": "open",
@@ -1340,6 +1400,16 @@
     "location": "United States",
     "salary": "$141K-$338K",
     "title": "Senior Director, Software Development"
+  },
+  "4380380493": {
+    "company": "MyFitnessPal",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
+    "salary": "$200K-$230K",
+    "status_checked_at": "2026-03-30T02:00:17",
+    "title": "Sr. Manager, Engineering - Product Platform"
   },
   "4380527735": {
     "company": "Atlassian",
@@ -1371,6 +1441,16 @@
     "salary": "$510K-$752K",
     "title": "Engineering Manager, Cloud Infrastructure Security"
   },
+  "4381009513": {
+    "company": "Fivetran",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-03-29T20:00:15",
+    "title": "Senior Director, Lead Software Engineering"
+  },
   "4381054512": {
     "company": "Andiamo",
     "job_status": "open",
@@ -1386,6 +1466,16 @@
     "location": "Seattle",
     "salary": null,
     "title": "Senior Software Development Manager, Engage"
+  },
+  "4381095588": {
+    "company": "Lenovo",
+    "job_status": "open",
+    "location": "North Carolina, United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-03-29T22:00:12",
+    "title": "Senior Manager AI Reliability Engineering"
   },
   "4381114694": {
     "company": "F5",
@@ -1438,6 +1528,36 @@
     "location": "98104",
     "salary": null,
     "title": "Director, Software Engineering"
+  },
+  "4381674767": {
+    "company": "Posit PBC",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-03-30T00:00:22",
+    "title": "Vice President, Engineering"
+  },
+  "4382152430": {
+    "company": "Ford Motor Company",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-03-29T22:00:13",
+    "title": "Software Engineering Manager"
+  },
+  "4382180838": {
+    "company": "BeyondTrust",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-03-29T20:00:17",
+    "title": "Director, Engineering- Remote"
   },
   "4382206577": {
     "company": "Superhuman",
@@ -1496,6 +1616,16 @@
     "salary": "$215K-$316K",
     "status_checked_at": "2026-03-29T07:00:14",
     "title": "Director of Engineering, Core Experience"
+  },
+  "4383406918": {
+    "company": "Upbound",
+    "job_status": "open",
+    "location": "San Francisco, CA",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-03-29T20:00:18",
+    "title": "Director of Engineering [REMOTE]"
   },
   "4383471231": {
     "company": "Elastic",
@@ -2227,6 +2357,16 @@
     "salary": null,
     "title": "Director of Software Engineering, Order Experience"
   },
+  "4388574962": {
+    "company": "Nutanix",
+    "job_status": "open",
+    "location": "Austin, TX",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-03-29T20:00:13",
+    "title": "Senior Director, Worldwide Systems Engineering - Global Accounts"
+  },
   "4388593100": {
     "company": "Nutanix",
     "location": "Seattle, WA",
@@ -2563,6 +2703,16 @@
     "status_checked_at": "2026-03-29T05:33:42",
     "title": "AI Customer Engineering Lead"
   },
+  "4390603245": {
+    "company": "Nordstrom",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
+    "salary": null,
+    "status_checked_at": "2026-03-30T03:00:14",
+    "title": "Senior Manager, Engineering - Customer Identity (Hybrid - Seattle)"
+  },
   "4390618635": {
     "company": "GitLab",
     "location": "United States",
@@ -2780,5 +2930,25 @@
     "salary": null,
     "status_checked_at": "2026-03-29T07:34:29",
     "title": "Manager - Software Engineering"
+  },
+  "4392763671": {
+    "company": "Netflix",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-03-30T02:00:15",
+    "title": "Engineering Manager - Member Experience Client Foundations"
+  },
+  "4392769826": {
+    "company": "WD",
+    "job_status": "open",
+    "location": "San Jose, CA",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-03-30T00:00:23",
+    "title": "Engineering Director, Agentic AI Delivery"
   }
 }

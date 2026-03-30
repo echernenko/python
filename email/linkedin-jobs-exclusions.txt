@@ -1,121 +1,6 @@
-
 # Format: job_id | company | position
 # Jobs listed here (by job ID) will not appear in future summaries
 # LinkedIn Jobs Exclusion List
-4340347913 | 1Password | Engineering Manager, API Platform
-4376827151 | Spotify | Engineering Manager II, Personalization
-4354058211 | Databricks | Senior Engineering Manager - Trust and Safety
-4362571056 | ClickUp | Manager, Software Engineering
-4389843043 | Affirm | Manager, Software Engineering (Card Experiences)
-4390926551 | Google | Software Engineering Manager II, Infrastructure, Google Cloud
-4390470750 | The Walt Disney Company | Director, Core Engineering
-4381123213 | Mastercard | Director, Platform Engineering
-4390812294 | LinkedIn | Senior Software Engineering Manager - Systems and Infrastructure
-4359712570 | Deloitte | Engineering Manager - PxE Platforms
-4361052144 | Oracle | Director, Software Engineering
-4389292616 | Amazon Web Services (AWS) | Software Development Manager, Amazon Connect
-4380527735 | Atlassian | Head of Engineering, DX
-4175510123 | Netflix | Director, Growth Data Engineering
-4192327226 | Oracle | Software Development Senior Manager
-4254314769 | Meta | Systems Software Engineering Manager
-4390898311 | Microsoft | Principal Engineering Manager
-4391936261 | Airbnb | Engineering Manager, Identity & Privacy Experience
-4389900571 | ServiceNow | Engineering Manager, Agentic Systems
-4254318514 | Meta | Systems Software Engineering Manager
-4255811878 | Meta | Software Engineering Manager, Infrastructure
-4255818033 | Google | Software Engineering Manager II, Infrastructure, Google Cloud AI
-4268409460 | Figma | Director, Software Engineering - Growth
-4268412434 | Figma | Director, Software Engineering - Growth
-4270179510 | Meta | Systems Software Engineering Manager
-4273762865 | Figma | Director, Software Engineering - Product Platform
-4273763849 | Figma | Director, Software Engineering - Product Platform
-4288512842 | Oracle | Software Development Senior Manager
-4301495308 | Meta | Software Engineering Manager, Product
-4302393949 | Netflix | Manager, Engineering - Page Systems
-4304288269 | DoorDash | Engineering Manager – Drive (Fleets and Delivery Experience)
-4304603851 | eBay | Director of Engineering - eBay Live
-4304810893 | Figma | Manager, Software Engineering - Collaboration Tools
-4305817743 | Databricks | Engineering Manager - Money
-4305859627 | Netflix | Director, Technical Program Management - Commerce Engineering
-4306853537 | Amazon Web Services (AWS) | Software Development Manager, Aurora PostgreSQL
-4307095014 | Reddit, Inc. | Engineering Manager, Data Pipeline
-4309495914 | Affirm | Manager, Software Engineering (Continuous Integration)
-4309706024 | Affirm | Manager, Software Engineering (Continuous Integration)
-4310215506 | Microsoft | Principal Software Engineering Manager
-4311810830 | Affirm | Senior Director, Software Engineering (Machine Learning)
-4311813721 | Affirm | Senior Manager, Software Engineering (Data & Storage Services)
-4311820609 | Affirm | Senior Director, Software Engineering (Machine Learning)
-4312227391 | Okta | Senior Manager, Site Reliability Engineering - Infrastructure Platform
-4312230264 | CrowdStrike | Sr. Manager, Enterprise Data Science (Remote, USA)
-4313000205 | Databricks | Director, Engineering - Databricks Mosaic AI
-4315744787 | Reddit, Inc. | Engineering Manager, Notifications Relevance
-4316728406 | Meta | Software Engineer (Technical Leadership)
-4318101719 | Figma | Manager, Software Engineering - Expressive AI
-4318108590 | Figma | Manager, Software Engineering - Expressive AI
-4318320298 | NerdWallet | Senior Manager, Software Engineering (SMB)
-4318496803 | Netflix | Senior Engineering Manager, CDN Edge
-4319254645 | Reddit, Inc. | Senior Engineering Manager, Unified Embeddings Platform
-4322290315 | Anthropic | Engineering Manager, Inference
-4322575104 | Affirm | Director, Software Engineering
-4322585032 | Affirm | Director, Software Engineering
-4323615765 | Dropbox | Senior Engineering Manager, Core Media & Intelligence
-4324843741 | Hinge | Senior Engineering Manager, Platform
-4326709471 | Affirm | Senior Manager, Software Engineering (Data & Storage Services)
-4326921223 | Affirm | Senior Manager, Software Engineering (Data & Storage Services)
-4327088872 | BeOne Medicines | Executive Director, Global Infrastructure and Cloud Computing
-4329920684 | Vanta | Sr. Engineering Manager, Reporting & Enterprise Hub
-4330954802 | Anthropic | Engineering Manager, UI Platform
-4332821888 | Zillow | Senior Manager, Software Development Engineering
-4333041788 | Snowflake | Director of Engineering, Cortex LLM Platform
-4337425687 | Oracle | Software Development Director
-4338853865 | Snap Inc. | Senior Manager, Software Engineering, Ads Format
-4338893759 | Snap Inc. | Senior Manager, Software Engineering, Ads Format
-4340497820 | Netflix | Senior Engineering Manager, Model Inference & Serving, Machine Learning Platform
-4340877049 | Meta | Director, Mechanical Engineering
-4341159842 | Databricks | Engineering Manager - Identity and Access Management (IAM)
-4342934829 | Airbnb | Senior Engineering Manager - Marketplaces DNA (Data & AI)
-4343983211 | Snowflake | Engineering Manager, Service Identity and Secret Management, Product Security
-4344737247 | Microsoft | Principal Software Engineering Manager
-4344882792 | Twitch | Sr. Software Development Manager, Community Discovery
-4345839527 | Uber | Engineering Manager II, Core Security Engineering
-4346141502 | The Trade Desk | Senior Manager, Software Engineering - Custom Solutions
-4347053438 | Netflix | Manager, Engineering - Content Discovery
-4348094322 | Oracle | Senior Manager, Cloud Engineering
-4349706417 | Microsoft | Principal Software Engineering Manager
-4349795432 | Netflix | Senior Engineering Manager - Domain Experience Systems
-4349900720 | Oracle | Senior Manager, Cloud Operations
-4351336764 | Compass | Senior Engineering Manager
-4351920987 | Samsara | Director, Software Engineering - Routing
-4352697668 | Oracle | Software Development Director
-4353116020 | Databricks | Senior Engineering Manager - Trust and Safety
-4353563915 | CrowdStrike | Sr. Engineering Manager, Sensor - CTIO (Hybrid)
-4353601593 | CrowdStrike | Director, Engineering, NG-SIEM Serverless Platform (Hybrid)
-4354477650 | Shopify | Data Engineering Managers (Americas)
-4355262391 | Oracle | Software Development Director
-4355780308 | Netflix | Engineering Manager - Launch Readiness
-4355799642 | Oracle | Software Development Director
-4355965220 | Netflix | Engineering Manager, Trust & Safety Foundations
-4356010437 | Oracle | Software Development Senior Manager
-4356475374 | Netflix | Manager, Engineering - Live Media Asset Management
-4356523053 | Palo Alto Networks | Senior Director, Engineering (Unit 42)
-4356750183 | Netflix | Engineering Manager (Cloud Architecture Tooling & Security)
-4357494191 | DoorDash | Engineering Manager - Merchant Acquisition, Onboarding & Early Success
-4359215380 | Apple | Software Engineering Manager, Enterprise Technology Services
-4359481620 | NVIDIA | Engineering Manager, Observability Platform
-4359607621 | Airbnb | Engineering Manager, Control Plane - Distributed Transactional Database
-4359611187 | Airbnb | Engineering Manager, Client Products & Emerging Tech
-4359621176 | Instacart | Software Engineering Manager, Enterprise Platform
-4359795062 | NVIDIA | Senior Manager, Software Security Architecture
-4360035090 | Apple | Senior Software Engineering Manager, Enterprise Technology Services
-4360083657 | Apple | Media Services Quality Engineering Manager
-4360546379 | Oracle | Senior Director, Software Development
-4360621793 | Amazon | Software Development Manager, Integrated Vehicle Testing
-4361027031 | Netflix | Engineering Manager – OC Foundation Infrastructure Services
-4361181454 | GitLab | Engineering Manager, Create:Source Code
-4361796992 | Netflix | Engineering Manager, Open Connect Control Plane Foundations
-4361848732 | Netflix | Engineering Manager - Games Social Communicate
-4361884757 | Blue Origin | Sr. Manager - Software Engineering
-4363096626 | Meta | Software Engineering Manager, Product
 4363125621 | Oracle | Software Development Director
 4363239200 | DoorDash | Engineering Manager, Search Quality
 4363995481 | Oracle | Snr Manager, Software Engineering, Cloud Performance
@@ -425,3 +310,76 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4381114694 | F5 | Sr DevOps Manager
 4391190684 | 1Password | Engineering Manager, Authentication Experience
 4389520974 | Expedia Group | Senior Director, Software Development Engineering
+4359031709 | Whatnot | Engineering Manager, Mobile
+4359041119 | Whatnot | Engineering Manager, Mobile
+4361328138 | Ford Motor Company | Software Engineering Manager, Mobile
+4368350629 | Red Ventures | Director of Engineering, AI Engineering
+4368794128 | Roblox | Sr Manager of Engineering, Sharing
+4369237481 | Tubi | Director, ML Engineering & Infrastructure
+4369283371 | LangChain | Director, Deployed Engineering - Central
+4369289297 | LangChain | Director, Deployed Engineering - Central
+4374842742 | CoinTracker | Engineering Manager, Infrastructure & Platform
+4376958727 | Nava | Senior Platform/Infrastructure Engineering Manager
+4377423475 | NVIDIA | Senior Manager, Software Security Architecture
+4377572973 | Ford Motor Company | Director, Private Cloud Platform Engineering
+4378019024 | Vercel | Sr. Engineering Manager, Platform
+4378325779 | Deloitte | Engineering Manager - Product Engineering A&A
+4379292084 | Microsoft | Principal Supercomputing Operations Engineering Manager
+4383372819 | Super.com | Director of Engineering, Core Experience
+4384098700 | Fanatics | Sr Engineering Manager - Fanatics Markets
+4384490468 | Nielsen | Director, IT Infrastructure Engineering
+4384727792 | Weave | Senior Director of Engineering
+4385029531 | Ladders | Senior Manager, Software Engineering (USA Remote)
+4385038176 | Ladders | Director, Global Software
+4385086875 | EY | AI & Machine Learning Engineering Consultant - Manager - Consulting - Location OPEN
+4385751985 | Walmart | Group Director, Software Engineering
+4385758701 | LogicGate | Manager, Software Engineering
+4385773001 | Talkiatry | Senior Manager of AI Engineering
+4385960051 | Starbucks | engineering manager, iOt- Seattle, WA
+4386365703 | WEX | Sr Director of Engineering, Mobilitiy
+4386377696 | NEO Energy | Vice President of Engineering
+4386794338 | Marriott International | Director, Engineering
+4386958810 | Toast | Manager II, Software Engineering
+4387179354 | The Walt Disney Company | Senior Manager, Software Engineering
+4387455931 | Confluent | Director II, Engineering
+4387482469 | GE Appliances, a Haier company | Senior Director, Cloud Software Engineering
+4387604821 | Sully.ai | Head of Engineering, Platform
+4387790091 | Honor | Engineering Manager
+4387934728 | Rippling | Senior Engineering Manager - Payroll Platform
+4387991256 | Switchfly | Director of Engineering
+4387996488 | GoGuardian | Senior Manager, Engineering
+4388200739 | Deloitte | AI Data Engineer - Manager
+4367296182 | HackerOne | Senior Manager, AI Engineering
+4384565878 | Ford Motor Company | Sr Director, Developer Experience and Platform Engineering
+4385589341 | Ford Motor Company | Director, Software Architecture
+4385832765 | JPMorganChase | Senior Director of Software Engineering - Head of Operations - Surveillance Technology
+4312219056 | eBay | Director of Engineering
+4390743386 | Red Oak Technologies | Sr. Manager, Applied AI Engineering
+4370847469 | You.com | Director of Engineering, Platform and DX
+4389171402 | EY | AI and Distributed Systems Backend Engineer - Manager - Consulting - Location OPEN
+4389884800 | Jobgether | Director of Software Engineering, Order Experience
+4389917018 | Maximus | Senior Director – Software Engineering
+4390636577 | Ziff Davis Shopping | Director of Engineering
+4379183556 | Kaseya | Director, Engineering
+4388461587 | Talkiatry | Senior Manager of AI Engineering
+4389782347 | LinkedIn | Director, Software Engineering, Systems Infrastructure
+4389790116 | Rippling | Senior Engineering Manager, AI Developer Experience
+4389936630 | Marqeta | Manager, Software Engineering - Data Infrastructure
+4389950971 | Marriott International | Director, AI Engineering (Tip.AI)
+4387500946 | Ladders | Senior Director, Engineering
+4387511575 | Splitero | Director of Engineering
+4389215368 | dynamism | Head of Engineering
+4389267627 | Curinos | Head, AI Platform Engineering
+4389443569 | LinkedIn | Software Engineering Manager, Systems and Infrastructure - Data Catalog
+4281959101 | Fleetio | Engineering Manager, Platform
+4310153867 | Rippling | Director of Engineering - Platform
+4361085152 | PitchBook | Engineering Manager, AI Enablement
+4388664221 | Valor Front | Director of Engineering
+4332542040 | AKASA | Sr. Engineering Manager, Machine Learning
+4392086418 | Disney Experiences | Manager - Software Engineering
+4362171369 | Expedia Group | Distinguished Software Development Engineer
+4371423521 | JPMorganChase | Sr Director of Software Engineering- Capital Technology
+4371650923 | Nordstrom | Senior Engineering Manager, Cloud Engineering - Hybrid - Seattle
+4381171189 | Aledade, Inc. | Senior Engineering Manager- AI Data Platform
+4381179401 | Fivetran | Senior Director, Lead Software Engineering
+4390492646 | Cognizant | AI Customer Engineering Lead
