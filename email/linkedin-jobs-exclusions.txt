@@ -423,3 +423,5 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4341185231 | Unknown | Unknown
 4367933006 | JPMorganChase | Senior Director of Software Engineering - Head of Cloud/Lake Platforms Engineering
 4366965937 | Ontra | Senior Manager, Platform Engineering
+4362571056 | ClickUp | Senior Engineering Manager, AI
+4343609864 | ClickUp | Engineering Manager
