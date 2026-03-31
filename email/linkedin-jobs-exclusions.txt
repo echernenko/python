@@ -394,3 +394,11 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4390684451 | CoderPad | Director of Engineering
 4389983662 | Zillow | Senior Manager, Site Reliability Engineering, Follow Up Boss
 4379149165 | Yahoo | Sr. Engineering Manager
+4372169597 | Salesforce | Senior Manager of Engineering, Search Data Infrastructure - Slack
+4381054512 | Andiamo | Senior Engineering Manager, Machine Learning - Tech Leader, Simplifying Access To Care
+4390886075 | Bain & Company | Expert Senior Manager, AI-ML Engineering
+4390603245 | Nordstrom | Senior Manager, Engineering - Customer Identity (Hybrid - Seattle)
+4379962446 | Armada | Head of Federal Engineering
+4389443040 | Nordstrom | Director of Engineering AI/ML
+4376781638 | Galvanick | Head of Engineering
+4391668709 | RemoteHunter | Sr. Director Engineering, Head of Internal Technology
