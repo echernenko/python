@@ -418,3 +418,6 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4391145490 | Petco | Sr. Manager, Frontend Engineering
 4368504842 | GitHub | Principal Engineering Manager, Data Engineering
 4343659841 | ClickUp | Senior Director of Engineering
+4390837113 | The Coca-Cola Company | Senior Director, Engineering
+4340158706 | Unknown | Unknown
+4341185231 | Unknown | Unknown
