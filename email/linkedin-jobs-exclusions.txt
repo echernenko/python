@@ -402,3 +402,16 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4389443040 | Nordstrom | Director of Engineering AI/ML
 4376781638 | Galvanick | Head of Engineering
 4391668709 | RemoteHunter | Sr. Director Engineering, Head of Internal Technology
+4377038402 | IonQ | Senior Manager, System Integration & Commissioning
+4373902224 | T-Mobile | Sr Manager, EPO Applications Support
+4387693065 | Microsoft AI | MTS - Platform Engineering Manager
+4382152430 | Ford Motor Company | Software Engineering Manager
+4390852349 | Unknown | Unknown
+4389776811 | LinkedIn | Manager, Software Engineering - Premium
+4360593747 | Circle | Senior Director, Engineering
+4383406918 | Upbound | Director of Engineering
+4379713146 | GitLab | Engineering Manager, Software Supply Chain Security: Pipeline Security
+4323328409 | Vertex Inc. | Senior Manager - AI Engineering
+4392079382 | Wells Fargo | DevOps Technology Director
+4319254645 | Reddit | Senior Engineering Manager, Unified Embeddings Platform
+4381652972 | Plaid | Engineering Manager - Credit Distribution
