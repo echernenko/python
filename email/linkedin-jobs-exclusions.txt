@@ -415,3 +415,6 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4392079382 | Wells Fargo | DevOps Technology Director
 4319254645 | Reddit | Senior Engineering Manager, Unified Embeddings Platform
 4381652972 | Plaid | Engineering Manager - Credit Distribution
+4391145490 | Petco | Sr. Manager, Frontend Engineering
+4368504842 | GitHub | Principal Engineering Manager, Data Engineering
+4343659841 | ClickUp | Senior Director of Engineering

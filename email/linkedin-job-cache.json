@@ -2947,10 +2947,10 @@
     "company": "Blink",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-30T06:00:09",
+    "status_checked_at": "2026-03-31T06:00:09",
     "title": "Director of Engineering"
   },
   "4390812294": {
@@ -2967,20 +2967,20 @@
     "company": "The Coca-Cola Company",
     "job_status": "open",
     "location": "Atlanta, GA",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$202K-$229K",
-    "status_checked_at": "2026-03-30T06:00:10",
+    "status_checked_at": "2026-03-31T06:24:34",
     "title": "Senior Director, Engineering"
   },
   "4390837262": {
     "company": "Pixar Animation Studios",
     "job_status": "open",
     "location": "Emeryville, CA",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-30T06:00:12",
+    "status_checked_at": "2026-03-31T06:24:36",
     "title": "Director, Core Engineering"
   },
   "4390852349": {
@@ -3023,10 +3023,10 @@
     "company": "Petco",
     "job_status": "open",
     "location": "San Diego, CA",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-30T06:00:17",
+    "status_checked_at": "2026-03-31T06:24:38",
     "title": "Sr. Manager, Frontend Engineering"
   },
   "4391160587": {
@@ -3113,20 +3113,20 @@
     "company": "Abridge",
     "job_status": "open",
     "location": "New York, NY",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$250K-$280K",
-    "status_checked_at": "2026-03-30T06:00:19",
+    "status_checked_at": "2026-03-31T06:24:40",
     "title": "Sr. Engineering Manager, SRE"
   },
   "4391920835": {
     "company": "Horizon3.ai",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$210K-$260K",
-    "status_checked_at": "2026-03-30T06:00:22",
+    "status_checked_at": "2026-03-31T06:24:41",
     "title": "Senior Engineering Manager, User Platform & Enterprise"
   },
   "4391936261": {
@@ -3139,10 +3139,10 @@
     "company": "Weights & Biases",
     "job_status": "open",
     "location": "Bellevue",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-30T06:00:24",
+    "status_checked_at": "2026-03-31T06:24:43",
     "title": "Engineering Manager, Launch & Sandboxes- Weights & Biases"
   },
   "4392079382": {
