@@ -458,3 +458,7 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4392197824 | Expedia Group | Director, Software Development Engineering
 4368844057 | Remitly | Engineering Manager, USA Regional Team
 4381780398 | Runpod | Sr Director of Software Engineering - Product & Platform Delivery
+4389843043 | Affirm | Manager, Software Engineering (Card Experiences)
+4311813721 | Affirm | Senior Director, Software Engineering (Machine Learning)
+4323406813 | Ashby | Engineering Manager, Americas
+4255811878 | Meta | Software Engineering Manager, Infrastructure
