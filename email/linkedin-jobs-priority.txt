@@ -1,0 +1,9 @@
+# Priority companies — appear first in the email summary, in this order.
+# One company name per line. Lines starting with # are ignored.
+# Example:
+# Stripe
+# Notion
+netflix
+microsoft
+amazon
+aws

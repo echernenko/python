@@ -1142,6 +1142,13 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
         return (1 if is_linkedin else 0, j['posted_hours'])
     active_jobs.sort(key=_job_sort_key)
 
+    # Load priority companies (one per line, highest priority first)
+    priority_file = os.path.join(os.path.dirname(__file__), 'linkedin-jobs-priority.txt')
+    priority_companies = []
+    if os.path.exists(priority_file):
+        with open(priority_file) as f:
+            priority_companies = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+
     # Group by company, preserving sort order (company ordered by its newest/best job)
     company_jobs = {}
     for job in active_jobs:
@@ -1149,6 +1156,13 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
         if company not in company_jobs:
             company_jobs[company] = []
         company_jobs[company].append(job)
+
+    # Re-order: priority companies first (in file order), then the rest
+    company_jobs_lower = {k.lower(): k for k in company_jobs}
+    priority_set_lower = {c.lower() for c in priority_companies}
+    priority_keys = [company_jobs_lower[c.lower()] for c in priority_companies if c.lower() in company_jobs_lower]
+    rest_keys = [c for c in company_jobs if c.lower() not in priority_set_lower]
+    ordered_company_jobs = {c: company_jobs[c] for c in priority_keys + rest_keys}
 
     # Build email body grouped by company, sorted by recency
     email_body = f"""
@@ -1158,6 +1172,7 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
         body {{ font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }}
         .company-group {{ margin-bottom: 25px; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }}
         .company-header {{ padding: 12px 15px; background: #e8f0fe; border-bottom: 1px solid #ccc; }}
+        .company-header.priority {{ background: #fff3cd; border-left: 4px solid #f0a500; }}
         .company-name {{ font-weight: bold; font-size: 18px; color: #0066cc; }}
         .company-type {{ font-size: 13px; color: #888; font-weight: normal; margin-left: 6px; }}
         .job {{ padding: 12px 15px; background: #f9f9f9; border-top: 1px solid #eee; }}
@@ -1174,13 +1189,17 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
     <p><strong>{len(active_jobs)} jobs</strong> across <strong>{len(company_jobs)} companies</strong> | Generated on {datetime.now().strftime('%Y-%m-%d %H:%M')} | Sorted by newest first, grouped by company</p>
 """
 
-    for company_idx, (company, jobs_in_group) in enumerate(company_jobs.items(), 1):
+    priority_company_names = {c.lower() for c in priority_keys}
+    for company_idx, (company, jobs_in_group) in enumerate(ordered_company_jobs.items(), 1):
         is_public = jobs_in_group[0].get('is_public', True)
         company_type = 'public' if is_public else 'private'
+        is_priority = company.lower() in priority_company_names
+        header_class = 'company-header priority' if is_priority else 'company-header'
+        priority_marker = '⭐ ' if is_priority else ''
         email_body += f"""
     <div class="company-group">
-        <div class="company-header">
-            <span class="company-name">{company_idx}. {company}</span> <span class="company-type">({company_type})</span>
+        <div class="{header_class}">
+            <span class="company-name">{priority_marker}{company_idx}. {company}</span> <span class="company-type">({company_type})</span>
         </div>
 """
         for job in jobs_in_group:
