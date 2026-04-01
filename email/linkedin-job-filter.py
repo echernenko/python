@@ -1157,12 +1157,20 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
             company_jobs[company] = []
         company_jobs[company].append(job)
 
-    # Re-order: priority companies first (in file order), then the rest
+    # Re-order: priority companies first, then local (Seattle area), then the rest
+    LOCAL_CITIES = ['greater seattle area', 'seattle', 'bellevue', 'kirkland', 'redmond', 'kent', 'everett']
+    local_pattern = re.compile(r'\b(' + '|'.join(re.escape(c) for c in LOCAL_CITIES) + r')\b', re.IGNORECASE)
+
+    def _is_local_company(jobs_list):
+        return any(local_pattern.search(j.get('location', '')) for j in jobs_list)
+
     company_jobs_lower = {k.lower(): k for k in company_jobs}
     priority_set_lower = {c.lower() for c in priority_companies}
     priority_keys = [company_jobs_lower[c.lower()] for c in priority_companies if c.lower() in company_jobs_lower]
     rest_keys = [c for c in company_jobs if c.lower() not in priority_set_lower]
-    ordered_company_jobs = {c: company_jobs[c] for c in priority_keys + rest_keys}
+    local_keys = [c for c in rest_keys if _is_local_company(company_jobs[c])]
+    other_keys = [c for c in rest_keys if not _is_local_company(company_jobs[c])]
+    ordered_company_jobs = {c: company_jobs[c] for c in priority_keys + local_keys + other_keys}
 
     # Build email body grouped by company, sorted by recency
     email_body = f"""
@@ -1173,6 +1181,7 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
         .company-group {{ margin-bottom: 25px; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }}
         .company-header {{ padding: 12px 15px; background: #e8f0fe; border-bottom: 1px solid #ccc; }}
         .company-header.priority {{ background: #fff3cd; border-left: 4px solid #f0a500; }}
+        .company-header.local {{ background: #e8f5e9; border-left: 4px solid #4caf50; }}
         .company-name {{ font-weight: bold; font-size: 18px; color: #0066cc; }}
         .company-type {{ font-size: 13px; color: #888; font-weight: normal; margin-left: 6px; }}
         .job {{ padding: 12px 15px; background: #f9f9f9; border-top: 1px solid #eee; }}
@@ -1190,16 +1199,25 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
 """
 
     priority_company_names = {c.lower() for c in priority_keys}
+    local_company_names = {c.lower() for c in local_keys}
     for company_idx, (company, jobs_in_group) in enumerate(ordered_company_jobs.items(), 1):
         is_public = jobs_in_group[0].get('is_public', True)
         company_type = 'public' if is_public else 'private'
         is_priority = company.lower() in priority_company_names
-        header_class = 'company-header priority' if is_priority else 'company-header'
-        priority_marker = '⭐ ' if is_priority else ''
+        is_local = company.lower() in local_company_names
+        if is_priority:
+            header_class = 'company-header priority'
+            marker = '⭐ '
+        elif is_local:
+            header_class = 'company-header local'
+            marker = '📍 '
+        else:
+            header_class = 'company-header'
+            marker = ''
         email_body += f"""
     <div class="company-group">
         <div class="{header_class}">
-            <span class="company-name">{priority_marker}{company_idx}. {company}</span> <span class="company-type">({company_type})</span>
+            <span class="company-name">{marker}{company_idx}. {company}</span> <span class="company-type">({company_type})</span>
         </div>
 """
         for job in jobs_in_group:
