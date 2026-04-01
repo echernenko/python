@@ -1136,10 +1136,18 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
         print("No active jobs remaining after filtering closed/gone.")
         return
 
-    # Sort: non-LinkedIn URLs first (manually sent jobs), then by posting time ascending
+    # Parse midpoint salary from compensation string like "$150K-$300K"
+    def _parse_salary_midpoint(comp: str) -> int:
+        m = re.findall(r'\$(\d+)K', comp or '')
+        if len(m) >= 2:
+            return (int(m[0]) + int(m[1])) // 2
+        return 0
+
+    # Sort: non-LinkedIn URLs first, then by salary descending, then by posting time ascending
     def _job_sort_key(j):
         is_linkedin = 'linkedin.com' in j.get('link', '')
-        return (1 if is_linkedin else 0, j['posted_hours'])
+        salary_mid = _parse_salary_midpoint(j.get('compensation', ''))
+        return (1 if is_linkedin else 0, -salary_mid, j['posted_hours'])
     active_jobs.sort(key=_job_sort_key)
 
     # Load priority companies (one per line, highest priority first)

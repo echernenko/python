@@ -3,7 +3,14 @@
 # Example:
 # Stripe
 # Notion
+google
+meta
 netflix
+Amazon Web Services (AWS)
 microsoft
 amazon
 aws
+linkedin
+airbnb
+databricks
+zillow

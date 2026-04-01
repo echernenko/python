@@ -450,3 +450,11 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4391626815 | AT&T | Director-Network Technology Support
 4341159842 | Databricks | Engineering Manager - Identity and Access Management (IAM)
 4354058211 | Databricks | Senior Engineering Manager - Trust and Safety
+4313000205 | Databricks | Director, Engineering - Databricks Mosaic AI
+4384491152 | Databricks | Sr. Manager, Field Engineering
+4383329543 | Zillow | Senior Manager, Software Engineering
+4392428532 | Aritzia | Senior Engineering Manager/Engineering Manager, Customer Data - Digital Technology
+4383452063 | Chewy | Senior Director, Fulfillment Science & Technology
+4392197824 | Expedia Group | Director, Software Development Engineering
+4368844057 | Remitly | Engineering Manager, USA Regional Team
+4381780398 | Runpod | Sr Director of Software Engineering - Product & Platform Delivery
