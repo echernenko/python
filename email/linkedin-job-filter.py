@@ -1142,15 +1142,26 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
         return (1 if is_linkedin else 0, j['posted_hours'])
     active_jobs.sort(key=_job_sort_key)
 
-    # Build flat email body sorted by recency
+    # Group by company, preserving sort order (company ordered by its newest/best job)
+    company_jobs = {}
+    for job in active_jobs:
+        company = job['company']
+        if company not in company_jobs:
+            company_jobs[company] = []
+        company_jobs[company].append(job)
+
+    # Build email body grouped by company, sorted by recency
     email_body = f"""
 <html>
 <head>
     <style>
         body {{ font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }}
-        .job {{ margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; background: #f9f9f9; }}
-        .company {{ font-weight: bold; font-size: 18px; color: #0066cc; }}
+        .company-group {{ margin-bottom: 25px; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }}
+        .company-header {{ padding: 12px 15px; background: #e8f0fe; border-bottom: 1px solid #ccc; }}
+        .company-name {{ font-weight: bold; font-size: 18px; color: #0066cc; }}
         .company-type {{ font-size: 13px; color: #888; font-weight: normal; margin-left: 6px; }}
+        .job {{ padding: 12px 15px; background: #f9f9f9; border-top: 1px solid #eee; }}
+        .company {{ display: none; }}
         .title {{ font-size: 16px; margin: 5px 0; }}
         .info {{ color: #666; margin: 3px 0; }}
         .posted {{ color: #2a7a2a; font-weight: bold; margin: 3px 0; }}
@@ -1160,23 +1171,33 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
 </head>
 <body>
     <h1>🎯 LinkedIn Job Opportunities</h1>
-    <p><strong>{len(active_jobs)} jobs</strong> | Generated on {datetime.now().strftime('%Y-%m-%d %H:%M')} | Sorted by newest first</p>
+    <p><strong>{len(active_jobs)} jobs</strong> across <strong>{len(company_jobs)} companies</strong> | Generated on {datetime.now().strftime('%Y-%m-%d %H:%M')} | Sorted by newest first, grouped by company</p>
 """
 
-    for i, job in enumerate(active_jobs, 1):
-        is_public = job.get('is_public', True)
+    for company_idx, (company, jobs_in_group) in enumerate(company_jobs.items(), 1):
+        is_public = jobs_in_group[0].get('is_public', True)
         company_type = 'public' if is_public else 'private'
-        posted = job.get('posted_text') or 'unknown'
         email_body += f"""
-    <div class="job">
-        <div class="company">{i}. {job['company']} <span class="company-type">({company_type})</span></div>
-        <div class="title">{job.get('title', 'Job Opportunity')}</div>
-        <div class="posted">🕐 {posted}</div>
-        <div class="info">💰 Pay Range: {job['compensation']}</div>
-        <div class="info">📍 Location: {job['location']}</div>
-        <div class="link">
-            <a href="{job['link']}">View Job Posting →</a>
+    <div class="company-group">
+        <div class="company-header">
+            <span class="company-name">{company_idx}. {company}</span> <span class="company-type">({company_type})</span>
         </div>
+"""
+        for job in jobs_in_group:
+            posted = job.get('posted_text') or 'unknown'
+            email_body += f"""
+        <div class="job">
+            <div class="company">{company}</div>
+            <div class="title">{job.get('title', 'Job Opportunity')}</div>
+            <div class="posted">🕐 {posted}</div>
+            <div class="info">💰 Pay Range: {job['compensation']}</div>
+            <div class="info">📍 Location: {job['location']}</div>
+            <div class="link">
+                <a href="{job['link']}">View Job Posting →</a>
+            </div>
+        </div>
+"""
+        email_body += """
     </div>
 """
 

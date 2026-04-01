@@ -25,6 +25,7 @@
   "Anthropic": false,
   "Applause": false,
   "Apple": true,
+  "Applied Intuition": false,
   "Aritzia": true,
   "Armada": true,
   "Asana": true,
@@ -200,6 +201,7 @@
   "Reddit, Inc.": true,
   "Redmond": true,
   "Redpanda Data": false,
+  "Remitly": true,
   "RemoteHunter": false,
   "Renew Home": false,
   "Replicate": false,
@@ -289,5 +291,6 @@
   "honeycomb.io": false,
   "kadence": false,
   "lululemon": true,
-  "myGwork - LGBTQ+ Business Community": false
+  "myGwork - LGBTQ+ Business Community": false,
+  "ujet.cx": false
 }
