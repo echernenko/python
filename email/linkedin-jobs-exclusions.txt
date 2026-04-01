@@ -430,3 +430,10 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4393236050 | WEKA | Technical Lead - AI Inferences
 4391857736 | Cadex | Sr. Director of Engineering - Platform & Shared Services
 4391677477 | FutureTech Recruitment | VP of Platform Engineering
+4352697668 | Oracle | Software Development Director
+4356523053 | Palo Alto Networks | Senior Director, Engineering (Unit 42)
+4359481620 | NVIDIA | Engineering Manager, Observability Platform, Engineering Manager, Observability Platform
+4390812294 | LinkedIn | Senior Software Engineering Manager - Systems and Infrastructure
+4355780308 | Netflix | Engineering Manager - Launch Readiness
+4302393949 | Netflix | Manager, Engineering - Page Systems
+4356475374 | Netflix | Manager, Engineering - Live Media Asset Management
