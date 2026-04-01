@@ -1158,7 +1158,7 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
         company_jobs[company].append(job)
 
     # Re-order: priority companies first, then local (Seattle area), then the rest
-    LOCAL_CITIES = ['greater seattle area', 'seattle', 'bellevue', 'kirkland', 'redmond', 'kent', 'everett']
+    LOCAL_CITIES = ['greater seattle area', 'seattle', 'bellevue', 'kirkland', 'redmond', 'kent', 'everett', 'bothell']
     local_pattern = re.compile(r'\b(' + '|'.join(re.escape(c) for c in LOCAL_CITIES) + r')\b', re.IGNORECASE)
 
     def _is_local_company(jobs_list):
