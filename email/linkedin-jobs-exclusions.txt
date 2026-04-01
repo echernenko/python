@@ -426,3 +426,7 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4362571056 | ClickUp | Senior Engineering Manager, AI
 4343609864 | ClickUp | Engineering Manager
 4390764326 | Blink | Director of Engineering
+4392969248 | Doxel | Director, Product Engineering
+4393236050 | WEKA | Technical Lead - AI Inferences
+4391857736 | Cadex | Sr. Director of Engineering - Platform & Shared Services
+4391677477 | FutureTech Recruitment | VP of Platform Engineering
