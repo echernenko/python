@@ -437,3 +437,16 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4355780308 | Netflix | Engineering Manager - Launch Readiness
 4302393949 | Netflix | Manager, Engineering - Page Systems
 4356475374 | Netflix | Manager, Engineering - Live Media Asset Management
+4395071625 | Netflix | Engineering Manager, Open Connect Site Reliability Engineering
+4390898311 | Microsoft | Principal Engineering Manager
+4360621793 | Amazon | Software Development Manager, Integrated Vehicle Testing
+4391883663 | LinkedIn | Software Engineering Manager, Systems and Infrastructure
+4392964207 | LinkedIn | Senior Software Engineering Manager - Systems and Infrastructure
+4391936261 | Airbnb | Engineering Manager, Identity & Privacy Experience (Users, Identity & Community)
+4359607621 | Airbnb | Engineering Manager, Control Plane - Distributed Transactional Database
+4323237114 | Ashby | Engineering Manager, Americas
+4323460131 | Ashby | Engineering Manager, Americas
+4323426716 | Ashby | Engineering Manager, Americas
+4391626815 | AT&T | Director-Network Technology Support
+4341159842 | Databricks | Engineering Manager - Identity and Access Management (IAM)
+4354058211 | Databricks | Senior Engineering Manager - Trust and Safety
