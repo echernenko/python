@@ -466,3 +466,32 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4391659083 | GEICO | Distinguished Engineer
 4393949724 | Nordstrom | Director of Engineering – Platform Services
 4391939667 | Weights & Biases | Engineering Manager, Launch & Sandboxes
+4315744787 | Reddit, Inc. | Engineering Manager, Notifications Relevance
+4380527735 | Atlassian | Head of Engineering, DX
+4390365442 | Amazon Web Services (AWS) | Software Dev Manager III, Amazon SageMaker Catalog
+4306853537 | Amazon Web Services (AWS) | Software Development Manager, Aurora PostgreSQL
+4389292616 | Amazon Web Services (AWS) | Software Development Manager, Amazon Connect
+4381789192 | Amazon Web Services (AWS) | ISV SA Manager, Business Applications, Tech-US-SA-ISV
+4392951935 | LinkedIn | Director, Software Engineering, Systems Infrastructure
+4384138245 | Airbnb | Engineering Manager, Storage
+4395534511 | Databricks | Sr. Manager, AI Forward Deployed Engineering (FDE)
+4344882792 | Twitch | Sr. Software Development Manager, Community Discovery
+4393075155 | Possible | Software Engineering Manager
+4379685781 | PwC | Manager, Solution Architect
+4384108622 | Deloitte | Manager, Industry Solutions, Life Science
+4304288269 | DoorDash | Engineering Manager – Drive (Fleets and Delivery Experience)
+4357494191 | DoorDash | Engineering Manager - Merchant Acquisition, Onboarding & Early Success
+4312227391 | Okta | Senior Manager, Site Reliability Engineering - Infrastructure Platform
+4357717314 | Chalk | Engineering Manager
+4383766874 | Gong | Global Head of Solutions Engineering
+4393267760 | Crusoe | Senior Director, Cloud Engineering
+4382349467 | Crusoe | Senior Director of Engineering, Developer Experience
+4381009513 | Fivetran | Senior Director, Lead Software Engineering
+4359712570 | Deloitte | Engineering Manager - PxE Platforms
+4346141502 | The Trade Desk | Senior Manager, Software Engineering - Custom Solutions
+4324843741 | Hinge | Senior Engineering Manager, Platform
+4337425687 | Oracle | Software Development Director
+4361181454 | GitLab | Engineering Manager, Create:Source Code
+4340347913 | 1Password | Engineering Manager, API Platform
+4376827151 | Spotify | Engineering Manager II, Personalization
+4323615765 | Dropbox | Senior Engineering Manager, Core Media & Intelligence

@@ -58,7 +58,7 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": "$233K-$311K",
-    "status_checked_at": "2026-04-01T18:07:45",
+    "status_checked_at": "2026-04-02T18:13:40",
     "title": "Director of Engineering - eBay Live"
   },
   "4306853537": {
@@ -115,10 +115,10 @@
     "company": "Postman",
     "job_status": "open",
     "location": "San Francisco, CA",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T00:00:21",
+    "status_checked_at": "2026-04-02T01:00:09",
     "title": "Head of AI Platform Engineering"
   },
   "4313000205": {
@@ -145,10 +145,10 @@
     "company": "Acorns",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 96,
-    "posted_text": "4 days ago",
+    "posted_hours": 13,
+    "posted_text": "13 hours ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T12:00:08",
+    "status_checked_at": "2026-04-02T12:00:08",
     "title": "Engineering Manager"
   },
   "4319254645": {
@@ -195,10 +195,10 @@
     "company": "Vanta",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 96,
-    "posted_text": "4 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T12:00:11",
+    "status_checked_at": "2026-04-02T13:00:08",
     "title": "Senior Director, Corporate Engineering"
   },
   "4323426716": {
@@ -228,17 +228,17 @@
     "posted_hours": 504,
     "posted_text": "3 weeks ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:07:56",
+    "status_checked_at": "2026-04-02T18:13:54",
     "title": "Senior Engineering Manager, Core Media & Intelligence"
   },
   "4323704412": {
     "company": "Yahoo",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T17:00:17",
+    "status_checked_at": "2026-04-02T17:18:43",
     "title": "Senior Engineering Manager - Mail Intelligence"
   },
   "4324843741": {
@@ -248,7 +248,7 @@
     "posted_hours": 336,
     "posted_text": "2 weeks ago",
     "salary": "$219K-$263K",
-    "status_checked_at": "2026-04-01T18:08:13",
+    "status_checked_at": "2026-04-02T18:13:43",
     "title": "Senior Engineering Manager, Platform"
   },
   "4325309022": {
@@ -261,30 +261,30 @@
     "company": "BeOne Medicines",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T23:00:15",
+    "status_checked_at": "2026-04-01T23:20:47",
     "title": "Executive Director, Global Infrastructure and Cloud Computing"
   },
   "4329860908": {
     "company": "Vanta",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T04:00:09",
+    "status_checked_at": "2026-04-02T04:11:19",
     "title": "Engineering Manager"
   },
   "4329920684": {
     "company": "Vanta",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 96,
-    "posted_text": "4 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T00:00:16",
+    "status_checked_at": "2026-04-02T01:00:11",
     "title": "Sr. Engineering Manager, Reporting & Enterprise Hub"
   },
   "4332542040": {
@@ -301,21 +301,31 @@
     "company": "General Motors",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T20:00:20",
+    "status_checked_at": "2026-04-01T21:00:10",
     "title": "Engineering Manager, Build Platform"
   },
   "4333292654": {
     "company": "General Motors",
     "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T17:50:02",
+    "title": "Engineering Manager, Observability"
+  },
+  "4333358205": {
+    "company": "CNN",
+    "job_status": "open",
+    "location": "Atlanta",
     "posted_hours": 24,
     "posted_text": "1 day ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T17:30:52",
-    "title": "Engineering Manager, Observability"
+    "status_checked_at": "2026-04-01T23:20:43",
+    "title": "Manager, Software Engineering, AI Systems & Enablement"
   },
   "4335116861": {
     "company": "Snowflake",
@@ -340,7 +350,7 @@
     "posted_hours": 336,
     "posted_text": "2 weeks ago",
     "salary": "$122K-$291K",
-    "status_checked_at": "2026-04-01T18:08:15",
+    "status_checked_at": "2026-04-02T18:13:45",
     "title": "Software Development Director"
   },
   "4340158706": {
@@ -360,7 +370,7 @@
     "posted_hours": 336,
     "posted_text": "2 weeks ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:11:17",
+    "status_checked_at": "2026-04-02T18:13:50",
     "title": "Engineering Manager, API Platform"
   },
   "4340500929": {
@@ -403,20 +413,20 @@
     "company": "BlackRock",
     "job_status": "open",
     "location": "Sausalito, CA",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T22:00:20",
+    "status_checked_at": "2026-04-01T23:00:08",
     "title": "Director, Head of SMA Portfolio Management Engineering"
   },
   "4343080036": {
     "company": "BlackRock",
     "job_status": "open",
     "location": "San Francisco, CA",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T22:00:18",
+    "status_checked_at": "2026-04-01T23:00:10",
     "title": "Director, Head of SMA Portfolio Management Engineering"
   },
   "4343559650": {
@@ -449,10 +459,10 @@
     "company": "Fanatics",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 168,
-    "posted_text": "1 week ago",
+    "posted_hours": 336,
+    "posted_text": "2 weeks ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T10:00:14",
+    "status_checked_at": "2026-04-02T11:00:10",
     "title": "Director Software Engineering"
   },
   "4344882792": {
@@ -490,17 +500,17 @@
     "posted_hours": 336,
     "posted_text": "2 weeks ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:08:20",
+    "status_checked_at": "2026-04-02T18:13:38",
     "title": "Senior Manager, Software Engineering - Custom Solutions"
   },
   "4350907288": {
     "company": "CoreWeave",
     "job_status": "open",
     "location": "Bellevue",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T05:00:08",
+    "status_checked_at": "2026-04-02T05:00:08",
     "title": "Senior Engineering Manager, Data Engineering"
   },
   "4352697668": {
@@ -551,10 +561,10 @@
     "company": "Ross Stores, Inc.",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$142K-$235K",
-    "status_checked_at": "2026-04-01T17:00:13",
+    "status_checked_at": "2026-04-02T17:18:41",
     "title": "REMOTE - Senior Manager, IT DevOps"
   },
   "4355780308": {
@@ -574,7 +584,7 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T10:00:10",
+    "status_checked_at": "2026-04-02T11:00:11",
     "title": "Head of Platform Engineering"
   },
   "4356475374": {
@@ -618,6 +628,16 @@
     "location": "United States",
     "salary": null,
     "title": "Manager, Data Engineering \u2013 Commerce"
+  },
+  "4357717314": {
+    "company": "Chalk",
+    "job_status": "open",
+    "location": "San Francisco, CA",
+    "posted_hours": 21,
+    "posted_text": "21 hours ago",
+    "salary": "$200K-$300K",
+    "status_checked_at": "2026-04-02T17:18:36",
+    "title": "Engineering Manager"
   },
   "4357891376": {
     "company": "Oracle",
@@ -672,7 +692,7 @@
     "posted_hours": 336,
     "posted_text": "2 weeks ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:11:19",
+    "status_checked_at": "2026-04-02T18:17:53",
     "title": "Engineering Manager - PxE Platforms"
   },
   "4360593747": {
@@ -702,7 +722,7 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": "$122K-$291K",
-    "status_checked_at": "2026-04-01T18:11:21",
+    "status_checked_at": "2026-04-02T18:17:55",
     "title": "Director, Software Engineering"
   },
   "4361079477": {
@@ -721,6 +741,16 @@
     "status_checked_at": "2026-03-29T05:50:40",
     "title": "Engineering Manager, AI Enablement"
   },
+  "4361147433": {
+    "company": "Postman",
+    "job_status": "open",
+    "location": "San Francisco",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-01T23:20:40",
+    "title": "Head of Forward Deployed Engineering"
+  },
   "4361181454": {
     "company": "GitLab",
     "job_status": "open",
@@ -728,7 +758,7 @@
     "posted_hours": 336,
     "posted_text": "2 weeks ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:09:27",
+    "status_checked_at": "2026-04-02T18:13:52",
     "title": "Engineering Manager, Create:Source Code"
   },
   "4361328138": {
@@ -817,20 +847,20 @@
     "company": "Synack",
     "job_status": "open",
     "location": "San Mateo, CA",
-    "posted_hours": 96,
-    "posted_text": "4 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": "$240K-$280K",
-    "status_checked_at": "2026-04-01T02:00:14",
+    "status_checked_at": "2026-04-02T03:00:08",
     "title": "Director, Software Engineering, AI"
   },
   "4365576456": {
     "company": "Huntress",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T23:00:11",
+    "status_checked_at": "2026-04-01T23:20:49",
     "title": "Director of Engineering, Endpoint Detection and Response (EDR)"
   },
   "4365577380": {
@@ -881,10 +911,10 @@
     "company": "Modular",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 144,
-    "posted_text": "6 days ago",
+    "posted_hours": 168,
+    "posted_text": "1 week ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T08:00:08",
+    "status_checked_at": "2026-04-02T08:00:08",
     "title": "Engineering Director, GenAI Enterprise"
   },
   "4366881182": {
@@ -1230,7 +1260,7 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": "$274K-$366K",
-    "status_checked_at": "2026-04-01T09:00:10",
+    "status_checked_at": "2026-04-02T10:00:10",
     "title": "Senior Director Eng, Seller Exp Platform"
   },
   "4374620119": {
@@ -1382,7 +1412,7 @@
     "posted_hours": 336,
     "posted_text": "2 weeks ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:11:23",
+    "status_checked_at": "2026-04-02T18:17:56",
     "title": "Engineering Manager II, Personalization"
   },
   "4376847148": {
@@ -1427,10 +1457,10 @@
     "company": "Linktree",
     "job_status": "open",
     "location": "Los Angeles, CA",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T22:00:15",
+    "status_checked_at": "2026-04-01T23:00:11",
     "title": "Director of Engineering"
   },
   "4377271698": {
@@ -1447,10 +1477,10 @@
     "company": "Linktree",
     "job_status": "open",
     "location": "San Francisco, CA",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T23:00:09",
+    "status_checked_at": "2026-04-01T23:20:50",
     "title": "Director of Engineering"
   },
   "4377416785": {
@@ -1576,7 +1606,7 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T10:00:12",
+    "status_checked_at": "2026-04-02T11:00:13",
     "title": "Sr. Engineering Manager, Platform"
   },
   "4378019024": {
@@ -1654,7 +1684,7 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": "$210K-$260K",
-    "status_checked_at": "2026-04-01T09:00:12",
+    "status_checked_at": "2026-04-02T10:00:12",
     "title": "Senior Engineering Manager, RVBM"
   },
   "4378991010": {
@@ -1717,10 +1747,10 @@
     "company": "PwC",
     "job_status": "open",
     "location": "Seattle",
-    "posted_hours": 144,
-    "posted_text": "6 days ago",
+    "posted_hours": 168,
+    "posted_text": "1 week ago",
     "salary": "$99K-$232K",
-    "status_checked_at": "2026-04-01T16:00:19",
+    "status_checked_at": "2026-04-02T17:00:08",
     "title": "Manager, Solution Architect"
   },
   "4379713146": {
@@ -1769,10 +1799,10 @@
     "company": "MyFitnessPal",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 144,
-    "posted_text": "6 days ago",
+    "posted_hours": 168,
+    "posted_text": "1 week ago",
     "salary": "$200K-$230K",
-    "status_checked_at": "2026-04-01T04:00:10",
+    "status_checked_at": "2026-04-02T04:11:17",
     "title": "Sr. Manager, Engineering - Product Platform"
   },
   "4380527735": {
@@ -1813,10 +1843,10 @@
     "company": "Fivetran",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T21:00:10",
+    "status_checked_at": "2026-04-01T22:00:20",
     "title": "Senior Director, Lead Software Engineering"
   },
   "4381054512": {
@@ -1869,10 +1899,10 @@
     "company": "Mastercard",
     "job_status": "open",
     "location": "10016",
-    "posted_hours": 144,
-    "posted_text": "6 days ago",
+    "posted_hours": 168,
+    "posted_text": "1 week ago",
     "salary": "$182K-$310K",
-    "status_checked_at": "2026-04-01T18:09:30",
+    "status_checked_at": "2026-04-02T18:13:42",
     "title": "Director, Platform Engineering"
   },
   "4381171189": {
@@ -1925,10 +1955,10 @@
     "company": "Posit PBC",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 96,
-    "posted_text": "4 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T02:00:16",
+    "status_checked_at": "2026-04-02T03:00:10",
     "title": "Vice President, Engineering"
   },
   "4381780398": {
@@ -1941,14 +1971,24 @@
     "status_checked_at": "2026-04-01T16:00:14",
     "title": "Sr Director of Software Engineering - Product & Platform Delivery"
   },
+  "4381789192": {
+    "company": "Amazon Web Services (AWS)",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T16:00:39",
+    "title": "ISV SA Manager, Business Applications, Tech-US-SA-ISV"
+  },
   "4381945245": {
     "company": "Canva",
     "job_status": "open",
     "location": "San Francisco, CA",
-    "posted_hours": 120,
-    "posted_text": "5 days ago",
+    "posted_hours": 144,
+    "posted_text": "6 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T13:00:08",
+    "status_checked_at": "2026-04-02T13:00:10",
     "title": "Engineering Manager - Video Performance (Bay area only)"
   },
   "4382152430": {
@@ -1965,10 +2005,10 @@
     "company": "BeyondTrust",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T22:00:22",
+    "status_checked_at": "2026-04-01T23:00:13",
     "title": "Director, Engineering- Remote"
   },
   "4382206577": {
@@ -1987,10 +2027,10 @@
     "company": "Crusoe",
     "job_status": "open",
     "location": "San Francisco, CA",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": "$301K-$355K",
-    "status_checked_at": "2026-04-01T01:00:08",
+    "status_checked_at": "2026-04-02T02:00:07",
     "title": "Senior Director of Engineering, Developer Experience"
   },
   "4382478678": {
@@ -2087,24 +2127,34 @@
     "salary": "$139K-$274K",
     "title": "Principal Software Engineering Manager"
   },
+  "4383764258": {
+    "company": "Smarter Technologies",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": "$235K-$290K",
+    "status_checked_at": "2026-04-02T16:00:32",
+    "title": "Senior Engineering Manager, Core Platform & Tooling"
+  },
   "4383766874": {
     "company": "Gong",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 504,
-    "posted_text": "3 weeks ago",
+    "posted_hours": 11,
+    "posted_text": "11 hours ago",
     "salary": "$340K-$357K",
-    "status_checked_at": "2026-04-01T00:00:18",
+    "status_checked_at": "2026-04-02T01:00:07",
     "title": "Global Head of Solutions Engineering"
   },
   "4383802314": {
     "company": "kadence",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$180K-$240K",
-    "status_checked_at": "2026-04-01T10:00:07",
+    "status_checked_at": "2026-04-02T10:00:14",
     "title": "Founding Head of Engineering"
   },
   "4383861311": {
@@ -2129,11 +2179,31 @@
     "status_checked_at": "2026-03-29T07:00:16",
     "title": "Sr Engineering Manager - Fanatics Markets"
   },
+  "4384108622": {
+    "company": "Deloitte",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T16:00:41",
+    "title": "Manager, Industry Solutions, Life Science"
+  },
   "4384111032": {
     "company": "NVIDIA",
     "location": "Santa Clara",
     "salary": "$272K-$431K",
     "title": "Senior Manager, Systems Software Engineering - GeForce NOW Cloud"
+  },
+  "4384138245": {
+    "company": "Airbnb",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 22,
+    "posted_text": "22 hours ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T16:00:30",
+    "title": "Engineering Manager, Storage"
   },
   "4384166826": {
     "company": "Microsoft",
@@ -2823,10 +2893,10 @@
     "company": "Nutanix",
     "job_status": "open",
     "location": "Austin, TX",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-03-31T21:00:11",
+    "status_checked_at": "2026-04-01T22:00:22",
     "title": "Senior Director, Worldwide Systems Engineering - Global Accounts"
   },
   "4388593100": {
@@ -2934,7 +3004,7 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": "$200K-$352K",
-    "status_checked_at": "2026-04-01T10:00:09",
+    "status_checked_at": "2026-04-02T11:00:08",
     "title": "Director, Software Engineering"
   },
   "4389407140": {
@@ -2990,7 +3060,7 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T09:00:14",
+    "status_checked_at": "2026-04-02T10:00:15",
     "title": "Senior Engineering Manager, Infrastructure"
   },
   "4389782347": {
@@ -3020,7 +3090,7 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T09:00:09",
+    "status_checked_at": "2026-04-02T10:00:08",
     "title": "AI Native Software Engineering Senior Manager - Assoc Director"
   },
   "4389843043": {
@@ -3053,10 +3123,10 @@
     "company": "ServiceNow",
     "job_status": "open",
     "location": "Mountain View, CA",
-    "posted_hours": 144,
-    "posted_text": "6 days ago",
+    "posted_hours": 168,
+    "posted_text": "1 week ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:09:32",
+    "status_checked_at": "2026-04-02T18:13:47",
     "title": "Engineering Manager, Agentic Systems"
   },
   "4389917018": {
@@ -3145,10 +3215,10 @@
     "company": "Space Executive",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 144,
-    "posted_text": "6 days ago",
+    "posted_hours": 168,
+    "posted_text": "1 week ago",
     "salary": "$180K-$250K",
-    "status_checked_at": "2026-04-01T09:00:07",
+    "status_checked_at": "2026-04-02T09:00:08",
     "title": "Engineering Manager \u2013 AI Platform - Observability - Remote (US) | Up to $250k base + equity"
   },
   "4390274824": {
@@ -3175,10 +3245,10 @@
     "company": "The Walt Disney Company",
     "job_status": "open",
     "location": "Emeryville",
-    "posted_hours": 144,
-    "posted_text": "6 days ago",
+    "posted_hours": 168,
+    "posted_text": "1 week ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:09:34",
+    "status_checked_at": "2026-04-02T18:13:48",
     "title": "Director, Core Engineering"
   },
   "4390492646": {
@@ -3271,10 +3341,10 @@
     "company": "Pixar Animation Studios",
     "job_status": "open",
     "location": "Emeryville, CA",
-    "posted_hours": 120,
-    "posted_text": "5 days ago",
+    "posted_hours": 144,
+    "posted_text": "6 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T07:00:08",
+    "status_checked_at": "2026-04-02T07:00:16",
     "title": "Director, Core Engineering"
   },
   "4390852349": {
@@ -3331,10 +3401,10 @@
     "company": "WEKA",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 120,
-    "posted_text": "5 days ago",
+    "posted_hours": 144,
+    "posted_text": "6 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T12:00:09",
+    "status_checked_at": "2026-04-02T13:00:12",
     "title": "Director of Engineering - AI Inferences"
   },
   "4391190684": {
@@ -3441,10 +3511,10 @@
     "company": "Jobgether",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$210K-$260K",
-    "status_checked_at": "2026-04-01T17:00:15",
+    "status_checked_at": "2026-04-02T17:18:39",
     "title": "Senior Engineering Manager, User Platform & Enterprise"
   },
   "4391883663": {
@@ -3461,40 +3531,40 @@
     "company": "Talogy",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$0K-$0K",
-    "status_checked_at": "2026-04-01T18:06:51",
+    "status_checked_at": "2026-04-02T18:07:36",
     "title": "Vice President of Software Engineering"
   },
   "4391898244": {
     "company": "TrustSwap",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:06:48",
+    "status_checked_at": "2026-04-02T18:07:38",
     "title": "Head of Engineering"
   },
   "4391918307": {
     "company": "Abridge",
     "job_status": "open",
     "location": "New York, NY",
-    "posted_hours": 120,
-    "posted_text": "5 days ago",
+    "posted_hours": 144,
+    "posted_text": "6 days ago",
     "salary": "$250K-$280K",
-    "status_checked_at": "2026-04-01T07:00:10",
+    "status_checked_at": "2026-04-02T07:00:13",
     "title": "Sr. Engineering Manager, SRE"
   },
   "4391920835": {
     "company": "Horizon3.ai",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 120,
-    "posted_text": "5 days ago",
+    "posted_hours": 144,
+    "posted_text": "6 days ago",
     "salary": "$210K-$260K",
-    "status_checked_at": "2026-04-01T07:00:12",
+    "status_checked_at": "2026-04-02T07:00:15",
     "title": "Senior Engineering Manager, User Platform & Enterprise"
   },
   "4391936261": {
@@ -3541,10 +3611,10 @@
     "company": "Applied Intuition",
     "job_status": "open",
     "location": "Sunnyvale, CA",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$65K-$400K",
-    "status_checked_at": "2026-04-01T17:30:59",
+    "status_checked_at": "2026-04-02T17:50:00",
     "title": "Engineering Manager - Data Platform and Infrastructure"
   },
   "4392197824": {
@@ -3571,10 +3641,10 @@
     "company": "ujet.cx",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 20,
-    "posted_text": "20 hours ago",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": "$170K-$190K",
-    "status_checked_at": "2026-04-01T16:00:17",
+    "status_checked_at": "2026-04-02T17:00:10",
     "title": "Senior Engineering Manager, Core Infrastructure"
   },
   "4392763671": {
@@ -3601,20 +3671,20 @@
     "company": "Impossible Cloud",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T17:00:19",
+    "status_checked_at": "2026-04-02T17:18:45",
     "title": "Head of Compute Engineering"
   },
   "4392908505": {
     "company": "Dessert Holdings",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T18:06:49",
+    "status_checked_at": "2026-04-02T18:07:39",
     "title": "Director of Engineering"
   },
   "4392951935": {
@@ -3667,14 +3737,34 @@
     "status_checked_at": "2026-04-01T18:44:05",
     "title": "Director, Engineering (Remote Eligible)"
   },
+  "4393056319": {
+    "company": "SAP",
+    "job_status": "open",
+    "location": "98004",
+    "posted_hours": 18,
+    "posted_text": "18 hours ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T16:00:37",
+    "title": "Development Senior Manager"
+  },
+  "4393075155": {
+    "company": "Possible",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 15,
+    "posted_text": "15 hours ago",
+    "salary": "$197K-$215K",
+    "status_checked_at": "2026-04-02T16:00:35",
+    "title": "Software Engineering Manager"
+  },
   "4393206144": {
     "company": "Renew Home",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 23,
-    "posted_text": "23 hours ago",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$200K-$240K",
-    "status_checked_at": "2026-03-31T20:00:18",
+    "status_checked_at": "2026-04-01T21:00:08",
     "title": "Engineering Manager, Consumer (Remote, US)"
   },
   "4393236050": {
@@ -3691,11 +3781,21 @@
     "company": "Pinterest",
     "job_status": "open",
     "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T17:50:03",
+    "title": "Engineering Manager, Agent Foundations"
+  },
+  "4393263567": {
+    "company": "Marqeta",
+    "job_status": "open",
+    "location": "United States",
     "posted_hours": 24,
     "posted_text": "1 day ago",
-    "salary": null,
-    "status_checked_at": "2026-04-01T17:30:53",
-    "title": "Engineering Manager, Agent Foundations"
+    "salary": "$200K-$250K",
+    "status_checked_at": "2026-04-01T22:00:18",
+    "title": "Senior Manager, Platform Engineering"
   },
   "4393267760": {
     "company": "Crusoe",
@@ -3721,30 +3821,60 @@
     "company": "Marriott International",
     "job_status": "open",
     "location": "Bethesda, MD",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T17:00:12",
+    "title": "Senior Director, Software Engineering"
+  },
+  "4393914034": {
+    "company": "TE Connectivity",
+    "job_status": "open",
+    "location": "United States",
     "posted_hours": 24,
     "posted_text": "1 day ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T16:00:15",
-    "title": "Senior Director, Software Engineering"
+    "status_checked_at": "2026-04-01T22:00:13",
+    "title": "Sr Mgr, AI/ML Software Engineering"
+  },
+  "4393949724": {
+    "company": "Nordstrom",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-01T23:20:38",
+    "title": "Director of Engineering \u2013 Platform Services (Hybrid - Seattle, WA)"
+  },
+  "4393958269": {
+    "company": "Flex",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-01T22:00:15",
+    "title": "Director of Engineering"
   },
   "4394159386": {
     "company": "Ladders",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$184K-$252K",
-    "status_checked_at": "2026-03-31T23:00:13",
+    "status_checked_at": "2026-04-01T23:20:45",
     "title": "Director of Application Security"
   },
   "4395057344": {
     "company": "DoorDash",
     "job_status": "open",
     "location": "Seattle",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-01T17:00:09",
+    "status_checked_at": "2026-04-02T17:18:38",
     "title": "Engineering Manager, People Applications"
   },
   "4395071625": {
@@ -3756,5 +3886,85 @@
     "salary": null,
     "status_checked_at": "2026-04-01T17:00:08",
     "title": "Engineering Manager, Open Connect Site Reliability Engineering"
+  },
+  "4395534511": {
+    "company": "Databricks",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-01T22:00:17",
+    "title": "Sr. Manager, AI Forward Deployed Engineering (FDE)"
+  },
+  "4396160860": {
+    "company": "Zendesk",
+    "job_status": "open",
+    "location": "San Francisco",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-01T23:20:42",
+    "title": "Director, Software Engineering"
+  },
+  "4396657798": {
+    "company": "Ladders",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 23,
+    "posted_text": "23 hours ago",
+    "salary": "$206K-$256K",
+    "status_checked_at": "2026-04-02T16:00:27",
+    "title": "Senior Manager, Software Engineering (Orchestration Services)"
+  },
+  "4396660471": {
+    "company": "Postscript",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T16:00:25",
+    "title": "Senior Engineering Manager, AI"
+  },
+  "4396664415": {
+    "company": "Postscript",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T17:18:34",
+    "title": "Engineering Manager, CDP"
+  },
+  "4396664636": {
+    "company": "Ladders",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 23,
+    "posted_text": "23 hours ago",
+    "salary": "$172K-$212K",
+    "status_checked_at": "2026-04-02T16:00:34",
+    "title": "Manager, AI Engineering (Remote)"
+  },
+  "4396776036": {
+    "company": "Zendesk",
+    "job_status": "open",
+    "location": "San Francisco, CA",
+    "posted_hours": 18,
+    "posted_text": "18 hours ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T17:18:32",
+    "title": "Senior Engineering Manager"
+  },
+  "4396778007": {
+    "company": "Zendesk",
+    "job_status": "open",
+    "location": "Wisconsin, United States",
+    "posted_hours": 17,
+    "posted_text": "17 hours ago",
+    "salary": null,
+    "status_checked_at": "2026-04-02T16:00:28",
+    "title": "Senior Engineering Manager"
   }
 }
