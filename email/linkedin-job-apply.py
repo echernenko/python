@@ -12,7 +12,7 @@ import json
 import re
 import sys
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import List, Dict, Any
 
 
@@ -156,15 +156,95 @@ def exclude_job(job_id: str, company: str, title: str):
         f.write(entry)
 
 
+def load_job_cache() -> Dict[str, Dict[str, Any]]:
+    """Load the job cache from disk."""
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    cache_file = os.path.join(script_dir, 'linkedin-job-cache.json')
+    if not os.path.exists(cache_file):
+        return {}
+    with open(cache_file) as f:
+        return json.load(f)
+
+
+def parse_delete_value(value: str):
+    """Parse a delete argument like '20' or '7d'.
+
+    Returns (count, None) for a plain number or (None, timedelta) for a duration.
+    """
+    m = re.fullmatch(r'(\d+)d', value)
+    if m:
+        return None, timedelta(days=int(m.group(1)))
+    if value.isdigit():
+        return int(value), None
+    return None, None
+
+
+def handle_delete(value: str):
+    """Bulk-exclude jobs from the cache based on count or time window."""
+    count, delta = parse_delete_value(value)
+    if count is None and delta is None:
+        print(f"Invalid delete value: '{value}'. Use a number (e.g. 20) or duration (e.g. 7d).")
+        sys.exit(1)
+
+    cache = load_job_cache()
+    excluded_ids = load_excluded_ids()
+
+    # Only consider cache entries with a timestamp that aren't already excluded
+    candidates = []
+    for job_id, info in cache.items():
+        if job_id in excluded_ids:
+            continue
+        ts = info.get('status_checked_at')
+        if not ts:
+            continue
+        checked_at = datetime.fromisoformat(ts)
+        candidates.append((job_id, info, checked_at))
+
+    # Sort by status_checked_at descending (most recent first)
+    candidates.sort(key=lambda x: x[2], reverse=True)
+
+    if delta:
+        cutoff = datetime.now() - delta
+        to_exclude = [(jid, info) for jid, info, ts in candidates if ts >= cutoff]
+    else:
+        to_exclude = [(jid, info) for jid, info, _ in candidates[:count]]
+
+    if not to_exclude:
+        print("No matching jobs to exclude.")
+        return
+
+    print(f"Excluding {len(to_exclude)} jobs:\n")
+    for job_id, info in to_exclude:
+        company = info.get('company', 'Unknown')
+        title = info.get('title', 'Unknown')
+        checked = info.get('status_checked_at', '')
+        print(f"  {company} - {title}  ({checked})")
+        exclude_job(job_id, company, title)
+
+    print(f"\nDone. Excluded {len(to_exclude)} jobs.")
+
+
 def main():
     import argparse
     global GOG_ACCOUNT
 
     parser = argparse.ArgumentParser(description='LinkedIn job application assistant')
     parser.add_argument('--account', default='chernenko@gmail.com', help='Gmail account')
-    parser.add_argument('filter', nargs='?', default=None, help='Optional filter string')
+    parser.add_argument('args', nargs='*', help='Optional: "delete <N|Nd>" or filter string')
     args = parser.parse_args()
     GOG_ACCOUNT = args.account
+
+    positional = args.args
+
+    # Handle "delete" subcommand
+    if positional and positional[0] == 'delete':
+        if len(positional) < 2:
+            print("Usage: linkedin-apply delete <N|Nd>  (e.g. delete 20 or delete 7d)")
+            sys.exit(1)
+        handle_delete(positional[1])
+        return
+
+    filter_str = positional[0] if positional else None
 
     print("Fetching latest summary email...")
     jobs = fetch_summary_jobs()
@@ -181,17 +261,17 @@ def main():
         print("All jobs in the summary are already excluded.")
         return
 
-    if args.filter:
-        q = args.filter.lower()
+    if filter_str:
+        q = filter_str.lower()
         jobs = [
             j for j in jobs
             if q in f"{j['company']} {j['title']} {j['compensation']} {j['location']} {j['link']}".lower()
         ]
         if not jobs:
-            print(f"No jobs matched '{args.filter}'.")
+            print(f"No jobs matched '{filter_str}'.")
             return
 
-    filter_note = f" (filtered: '{args.filter}')" if args.filter else ""
+    filter_note = f" (filtered: '{filter_str}')" if filter_str else ""
     print(f"\n{len(jobs)} positions to review{filter_note}.\n")
     current_tier = ''
     excluded_count = 0
