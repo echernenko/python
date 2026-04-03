@@ -189,23 +189,22 @@ def handle_delete(value: str):
     cache = load_job_cache()
     excluded_ids = load_excluded_ids()
 
-    # Only consider cache entries with a timestamp that aren't already excluded
+    # Only consider cache entries that aren't already excluded
     candidates = []
     for job_id, info in cache.items():
         if job_id in excluded_ids:
             continue
-        ts = info.get('status_checked_at')
-        if not ts:
+        posted_hours = info.get('posted_hours')
+        if posted_hours is None:
             continue
-        checked_at = datetime.fromisoformat(ts)
-        candidates.append((job_id, info, checked_at))
+        candidates.append((job_id, info, posted_hours))
 
-    # Sort by status_checked_at descending (most recent first)
+    # Sort by posted_hours ascending (oldest postings first)
     candidates.sort(key=lambda x: x[2], reverse=True)
 
     if delta:
-        cutoff = datetime.now() - delta
-        to_exclude = [(jid, info) for jid, info, ts in candidates if ts < cutoff]
+        cutoff_hours = delta.total_seconds() / 3600
+        to_exclude = [(jid, info) for jid, info, hours in candidates if hours >= cutoff_hours]
     else:
         to_exclude = [(jid, info) for jid, info, _ in candidates[:count]]
 
@@ -217,8 +216,8 @@ def handle_delete(value: str):
     for job_id, info in to_exclude:
         company = info.get('company', 'Unknown')
         title = info.get('title', 'Unknown')
-        checked = info.get('status_checked_at', '')
-        print(f"  {company} - {title}  ({checked})")
+        posted = info.get('posted_text', f"{info.get('posted_hours', '?')}h ago")
+        print(f"  {company} - {title}  (posted {posted})")
         exclude_job(job_id, company, title)
 
     print(f"\nDone. Excluded {len(to_exclude)} jobs.")
