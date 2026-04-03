@@ -205,7 +205,7 @@ def handle_delete(value: str):
 
     if delta:
         cutoff = datetime.now() - delta
-        to_exclude = [(jid, info) for jid, info, ts in candidates if ts >= cutoff]
+        to_exclude = [(jid, info) for jid, info, ts in candidates if ts < cutoff]
     else:
         to_exclude = [(jid, info) for jid, info, _ in candidates[:count]]
 
