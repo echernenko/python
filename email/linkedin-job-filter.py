@@ -463,6 +463,18 @@ def extract_compensation(text: str) -> str:
 
     return "Not specified"
 
+def _is_garbled_location(location: str) -> bool:
+    """Check if a location string contains leaked CSS/HTML artifacts."""
+    if not location or location == 'Not specified':
+        return False
+    garbled_keywords = [
+        'width', 'margin', 'padding', 'font-', 'color:', 'regenerate', 'email',
+        'block', 'inline', 'flex', 'grid', 'none', 'auto', 'solid', 'border',
+    ]
+    loc_lower = location.lower()
+    return any(kw in loc_lower for kw in garbled_keywords)
+
+
 def extract_location(text: str) -> str:
     """Extract location information from text."""
     # Common location patterns
@@ -833,9 +845,7 @@ def parse_previous_summary_emails() -> List[Dict[str, Any]]:
                 if title.lower() in bad_titles or 'linkedin login' in title.lower():
                     continue
                 location = location_match.group(1).strip() if location_match else 'Not specified'
-                # Skip entries where CSS leaked into location
-                garbled_keywords = ['width', 'margin', 'padding', 'font-', 'color:']
-                if any(kw in location.lower() for kw in garbled_keywords):
+                if _is_garbled_location(location):
                     continue
                 jobs.append({
                     'company': company,
@@ -1450,6 +1460,9 @@ def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
             if is_location:
                 continue
 
+            if _is_garbled_location(location):
+                location = 'Not specified'
+
             jobs.append({
                 'title': title,
                 'company': company,
@@ -1527,9 +1540,7 @@ def parse_job_listings_from_html(html: str) -> List[Dict[str, str]]:
                 parts_split = part.split(sep, 1)
                 company = parts_split[0].strip()
                 location = parts_split[1].strip() if len(parts_split) > 1 else 'Not specified'
-                # Validate location doesn't contain garbled HTML/CSS content
-                garbled_keywords = ['width', 'margin', 'padding', 'font-', 'color:', 'regenerate', 'email']
-                if any(kw in location.lower() for kw in garbled_keywords):
+                if _is_garbled_location(location):
                     location = 'Not specified'
                 break
 
@@ -1633,10 +1644,19 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False, refresh
                 print(f"    Skipping {company_name} - {job['title']} - in exclusion list")
                 continue
 
-            # Check job cache for previously stored compensation
+            # Check job cache for previously stored data
             job_cache = _get_job_cache()
             cached_job = job_cache.get(job_id) if job_id else None
             cached_comp = cached_job.get('salary') if cached_job else None
+            cached_loc = cached_job.get('location') if cached_job else None
+
+            # Prefer cached location over garbled/missing parsed location
+            location = job['location']
+            if (not location or location == 'Not specified' or _is_garbled_location(location)):
+                if cached_loc and cached_loc != 'Not specified':
+                    location = cached_loc
+                else:
+                    location = 'Not specified'
 
             if cached_comp and cached_comp != "Not specified":
                 compensation = cached_comp
@@ -1665,7 +1685,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False, refresh
                 entry = {
                     'title': job['title'],
                     'company': company_name,
-                    'location': job['location'],
+                    'location': location,
                 }
                 if final_compensation != "Not specified":
                     entry['salary'] = final_compensation
@@ -1678,7 +1698,7 @@ def process_linkedin_emails(recipient_email: str, dry_run: bool = False, refresh
                 'title': job['title'],
                 'link': job['link'],
                 'compensation': final_compensation,
-                'location': job['location'],
+                'location': location,
                 'is_public': company_is_public
             })
 
