@@ -10,7 +10,20 @@ Amazon Web Services (AWS)
 microsoft
 amazon
 aws
+Expedia Group
 linkedin
 airbnb
 databricks
+servicenow
 zillow
+blackrock
+discord
+yahoo
+mastercard
+1Password
+superhuman
+zendesk
+The Walt Disney Company
+sap
+DuckDuckGo
+cnn

@@ -495,3 +495,70 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4340347913 | 1Password | Engineering Manager, API Platform
 4376827151 | Spotify | Engineering Manager II, Personalization
 4323615765 | Dropbox | Senior Engineering Manager, Core Media & Intelligence
+4374553717 | eBay | Senior Director Eng, Seller Exp Platform
+4304603851 | eBay | Director of Engineering - eBay Live
+4396657798 | Ladders | Senior Manager, Software Engineering (Orchestration Services)
+4396664636 | Ladders | Manager, AI Engineering (Remote)
+4355965220 | Netflix | Engineering Manager, Trust & Safety Foundations
+4394987627 | Amazon | Software Development Manager, ESCAPE
+4395722875 | Starbucks | director engineering, Cloud Foundational Services -ST (Seattle, WA)
+4383890911 | SoFi | Senior Engineering Manager, Bank Platform
+4382404581 | GEICO | Senior Staff Engineering Manager - Applied AI
+4384320765 | Deloitte | Lead Engineering Manager - PxE Consulting
+4395057344 | DoorDash | Engineering Manager, People Applications
+4350907288 | CoreWeave | Senior Engineering Manager, Data Engineering
+4389822304 | Accenture | AI Native Software Engineering Senior Manager - Assoc Director
+4382546312 | Walmart | Senior Director, Software Engineering
+4393462609 | Superhuman | Engineering Manager, Superhuman Docs — Formula Engine
+4389900571 | ServiceNow | Engineering Manager, Agentic Systems
+4333358205 | CNN | Manager, Software Engineering, AI Systems & Enablement
+4381062939 | Discord | Engineering Manager, Data Platform
+4343080036 | BlackRock | Director, Head of SMA Portfolio Management Engineering
+4343060073 | BlackRock | Director, Head of SMA Portfolio Management Engineering
+4396658752 | Ladders | Sr Director of Engineering, Mobilitiy
+4344160294 | Fanatics | Director Software Engineering
+4367875586 | Google | Technical Lead Manager, YouTube
+4375747325 | Google | Senior Software Engineering Manager, Horizontal Compliance Platform and Tooling
+4378018021 | Vercel | Sr. Engineering Manager, Platform
+4384287552 | DuckDuckGo | Engineering Director, Backend
+4355900830 | TENEX.AI | Head of Platform Engineering
+4361052144 | Oracle | Director, Software Engineering
+4365577444 | Google | Senior Software Engineering Manager, Infrastructure, Google Cloud Security and Privacy
+4366337900 | Modular | Engineering Director, GenAI Enterprise
+4377271698 | Google | Software Engineering Manager II, Site Reliability Engineering
+4378883338 | Horizon3.ai | Senior Engineering Manager, RVBM
+4380380493 | MyFitnessPal | Sr. Manager, Engineering - Product Platform
+4381123213 | Mastercard | Director, Platform Engineering
+4381945245 | Canva | Engineering Manager - Video Performance (Bay area only)
+4389318851 | Blue River Technology | Director, Software Engineering
+4389781410 | Rippling | Senior Engineering Manager, Infrastructure
+4390153302 | Space Executive | Engineering Manager – AI Platform - Observability - Remote (US) | Up to $250k base + equity
+4390470750 | The Walt Disney Company | Director, Core Engineering
+4390837262 | Pixar Animation Studios | Director, Core Engineering
+4391160587 | WEKA | Director of Engineering - AI Inferences
+4391918307 | Abridge | Sr. Engineering Manager, SRE
+4391920835 | Horizon3.ai | Senior Engineering Manager, User Platform & Enterprise
+4323422584 | Vanta | Senior Director, Corporate Engineering
+4329920684 | Vanta | Sr. Engineering Manager, Reporting & Enterprise Hub
+4365323885 | Synack | Director, Software Engineering, AI
+4381674767 | Posit PBC | Vice President, Engineering
+4388574962 | Nutanix | Senior Director, Worldwide Systems Engineering - Global Accounts
+4312325295 | Postman | Head of AI Platform Engineering
+4329860908 | Vanta | Engineering Manager
+4364454614 | Porch Group | Infrastructure Engineering Team Lead
+4365606869 | Activision | Senior Manager, Engineering
+4382180838 | BeyondTrust | Director, Engineering- Remote
+4390926551 | Google | Software Engineering Manager II, Infrastructure, Google Cloud
+4384820375 | Amazon | Software Development Manager, Leo Payload, Leo
+4397173790 | Expedia Group | Distinguished PM - AI and ML Platforms
+4323704412 | Yahoo | Senior Engineering Manager - Mail Intelligence
+4374171893 | 1Password | Engineering Manager, Partnerships Engineering
+4366390617 | 1Password | Senior Director Engineering, Identity Security Platform Infrastructure
+4393875405 | AT&amp;T | Principal System Engineering (SRE-DevOps)
+4395396178 | Mechanical Orchard | Director of Engineering, Product Infrastructure and Release Engineering
+4379126827 | hacka | Engineering Director
+4397579066 | Ladders | Senior Engineering Manager - Data Platform
+4397566832 | Ladders | Senior Manager, Software Engineering (Lake Analytics Platform)
+4397574293 | Ladders | VP, Engineering
+4397569637 | Ladders | Director of Platform Engineering
+4391873621 | Jobgether | Senior Engineering Manager, User Platform & Enterprise
