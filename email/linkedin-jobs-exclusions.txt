@@ -562,3 +562,134 @@ Engineering-Manager-Feature-Store | Snowflake | Engineering Manager, Feature Sto
 4397574293 | Ladders | VP, Engineering
 4397569637 | Ladders | Director of Platform Engineering
 4391873621 | Jobgether | Senior Engineering Manager, User Platform & Enterprise
+mohammedwasfi | LinkedIn | Mohammed Wasfi - NVIDIA
+4327088872 | BeOne Medicines | Executive Director, Global Infrastructure and Cloud Computing
+4333242698 | General Motors | Engineering Manager, Build Platform
+4355701147 | Ross Stores, Inc. | REMOTE - Senior Manager, IT DevOps
+4363903041 | Unknown | Unknown
+4365576456 | Huntress | Director of Engineering, Endpoint Detection and Response (EDR)
+4377263744 | Linktree | Director of Engineering
+4377275320 | Linktree | Director of Engineering
+4383802314 | kadence | Founding Head of Engineering
+4391704828 | SEPHORA | Director, Engineering, Digital Experiences
+4391893249 | Talogy | Vice President of Software Engineering
+4391898244 | TrustSwap | Head of Engineering
+4392102963 | Discord | Engineering Manager, Core Product
+4392591685 | EY | Consulting - Managed Services - AI, IT and Automation Senior Manager
+4392904929 | Impossible Cloud | Head of Compute Engineering
+4392908505 | Dessert Holdings | Director of Engineering
+4392985879 | Vontier | Vice President, Software Engineering
+4393206144 | Renew Home | Engineering Manager, Consumer (Remote, US)
+4394159386 | Ladders | Director of Application Security
+4396778007 | Zendesk | Senior Engineering Manager
+4397417272 | Snowflake | Director of Engineering, Snowflake Apps
+4373865748 | Snowflake | Senior Manager of Engineering - Capacity Engineering
+4333292654 | General Motors | Engineering Manager, Observability
+4358306008 | Copilot Money | Head of Engineering
+4361147433 | Postman | Head of Forward Deployed Engineering
+4392166340 | Applied Intuition | Engineering Manager - Data Platform and Infrastructure
+4392464562 | ujet.cx | Senior Engineering Manager, Core Infrastructure
+4393239622 | Pinterest | Engineering Manager, Agent Foundations
+4393293869 | Zania | Head of Engineering
+4393530428 | Marriott International | Senior Director, Software Engineering
+4393572716 | Arcadia | Head of Engineering (hands on)
+4393914034 | TE Connectivity | Sr Mgr, AI/ML Software Engineering
+4393958269 | Flex | Director of Engineering
+4395671387 | Blue Origin | Sr Manager, Software
+4396160860 | Zendesk | Director, Software Engineering
+4383764258 | Smarter Technologies | Senior Engineering Manager, Core Platform & Tooling
+4383859589 | Snap Inc. | Senior Manager, Security Engineering, Application Security
+4392892410 | OrderMyGear (OMG) | Director of Engineering
+4393020086 | Smartsheet | Director, Engineering (Remote Eligible)
+4396654936 | Ladders | Sr. Director, Cloud and Engineering
+4396660471 | Postscript | Senior Engineering Manager, AI
+4396664415 | Postscript | Engineering Manager, CDP
+4356750183 | Netflix | Engineering Manager (Cloud Architecture Tooling & Security)
+4398042235 | Amazon Web Services (AWS) | Software Development Manager, Agentic AI - AgentCore
+4396599236 | Microsoft | Principal Software Engineering Manager
+4393985480 | Amazon | Software Development Manager, Amazon Leo
+4359611187 | Airbnb | Engineering Manager, Client Products & Emerging Tech
+4397357087 | Airbnb | Engineering Manager, UI Tooling
+4374306035 | Yahoo | Engineering Manager - Games
+4385803323 | 1Password | Director of Engineering - Enterprise Password Manager (EPM)
+4317380913 | Acorns | Engineering Manager
+4344889579 | Alchemy | Director of Engineering, Infrastructure & Platform
+4373648394 | Redpanda Data | Director of Engineering, Cloud
+4374446513 | dbt Labs | Manager, Software Engineering
+4375066617 | Confluent | Director of Engineering, Governance
+4382475216 | Protege | VP, Engineering
+4382736646 | CentralSquare Technologies | Director of AI Engineering Operations - Remote
+4383225469 | ezCater | Senior Engineering Manager, Platform Engineering (Remote)
+4385195440 | FICO | Senior Principal/Senior Director - Software Delivery/Software Program Management
+4393056319 | SAP | Development Senior Manager
+4395713081 | Help Scout | VP of Engineering
+4396776036 | Zendesk | Senior Engineering Manager
+4397152250 | Chainguard | VP, Engineering
+4397155178 | Fanatics | Engineering Manager
+4397569641 | Ladders | Senior Director of Engineering, AI | Allconnect
+4354845598 | Cotiviti | Director Engineering - Artificial Intelligence
+4366532114 | Valon | Engineering Manager, Platform - Cloud Infrastructure
+4393263567 | Marqeta | Senior Manager, Platform Engineering
+4393805960 | Hagerty | Engineering Manager, Solution Architecture
+4393817629 | Autodesk | Senior Group Software Development Manager, Generative AI
+4393886146 | PwC | CTIO AI Engineering Manager
+4395738194 | HubSpot | Director of Engineering, CRM Product Platform
+4396036100 | Instacart | Senior Engineering Manager, Software — Carrot Ads Platform
+4397333637 | Lumen Technologies | Senior Director of Architecture, Engineering, and Visibility
+4397374648 | Nutanix | Senior Director, AI Factory
+4397388336 | IonQ | Senior Manager, Software Engineering
+4394478932 | Smartsheet | Manager, Engineering
+4294692105 | Zoox | Senior Director/Director of Engineering, Product Software
+4385800393 | Chewy | Associate Director, Software Engineering
+4397957085 | Walmart | Director, Software Engineering
+4398076738 | Roku | Engineering Manager, Ad Serving
+4398094154 | Roku | Engineering Manager, Ad Serving
+4384268137 | Visa | Sr. Director, Software Engineering (GenAI/Cloud)
+4374658041 | Visa | Director, Software Engineering
+4324879014 | Whatnot | Technical Lead Manager, ML Platform
+4385846017 | JPMorganChase | Director of Software Engineering
+4384269356 | PwC | NGA AI Engineer Senior Manager
+4373720838 | lululemon | Technology Director (Engineering) - Logistics and Trade
+4294703954 | DoorDash | Engineering Manager, Online Ordering
+4394441595 | Adobe | Sr. Director Engineering - Agentic
+4398085640 | Temporal Technologies | Senior Engineering Manager, Builder Tools
+4397972339 | Asana | Senior Engineering Manager, AI Agents
+4398275631 | Netflix | Engineering Manager - Player Platform Solutions
+4398962432 | 1Password | Engineering Manager - Vulnerability Management
+4395471500 | NVIDIA | Senior Manager, Engineering -  Enterprise AI and Automation
+4395489201 | NVIDIA | Senior Software Manager, AI Networking
+4395479254 | NVIDIA | Senior Product Manager, Kubernetes AI Platform and Operational Tools
+4398067990 | Nordstrom | Sr. Manager, Site Reliability Engineering (Hybrid - Seattle, WA)
+4398544711 | Telestream | Director Platform Engineering & Cloud Infrastructure
+4386782099 | Coinbase | Senior Engineering Manager (Consumer - Growth App & Infra)
+4375107561 | Scale AI | Engineering Manager, Security
+4396596261 | Microsoft | Member of Technical Staff, Principal Engineering Manager
+4304810893 | Figma | Manager, Software Engineering - Collaboration Tools
+4320408224 | Roblox | Engineering Manager - Internal Talent Products
+4344028637 | Lenovo | Head of AI Enterprise Engineering - REMOTE
+4344387568 | Pinterest | Engineering Manager, Big Data Storage
+4344610495 | Weights & Biases | Sr. Engineering Manager, Inference - Weights & Biases
+4367065924 | Sony Interactive Entertainment | Sr Manager, Software Engineering
+4368380267 | Mercury Insurance | Director of Engineering, AI/ML
+4385808451 | SoFi | Senior Engineering Manager, Commercial Banking
+4385846253 | Twilio | Senior Manager, Platform Engineering - Secure Supply Chain
+4397458362 | Microsoft | Principal Software Engineering Manager
+4320584713 | Figma | Manager, Software Engineering - Creation Engine
+4337979464 | Mercury | Senior Engineering Manager - Risk
+4373493660 | Robinhood | Software Engineering Manager, Growth
+4384681180 | Deepgram | Engineering Manager, Active Learning
+4394292168 | Vanta | Head of Data Platform
+4397488078 | Urrly | Head of Engineering - B2B SaaS
+4398387394 | Atlassian | Head of Developer Platform
+4398401856 | Mastercard | Director Software Engineering
+4398572778 | Talkdesk | Director, Forward Deployed Engineer
+4398403900 | Netflix | Engineering Manager - TV Product UI
+4398935617 | Amazon Web Services (AWS) | Software Development Manager, Aurora DSQL
+4398922967 | Amazon Web Services (AWS) | Senior Software Development Manager, AWS PrivateLink & VPC Lattice
+4395492011 | Trupanion | Microsoft Dynamics CRM & Appian Technical Platform Manager
+4384408525 | Asana | Head of Engineering, Core Product & Collaborative Work Management
+4398841768 | Robinhood | Senior Engineering Manager, Application and Product Security
+4399409723 | SentiLink | (Senior) Engineering Manager, Platform/Back End
+4398028705 | Prime Video & Amazon MGM Studios | Software Development Manager, Prime Video Content Platform, Prime Video Content Platform
+4398091908 | Chainlink Labs | Engineering Manager, Infrastructure
+481077504601 | Starbucks Coffee Company | engineer lead, Backend Services- ST; Seattle, WA
