@@ -170,10 +170,15 @@ def extract_job_id_from_url(url: str) -> str:
     m = re.search(r'/jobs?/(?:view/)?(\d+)', url)
     if m:
         return m.group(1)
+    # Greenhouse-style URLs with gh_jid query parameter
+    parsed = urllib.parse.urlparse(url)
+    qs = urllib.parse.parse_qs(parsed.query)
+    if 'gh_jid' in qs:
+        return qs['gh_jid'][0]
     # Non-LinkedIn career pages often have a numeric ID at the end of the path
     # e.g. .../sr-staff-software-engineer---data-platform-7823561002
     # or  .../790312856978-senior-engineering-manager-...
-    path = urllib.parse.urlparse(url).path.rstrip('/')
+    path = parsed.path.rstrip('/')
     last_segment = path.rsplit('/', 1)[-1] if '/' in path else path
     # ID at the end after a hyphen: ...-7823561002
     m = re.search(r'-(\d{5,})$', last_segment)
@@ -844,6 +849,8 @@ def parse_previous_summary_emails() -> List[Dict[str, Any]]:
                 bad_titles = {'linkedin login, sign in', 'sign in', 'login', 'view on linkedin'}
                 if title.lower() in bad_titles or 'linkedin login' in title.lower():
                     continue
+                if _is_section_header(title):
+                    continue
                 location = location_match.group(1).strip() if location_match else 'Not specified'
                 if _is_garbled_location(location):
                     continue
@@ -1331,6 +1338,11 @@ def send_summary_email(jobs: List[Dict[str, Any]], recipient: str, refresh_all: 
     except Exception as e:
         print(f"Error sending email: {e}", file=sys.stderr)
 
+def _is_section_header(text: str) -> bool:
+    """Detect LinkedIn section headers like '31 manager jobs in seattle'."""
+    return bool(re.match(r'^\d+\s+.+\s+jobs?\s+in\s+', text, re.IGNORECASE))
+
+
 def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
     """Parse individual job listings from LinkedIn email body."""
     jobs = []
@@ -1430,6 +1442,9 @@ def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
             title_idx = lines.index(company_location_match) - 1
             title = lines[title_idx] if title_idx >= 0 else "Unknown Title"
 
+            if _is_section_header(title):
+                continue
+
             jobs.append({
                 'title': title,
                 'company': company,
@@ -1458,6 +1473,10 @@ def parse_job_listings_from_body(body: str) -> List[Dict[str, str]]:
             # Filter out if company looks like a location
             is_location = any(re.match(pattern, company) for pattern in location_patterns)
             if is_location:
+                continue
+
+            # Filter out LinkedIn section headers like "31 manager jobs in seattle"
+            if _is_section_header(title) or _is_section_header(company):
                 continue
 
             if _is_garbled_location(location):
@@ -1547,6 +1566,10 @@ def parse_job_listings_from_html(html: str) -> List[Dict[str, str]]:
         if title and company:
             # Skip if title looks like LinkedIn UI text (not a real job title)
             if title.lower() in linkedin_ui_skip or 'login' in title.lower() or 'sign in' in title.lower():
+                continue
+
+            # Skip LinkedIn section headers like "31 manager jobs in seattle"
+            if _is_section_header(title):
                 continue
 
             # Clean up company name

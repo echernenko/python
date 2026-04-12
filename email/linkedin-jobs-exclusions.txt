@@ -693,3 +693,33 @@ mohammedwasfi | LinkedIn | Mohammed Wasfi - NVIDIA
 4398028705 | Prime Video & Amazon MGM Studios | Software Development Manager, Prime Video Content Platform, Prime Video Content Platform
 4398091908 | Chainlink Labs | Engineering Manager, Infrastructure
 481077504601 | Starbucks Coffee Company | engineer lead, Backend Services- ST; Seattle, WA
+?currentJobId=4120824645&f_C=10667%2C2289109%2C27104390%2C23769%2C2763277%2C76987811%2C289891%2C27046884&geoId=104116203&keywords=Manager&origin=JOB_SEARCH_PAGE_LOCATION_HISTORY&refresh=true&start=25 | Linkedin | 31 Manager jobs in Seattle
+4387469485 | 1Password | Engineering Manager, Growth
+4397629342 | RemoteHunter | Sr. Manager, Data Infrastructure
+4400334895 | Airbnb | Engineering Manager, Listings Product
+4390267931 | GitHub | Staff Engineering Manager
+4323446708 | Ashby | Engineering Manager, Americas
+4394280362 | Vanta | Engineering Manager
+4397550064 | Airwallex | Engineering Manager, Infrastructure Automation
+4397747447 | Amazon | Manager III, Software Development, Secure Tools Foundation
+4397950266 | IBM | Software Engineering Manager
+4398006329 | Grafana Labs | Senior Engineering Manager - Corporate Engineering | US (EST) | Remote
+4398008935 | GE HealthCare | Senior Director - Cloud Infrastructure & Platform Engineering
+4398021490 | GE HealthCare | Senior Director - Cloud Infrastructure & Platform Engineering
+4398045415 | Endeavour. Inspired Infrastructure. | Director of Global IT DevOps & AI Infrastructure
+4368049186 | Figma | Manager, Software Engineering - Design Systems Management
+4395421766 | Phipps Cameron | Senior Director – AI Platform Engineering
+4395485239 | NVIDIA | Manager, Solution Engineering for NVIDIA Experience
+4395917023 | NVIDIA | Senior Manager, Software Engineering - JAX
+4395917025 | NVIDIA | Senior Manager, Software Engineering - Platform Operations
+4398075094 | AuthZed | Sr. Engineering Manager: Cloud + Platform (US - East)
+4398231567 | PROOF. | Senior Director of Engineering
+4398316410 | Overstory | Director of Platform Engineering
+4398957400 | Pinterest | Staff Technical Program Manager, ML/AI Platform
+4398958365 | Pinterest | Staff Technical Program Manager, ML/AI Platform
+job?4665409006&board=weights_and_biases&gh_jid=4665409006 | CoreWeave | Explore Our Open Positions
+4387816994 | Microsoft | MTS - Platform Engineering Manager
+engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 | Databricks | Engineering Manager, Spark Connect
+4353116020 | Databricks | Senior Engineering Manager - Trust and Safety
+4385741506 | Weights & Biases | Senior Engineering Manager, Platform Services- Weights & Biases
+4665409006 | Weights & Biases | (excluded via coreweave.com career page)
