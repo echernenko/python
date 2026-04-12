@@ -723,3 +723,4 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4353116020 | Databricks | Senior Engineering Manager - Trust and Safety
 4385741506 | Weights & Biases | Senior Engineering Manager, Platform Services- Weights & Biases
 4665409006 | Weights & Biases | (excluded via coreweave.com career page)
+4398850226 | CoreWeave | Engineering Manager, Data Infrastructure
