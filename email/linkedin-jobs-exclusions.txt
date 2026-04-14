@@ -725,3 +725,63 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4665409006 | Weights & Biases | (excluded via coreweave.com career page)
 4398850226 | CoreWeave | Engineering Manager, Data Infrastructure
 4399023102 | Ladders | SR MGR Engineering Methodology & Tools
+4377103650 | Uber | Sr Engineering Manager, Maps Search
+4395486262 | NVIDIA | Product Manager, Accelerated Kubernetes Infrastructure
+4398023937 | Prime Video & Amazon MGM Studios | Software Development Manager, App Experience Delivery Tech, Prime Video
+4398298648 | Backblaze | Sr. Manager, Data Infrastructure
+4385970265 | Peregrine | Engineering Leader, Platform
+4387284922 | Microsoft | Principal Software Engineering Manager
+4391942543 | Fetch | Director of Engineering, Growth
+4395922189 | GitHub | Staff Engineering Manager GitHub Copilot API
+4395937732 | PrePass | Director of Software Engineering
+4395967928 | The Walt Disney Company | VP Software Engineering
+4396342470 | Babylist | Senior Engineering Manager, BizOps
+4396374264 | Deepgram | Engineering Manager, Engine Team
+4397745864 | Sigma | Senior Director of Engineering
+4398432653 | Riot Games | Senior Manager, Software Engineering - League of Legends, Developer Experience
+4398596992 | MrBeast | Director of Engineering
+4398948352 | Amazon Web Services (AWS) | Software Development Manager, Distributed SQL (DSQL) Control Plane
+4399473573 | CVS Health | Senior Engineering Manager
+4345839527 | Uber | Engineering Manager II, Core Security Engineering
+4376463207 | Eltropy | Senior Manager, Site Reliability Engineer
+4377466819 | Pinterest | Sr. Director, Engineering - Delivery Infrastructure
+4377475024 | Pinterest | Sr. Director, Engineering - Delivery Infrastructure
+4377499067 | Temporal Technologies | Senior Manager, Platform Architecture
+4385089177 | EY | AI Strategy - Oil & Gas Sector - Senior Manager - Consulting - Location OPEN
+4385090257 | EY | AI Strategy - Oil & Gas Sector - Manager - Consulting - Location OPEN
+4386899062 | Movable Ink | Manager, Engineering
+4396356055 | PwC | PwC Tech Azure Cloud Architect/Engineer (Senior Manager)
+4397274966 | Ontra | Senior Manager, Platform Engineering
+4397292839 | GitHub | Principal Engineering Manager
+4398694243 | Backblaze | Director of Site Reliability Engineering (SRE)
+4398813321 | eBay | Senior Director Eng, Seller Exp Platform
+4398828882 | 7Seventy Recruiting | Head of Engineering - $96.15 - $144.23 per hour
+4399443839 | Snowflake | Director of Engineering, Snowflake Apps
+4399446724 | Snowflake | Director of Engineering, Snowflake Apps
+4400244038 | PortX | Engineering Manager Payments
+4400267984 | Instacart | Director of Engineering, Catalog Content
+4400278656 | Coinbase | Senior Engineering Manager (Consumer - Growth App & Infra)
+4400289026 | UniUni | Director of Platform Engineering
+4400301001 | Snowflake | Engineering Manager - Transformation & Data Lake
+4344317247 | Cryoport Systems | Director- Software Engineering
+4369472807 | Deloitte | Solutions Architect, Manager - Tax Transformation
+4378366240 | A Place for Mom | Senior Director, Engineering - Senior Living
+4387111432 | PwC | Corporate Deals Technology Manager
+4387170845 | GitHub | Senior AI Transformation Manager, HR
+4397621221 | Blackmere Consulting, LLC | Sr. Director, Software Engineering - AI SaaS Product
+4398109985 | Qualcomm | Sr. Director - Technology
+4398190771 | NVIDIA | Senior Manager, System Software Security
+4398848638 | OP | Senior Engineering Manager (Product)
+4399018185 | Ladders | Senior Engineering Manager
+4399021177 | Ladders | Engineering Manager, Cloud Network Engineering
+4399024066 | Ladders | Senior Director, AI/ML Engineering - Remote
+4399028386 | Airdev | Director of Engineering
+4399059406 | Robinhood | Engineering Manager, International
+4400322314 | Salesforce | Manager/Sr. Manager of Software Engineering - Commerce Cloud
+4400560909 | Pathstream | Engineering Director
+4400583349 | Spotify | Engineering Manager – Messaging Platform & Tooling
+4353682921 | Netflix | Engineering Manager - Ads Serving
+4401000892 | Amazon Web Services (AWS) | Software Development Manager, Agentic AI - AgentCore Gateway
+4400914351 | Amazon Web Services (AWS) | Software Development Manager, EC2 Infrastructure Supply Chain Security Services
+4400666762 | Snowflake | Technical Director for AI Functions
+4400667762 | Snowflake | Technical Director for AI Functions
