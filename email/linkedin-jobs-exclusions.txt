@@ -785,3 +785,82 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4400914351 | Amazon Web Services (AWS) | Software Development Manager, EC2 Infrastructure Supply Chain Security Services
 4400666762 | Snowflake | Technical Director for AI Functions
 4400667762 | Snowflake | Technical Director for AI Functions
+4399650034 | Cengage | Director, Software Engineering
+4399106306 | Haystack | Software Engineering Manager
+4399511690 | Ladders | Manager, Software Engineering- Infrastructure (MANTL)
+4399507659 | Ladders | Director of Engineering
+4398798464 | Haystack | Software Engineering Manager
+4385468421 | Arclin | Plant Engineering Manager
+4355281743 | Sesame | Head of Advanced Manufacturing
+4380570855 | Amazon | Manager III, Ops Engineering - AMZ3815.19
+4377612526 | Philips | Product Industrialization Project Manager - OHC
+4384261792 | Helion | Manager, Manufacturing Engineering
+4384263768 | Helion | Engineering Technician Manager
+4397595229 | Blue Origin | Manager, Tooling Engineering
+4399202485 | Deloitte | Databricks Manager
+4398642179 | Boeing | Manufacturing Manager
+4399883590 | Amazon Web Services (AWS) | Manager, Software Dev, AWS Supply Chain
+4398868010 | Boeing | Manufacturing Managers - Assembly
+4400296311 | Snowflake | Senior Manager, Applied Field Engineering - AI/ML Product Specialist
+4271758685 | Sony Interactive Entertainment | Sr. Director, Data Platform Engineering & Operations
+4311179174 | Snowflake | Senior Manager Engineering - Snowhouse Foundation
+4318101719 | Figma | Manager, Software Engineering - Expressive AI
+4377988888 | Figma | Manager, Software Engineering - Observability
+4398198720 | PwC | AI-Native Senior Engineering Manager, Full Stack
+4398752242 | Starbucks | engineer lead, Cloud Foundation Services Platform (Kubernetes)- ST; Seattle WA
+4398753361 | PwC | Cloud Deployment Architect- Manager
+4398860007 | OP | Senior Engineering Manager (Platform)
+4399059624 | Maximus | Lead Software Engineer / Tech Lead Manager, Growth (Remote)
+4400693620 | Brightside Health | Senior Director of Software Engineering
+4400917205 | The Coca-Cola Company | Senior Director, Engineering
+4400923060 | Avanade | Manager, Infrastructure Architecture
+4322290315 | Anthropic | Engineering Manager, Inference
+4322300316 | Anthropic | Engineering Manager, Inference
+4355671357 | TENEX.AI | Head of Platform Engineering
+4355920469 | TENEX.AI | Head of Platform Engineering
+4361790638 | Evolent | Sr. Director, Software Engineering
+4363874796 | Anduril Industries | Senior Manager, Software Engineering (Game Development)
+4369282388 | LangChain | Director, Deployed Engineering - Central
+4369957239 | Empower Pharmacy | Director, Cloud Infrastructure
+4376211889 | Cloudflare | Engineering Manager - Security Platform
+4377985539 | Nuro | Technical Lead Manager, ML Platform Infrastructure
+4385768577 | Crunchyroll | Senior Manager, Platform Engineering
+4387959789 | Autodesk | Director of Engineering, AI Platform
+4398750339 | Starbucks | engineer lead, Cloud Foundation Services Platform (Network)- ST; Seattle, WA
+4398764440 | Gradial | Forward Deployed Engineering Lead
+4400682555 | BioSpace | Engineering Manager - TuneLab
+4400961518 | GenBio AI | Vice President of Engineering
+4401728741 | Amazon Web Services (AWS) | Sr. Software Development Manager, GenAIUX
+4401740812 | Microsoft | Member of Technical Staff -Platform Engineering Manager
+4401734975 | Microsoft | Principal Software Engineering Manager, CoreAI
+4399140894 | Expedia Group | Sr. Director - AI, Innovation and Digital Employee Experience
+4318746746 | Exelixis | Director, Cloud Engineering
+4401506532 | Halcyon | Senior Engineering Manager
+4369950182 | Pinterest | Sr. Engineering Manager, AI/ML Serving Platform
+4401344873 | Pinterest | Engineering Manager II, Enterprise AI Solutions
+4399504739 | Ladders | Senior Engineering Manager, Distribution Platform
+4399523553 | Ladders | Senior Engineering Manager, Marketplace Optimization
+4401123113 | Google | Director of Engineering, Storage Infrastructure and Instances
+4399914153 | Netflix | Head of Technology - Ink
+4401556667 | Tin Can | Engineering Director
+4399769835 | PitchBook | Engineering Manager, AI Business Enablement
+4402049339 | UserTesting | Head of Internal AI
+4379246451 | Snowflake | Engineering Manager - Feature Store
+4366913964 | Brex | Engineering Manager, AI — Brex Assistant
+4346834278 | SoFi | AI Software Engineer Manager, Risk Engineering
+4397166774 | Microsoft AI | Principal Software Engineer Manager
+4396599254 | Microsoft | Principal Software Engineer Manager
+4288097984 | The Trade Desk | Senior Product Manager, Infra Generalist
+4369870016 | Whatnot | Director, Strategy & Operations - Service Delivery
+4369988868 | Virta Health | Director of IT
+4388736622 | Rubrik | Director of Web
+4399617838 | Procom | Director of Software Engineering
+4399627699 | Insight Global | Director of Platform Engineering
+4401319391 | Copyright Slap, Inc. | Head of Engineering
+4401361755 | Kenworth Truck Co. | Advanced Manufacturing - Technical Project Manager
+4390324276 | Microsoft | Principal Software Engineering Manager - Substrate- CTJ- Secret  (Cleared Environments)
+4322585032 | Affirm | Director, Software Engineering
+4402627855 | Qualtrics | Software Engineering Manager - Topics Core Platform
+4402002630 | Auxo Solutions | Director/VP of Software
+4400018870 | NVIDIA | Senior Manager, Software Engineering - IT Infrastructure
+4402236723 | JPMorganChase | Sr Director of Software Engineering- AI Infrastructure Platform
