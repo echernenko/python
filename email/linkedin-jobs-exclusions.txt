@@ -1,45 +1,6 @@
 # Format: job_id | company | position
 # Jobs listed here (by job ID) will not appear in future summaries
 # LinkedIn Jobs Exclusion List
-4363125621 | Oracle | Software Development Director
-4363239200 | DoorDash | Engineering Manager, Search Quality
-4363995481 | Oracle | Snr Manager, Software Engineering, Cloud Performance
-4364418708 | Mastercard | Vice President, Software Engineering
-4364495591 | Mastercard | Vice President, Software Engineering
-4365006239 | NVIDIA | Senior Manager, Software Engineering - Libraries Devops and Infrastructure
-4365077604 | Coinbase | Director of Engineering, Custody
-4365267928 | Microsoft | Principal Engineering Manager
-4365598443 | Snowflake | Engineering Manager - Freepool
-4365639524 | CVS Health | Director Web Engineering
-4365641608 | Snowflake | Engineering Manager - Freepool
-4365662657 | Microsoft | Principal Software Engineering Manager
-4365913955 | Apple | Senior Engineering Manager, Product Engineering Systems
-4366036352 | Apple | Software Engineering Manager, HomeKit
-4366204324 | LinkedIn | Director, Software Engineering, Systems Infrastructure
-4366244555 | Snap Inc. | Manager, Software Engineering
-4366244557 | Snap Inc. | Manager, Software Engineering
-4366561033 | Affirm | Senior Manager, Technical Programs
-4366842941 | Microsoft | Principal Software Engineering Manager
-4366881182 | Starbucks | engineering manager, Next Generation Ordering & Coffeehouse Platform
-4366974065 | Airbnb | Engineering Manager, Ambassador Routing
-4366985331 | Coinbase | Engineering Manager - Risk Platform
-4367208554 | Apple | Senior Manager, Quality Engineering Xcode
-4367606078 | GitHub | Principal Engineering Manager, Git Systems
-4367918605 | Microsoft | Principal Software Engineering Manager - Developer Platform
-4368056061 | Figma | Manager, Software Engineering - Design Systems Management
-4368333496 | Coinbase | Senior Engineering Manager - Data Platform
-4368433237 | Dropbox | Senior Engineering Manager, Core Mobile Experience
-4368604485 | Ford Motor Company | Software Engineering Director
-4368840670 | Coinbase | Software Engineering Manager - Cloud Provisioning
-4369029689 | Cisco | Director, Engineering
-4369074568 | Microsoft | Principal Group Engineering Manager
-4369309314 | Anthropic | Engineering Manager, Inference Developer Productivity
-4369311207 | Figma | Manager, Software Engineering - Internal Tools
-4369317865 | Salesforce | Sr. Manager, Software Engineering
-4370127027 | NVIDIA | Director, Software Engineering - NIM Factory
-4370142945 | Microsoft | Principal Software Engineering Manager
-4370848614 | Slack | Staff Frontend Product Engineer - Slack, Search Pillar
-4370985645 | Microsoft | Principal Software Engineering Manager
 4371025252 | CVS Health | Senior Engineering Manager
 4371093314 | Nutanix | Director, Systems Engineering
 4371220751 | Instacart | Director of Software Engineering, Order Experience
@@ -856,18 +817,38 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4388736622 | Rubrik | Director of Web
 4399617838 | Procom | Director of Software Engineering
 4399627699 | Insight Global | Director of Platform Engineering
-4401319391 | Copyright Slap, Inc. | Head of Engineering
-4401361755 | Kenworth Truck Co. | Advanced Manufacturing - Technical Project Manager
-4390324276 | Microsoft | Principal Software Engineering Manager - Substrate- CTJ- Secret  (Cleared Environments)
-4322585032 | Affirm | Director, Software Engineering
-4402627855 | Qualtrics | Software Engineering Manager - Topics Core Platform
-4402002630 | Auxo Solutions | Director/VP of Software
-4400018870 | NVIDIA | Senior Manager, Software Engineering - IT Infrastructure
-4402236723 | JPMorganChase | Sr Director of Software Engineering- AI Infrastructure Platform
-4401765932 | PayPal | Sr Manager, Software Engineering
-4402942108 | Joveo Ai | Engineering Manager  (Remote)
-4402330223 | RemoteHunter | Senior Engineering Manager
-4403894484 | GitLab | Engineering Manager, AI Engineering:Workflow Catalog
-4403310073 | RemoteHunter | Director of IT Infrastructure and Cloud Services
+4387938947 | Unknown | Unknown
+4401629832 | Avenue 45 | Head of Engineering
 4402137819 | Acumatica | Director, IT Business Systems
+4402179492 | Robert Half | Vice President of Engineering
+4402330223 | RemoteHunter | Senior Engineering Manager
+4402942108 | Joveo Ai | Engineering Manager  (Remote)
+4403310073 | RemoteHunter | Director of IT Infrastructure and Cloud Services
+4403894484 | GitLab | Engineering Manager, AI Engineering:Workflow Catalog
 4404311039 | Joveo AI | Engineering Manager  (Remote)
+4389407074 | Unknown | Unknown
+4399670892 | ePublishing | Director of Software Engineering
+4400005549 | Ethos | IT Director / Head of Engineering ($100/hr, up to $2,000/week)
+4401119370 | Solera Holdings, LLC. | Sr. Director, Engineering
+4401575811 | Mainstay | Head of Engineering
+4401744005 | Amazon Web Services (AWS) | Software Development Manager, Edge Console and Agentic Experience, CloudFront
+4402025485 | Flock | Engineering Manager, Computer Vision
+4399952838 | Ladders | Senior Engineering Manager
+4401124183 | One Call | Director, Applied AI Engineering
+4401768813 | Fanatics | Engineering Manager
+4402051671 | Walmart | (USA) Director, Software Engineering
+4402533336 | Panther | Senior Engineering Manager, Agent AI
+4390832520 | Unknown | Unknown
+4399942942 | Ladders | Director, Software Engineering
+4400128270 | Electronic Arts (EA) | Senior Director Technical Engineering
+4400408014 | Cover Whale | Director of AI Engineering
+4400421844 | Google | Forward Deployed Engineering Manager, GenAI, Google Cloud
+4401480078 | Two Chairs | Director, Engineering and Data
+4401812748 | NVIDIA | Senior Manager, Software Engineering - NIM Factory
+4402632714 | Rippling | Senior Engineering Manager, Infrastructure
+4402634601 | Rippling | Director of Engineering - Platform
+4402645447 | Rippling | Director of Engineering - Infrastructure
+4402646463 | Rippling | Senior Engineering Manager - Platform
+4402649316 | Amazon Web Services (AWS) | Software Development Manager, AWS BillGeneration
+4402652328 | Rippling | Senior Engineering Manager, AI Developer Experience
+4402941343 | Deloitte | AI & Data Life Sciences Senior Manager
