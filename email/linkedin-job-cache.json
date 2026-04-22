@@ -41,6 +41,16 @@
     "posted_text": "4 days ago",
     "status_checked_at": "2026-04-21T22:12:05"
   },
+  "4380815530": {
+    "company": "Mastercard",
+    "job_status": "open",
+    "location": "63368",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
+    "salary": "$152K-$258K",
+    "status_checked_at": "2026-04-22T02:00:12",
+    "title": "Director, Site Reliability Engineering"
+  },
   "4381057448": {
     "job_status": "open",
     "posted_hours": 48,
@@ -48,10 +58,14 @@
     "status_checked_at": "2026-04-21T22:12:03"
   },
   "4381083948": {
+    "company": "Lenovo",
     "job_status": "open",
+    "location": "Chicago",
     "posted_hours": 72,
     "posted_text": "3 days ago",
-    "status_checked_at": "2026-04-21T22:12:30"
+    "salary": null,
+    "status_checked_at": "2026-04-21T22:12:30",
+    "title": "Senior Manager AI Reliability Engineering"
   },
   "4381148933": {
     "job_status": "open",
@@ -76,6 +90,16 @@
     "posted_hours": 168,
     "posted_text": "1 week ago",
     "status_checked_at": "2026-04-21T22:11:55"
+  },
+  "4390324276": {
+    "company": "Microsoft",
+    "job_status": "open",
+    "location": "Redmond",
+    "posted_hours": 144,
+    "posted_text": "6 days ago",
+    "salary": "$139K-$274K",
+    "status_checked_at": "2026-04-22T16:00:27",
+    "title": "Principal Software Engineering Manager - Substrate- CTJ- Secret  (Cleared Environments)"
   },
   "4390832520": {
     "job_status": "open",
@@ -1815,7 +1839,7 @@
     "posted_text": "4 days ago",
     "salary": null,
     "status_checked_at": "2026-04-21T17:00:09",
-    "title": "Technology - Systems Implementation and Engineering - Transformation Delivery -o9 Senior Manager"
+    "title": "Technology - Transformation Program Delivery - o9 Solution Strategist Senior Manager - Location Open"
   },
   "4400469155": {
     "company": "EY",
@@ -2091,10 +2115,10 @@
     "company": "Ladders",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$192K-$278K",
-    "status_checked_at": "2026-04-21T16:00:28",
+    "status_checked_at": "2026-04-22T17:00:10",
     "title": "Engineering Manager, Authentication Experience"
   },
   "4401615275": {
@@ -2131,10 +2155,10 @@
     "company": "OpenAI",
     "job_status": "open",
     "location": "San Francisco, CA",
-    "posted_hours": 22,
-    "posted_text": "22 hours ago",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T16:00:24",
+    "status_checked_at": "2026-04-22T17:00:14",
     "title": "Engineering Manager, Multimodal (API)"
   },
   "4401728741": {
@@ -2311,10 +2335,10 @@
     "company": "Discord",
     "job_status": "open",
     "location": "San Francisco Bay Area",
-    "posted_hours": 96,
-    "posted_text": "4 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T03:00:10",
+    "status_checked_at": "2026-04-22T04:00:08",
     "title": "Engineering Manager, Social Commerce"
   },
   "4402330223": {
@@ -2331,10 +2355,10 @@
     "company": "Ditto",
     "job_status": "open",
     "location": "Greater Seattle Area",
-    "posted_hours": 96,
-    "posted_text": "4 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T16:00:30",
+    "status_checked_at": "2026-04-22T17:00:09",
     "title": "Engineering Manager, FDE"
   },
   "4402533336": {
@@ -2351,10 +2375,10 @@
     "company": "kadence",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$180K-$250K",
-    "status_checked_at": "2026-04-21T02:00:19",
+    "status_checked_at": "2026-04-22T03:00:08",
     "title": "Founding Head of Engineering"
   },
   "4402627855": {
@@ -2581,20 +2605,20 @@
     "company": "American Express",
     "job_status": "open",
     "location": "Phoenix",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T00:00:16",
+    "status_checked_at": "2026-04-22T01:00:08",
     "title": "Engineering Director - Global Web Engineering"
   },
   "4403474296": {
     "company": "Bain & Company",
     "job_status": "open",
     "location": "Seattle",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T04:00:08",
+    "status_checked_at": "2026-04-22T05:00:07",
     "title": "Expert Senior Manager, Engineering Excellence"
   },
   "4403476388": {
@@ -2641,10 +2665,10 @@
     "company": "Jobgether",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
     "salary": "$223K-$270K",
-    "status_checked_at": "2026-04-21T16:00:22",
+    "status_checked_at": "2026-04-22T17:00:12",
     "title": "Senior Engineering Manager - Infrastructure"
   },
   "4403687364": {
@@ -2716,6 +2740,46 @@
     "salary": null,
     "status_checked_at": "2026-04-21T21:56:46",
     "title": "Sr. Director, Engineering"
+  },
+  "4404520840": {
+    "company": "Amazon",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 1,
+    "posted_text": "1 hour ago",
+    "salary": null,
+    "status_checked_at": "2026-04-22T16:00:24",
+    "title": "Software Development Manager, Customer Data Foundations"
+  },
+  "4404825587": {
+    "company": "Roku",
+    "job_status": "open",
+    "location": "San Jose, CA",
+    "posted_hours": 22,
+    "posted_text": "22 hours ago",
+    "salary": "$328K-$451K",
+    "status_checked_at": "2026-04-22T16:00:20",
+    "title": "Senior Engineering Manager, Content Platform"
+  },
+  "4404859411": {
+    "company": "Abridge",
+    "job_status": "open",
+    "location": "New York, NY",
+    "posted_hours": 1,
+    "posted_text": "1 hour ago",
+    "salary": "$220K-$250K",
+    "status_checked_at": "2026-04-22T16:00:22",
+    "title": "Engineering Manager, Platform"
+  },
+  "4404928887": {
+    "company": "TikTok USDS Joint Venture",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 13,
+    "posted_text": "13 hours ago",
+    "salary": "$198K-$416K",
+    "status_checked_at": "2026-04-22T16:00:26",
+    "title": "SRE Tech Lead Manager, Video Platform - USDS"
   },
   "481077504601": {
     "job_status": "gone",

@@ -852,3 +852,43 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4402649316 | Amazon Web Services (AWS) | Software Development Manager, AWS BillGeneration
 4402652328 | Rippling | Senior Engineering Manager, AI Developer Experience
 4402941343 | Deloitte | AI & Data Life Sciences Senior Manager
+4400433694 | Expedia Group | Sr. Director - AI, Innovation and Digital Employee Experience
+4391795481 | Airbnb | Senior Manager, Technical Program Management (Guest & Host Technology)
+4403687364 | NVIDIA | Lead Software Engineer, Fleet Management - DGX Cloud
+4402318711 | NVIDIA | Manager, Next-Gen AI Cluster Validation
+4402749711 | ByteDance | Tech Lead Manager, Global Traffic Infrastructure
+4326709471 | Affirm | Senior Manager, Software Engineering (Data & Storage Services)
+4381057448 | Anthropic | Engineering Manager, Cloud Inference AWS
+4380641654 | Anthropic | Engineering Manager, Cloud Inference AWS
+4402314288 | Smartsheet | Senior Manager, Engineering - AI & Automation
+4403576363 | Uber | Manager II, Engineering
+4402766315 | Yahoo | Sr. Engineering Manager, Tooling and Reliability Platforms
+4404024215 | Pinterest | VP, Ads Quality Engineering
+4402737892 | UKG | Vice President, Cloud Engineering & Operations
+4400818322 | Boeing | Architecture and Platform Manager
+4404825587 | Roku | Senior Engineering Manager, Content Platform
+4404928887 | TikTok USDS Joint Venture | SRE Tech Lead Manager, Video Platform - USDS
+4370379072 | Unknown | Unknown
+4372428067 | Unknown | Unknown
+4390324276 | Microsoft | Principal Software Engineering Manager - Substrate- CTJ- Secret  (Cleared Environments)
+4402326123 | Discord | Engineering Manager, Social Commerce
+4402349834 | Ditto | Engineering Manager, FDE
+4379682903 | Unknown | Unknown
+4381148933 | Unknown | Unknown
+4400452727 | Telestream, LLC | Director Platform Engineering & Cloud Infrastructure
+4400469152 | EY | Technology - Transformation Program Delivery - o9 Solution Strategist Senior Manager - Location Open
+4400469155 | EY | Technology - Systems Implementation and Engineering - Transformation Program Delivery -09 Manager
+4400804564 | Ladders | Senior Engineering Manager
+4400817442 | Ladders | Director of Engineering
+4400817445 | Ladders | Senior Director, Technical Programs
+4402188222 | Google | Senior Software Engineering Manager, Infrastructure, Google Cloud Security and Privacy
+4402704925 | Bevi | Senior Director, Software Engineering
+4403133541 | Amazon Web Services (AWS) | Senior Delivery Practice Manager, Emerging Tech
+4403135475 | Amazon Web Services (AWS) | Software Development Manager, EC2 VPC Private Gateway Networking
+4403139278 | Stitch Fix | Engineering Manager, Fulfillment
+4403140229 | Avalara | Director, Engineering - Avalara Developer Experience Platform
+4403160560 | Checkr, Inc. | Director of Platform Engineering
+4403160561 | Checkr, Inc. | Director of Platform Engineering
+4403180483 | Google DeepMind | Director, Engineering, Create
+4403474296 | Bain & Company | Expert Senior Manager, Engineering Excellence
+4403476388 | Freshworks | Senior Director - Engineering
