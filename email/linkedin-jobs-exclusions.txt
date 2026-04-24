@@ -892,3 +892,5 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4403180483 | Google DeepMind | Director, Engineering, Create
 4403474296 | Bain & Company | Expert Senior Manager, Engineering Excellence
 4403476388 | Freshworks | Senior Director - Engineering
+4404520840 | Amazon | Software Development Manager, Customer Data Foundations
+4402546238 | kadence | Founding Head of Engineering

@@ -1,4 +1,14 @@
 {
+  "4310215506": {
+    "company": "Databricks",
+    "job_status": "open",
+    "location": "New York, NY",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-23T18:00:09",
+    "title": "Sr. Manager, Engineering Performance"
+  },
   "4326709471": {
     "job_status": "open",
     "posted_hours": 48,
@@ -7,9 +17,29 @@
   },
   "4365439034": {
     "job_status": "open",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
-    "status_checked_at": "2026-04-21T22:12:29"
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
+    "status_checked_at": "2026-04-24T00:00:13"
+  },
+  "4367330156": {
+    "company": "Costco Wholesale",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 336,
+    "posted_text": "2 weeks ago",
+    "salary": "$137K-$200K",
+    "status_checked_at": "2026-04-24T01:00:13",
+    "title": "Manager - Enterprise Architecture"
+  },
+  "4367351446": {
+    "company": "Costco IT",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 1440,
+    "posted_text": "2 months ago",
+    "salary": "$137K-$200K",
+    "status_checked_at": "2026-04-24T01:00:15",
+    "title": "Manager - Enterprise Architecture"
   },
   "4370379072": {
     "job_status": "open",
@@ -19,9 +49,9 @@
   },
   "4371537503": {
     "job_status": "open",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
-    "status_checked_at": "2026-04-21T22:12:07"
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
+    "status_checked_at": "2026-04-24T00:00:10"
   },
   "4372428067": {
     "job_status": "open",
@@ -45,10 +75,10 @@
     "company": "Mastercard",
     "job_status": "open",
     "location": "63368",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": "$152K-$258K",
-    "status_checked_at": "2026-04-22T02:00:12",
+    "status_checked_at": "2026-04-24T03:00:15",
     "title": "Director, Site Reliability Engineering"
   },
   "4381057448": {
@@ -61,10 +91,10 @@
     "company": "Lenovo",
     "job_status": "open",
     "location": "Chicago",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T22:12:30",
+    "status_checked_at": "2026-04-24T00:00:15",
     "title": "Senior Manager AI Reliability Engineering"
   },
   "4381148933": {
@@ -75,9 +105,19 @@
   },
   "4381912274": {
     "job_status": "open",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
-    "status_checked_at": "2026-04-21T22:12:08"
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
+    "status_checked_at": "2026-04-24T00:00:12"
+  },
+  "4383371131": {
+    "company": "Zillow",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-23T18:00:11",
+    "title": "Senior Manager, Software Development Engineering, Big Data"
   },
   "4387938947": {
     "job_status": "open",
@@ -100,6 +140,16 @@
     "salary": "$139K-$274K",
     "status_checked_at": "2026-04-22T16:00:27",
     "title": "Principal Software Engineering Manager - Substrate- CTJ- Secret  (Cleared Environments)"
+  },
+  "4390627723": {
+    "company": "Microsoft AI",
+    "job_status": "open",
+    "location": "Redmond",
+    "posted_hours": 168,
+    "posted_text": "1 week ago",
+    "salary": "$139K-$274K",
+    "status_checked_at": "2026-04-24T01:00:12",
+    "title": "Member of Technical Staff - Data Infrastructure Manager - Microsoft AI - Copilot"
   },
   "4390832520": {
     "job_status": "open",
@@ -538,6 +588,16 @@
     "salary": "$91K-$321K",
     "status_checked_at": "2026-04-13T17:00:09",
     "title": "PwC Tech Azure Cloud Architect/Engineer (Senior Manager)"
+  },
+  "4396356437": {
+    "company": "ByteDance",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 336,
+    "posted_text": "2 weeks ago",
+    "salary": "$232K-$427K",
+    "status_checked_at": "2026-04-24T01:00:08",
+    "title": "Tech Lead / Architect, Global Traffic Infrastructure"
   },
   "4396374264": {
     "company": "Deepgram",
@@ -1955,10 +2015,10 @@
     "company": "Leidos",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T18:00:19",
+    "status_checked_at": "2026-04-23T20:00:11",
     "title": "DevSecOps Lead"
   },
   "4400914351": {
@@ -2115,30 +2175,30 @@
     "company": "Ladders",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$192K-$278K",
-    "status_checked_at": "2026-04-22T17:00:10",
+    "status_checked_at": "2026-04-23T18:00:14",
     "title": "Engineering Manager, Authentication Experience"
   },
   "4401615275": {
     "company": "Ladders",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$156K-$312K",
-    "status_checked_at": "2026-04-21T21:56:44",
+    "status_checked_at": "2026-04-23T23:00:09",
     "title": "Director, Software Engineering"
   },
   "4401623230": {
     "company": "Ladders",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$183K-$306K",
-    "status_checked_at": "2026-04-21T21:56:47",
+    "status_checked_at": "2026-04-23T23:00:07",
     "title": "Senior Director, Software Development and Engineering"
   },
   "4401629832": {
@@ -2155,10 +2215,10 @@
     "company": "OpenAI",
     "job_status": "open",
     "location": "San Francisco, CA",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-22T17:00:14",
+    "status_checked_at": "2026-04-23T18:00:16",
     "title": "Engineering Manager, Multimodal (API)"
   },
   "4401728741": {
@@ -2230,6 +2290,26 @@
     "salary": "$272K-$431K",
     "status_checked_at": "2026-04-21T21:56:49",
     "title": "Senior Manager, Software Engineering - NIM Factory"
+  },
+  "4401972603": {
+    "company": "DoorDash",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-24T03:00:21",
+    "title": "Engineering Manager, Red Team"
+  },
+  "4401989400": {
+    "company": "Okta",
+    "job_status": "open",
+    "location": "San Francisco",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-24T03:00:23",
+    "title": "Director of Engineering, Workflows Experiences"
   },
   "4402002630": {
     "company": "Auxo Solutions",
@@ -2373,12 +2453,12 @@
   },
   "4402546238": {
     "company": "kadence",
-    "job_status": "open",
+    "job_status": "closed",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 999999,
+    "posted_text": null,
     "salary": "$180K-$250K",
-    "status_checked_at": "2026-04-22T03:00:08",
+    "status_checked_at": "2026-04-23T03:00:15",
     "title": "Founding Head of Engineering"
   },
   "4402627855": {
@@ -2465,10 +2545,10 @@
     "company": "Trupanion",
     "job_status": "open",
     "location": "Seattle",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 144,
+    "posted_text": "6 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T19:00:13",
+    "status_checked_at": "2026-04-23T21:00:08",
     "title": "Manager Software Development"
   },
   "4402737892": {
@@ -2605,10 +2685,10 @@
     "company": "American Express",
     "job_status": "open",
     "location": "Phoenix",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-22T01:00:08",
+    "status_checked_at": "2026-04-24T01:00:17",
     "title": "Engineering Director - Global Web Engineering"
   },
   "4403474296": {
@@ -2645,30 +2725,30 @@
     "company": "Flock",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T18:00:21",
+    "status_checked_at": "2026-04-23T20:00:13",
     "title": "Engineering Manager, Mulitimodal Modeling"
   },
   "4403591007": {
     "company": "dbt Labs",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 72,
-    "posted_text": "3 days ago",
+    "posted_hours": 120,
+    "posted_text": "5 days ago",
     "salary": "$223K-$270K",
-    "status_checked_at": "2026-04-21T18:00:18",
+    "status_checked_at": "2026-04-23T20:00:10",
     "title": "Senior Engineering Manager - Infrastructure"
   },
   "4403621890": {
     "company": "Jobgether",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$223K-$270K",
-    "status_checked_at": "2026-04-22T17:00:12",
+    "status_checked_at": "2026-04-23T18:00:12",
     "title": "Senior Engineering Manager - Infrastructure"
   },
   "4403687364": {
@@ -2685,10 +2765,10 @@
     "company": "Spotify",
     "job_status": "open",
     "location": "New York",
-    "posted_hours": 48,
-    "posted_text": "2 days ago",
+    "posted_hours": 96,
+    "posted_text": "4 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T19:00:20",
+    "status_checked_at": "2026-04-23T21:00:13",
     "title": "Senior Engineering Manager - Spotify for Artists"
   },
   "4403894484": {
@@ -2705,11 +2785,21 @@
     "company": "Tessera Data",
     "job_status": "open",
     "location": "San Francisco Bay Area",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": "$299K-$352K",
-    "status_checked_at": "2026-04-21T18:00:11",
+    "status_checked_at": "2026-04-23T20:00:08",
     "title": "Director of Platform Engineering"
+  },
+  "4403902904": {
+    "company": "Expedia Group",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": "$184K-$258K",
+    "status_checked_at": "2026-04-24T03:00:13",
+    "title": "Senior Manager, Software Development Engineering"
   },
   "4404024215": {
     "company": "Pinterest",
@@ -2720,6 +2810,26 @@
     "salary": null,
     "status_checked_at": "2026-04-21T00:00:18",
     "title": "VP, Ads Quality Engineering"
+  },
+  "4404221815": {
+    "company": "GitHub",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-24T03:00:25",
+    "title": "Staff Product Manager"
+  },
+  "4404244052": {
+    "company": "Goldman Sachs",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": null,
+    "status_checked_at": "2026-04-24T03:00:18",
+    "title": "Engineering - Cloud Development - Engineering Platforms Cloud Enablement - Vice President - Seattle"
   },
   "4404311039": {
     "company": "Joveo AI",
@@ -2735,10 +2845,10 @@
     "company": "Aislelabs",
     "job_status": "open",
     "location": "United States",
-    "posted_hours": 24,
-    "posted_text": "1 day ago",
+    "posted_hours": 72,
+    "posted_text": "3 days ago",
     "salary": null,
-    "status_checked_at": "2026-04-21T21:56:46",
+    "status_checked_at": "2026-04-23T23:00:11",
     "title": "Sr. Director, Engineering"
   },
   "4404520840": {
@@ -2751,6 +2861,26 @@
     "status_checked_at": "2026-04-22T16:00:24",
     "title": "Software Development Manager, Customer Data Foundations"
   },
+  "4404561560": {
+    "company": "Alchemy",
+    "job_status": "open",
+    "location": "San Francisco, CA",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": "$300K-$350K",
+    "status_checked_at": "2026-04-23T21:00:09",
+    "title": "Director of Engineering, Infrastructure & Platform"
+  },
+  "4404802526": {
+    "company": "TikTok USDS Joint Venture",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 48,
+    "posted_text": "2 days ago",
+    "salary": "$198K-$416K",
+    "status_checked_at": "2026-04-24T01:00:10",
+    "title": "Engineering Tech Lead, Data Platform \u2013 USDS"
+  },
   "4404825587": {
     "company": "Roku",
     "job_status": "open",
@@ -2761,15 +2891,35 @@
     "status_checked_at": "2026-04-22T16:00:20",
     "title": "Senior Engineering Manager, Content Platform"
   },
+  "4404858953": {
+    "company": "RTX",
+    "job_status": "open",
+    "location": "Des Moines",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-24T03:00:20",
+    "title": "Senior Manager, Agile & Digital Delivery"
+  },
   "4404859411": {
     "company": "Abridge",
     "job_status": "open",
     "location": "New York, NY",
-    "posted_hours": 1,
-    "posted_text": "1 hour ago",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
     "salary": "$220K-$250K",
-    "status_checked_at": "2026-04-22T16:00:22",
+    "status_checked_at": "2026-04-23T17:00:08",
     "title": "Engineering Manager, Platform"
+  },
+  "4404891666": {
+    "company": "FICO",
+    "job_status": "open",
+    "location": "United States",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-23T21:00:11",
+    "title": "Software Engineering - Sr. Director"
   },
   "4404928887": {
     "company": "TikTok USDS Joint Venture",
@@ -2780,6 +2930,16 @@
     "salary": "$198K-$416K",
     "status_checked_at": "2026-04-22T16:00:26",
     "title": "SRE Tech Lead Manager, Video Platform - USDS"
+  },
+  "4404962386": {
+    "company": "Uber",
+    "job_status": "open",
+    "location": "Seattle",
+    "posted_hours": 24,
+    "posted_text": "1 day ago",
+    "salary": null,
+    "status_checked_at": "2026-04-24T03:00:16",
+    "title": "Engineering Manager II"
   },
   "481077504601": {
     "job_status": "gone",
