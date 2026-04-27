@@ -921,3 +921,5 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4383371131 | Zillow | Senior Manager, Software Development Engineering, Big Data
 4404561560 | Alchemy | Director of Engineering, Infrastructure & Platform
 4404891666 | FICO | Software Engineering - Sr. Director
+4403783838 | AAA Washington | Senior Manager, Product Engineering
+4396676268 | Netflix | Engineering Manager, AI Observability
