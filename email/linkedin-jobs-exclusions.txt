@@ -894,3 +894,30 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4403476388 | Freshworks | Senior Director - Engineering
 4404520840 | Amazon | Software Development Manager, Customer Data Foundations
 4402546238 | kadence | Founding Head of Engineering
+4373627290 | Affirm | Director, Software Engineering (Site Reliability Engineering)
+4367351446 | Costco IT | Manager - Enterprise Architecture
+4369182225 | Runpod | Engineering Manager - Product & Platform Delivery
+4367330156 | Costco Wholesale | Manager - Enterprise Architecture
+4396356437 | ByteDance | Tech Lead / Architect, Global Traffic Infrastructure
+4365439034 | Unknown | Unknown
+4371537503 | Unknown | Unknown
+4380815530 | Mastercard | Director, Site Reliability Engineering
+4381083948 | Lenovo | Senior Manager AI Reliability Engineering
+4381912274 | Unknown | Unknown
+4390627723 | Microsoft AI | Member of Technical Staff - Data Infrastructure Manager - Microsoft AI - Copilot
+4400859890 | Leidos | DevSecOps Lead
+4402735917 | Trupanion | Manager Software Development
+4403578404 | Flock | Engineering Manager, Mulitimodal Modeling
+4403591007 | dbt Labs | Senior Engineering Manager - Infrastructure
+4403882098 | Spotify | Senior Engineering Manager - Spotify for Artists
+4401613295 | Ladders | Engineering Manager, Authentication Experience
+4401615275 | Ladders | Director, Software Engineering
+4401623230 | Ladders | Senior Director, Software Development and Engineering
+4403318456 | American Express | Engineering Director - Global Web Engineering
+4403621890 | Jobgether | Senior Engineering Manager - Infrastructure
+4403898990 | Tessera Data | Director of Platform Engineering
+4404347113 | Aislelabs | Sr. Director, Engineering
+4310215506 | Databricks | Sr. Manager, Engineering Performance
+4383371131 | Zillow | Senior Manager, Software Development Engineering, Big Data
+4404561560 | Alchemy | Director of Engineering, Infrastructure & Platform
+4404891666 | FICO | Software Engineering - Sr. Director
