@@ -923,3 +923,32 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4404891666 | FICO | Software Engineering - Sr. Director
 4403783838 | AAA Washington | Senior Manager, Product Engineering
 4396676268 | Netflix | Engineering Manager, AI Observability
+4373619689 | Affirm | Director, Software Engineering (Site Reliability Engineering)
+4373609770 | Affirm | Director, Software Engineering (Site Reliability Engineering)
+4373611699 | Affirm | Director, Software Engineering (Site Reliability Engineering)
+4404802526 | TikTok USDS Joint Venture | Engineering Tech Lead, Data Platform – USDS
+4395750012 | Salesforce | Senior Director - Software Engineering
+4401972603 | DoorDash | Engineering Manager, Red Team
+4401989400 | Okta | Director of Engineering, Workflows Experiences
+4402802058 | UiPath | Principal Forward Deployed Engineering Manager
+4404221815 | GitHub | Staff Product Manager
+4404244052 | Goldman Sachs | Engineering - Cloud Development - Engineering Platforms Cloud Enablement - Vice President - Seattle
+4404469024 | GitHub | Senior Director, Software Engineering
+4404472264 | Affirm | Senior Manager, Software Engineering (ML Platform)
+4404859411 | Abridge | Engineering Manager, Platform
+4404962386 | Uber | Engineering Manager II
+4405217252 | Microsoft | Principal Group Engineering Manager - FastTrack
+4405295408 | Salesforce | Cloud Technical Lead - Service Cloud
+4405419326 | Motorola Solutions | Senior Director of Software Engineering
+4393075570 | Anthropic | Manager of Applied AI Architecture, Partnerships
+4394936477 | Coinbase | Engineering Manager
+4395305552 | Microsoft | Principal Software Engineering Manager
+4402826174 | EY | Technology Consulting - Managed Services - Digital Engineering - Senior Manager
+4402839294 | Veritone | Sr. Manager, Engineering - Infrastructure/Backend
+4403228971 | Robinhood | Senior Engineering Manager, AI
+4403265748 | American Credit Acceptance | Director, Engineering
+4403902904 | Expedia Group | Senior Manager, Software Development Engineering
+4404858953 | RTX | Senior Manager, Agile & Digital Delivery
+4405471486 | Deloitte | Engineering Managed Services Delivery Manager
+4405474060 | Toast | Director of Retail Engineering
+4405663681 | Mercor | Engineering Manager, Applied AI
