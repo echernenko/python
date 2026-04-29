@@ -952,3 +952,4 @@ engineering-manager-spark-connect-8502969002?gh_jid=8502969002&gh_src=62a881d62 
 4405471486 | Deloitte | Engineering Managed Services Delivery Manager
 4405474060 | Toast | Director of Retail Engineering
 4405663681 | Mercor | Engineering Manager, Applied AI
+4404105249 | Jobs via Dice | API Platform Manager
